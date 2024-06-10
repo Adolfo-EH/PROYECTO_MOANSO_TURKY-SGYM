@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{64769021-152B-482E-B152-7752AA7C377F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Turky_sGym_Programa</RootNamespace>
+    <AssemblyName>Turky%27sGym_Programa</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes.Designer.cs">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaVentaServicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaVentaServicios.Designer.cs">
+      <DependentUpon>ConsultaVentaServicios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORE_VENTA_PRODUCTOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORE_VENTA_PRODUCTOS.Designer.cs">
+      <DependentUpon>CORE_VENTA_PRODUCTOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORE_VENTA_SERVICIOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORE_VENTA_SERVICIOS.Designer.cs">
+      <DependentUpon>CORE_VENTA_SERVICIOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crud_MonitoreoClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crud_MonitoreoClientes.Designer.cs">
+      <DependentUpon>Crud_MonitoreoClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crud_Planes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>Crud_Planes.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crud_Promociones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crud_Promociones.Designer.cs">
+      <DependentUpon>Crud_Promociones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crud_StockProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crud_StockProductos.Designer.cs">
+      <DependentUpon>Crud_StockProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formConsultaProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formConsultaProducto.Designer.cs">
+      <DependentUpon>formConsultaProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Clientes.resx">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaVentaServicios.resx">
+      <DependentUpon>ConsultaVentaServicios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORE_VENTA_PRODUCTOS.resx">
+      <DependentUpon>CORE_VENTA_PRODUCTOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORE_VENTA_SERVICIOS.resx">
+      <DependentUpon>CORE_VENTA_SERVICIOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crud_MonitoreoClientes.resx">
+      <DependentUpon>Crud_MonitoreoClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crud_Planes.resx">
+      <DependentUpon>Crud_Planes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crud_Promociones.resx">
+      <DependentUpon>Crud_Promociones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crud_StockProductos.resx">
+      <DependentUpon>Crud_StockProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formConsultaProducto.resx">
+      <DependentUpon>formConsultaProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lupa %281%29 %282%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

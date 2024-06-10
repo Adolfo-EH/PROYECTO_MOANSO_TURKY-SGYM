@@ -1,0 +1,6 @@
+D:\UPN\MOANSO\Semana11-Capas\CapaLógica\bin\Debug\CapaLógica.dll
+D:\UPN\MOANSO\Semana11-Capas\CapaLógica\bin\Debug\CapaLógica.pdb
+D:\UPN\MOANSO\Semana11-Capas\CapaLógica\obj\Debug\CapaLógica.csproj.AssemblyReference.cache
+D:\UPN\MOANSO\Semana11-Capas\CapaLógica\obj\Debug\CapaLógica.csproj.CoreCompileInputs.cache
+D:\UPN\MOANSO\Semana11-Capas\CapaLógica\obj\Debug\CapaLógica.dll
+D:\UPN\MOANSO\Semana11-Capas\CapaLógica\obj\Debug\CapaLógica.pdb

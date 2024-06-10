@@ -1,0 +1,50 @@
+C:\Users\dominick\Desktop\clon\Trabajo MOANSO\Actividad_SEM11\Turky'sGym_Programa\bin\Debug\Turky'sGym_Programa.exe.config
+C:\Users\dominick\Desktop\clon\Trabajo MOANSO\Actividad_SEM11\Turky'sGym_Programa\bin\Debug\Turky'sGym_Programa.exe
+C:\Users\dominick\Desktop\clon\Trabajo MOANSO\Actividad_SEM11\Turky'sGym_Programa\bin\Debug\Turky'sGym_Programa.pdb
+C:\Users\dominick\Desktop\clon\Trabajo MOANSO\Actividad_SEM11\Turky'sGym_Programa\obj\Debug\CapaPresentación.csproj.AssemblyReference.cache
+C:\Users\dominick\Desktop\clon\Trabajo MOANSO\Actividad_SEM11\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.Properties.Resources.resources
+C:\Users\dominick\Desktop\clon\Trabajo MOANSO\Actividad_SEM11\Turky'sGym_Programa\obj\Debug\CapaPresentación.csproj.GenerateResource.cache
+C:\Users\dominick\Desktop\clon\Trabajo MOANSO\Actividad_SEM11\Turky'sGym_Programa\obj\Debug\CapaPresentación.csproj.CoreCompileInputs.cache
+C:\Users\dominick\Desktop\clon\Trabajo MOANSO\Actividad_SEM11\Turky'sGym_Programa\obj\Debug\Turky'sGym_Programa.exe
+C:\Users\dominick\Desktop\clon\Trabajo MOANSO\Actividad_SEM11\Turky'sGym_Programa\obj\Debug\Turky'sGym_Programa.pdb
+D:\INTERFAZ_CORE\Actividad_SEM11\Turky'sGym_Programa\bin\Debug\Turky'sGym_Programa.exe.config
+D:\INTERFAZ_CORE\Actividad_SEM11\Turky'sGym_Programa\bin\Debug\Turky'sGym_Programa.exe
+D:\INTERFAZ_CORE\Actividad_SEM11\Turky'sGym_Programa\bin\Debug\Turky'sGym_Programa.pdb
+D:\INTERFAZ_CORE\Actividad_SEM11\Turky'sGym_Programa\obj\Debug\CapaPresentación.csproj.AssemblyReference.cache
+D:\INTERFAZ_CORE\Actividad_SEM11\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.CORE_VENTA_SERVICIOS.resources
+D:\INTERFAZ_CORE\Actividad_SEM11\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.CRUD.resources
+D:\INTERFAZ_CORE\Actividad_SEM11\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.Properties.Resources.resources
+D:\INTERFAZ_CORE\Actividad_SEM11\Turky'sGym_Programa\obj\Debug\CapaPresentación.csproj.GenerateResource.cache
+D:\INTERFAZ_CORE\Actividad_SEM11\Turky'sGym_Programa\obj\Debug\CapaPresentación.csproj.CoreCompileInputs.cache
+D:\INTERFAZ_CORE\Actividad_SEM11\Turky'sGym_Programa\obj\Debug\Turky'sGym_Programa.exe
+D:\INTERFAZ_CORE\Actividad_SEM11\Turky'sGym_Programa\obj\Debug\Turky'sGym_Programa.pdb
+C:\Users\Renzo Ulloa\Source\Repos\Actividad_SEM11\Turky'sGym_Programa\bin\Debug\Turky'sGym_Programa.exe.config
+C:\Users\Renzo Ulloa\Source\Repos\Actividad_SEM11\Turky'sGym_Programa\bin\Debug\Turky'sGym_Programa.exe
+C:\Users\Renzo Ulloa\Source\Repos\Actividad_SEM11\Turky'sGym_Programa\bin\Debug\Turky'sGym_Programa.pdb
+C:\Users\Renzo Ulloa\Source\Repos\Actividad_SEM11\Turky'sGym_Programa\obj\Debug\CapaPresentación.csproj.AssemblyReference.cache
+C:\Users\Renzo Ulloa\Source\Repos\Actividad_SEM11\Turky'sGym_Programa\obj\Debug\CapaPresentación.csproj.SuggestedBindingRedirects.cache
+C:\Users\Renzo Ulloa\Source\Repos\Actividad_SEM11\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.CORE_VENTA_SERVICIOS.resources
+C:\Users\Renzo Ulloa\Source\Repos\Actividad_SEM11\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.CRUD.resources
+C:\Users\Renzo Ulloa\Source\Repos\Actividad_SEM11\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.Properties.Resources.resources
+C:\Users\Renzo Ulloa\Source\Repos\Actividad_SEM11\Turky'sGym_Programa\obj\Debug\CapaPresentación.csproj.GenerateResource.cache
+C:\Users\Renzo Ulloa\Source\Repos\Actividad_SEM11\Turky'sGym_Programa\obj\Debug\CapaPresentación.csproj.CoreCompileInputs.cache
+C:\Users\Renzo Ulloa\Source\Repos\Actividad_SEM11\Turky'sGym_Programa\obj\Debug\Turky'sGym_Programa.exe
+C:\Users\Renzo Ulloa\Source\Repos\Actividad_SEM11\Turky'sGym_Programa\obj\Debug\Turky'sGym_Programa.pdb
+D:\Nueva carpeta (11)\Turky'sGym_Programa\bin\Debug\Turky'sGym_Programa.exe.config
+D:\Nueva carpeta (11)\Turky'sGym_Programa\bin\Debug\Turky'sGym_Programa.exe
+D:\Nueva carpeta (11)\Turky'sGym_Programa\bin\Debug\Turky'sGym_Programa.pdb
+D:\Nueva carpeta (11)\Turky'sGym_Programa\obj\Debug\CapaPresentación.csproj.AssemblyReference.cache
+D:\Nueva carpeta (11)\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.Consulta_Servicio_Cliente.resources
+D:\Nueva carpeta (11)\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.CORE_VENTA_SERVICIOS.resources
+D:\Nueva carpeta (11)\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.CRUD.resources
+D:\Nueva carpeta (11)\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.Properties.Resources.resources
+D:\Nueva carpeta (11)\Turky'sGym_Programa\obj\Debug\CapaPresentación.csproj.GenerateResource.cache
+D:\Nueva carpeta (11)\Turky'sGym_Programa\obj\Debug\CapaPresentación.csproj.CoreCompileInputs.cache
+D:\Nueva carpeta (11)\Turky'sGym_Programa\obj\Debug\Turky'sGym_Programa.exe
+D:\Nueva carpeta (11)\Turky'sGym_Programa\obj\Debug\Turky'sGym_Programa.pdb
+D:\Nueva carpeta (11)\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.Clientes.resources
+D:\Nueva carpeta (11)\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.CORE_VENTA_PRODUCTOS.resources
+D:\Nueva carpeta (11)\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.Crud_MonitoreoClientes.resources
+D:\Nueva carpeta (11)\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.Crud_Promociones.resources
+D:\Nueva carpeta (11)\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.Crud_StockProductos.resources
+D:\Nueva carpeta (11)\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.formConsultaProducto.resources
