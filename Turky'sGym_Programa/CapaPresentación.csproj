@@ -70,6 +70,12 @@
     <Compile Include="CORE_VENTA_SERVICIOS.Designer.cs">
       <DependentUpon>CORE_VENTA_SERVICIOS.cs</DependentUpon>
     </Compile>
+    <Compile Include="CRUD_Categoría.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD_Categoría.Designer.cs">
+      <DependentUpon>CRUD_Categoría.cs</DependentUpon>
+    </Compile>
     <Compile Include="Crud_MonitoreoClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,12 @@
     <Compile Include="Crud_Promociones.Designer.cs">
       <DependentUpon>Crud_Promociones.cs</DependentUpon>
     </Compile>
+    <Compile Include="CRUD_Servicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD_Servicios.Designer.cs">
+      <DependentUpon>CRUD_Servicios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Crud_StockProductos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +112,12 @@
     </Compile>
     <Compile Include="formConsultaProducto.Designer.cs">
       <DependentUpon>formConsultaProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD_Marca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD_Marca.Designer.cs">
+      <DependentUpon>CRUD_Marca.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -115,6 +133,9 @@
     <EmbeddedResource Include="CORE_VENTA_SERVICIOS.resx">
       <DependentUpon>CORE_VENTA_SERVICIOS.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CRUD_Categoría.resx">
+      <DependentUpon>CRUD_Categoría.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Crud_MonitoreoClientes.resx">
       <DependentUpon>Crud_MonitoreoClientes.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,11 +145,17 @@
     <EmbeddedResource Include="Crud_Promociones.resx">
       <DependentUpon>Crud_Promociones.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CRUD_Servicios.resx">
+      <DependentUpon>CRUD_Servicios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Crud_StockProductos.resx">
       <DependentUpon>Crud_StockProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formConsultaProducto.resx">
       <DependentUpon>formConsultaProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD_Marca.resx">
+      <DependentUpon>CRUD_Marca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
