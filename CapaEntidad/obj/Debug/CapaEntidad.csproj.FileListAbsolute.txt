@@ -1,0 +1,6 @@
+D:\TurkysGYM_MOANSO\CapaEntidad\bin\Debug\CapaEntidad.dll
+D:\TurkysGYM_MOANSO\CapaEntidad\bin\Debug\CapaEntidad.pdb
+D:\TurkysGYM_MOANSO\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+D:\TurkysGYM_MOANSO\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+D:\TurkysGYM_MOANSO\CapaEntidad\obj\Debug\CapaEntidad.dll
+D:\TurkysGYM_MOANSO\CapaEntidad\obj\Debug\CapaEntidad.pdb

@@ -1,6 +1,6 @@
 ﻿namespace Turky_sGym_Programa
 {
-    partial class Crud_StockProductos
+    partial class Crud_Productos
     {
         /// <summary>
         /// Required designer variable.
@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             this.grbDatosProducto = new System.Windows.Forms.GroupBox();
+            this.cbxEstadoProducto = new System.Windows.Forms.CheckBox();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnInsertar = new System.Windows.Forms.Button();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.txtCantidad = new System.Windows.Forms.TextBox();
-            this.txtTipo = new System.Windows.Forms.TextBox();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.txtMarca = new System.Windows.Forms.TextBox();
             this.cmbCategoria = new System.Windows.Forms.ComboBox();
             this.lbPrecio = new System.Windows.Forms.Label();
@@ -58,12 +59,13 @@
             // 
             // grbDatosProducto
             // 
+            this.grbDatosProducto.Controls.Add(this.cbxEstadoProducto);
             this.grbDatosProducto.Controls.Add(this.btnModificar);
             this.grbDatosProducto.Controls.Add(this.btnCancelar);
             this.grbDatosProducto.Controls.Add(this.btnInsertar);
             this.grbDatosProducto.Controls.Add(this.txtPrecio);
             this.grbDatosProducto.Controls.Add(this.txtCantidad);
-            this.grbDatosProducto.Controls.Add(this.txtTipo);
+            this.grbDatosProducto.Controls.Add(this.txtDescripcion);
             this.grbDatosProducto.Controls.Add(this.txtMarca);
             this.grbDatosProducto.Controls.Add(this.cmbCategoria);
             this.grbDatosProducto.Controls.Add(this.lbPrecio);
@@ -81,32 +83,45 @@
             this.grbDatosProducto.TabStop = false;
             this.grbDatosProducto.Text = "Datos del Producto";
             // 
+            // cbxEstadoProducto
+            // 
+            this.cbxEstadoProducto.AutoSize = true;
+            this.cbxEstadoProducto.Location = new System.Drawing.Point(331, 76);
+            this.cbxEstadoProducto.Name = "cbxEstadoProducto";
+            this.cbxEstadoProducto.Size = new System.Drawing.Size(72, 20);
+            this.cbxEstadoProducto.TabIndex = 29;
+            this.cbxEstadoProducto.Text = "Estado ";
+            this.cbxEstadoProducto.UseVisualStyleBackColor = true;
+            // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(380, 142);
+            this.btnModificar.Location = new System.Drawing.Point(418, 142);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(93, 35);
             this.btnModificar.TabIndex = 14;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click_1);
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(380, 210);
+            this.btnCancelar.Location = new System.Drawing.Point(418, 210);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(93, 35);
             this.btnCancelar.TabIndex = 13;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click_1);
             // 
             // btnInsertar
             // 
-            this.btnInsertar.Location = new System.Drawing.Point(380, 67);
+            this.btnInsertar.Location = new System.Drawing.Point(418, 65);
             this.btnInsertar.Name = "btnInsertar";
             this.btnInsertar.Size = new System.Drawing.Size(93, 35);
             this.btnInsertar.TabIndex = 12;
             this.btnInsertar.Text = "Insertar";
             this.btnInsertar.UseVisualStyleBackColor = true;
+            this.btnInsertar.Click += new System.EventHandler(this.btnInsertar_Click_1);
             // 
             // txtPrecio
             // 
@@ -122,12 +137,12 @@
             this.txtCantidad.Size = new System.Drawing.Size(136, 22);
             this.txtCantidad.TabIndex = 10;
             // 
-            // txtTipo
+            // txtDescripcion
             // 
-            this.txtTipo.Location = new System.Drawing.Point(166, 148);
-            this.txtTipo.Name = "txtTipo";
-            this.txtTipo.Size = new System.Drawing.Size(139, 22);
-            this.txtTipo.TabIndex = 9;
+            this.txtDescripcion.Location = new System.Drawing.Point(166, 148);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(139, 22);
+            this.txtDescripcion.TabIndex = 9;
             // 
             // txtMarca
             // 
@@ -140,10 +155,9 @@
             // 
             this.cmbCategoria.FormattingEnabled = true;
             this.cmbCategoria.Items.AddRange(new object[] {
-            "Bebida",
-            "Vestimenta",
-            "Sumplemento",
-            "Accesorio"});
+            "1",
+            "2",
+            "3"});
             this.cmbCategoria.Location = new System.Drawing.Point(166, 76);
             this.cmbCategoria.Name = "cmbCategoria";
             this.cmbCategoria.Size = new System.Drawing.Size(139, 24);
@@ -170,11 +184,11 @@
             // lbTipo
             // 
             this.lbTipo.AutoSize = true;
-            this.lbTipo.Location = new System.Drawing.Point(90, 151);
+            this.lbTipo.Location = new System.Drawing.Point(48, 151);
             this.lbTipo.Name = "lbTipo";
-            this.lbTipo.Size = new System.Drawing.Size(38, 16);
+            this.lbTipo.Size = new System.Drawing.Size(82, 16);
             this.lbTipo.TabIndex = 4;
-            this.lbTipo.Text = "Tipo:";
+            this.lbTipo.Text = "Descripción:";
             // 
             // lbMarca
             // 
@@ -221,6 +235,7 @@
             this.btnEditar.TabIndex = 10;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click_1);
             // 
             // btnInhabilitar
             // 
@@ -231,6 +246,7 @@
             this.btnInhabilitar.TabIndex = 9;
             this.btnInhabilitar.Text = "Inhabilitar";
             this.btnInhabilitar.UseVisualStyleBackColor = true;
+            this.btnInhabilitar.Click += new System.EventHandler(this.btnInhabilitar_Click_1);
             // 
             // btnRegresar
             // 
@@ -241,6 +257,7 @@
             this.btnRegresar.TabIndex = 8;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = true;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // btnNuevo
             // 
@@ -251,15 +268,18 @@
             this.btnNuevo.TabIndex = 7;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // dgvStockProducto
             // 
             this.dgvStockProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStockProducto.Location = new System.Drawing.Point(133, 125);
             this.dgvStockProducto.Name = "dgvStockProducto";
+            this.dgvStockProducto.ReadOnly = true;
             this.dgvStockProducto.RowHeadersWidth = 51;
             this.dgvStockProducto.Size = new System.Drawing.Size(535, 239);
             this.dgvStockProducto.TabIndex = 6;
+            this.dgvStockProducto.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStockProducto_CellDoubleClick);
             // 
             // panel1
             // 
@@ -278,14 +298,14 @@
             this.Titulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Titulo.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Titulo.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.Titulo.Location = new System.Drawing.Point(315, 22);
+            this.Titulo.Location = new System.Drawing.Point(338, 22);
             this.Titulo.Name = "Titulo";
-            this.Titulo.Size = new System.Drawing.Size(353, 31);
+            this.Titulo.Size = new System.Drawing.Size(198, 31);
             this.Titulo.TabIndex = 1;
-            this.Titulo.Text = "STOCK DE PRODUCTOS";
+            this.Titulo.Text = "PRODUCTOS";
             this.Titulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Crud_StockProductos
+            // Crud_Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -297,7 +317,7 @@
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.dgvStockProducto);
-            this.Name = "Crud_StockProductos";
+            this.Name = "Crud_Productos";
             this.Text = "Crud_StockProductos";
             this.grbDatosProducto.ResumeLayout(false);
             this.grbDatosProducto.PerformLayout();
@@ -316,7 +336,7 @@
         private System.Windows.Forms.Button btnInsertar;
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.TextBox txtCantidad;
-        private System.Windows.Forms.TextBox txtTipo;
+        private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.TextBox txtMarca;
         private System.Windows.Forms.ComboBox cmbCategoria;
         private System.Windows.Forms.Label lbPrecio;
@@ -333,5 +353,6 @@
         private System.Windows.Forms.DataGridView dgvStockProducto;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label Titulo;
+        private System.Windows.Forms.CheckBox cbxEstadoProducto;
     }
 }

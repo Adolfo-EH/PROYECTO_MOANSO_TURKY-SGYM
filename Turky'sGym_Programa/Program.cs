@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaPresentación;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace Turky_sGym_Programa
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CRUD());
+            Application.Run(new formMetodoPago());
         }
     }
 }

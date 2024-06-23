@@ -89,6 +89,12 @@
       <DependentUpon>Crud_Planes.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Crud_Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crud_Productos.Designer.cs">
+      <DependentUpon>Crud_Productos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Crud_Promociones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,12 +107,6 @@
     <Compile Include="CRUD_Servicios.Designer.cs">
       <DependentUpon>CRUD_Servicios.cs</DependentUpon>
     </Compile>
-    <Compile Include="Crud_StockProductos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Crud_StockProductos.Designer.cs">
-      <DependentUpon>Crud_StockProductos.cs</DependentUpon>
-    </Compile>
     <Compile Include="formConsultaProducto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +118,12 @@
     </Compile>
     <Compile Include="CRUD_Marca.Designer.cs">
       <DependentUpon>CRUD_Marca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formMetodoPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMetodoPago.Designer.cs">
+      <DependentUpon>formMetodoPago.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -142,20 +148,23 @@
     <EmbeddedResource Include="Crud_Planes.resx">
       <DependentUpon>Crud_Planes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Crud_Productos.resx">
+      <DependentUpon>Crud_Productos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Crud_Promociones.resx">
       <DependentUpon>Crud_Promociones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CRUD_Servicios.resx">
       <DependentUpon>CRUD_Servicios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Crud_StockProductos.resx">
-      <DependentUpon>Crud_StockProductos.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="formConsultaProducto.resx">
       <DependentUpon>formConsultaProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CRUD_Marca.resx">
       <DependentUpon>CRUD_Marca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMetodoPago.resx">
+      <DependentUpon>formMetodoPago.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -182,6 +191,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\lupa %281%29 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaEntidad\CapaEntidad.csproj">
+      <Project>{1D4338B3-1D8A-4436-AE5C-4F764EF67553}</Project>
+      <Name>CapaEntidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaLógica\CapaLógica.csproj">
+      <Project>{8719CA10-1097-4A28-8A73-5881850D61D0}</Project>
+      <Name>CapaLógica</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

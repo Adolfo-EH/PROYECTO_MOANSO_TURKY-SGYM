@@ -4,3 +4,14 @@ D:\UPN\MOANSO\Semana11-Capas\CapaLógica\obj\Debug\CapaLógica.csproj.AssemblyRe
 D:\UPN\MOANSO\Semana11-Capas\CapaLógica\obj\Debug\CapaLógica.csproj.CoreCompileInputs.cache
 D:\UPN\MOANSO\Semana11-Capas\CapaLógica\obj\Debug\CapaLógica.dll
 D:\UPN\MOANSO\Semana11-Capas\CapaLógica\obj\Debug\CapaLógica.pdb
+D:\TurkysGYM_MOANSO\CapaLógica\bin\Debug\CapaLógica.dll
+D:\TurkysGYM_MOANSO\CapaLógica\bin\Debug\CapaLógica.pdb
+D:\TurkysGYM_MOANSO\CapaLógica\bin\Debug\CapaDatos.dll
+D:\TurkysGYM_MOANSO\CapaLógica\bin\Debug\CapaEntidad.dll
+D:\TurkysGYM_MOANSO\CapaLógica\bin\Debug\CapaDatos.pdb
+D:\TurkysGYM_MOANSO\CapaLógica\bin\Debug\CapaEntidad.pdb
+D:\TurkysGYM_MOANSO\CapaLógica\obj\Debug\CapaLógica.csproj.AssemblyReference.cache
+D:\TurkysGYM_MOANSO\CapaLógica\obj\Debug\CapaLógica.csproj.CoreCompileInputs.cache
+D:\TurkysGYM_MOANSO\CapaLógica\obj\Debug\CapaLógica.csproj.Up2Date
+D:\TurkysGYM_MOANSO\CapaLógica\obj\Debug\CapaLógica.dll
+D:\TurkysGYM_MOANSO\CapaLógica\obj\Debug\CapaLógica.pdb
