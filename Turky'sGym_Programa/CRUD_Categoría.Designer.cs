@@ -30,21 +30,21 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblVentaServicios = new System.Windows.Forms.Label();
-            this.dgvCategoría = new System.Windows.Forms.DataGridView();
+            this.dgvCategoria = new System.Windows.Forms.DataGridView();
             this.btnCrearC = new System.Windows.Forms.Button();
             this.btnInhabilitarC = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtNomCat = new System.Windows.Forms.TextBox();
             this.cbEstadoCategoría = new System.Windows.Forms.CheckBox();
             this.gbCategoría = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblIDCat = new System.Windows.Forms.Label();
+            this.btnCancelarC = new System.Windows.Forms.Button();
             this.btnInsertarC = new System.Windows.Forms.Button();
+            this.lblIDCat = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.btnHabilitarC = new System.Windows.Forms.Button();
             this.btnRegresarC = new System.Windows.Forms.Button();
-            this.btnCancelarC = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCategoría)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCategoria)).BeginInit();
             this.gbCategoría.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,13 +68,16 @@
             this.lblVentaServicios.TabIndex = 44;
             this.lblVentaServicios.Text = "CATEGORÍA";
             // 
-            // dgvCategoría
+            // dgvCategoria
             // 
-            this.dgvCategoría.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCategoría.Location = new System.Drawing.Point(24, 91);
-            this.dgvCategoría.Name = "dgvCategoría";
-            this.dgvCategoría.Size = new System.Drawing.Size(641, 296);
-            this.dgvCategoría.TabIndex = 65;
+            this.dgvCategoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCategoria.Location = new System.Drawing.Point(24, 91);
+            this.dgvCategoria.Name = "dgvCategoria";
+            this.dgvCategoria.Size = new System.Drawing.Size(641, 296);
+            this.dgvCategoria.TabIndex = 65;
+            this.dgvCategoria.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCategoría_CellContentDoubleClick);
+            this.dgvCategoria.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCategoria_CellDoubleClick);
+            this.dgvCategoria.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvCategoria_CellMouseDoubleClick);
             // 
             // btnCrearC
             // 
@@ -96,6 +99,7 @@
             this.btnInhabilitarC.TabIndex = 67;
             this.btnInhabilitarC.Text = "INHABILITAR";
             this.btnInhabilitarC.UseVisualStyleBackColor = true;
+            this.btnInhabilitarC.Click += new System.EventHandler(this.btnInhabilitarC_Click);
             // 
             // label1
             // 
@@ -141,14 +145,25 @@
             this.gbCategoría.TabStop = false;
             this.gbCategoría.Text = "Categoría";
             // 
-            // label2
+            // btnCancelarC
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(103, 32);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(21, 13);
-            this.label2.TabIndex = 71;
-            this.label2.Text = "ID:";
+            this.btnCancelarC.Location = new System.Drawing.Point(503, 90);
+            this.btnCancelarC.Name = "btnCancelarC";
+            this.btnCancelarC.Size = new System.Drawing.Size(115, 35);
+            this.btnCancelarC.TabIndex = 75;
+            this.btnCancelarC.Text = "CANCELAR";
+            this.btnCancelarC.UseVisualStyleBackColor = true;
+            this.btnCancelarC.Click += new System.EventHandler(this.btnCancelarC_Click);
+            // 
+            // btnInsertarC
+            // 
+            this.btnInsertarC.Location = new System.Drawing.Point(503, 29);
+            this.btnInsertarC.Name = "btnInsertarC";
+            this.btnInsertarC.Size = new System.Drawing.Size(115, 40);
+            this.btnInsertarC.TabIndex = 73;
+            this.btnInsertarC.Text = "INSERTAR";
+            this.btnInsertarC.UseVisualStyleBackColor = true;
+            this.btnInsertarC.Click += new System.EventHandler(this.btnInsertarC_Click);
             // 
             // lblIDCat
             // 
@@ -159,14 +174,14 @@
             this.lblIDCat.TabIndex = 72;
             this.lblIDCat.Text = "00";
             // 
-            // btnInsertarC
+            // label2
             // 
-            this.btnInsertarC.Location = new System.Drawing.Point(503, 29);
-            this.btnInsertarC.Name = "btnInsertarC";
-            this.btnInsertarC.Size = new System.Drawing.Size(115, 40);
-            this.btnInsertarC.TabIndex = 73;
-            this.btnInsertarC.Text = "INSERTAR";
-            this.btnInsertarC.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(103, 32);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(21, 13);
+            this.label2.TabIndex = 71;
+            this.label2.Text = "ID:";
             // 
             // btnHabilitarC
             // 
@@ -177,6 +192,7 @@
             this.btnHabilitarC.TabIndex = 72;
             this.btnHabilitarC.Text = "HABILITAR";
             this.btnHabilitarC.UseVisualStyleBackColor = true;
+            this.btnHabilitarC.Click += new System.EventHandler(this.btnHabilitarC_Click);
             // 
             // btnRegresarC
             // 
@@ -188,15 +204,6 @@
             this.btnRegresarC.Text = "REGRESAR";
             this.btnRegresarC.UseVisualStyleBackColor = true;
             // 
-            // btnCancelarC
-            // 
-            this.btnCancelarC.Location = new System.Drawing.Point(503, 90);
-            this.btnCancelarC.Name = "btnCancelarC";
-            this.btnCancelarC.Size = new System.Drawing.Size(115, 35);
-            this.btnCancelarC.TabIndex = 75;
-            this.btnCancelarC.Text = "CANCELAR";
-            this.btnCancelarC.UseVisualStyleBackColor = true;
-            // 
             // CRUD_Categoría
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -206,7 +213,7 @@
             this.Controls.Add(this.btnHabilitarC);
             this.Controls.Add(this.btnInhabilitarC);
             this.Controls.Add(this.btnCrearC);
-            this.Controls.Add(this.dgvCategoría);
+            this.Controls.Add(this.dgvCategoria);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.gbCategoría);
             this.Name = "CRUD_Categoría";
@@ -214,7 +221,7 @@
             this.Load += new System.EventHandler(this.CRUD_Categoría_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCategoría)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCategoria)).EndInit();
             this.gbCategoría.ResumeLayout(false);
             this.gbCategoría.PerformLayout();
             this.ResumeLayout(false);
@@ -225,7 +232,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblVentaServicios;
-        private System.Windows.Forms.DataGridView dgvCategoría;
+        private System.Windows.Forms.DataGridView dgvCategoria;
         private System.Windows.Forms.Button btnCrearC;
         private System.Windows.Forms.Button btnInhabilitarC;
         private System.Windows.Forms.Label label1;

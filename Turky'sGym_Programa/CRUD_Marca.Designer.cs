@@ -32,7 +32,7 @@
             this.btnHabilitarM = new System.Windows.Forms.Button();
             this.btnInhabilitarM = new System.Windows.Forms.Button();
             this.btnCrearM = new System.Windows.Forms.Button();
-            this.dgvServicios = new System.Windows.Forms.DataGridView();
+            this.dgvMarca = new System.Windows.Forms.DataGridView();
             this.gbMarca = new System.Windows.Forms.GroupBox();
             this.btnCancelarM = new System.Windows.Forms.Button();
             this.btnInsertarM = new System.Windows.Forms.Button();
@@ -43,7 +43,7 @@
             this.cbEstadoMarca = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.f = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvServicios)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMarca)).BeginInit();
             this.gbMarca.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -67,6 +67,7 @@
             this.btnHabilitarM.TabIndex = 85;
             this.btnHabilitarM.Text = "HABILITAR";
             this.btnHabilitarM.UseVisualStyleBackColor = true;
+            this.btnHabilitarM.Click += new System.EventHandler(this.btnHabilitarM_Click);
             // 
             // btnInhabilitarM
             // 
@@ -77,6 +78,7 @@
             this.btnInhabilitarM.TabIndex = 83;
             this.btnInhabilitarM.Text = "INHABILITAR";
             this.btnInhabilitarM.UseVisualStyleBackColor = true;
+            this.btnInhabilitarM.Click += new System.EventHandler(this.btnInhabilitarM_Click);
             // 
             // btnCrearM
             // 
@@ -89,13 +91,14 @@
             this.btnCrearM.UseVisualStyleBackColor = true;
             this.btnCrearM.Click += new System.EventHandler(this.btnCrearM_Click);
             // 
-            // dgvServicios
+            // dgvMarca
             // 
-            this.dgvServicios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvServicios.Location = new System.Drawing.Point(47, 102);
-            this.dgvServicios.Name = "dgvServicios";
-            this.dgvServicios.Size = new System.Drawing.Size(641, 296);
-            this.dgvServicios.TabIndex = 81;
+            this.dgvMarca.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMarca.Location = new System.Drawing.Point(47, 102);
+            this.dgvMarca.Name = "dgvMarca";
+            this.dgvMarca.Size = new System.Drawing.Size(641, 296);
+            this.dgvMarca.TabIndex = 81;
+            this.dgvMarca.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMarca_CellDoubleClick);
             // 
             // gbMarca
             // 
@@ -121,6 +124,7 @@
             this.btnCancelarM.TabIndex = 75;
             this.btnCancelarM.Text = "CANCELAR";
             this.btnCancelarM.UseVisualStyleBackColor = true;
+            this.btnCancelarM.Click += new System.EventHandler(this.btnCancelarM_Click);
             // 
             // btnInsertarM
             // 
@@ -130,6 +134,7 @@
             this.btnInsertarM.TabIndex = 73;
             this.btnInsertarM.Text = "INSERTAR";
             this.btnInsertarM.UseVisualStyleBackColor = true;
+            this.btnInsertarM.Click += new System.EventHandler(this.btnInsertarM_Click);
             // 
             // txtNomMarca
             // 
@@ -198,7 +203,7 @@
             this.f.TabIndex = 44;
             this.f.Text = "MARCA";
             // 
-            // Marca
+            // CRUD_Marca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -207,13 +212,13 @@
             this.Controls.Add(this.btnHabilitarM);
             this.Controls.Add(this.btnInhabilitarM);
             this.Controls.Add(this.btnCrearM);
-            this.Controls.Add(this.dgvServicios);
+            this.Controls.Add(this.dgvMarca);
             this.Controls.Add(this.gbMarca);
             this.Controls.Add(this.panel1);
-            this.Name = "Marca";
+            this.Name = "CRUD_Marca";
             this.Text = "Marca";
             this.Load += new System.EventHandler(this.Marca_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvServicios)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMarca)).EndInit();
             this.gbMarca.ResumeLayout(false);
             this.gbMarca.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -228,7 +233,7 @@
         private System.Windows.Forms.Button btnHabilitarM;
         private System.Windows.Forms.Button btnInhabilitarM;
         private System.Windows.Forms.Button btnCrearM;
-        private System.Windows.Forms.DataGridView dgvServicios;
+        private System.Windows.Forms.DataGridView dgvMarca;
         private System.Windows.Forms.GroupBox gbMarca;
         private System.Windows.Forms.Button btnCancelarM;
         private System.Windows.Forms.Button btnInsertarM;
