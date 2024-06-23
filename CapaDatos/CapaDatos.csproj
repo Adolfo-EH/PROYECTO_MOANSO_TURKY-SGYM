@@ -45,6 +45,7 @@
     <Compile Include="Conexion.cs" />
     <Compile Include="datMetodoPago.cs" />
     <Compile Include="datProducto.cs" />
+    <Compile Include="datPromocion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

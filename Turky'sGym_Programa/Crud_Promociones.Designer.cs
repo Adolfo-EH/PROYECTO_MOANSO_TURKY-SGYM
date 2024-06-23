@@ -29,27 +29,28 @@
         private void InitializeComponent()
         {
             this.btnRegresar = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.gbPromociones = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dgvPromocion = new System.Windows.Forms.DataGridView();
+            this.gbPromocion = new System.Windows.Forms.GroupBox();
+            this.dtpDuracion = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtDescuento = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblDescuento = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lbID = new System.Windows.Forms.Label();
+            this.cmbTipoProm = new System.Windows.Forms.ComboBox();
             this.lblTipoPromocion = new System.Windows.Forms.Label();
             this.lblIdPromocion = new System.Windows.Forms.Label();
             this.btnInhabilitar = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnHabilitar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Titulo = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.gbPromociones.SuspendLayout();
+            this.cbxPromocion = new System.Windows.Forms.CheckBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPromocion)).BeginInit();
+            this.gbPromocion.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,47 +64,48 @@
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dgvPromocion
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(120, 96);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(511, 228);
-            this.dataGridView1.TabIndex = 7;
+            this.dgvPromocion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPromocion.Location = new System.Drawing.Point(120, 96);
+            this.dgvPromocion.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvPromocion.Name = "dgvPromocion";
+            this.dgvPromocion.RowHeadersWidth = 51;
+            this.dgvPromocion.RowTemplate.Height = 24;
+            this.dgvPromocion.Size = new System.Drawing.Size(511, 228);
+            this.dgvPromocion.TabIndex = 7;
             // 
-            // gbPromociones
+            // gbPromocion
             // 
-            this.gbPromociones.Controls.Add(this.dateTimePicker1);
-            this.gbPromociones.Controls.Add(this.label1);
-            this.gbPromociones.Controls.Add(this.btnCancelar);
-            this.gbPromociones.Controls.Add(this.btnGuardar);
-            this.gbPromociones.Controls.Add(this.textBox2);
-            this.gbPromociones.Controls.Add(this.lblNombre);
-            this.gbPromociones.Controls.Add(this.textBox1);
-            this.gbPromociones.Controls.Add(this.lblDescuento);
-            this.gbPromociones.Controls.Add(this.label3);
-            this.gbPromociones.Controls.Add(this.comboBox1);
-            this.gbPromociones.Controls.Add(this.lblTipoPromocion);
-            this.gbPromociones.Controls.Add(this.lblIdPromocion);
-            this.gbPromociones.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbPromociones.Location = new System.Drawing.Point(122, 363);
-            this.gbPromociones.Margin = new System.Windows.Forms.Padding(2);
-            this.gbPromociones.Name = "gbPromociones";
-            this.gbPromociones.Padding = new System.Windows.Forms.Padding(2);
-            this.gbPromociones.Size = new System.Drawing.Size(509, 212);
-            this.gbPromociones.TabIndex = 11;
-            this.gbPromociones.TabStop = false;
-            this.gbPromociones.Text = "Promociones(Productos/Servicios)";
+            this.gbPromocion.Controls.Add(this.cbxPromocion);
+            this.gbPromocion.Controls.Add(this.dtpDuracion);
+            this.gbPromocion.Controls.Add(this.label1);
+            this.gbPromocion.Controls.Add(this.btnCancelar);
+            this.gbPromocion.Controls.Add(this.btnGuardar);
+            this.gbPromocion.Controls.Add(this.txtDescuento);
+            this.gbPromocion.Controls.Add(this.lblNombre);
+            this.gbPromocion.Controls.Add(this.txtNombre);
+            this.gbPromocion.Controls.Add(this.lblDescuento);
+            this.gbPromocion.Controls.Add(this.lbID);
+            this.gbPromocion.Controls.Add(this.cmbTipoProm);
+            this.gbPromocion.Controls.Add(this.lblTipoPromocion);
+            this.gbPromocion.Controls.Add(this.lblIdPromocion);
+            this.gbPromocion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbPromocion.Location = new System.Drawing.Point(122, 363);
+            this.gbPromocion.Margin = new System.Windows.Forms.Padding(2);
+            this.gbPromocion.Name = "gbPromocion";
+            this.gbPromocion.Padding = new System.Windows.Forms.Padding(2);
+            this.gbPromocion.Size = new System.Drawing.Size(509, 212);
+            this.gbPromocion.TabIndex = 11;
+            this.gbPromocion.TabStop = false;
+            this.gbPromocion.Text = "Promociones(Productos/Servicios)";
             // 
-            // dateTimePicker1
+            // dtpDuracion
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(140, 169);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker1.TabIndex = 11;
+            this.dtpDuracion.Location = new System.Drawing.Point(140, 169);
+            this.dtpDuracion.Name = "dtpDuracion";
+            this.dtpDuracion.Size = new System.Drawing.Size(200, 22);
+            this.dtpDuracion.TabIndex = 11;
             // 
             // label1
             // 
@@ -125,6 +127,7 @@
             this.btnCancelar.TabIndex = 9;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnGuardar
             // 
@@ -135,14 +138,15 @@
             this.btnGuardar.TabIndex = 8;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // textBox2
+            // txtDescuento
             // 
-            this.textBox2.Location = new System.Drawing.Point(140, 134);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 22);
-            this.textBox2.TabIndex = 7;
+            this.txtDescuento.Location = new System.Drawing.Point(140, 134);
+            this.txtDescuento.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDescuento.Name = "txtDescuento";
+            this.txtDescuento.Size = new System.Drawing.Size(200, 22);
+            this.txtDescuento.TabIndex = 7;
             // 
             // lblNombre
             // 
@@ -155,13 +159,13 @@
             this.lblNombre.TabIndex = 6;
             this.lblNombre.Text = "Nombre";
             // 
-            // textBox1
+            // txtNombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(140, 98);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 22);
-            this.textBox1.TabIndex = 5;
+            this.txtNombre.Location = new System.Drawing.Point(140, 98);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(200, 22);
+            this.txtNombre.TabIndex = 5;
             // 
             // lblDescuento
             // 
@@ -174,27 +178,27 @@
             this.lblDescuento.TabIndex = 4;
             this.lblDescuento.Text = "Descuento";
             // 
-            // label3
+            // lbID
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(137, 29);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(21, 16);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "00";
+            this.lbID.AutoSize = true;
+            this.lbID.Location = new System.Drawing.Point(137, 29);
+            this.lbID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbID.Name = "lbID";
+            this.lbID.Size = new System.Drawing.Size(21, 16);
+            this.lbID.TabIndex = 3;
+            this.lbID.Text = "00";
             // 
-            // comboBox1
+            // cmbTipoProm
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbTipoProm.FormattingEnabled = true;
+            this.cmbTipoProm.Items.AddRange(new object[] {
             "Servicios",
             "Productos"});
-            this.comboBox1.Location = new System.Drawing.Point(140, 59);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 24);
-            this.comboBox1.TabIndex = 2;
+            this.cmbTipoProm.Location = new System.Drawing.Point(140, 59);
+            this.cmbTipoProm.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbTipoProm.Name = "cmbTipoProm";
+            this.cmbTipoProm.Size = new System.Drawing.Size(200, 24);
+            this.cmbTipoProm.TabIndex = 2;
             // 
             // lblTipoPromocion
             // 
@@ -227,16 +231,18 @@
             this.btnInhabilitar.TabIndex = 10;
             this.btnInhabilitar.Text = "INHABILITAR";
             this.btnInhabilitar.UseVisualStyleBackColor = true;
+            this.btnInhabilitar.Click += new System.EventHandler(this.btnInhabilitar_Click);
             // 
-            // btnEditar
+            // btnHabilitar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(694, 195);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(110, 51);
-            this.btnEditar.TabIndex = 9;
-            this.btnEditar.Text = "EDITAR";
-            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnHabilitar.Location = new System.Drawing.Point(694, 195);
+            this.btnHabilitar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnHabilitar.Name = "btnHabilitar";
+            this.btnHabilitar.Size = new System.Drawing.Size(110, 51);
+            this.btnHabilitar.TabIndex = 9;
+            this.btnHabilitar.Text = "HABILITAR";
+            this.btnHabilitar.UseVisualStyleBackColor = true;
+            this.btnHabilitar.Click += new System.EventHandler(this.btnHabilitar_Click);
             // 
             // btnNuevo
             // 
@@ -247,6 +253,7 @@
             this.btnNuevo.TabIndex = 8;
             this.btnNuevo.Text = "NUEVO";
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // panel1
             // 
@@ -273,6 +280,16 @@
             this.Titulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Titulo.Click += new System.EventHandler(this.Titulo_Click);
             // 
+            // cbxPromocion
+            // 
+            this.cbxPromocion.AutoSize = true;
+            this.cbxPromocion.Location = new System.Drawing.Point(268, 31);
+            this.cbxPromocion.Name = "cbxPromocion";
+            this.cbxPromocion.Size = new System.Drawing.Size(72, 20);
+            this.cbxPromocion.TabIndex = 31;
+            this.cbxPromocion.Text = "Estado ";
+            this.cbxPromocion.UseVisualStyleBackColor = true;
+            // 
             // Crud_Promociones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -280,16 +297,16 @@
             this.ClientSize = new System.Drawing.Size(960, 608);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnRegresar);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.gbPromociones);
+            this.Controls.Add(this.dgvPromocion);
+            this.Controls.Add(this.gbPromocion);
             this.Controls.Add(this.btnInhabilitar);
-            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.btnHabilitar);
             this.Controls.Add(this.btnNuevo);
             this.Name = "Crud_Promociones";
             this.Text = "Crud_Promociones";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.gbPromociones.ResumeLayout(false);
-            this.gbPromociones.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPromocion)).EndInit();
+            this.gbPromocion.ResumeLayout(false);
+            this.gbPromocion.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -299,24 +316,25 @@
         #endregion
 
         private System.Windows.Forms.Button btnRegresar;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.GroupBox gbPromociones;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DataGridView dgvPromocion;
+        private System.Windows.Forms.GroupBox gbPromocion;
+        private System.Windows.Forms.DateTimePicker dtpDuracion;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtDescuento;
         private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label lblDescuento;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label lbID;
+        private System.Windows.Forms.ComboBox cmbTipoProm;
         private System.Windows.Forms.Label lblTipoPromocion;
         private System.Windows.Forms.Label lblIdPromocion;
         private System.Windows.Forms.Button btnInhabilitar;
-        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button btnHabilitar;
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label Titulo;
+        private System.Windows.Forms.CheckBox cbxPromocion;
     }
 }

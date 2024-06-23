@@ -3,8 +3,40 @@
   "WorkspaceRootPath": "D:\\TurkysGYM_MOANSO\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|d:\\turkysgym_moanso\\turky\u0027sgym_programa\\crud_productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|d:\\turkysgym_moanso\\turky\u0027sgym_programa\\crud_promociones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|solutionrelative:turky\u0027sgym_programa\\crud_promociones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|D:\\TurkysGYM_MOANSO\\turky\u0027sgym_programa\\crud_promociones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|solutionrelative:turky\u0027sgym_programa\\crud_promociones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D4338B3-1D8A-4436-AE5C-4F764EF67553}|CapaEntidad\\CapaEntidad.csproj|D:\\TurkysGYM_MOANSO\\capaentidad\\entpromocion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D4338B3-1D8A-4436-AE5C-4F764EF67553}|CapaEntidad\\CapaEntidad.csproj|solutionrelative:capaentidad\\entpromocion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|D:\\TurkysGYM_MOANSO\\turky\u0027sgym_programa\\formmetodopago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|solutionrelative:turky\u0027sgym_programa\\formmetodopago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|D:\\TurkysGYM_MOANSO\\turky\u0027sgym_programa\\crud_productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|solutionrelative:turky\u0027sgym_programa\\crud_productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EF94DC8-2057-441F-B546-18F5A19BBF94}|CapaDatos\\CapaDatos.csproj|D:\\TurkysGYM_MOANSO\\capadatos\\datpromocion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EF94DC8-2057-441F-B546-18F5A19BBF94}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\datpromocion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EF94DC8-2057-441F-B546-18F5A19BBF94}|CapaDatos\\CapaDatos.csproj|D:\\TurkysGYM_MOANSO\\capadatos\\datproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EF94DC8-2057-441F-B546-18F5A19BBF94}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\datproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|D:\\TurkysGYM_MOANSO\\turky\u0027sgym_programa\\formmetodopago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|solutionrelative:turky\u0027sgym_programa\\formmetodopago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8719CA10-1097-4A28-8A73-5881850D61D0}|CapaL\u00F3gica\\CapaL\u00F3gica.csproj|D:\\TurkysGYM_MOANSO\\capal\u00F3gica\\logpromocion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8719CA10-1097-4A28-8A73-5881850D61D0}|CapaL\u00F3gica\\CapaL\u00F3gica.csproj|solutionrelative:capal\u00F3gica\\logpromocion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|D:\\TurkysGYM_MOANSO\\turky\u0027sgym_programa\\crud_productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -13,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8719CA10-1097-4A28-8A73-5881850D61D0}|CapaL\u00F3gica\\CapaL\u00F3gica.csproj|D:\\TurkysGYM_MOANSO\\capal\u00F3gica\\logproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8719CA10-1097-4A28-8A73-5881850D61D0}|CapaL\u00F3gica\\CapaL\u00F3gica.csproj|solutionrelative:capal\u00F3gica\\logproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EF94DC8-2057-441F-B546-18F5A19BBF94}|CapaDatos\\CapaDatos.csproj|D:\\TurkysGYM_MOANSO\\capadatos\\datproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EF94DC8-2057-441F-B546-18F5A19BBF94}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\datproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1D4338B3-1D8A-4436-AE5C-4F764EF67553}|CapaEntidad\\CapaEntidad.csproj|D:\\TurkysGYM_MOANSO\\capaentidad\\entproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,14 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6EF94DC8-2057-441F-B546-18F5A19BBF94}|CapaDatos\\CapaDatos.csproj|D:\\TurkysGYM_MOANSO\\capadatos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EF94DC8-2057-441F-B546-18F5A19BBF94}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|D:\\TurkysGYM_MOANSO\\turky\u0027sgym_programa\\formmetodopago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|solutionrelative:turky\u0027sgym_programa\\formmetodopago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|D:\\TurkysGYM_MOANSO\\turky\u0027sgym_programa\\formmetodopago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|solutionrelative:turky\u0027sgym_programa\\formmetodopago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8719CA10-1097-4A28-8A73-5881850D61D0}|CapaL\u00F3gica\\CapaL\u00F3gica.csproj|D:\\TurkysGYM_MOANSO\\capal\u00F3gica\\logmetodopago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -77,10 +97,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|D:\\TurkysGYM_MOANSO\\turky\u0027sgym_programa\\crud_marca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|solutionrelative:turky\u0027sgym_programa\\crud_marca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|D:\\TurkysGYM_MOANSO\\turky\u0027sgym_programa\\crud_promociones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|solutionrelative:turky\u0027sgym_programa\\crud_promociones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|D:\\TurkysGYM_MOANSO\\turky\u0027sgym_programa\\core_venta_productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -154,103 +170,91 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "logProducto.cs",
-              "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\CapaL\u00F3gica\\logProducto.cs",
-              "RelativeDocumentMoniker": "CapaL\u00F3gica\\logProducto.cs",
-              "ToolTip": "D:\\TurkysGYM_MOANSO\\CapaL\u00F3gica\\logProducto.cs",
-              "RelativeToolTip": "CapaL\u00F3gica\\logProducto.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAiwCwAAAAaAAAA",
+              "DocumentIndex": 5,
+              "Title": "datPromocion.cs",
+              "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\CapaDatos\\datPromocion.cs",
+              "RelativeDocumentMoniker": "CapaDatos\\datPromocion.cs",
+              "ToolTip": "D:\\TurkysGYM_MOANSO\\CapaDatos\\datPromocion.cs",
+              "RelativeToolTip": "CapaDatos\\datPromocion.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAowEoAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T14:27:49.055Z"
+              "WhenOpened": "2024-06-23T15:54:08.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "entPromocion.cs",
+              "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\CapaEntidad\\entPromocion.cs",
+              "RelativeDocumentMoniker": "CapaEntidad\\entPromocion.cs",
+              "ToolTip": "D:\\TurkysGYM_MOANSO\\CapaEntidad\\entPromocion.cs",
+              "RelativeToolTip": "CapaEntidad\\entPromocion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T15:53:34.475Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "datProducto.cs",
-              "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\CapaDatos\\datProducto.cs",
-              "RelativeDocumentMoniker": "CapaDatos\\datProducto.cs",
-              "ToolTip": "D:\\TurkysGYM_MOANSO\\CapaDatos\\datProducto.cs",
-              "RelativeToolTip": "CapaDatos\\datProducto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJgAAAAaAAAA",
+              "Title": "formMetodoPago.cs",
+              "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\Turky\u0027sGym_Programa\\formMetodoPago.cs",
+              "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\formMetodoPago.cs",
+              "ToolTip": "D:\\TurkysGYM_MOANSO\\Turky\u0027sGym_Programa\\formMetodoPago.cs",
+              "RelativeToolTip": "Turky\u0027sGym_Programa\\formMetodoPago.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAADwvxQAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T14:26:54Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "entProducto.cs",
-              "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\CapaEntidad\\entProducto.cs",
-              "RelativeDocumentMoniker": "CapaEntidad\\entProducto.cs",
-              "ToolTip": "D:\\TurkysGYM_MOANSO\\CapaEntidad\\entProducto.cs",
-              "RelativeToolTip": "CapaEntidad\\entProducto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T14:26:02.039Z"
+              "WhenOpened": "2024-06-23T15:47:00.513Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Crud_Promociones.cs",
+              "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\Turky\u0027sGym_Programa\\Crud_Promociones.cs",
+              "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\Crud_Promociones.cs",
+              "ToolTip": "D:\\TurkysGYM_MOANSO\\Turky\u0027sGym_Programa\\Crud_Promociones.cs",
+              "RelativeToolTip": "Turky\u0027sGym_Programa\\Crud_Promociones.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAmwGYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T15:44:15.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Crud_Productos.cs",
               "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\Turky\u0027sGym_Programa\\Crud_Productos.cs",
               "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\Crud_Productos.cs",
               "ToolTip": "D:\\TurkysGYM_MOANSO\\Turky\u0027sGym_Programa\\Crud_Productos.cs",
               "RelativeToolTip": "Turky\u0027sGym_Programa\\Crud_Productos.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEsAAAAMAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAxwCoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T14:25:11.246Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-23T14:25:11.246Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Crud_Productos.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\Turky\u0027sGym_Programa\\Crud_Productos.cs",
-              "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\Crud_Productos.cs",
-              "ToolTip": "D:\\TurkysGYM_MOANSO\\Turky\u0027sGym_Programa\\Crud_Productos.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Turky\u0027sGym_Programa\\Crud_Productos.cs [Dise\u00F1o]",
+              "Title": "Crud_Promociones.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\Turky\u0027sGym_Programa\\Crud_Promociones.cs",
+              "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\Crud_Promociones.cs",
+              "ToolTip": "D:\\TurkysGYM_MOANSO\\Turky\u0027sGym_Programa\\Crud_Promociones.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Turky\u0027sGym_Programa\\Crud_Promociones.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T14:25:09.093Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "logMetodoPago.cs",
-              "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\CapaL\u00F3gica\\logMetodoPago.cs",
-              "RelativeDocumentMoniker": "CapaL\u00F3gica\\logMetodoPago.cs",
-              "ToolTip": "D:\\TurkysGYM_MOANSO\\CapaL\u00F3gica\\logMetodoPago.cs",
-              "RelativeToolTip": "CapaL\u00F3gica\\logMetodoPago.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T14:16:49.377Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "entMetodoPago.cs",
-              "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\CapaEntidad\\entMetodoPago.cs",
-              "RelativeDocumentMoniker": "CapaEntidad\\entMetodoPago.cs",
-              "ToolTip": "D:\\TurkysGYM_MOANSO\\CapaEntidad\\entMetodoPago.cs",
-              "RelativeToolTip": "CapaEntidad\\entMetodoPago.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T14:16:04.746Z"
+              "WhenOpened": "2024-06-10T21:03:47.307Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "datMetodoPago.cs",
-              "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\CapaDatos\\datMetodoPago.cs",
-              "RelativeDocumentMoniker": "CapaDatos\\datMetodoPago.cs",
-              "ToolTip": "D:\\TurkysGYM_MOANSO\\CapaDatos\\datMetodoPago.cs",
-              "RelativeToolTip": "CapaDatos\\datMetodoPago.cs",
-              "ViewState": "AQIAAGIAAAAAAAAAAAAIwAkAAAATAAAA",
+              "Title": "datProducto.cs",
+              "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\CapaDatos\\datProducto.cs",
+              "RelativeDocumentMoniker": "CapaDatos\\datProducto.cs",
+              "ToolTip": "D:\\TurkysGYM_MOANSO\\CapaDatos\\datProducto.cs",
+              "RelativeToolTip": "CapaDatos\\datProducto.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAAAC8AAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T14:15:10.908Z"
+              "WhenOpened": "2024-06-23T14:26:54Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "formMetodoPago.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\Turky\u0027sGym_Programa\\formMetodoPago.cs",
               "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\formMetodoPago.cs",
@@ -262,18 +266,89 @@
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "formMetodoPago.cs",
-              "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\Turky\u0027sGym_Programa\\formMetodoPago.cs",
-              "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\formMetodoPago.cs",
-              "ToolTip": "D:\\TurkysGYM_MOANSO\\Turky\u0027sGym_Programa\\formMetodoPago.cs",
-              "RelativeToolTip": "Turky\u0027sGym_Programa\\formMetodoPago.cs",
-              "ViewState": "AQIAAGIAAAAAAAAAAAAAwFoAAAAUAAAA",
+              "Title": "logPromocion.cs",
+              "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\CapaL\u00F3gica\\logPromocion.cs",
+              "RelativeDocumentMoniker": "CapaL\u00F3gica\\logPromocion.cs",
+              "ToolTip": "D:\\TurkysGYM_MOANSO\\CapaL\u00F3gica\\logPromocion.cs",
+              "RelativeToolTip": "CapaL\u00F3gica\\logPromocion.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwC8AAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T14:09:59.112Z"
+              "WhenOpened": "2024-06-23T15:37:19.448Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 13,
+              "Title": "datMetodoPago.cs",
+              "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\CapaDatos\\datMetodoPago.cs",
+              "RelativeDocumentMoniker": "CapaDatos\\datMetodoPago.cs",
+              "ToolTip": "D:\\TurkysGYM_MOANSO\\CapaDatos\\datMetodoPago.cs",
+              "RelativeToolTip": "CapaDatos\\datMetodoPago.cs",
+              "ViewState": "AQIAAGIAAAAAAAAAAAAIwAkAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T14:15:10.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "entMetodoPago.cs",
+              "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\CapaEntidad\\entMetodoPago.cs",
+              "RelativeDocumentMoniker": "CapaEntidad\\entMetodoPago.cs",
+              "ToolTip": "D:\\TurkysGYM_MOANSO\\CapaEntidad\\entMetodoPago.cs",
+              "RelativeToolTip": "CapaEntidad\\entMetodoPago.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T14:16:04.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "logMetodoPago.cs",
+              "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\CapaL\u00F3gica\\logMetodoPago.cs",
+              "RelativeDocumentMoniker": "CapaL\u00F3gica\\logMetodoPago.cs",
+              "ToolTip": "D:\\TurkysGYM_MOANSO\\CapaL\u00F3gica\\logMetodoPago.cs",
+              "RelativeToolTip": "CapaL\u00F3gica\\logMetodoPago.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T14:16:49.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Crud_Productos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\Turky\u0027sGym_Programa\\Crud_Productos.cs",
+              "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\Crud_Productos.cs",
+              "ToolTip": "D:\\TurkysGYM_MOANSO\\Turky\u0027sGym_Programa\\Crud_Productos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Turky\u0027sGym_Programa\\Crud_Productos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T14:25:09.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "entProducto.cs",
+              "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\CapaEntidad\\entProducto.cs",
+              "RelativeDocumentMoniker": "CapaEntidad\\entProducto.cs",
+              "ToolTip": "D:\\TurkysGYM_MOANSO\\CapaEntidad\\entProducto.cs",
+              "RelativeToolTip": "CapaEntidad\\entProducto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T14:26:02.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "logProducto.cs",
+              "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\CapaL\u00F3gica\\logProducto.cs",
+              "RelativeDocumentMoniker": "CapaL\u00F3gica\\logProducto.cs",
+              "ToolTip": "D:\\TurkysGYM_MOANSO\\CapaL\u00F3gica\\logProducto.cs",
+              "RelativeToolTip": "CapaL\u00F3gica\\logProducto.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAiwCwAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T14:27:49.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\Turky\u0027sGym_Programa\\Program.cs",
               "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\Program.cs",
@@ -285,7 +360,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "entCategor\u00EDa.cs",
               "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\CapaEntidad\\entCategor\u00EDa.cs",
               "RelativeDocumentMoniker": "CapaEntidad\\entCategor\u00EDa.cs",
@@ -297,7 +372,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "Conexion.cs",
               "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\CapaDatos\\Conexion.cs",
               "RelativeDocumentMoniker": "CapaDatos\\Conexion.cs",
@@ -309,7 +384,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "formConsultaProducto.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\Turky\u0027sGym_Programa\\formConsultaProducto.cs",
               "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\formConsultaProducto.cs",
@@ -320,7 +395,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "formConsultaProducto.cs",
               "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\Turky\u0027sGym_Programa\\formConsultaProducto.cs",
               "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\formConsultaProducto.cs",
@@ -332,7 +407,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "Class1.cs",
               "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\CapaL\u00F3gica\\Class1.cs",
               "RelativeDocumentMoniker": "CapaL\u00F3gica\\Class1.cs",
@@ -344,7 +419,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
               "Title": "Crud_Planes.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\Turky\u0027sGym_Programa\\Crud_Planes.cs",
               "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\Crud_Planes.cs",
@@ -355,7 +430,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 22,
               "Title": "CRUD_Marca.cs",
               "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\Turky\u0027sGym_Programa\\CRUD_Marca.cs",
               "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\CRUD_Marca.cs",
@@ -367,7 +442,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "CRUD_Servicios.cs",
               "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\Turky\u0027sGym_Programa\\CRUD_Servicios.cs",
               "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\CRUD_Servicios.cs",
@@ -379,7 +454,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "CRUD_Servicios.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\Turky\u0027sGym_Programa\\CRUD_Servicios.cs",
               "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\CRUD_Servicios.cs",
@@ -389,7 +464,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
               "Title": "CRUD_Categor\u00EDa.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\Turky\u0027sGym_Programa\\CRUD_Categor\u00EDa.cs",
               "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\CRUD_Categor\u00EDa.cs",
@@ -399,7 +474,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 23,
               "Title": "CRUD_Marca.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\Turky\u0027sGym_Programa\\CRUD_Marca.cs",
               "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\CRUD_Marca.cs",
@@ -409,7 +484,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "CORE_VENTA_PRODUCTOS.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\Turky\u0027sGym_Programa\\CORE_VENTA_PRODUCTOS.cs",
               "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\CORE_VENTA_PRODUCTOS.cs",
@@ -419,17 +494,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Crud_Promociones.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\Turky\u0027sGym_Programa\\Crud_Promociones.cs",
-              "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\Crud_Promociones.cs",
-              "ToolTip": "C:\\COMMIT-MOANSO\\PROYECTO_MOANSO_TURKY-SGYM\\Turky\u0027sGym_Programa\\Crud_Promociones.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-10T21:03:47.307Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 29,
               "Title": "Crud_MonitoreoClientes.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\Turky\u0027sGym_Programa\\Crud_MonitoreoClientes.cs",
               "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\Crud_MonitoreoClientes.cs",
@@ -439,7 +504,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 28,
               "Title": "CORE_VENTA_SERVICIOS.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\Turky\u0027sGym_Programa\\CORE_VENTA_SERVICIOS.cs",
               "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\CORE_VENTA_SERVICIOS.cs",
@@ -449,7 +514,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 30,
               "Title": "Clientes.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\Turky\u0027sGym_Programa\\Clientes.cs",
               "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\Clientes.cs",
@@ -459,7 +524,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "ConsultaVentaServicios.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\Turky\u0027sGym_Programa\\ConsultaVentaServicios.cs",
               "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\ConsultaVentaServicios.cs",
@@ -470,7 +535,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "ConsultaVentaServicios.cs",
               "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\Turky\u0027sGym_Programa\\ConsultaVentaServicios.cs",
               "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\ConsultaVentaServicios.cs",
@@ -482,7 +547,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 33,
               "Title": "Crud_Planes.cs",
               "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\Turky\u0027sGym_Programa\\Crud_Planes.cs",
               "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\Crud_Planes.cs",
@@ -494,7 +559,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 34,
               "Title": "App.config",
               "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\Turky\u0027sGym_Programa\\App.config",
               "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\App.config",
@@ -506,7 +571,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 35,
               "Title": "ConsultaVentaServicios.Designer.cs",
               "DocumentMoniker": "D:\\TurkysGYM_MOANSO\\Turky\u0027sGym_Programa\\ConsultaVentaServicios.Designer.cs",
               "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\ConsultaVentaServicios.Designer.cs",
