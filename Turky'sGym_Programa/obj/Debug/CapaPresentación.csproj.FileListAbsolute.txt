@@ -67,3 +67,24 @@ C:\COMMIT-MOANSO\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa\obj\Debug\CapaPr
 C:\COMMIT-MOANSO\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa\obj\Debug\CapaPresentación.csproj.CoreCompileInputs.cache
 C:\COMMIT-MOANSO\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa\obj\Debug\Turky'sGym_Programa.exe
 C:\COMMIT-MOANSO\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa\obj\Debug\Turky'sGym_Programa.pdb
+C:\Users\dominick\Desktop\MILA NYAA\visual nuevo\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa\bin\Debug\Turky'sGym_Programa.exe.config
+C:\Users\dominick\Desktop\MILA NYAA\visual nuevo\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa\bin\Debug\Turky'sGym_Programa.exe
+C:\Users\dominick\Desktop\MILA NYAA\visual nuevo\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa\bin\Debug\Turky'sGym_Programa.pdb
+C:\Users\dominick\Desktop\MILA NYAA\visual nuevo\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa\obj\Debug\CapaPresentación.csproj.AssemblyReference.cache
+C:\Users\dominick\Desktop\MILA NYAA\visual nuevo\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.Clientes.resources
+C:\Users\dominick\Desktop\MILA NYAA\visual nuevo\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.Consulta_Servicio_Cliente.resources
+C:\Users\dominick\Desktop\MILA NYAA\visual nuevo\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.CORE_VENTA_PRODUCTOS.resources
+C:\Users\dominick\Desktop\MILA NYAA\visual nuevo\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.CORE_VENTA_SERVICIOS.resources
+C:\Users\dominick\Desktop\MILA NYAA\visual nuevo\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.CRUD_Categoría.resources
+C:\Users\dominick\Desktop\MILA NYAA\visual nuevo\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.Crud_MonitoreoClientes.resources
+C:\Users\dominick\Desktop\MILA NYAA\visual nuevo\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.CRUD.resources
+C:\Users\dominick\Desktop\MILA NYAA\visual nuevo\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.Crud_Promociones.resources
+C:\Users\dominick\Desktop\MILA NYAA\visual nuevo\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.CRUD_Servicios.resources
+C:\Users\dominick\Desktop\MILA NYAA\visual nuevo\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.Crud_StockProductos.resources
+C:\Users\dominick\Desktop\MILA NYAA\visual nuevo\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.formConsultaProducto.resources
+C:\Users\dominick\Desktop\MILA NYAA\visual nuevo\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.CRUD_Marca.resources
+C:\Users\dominick\Desktop\MILA NYAA\visual nuevo\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.Properties.Resources.resources
+C:\Users\dominick\Desktop\MILA NYAA\visual nuevo\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa\obj\Debug\CapaPresentación.csproj.GenerateResource.cache
+C:\Users\dominick\Desktop\MILA NYAA\visual nuevo\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa\obj\Debug\CapaPresentación.csproj.CoreCompileInputs.cache
+C:\Users\dominick\Desktop\MILA NYAA\visual nuevo\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa\obj\Debug\Turky'sGym_Programa.exe
+C:\Users\dominick\Desktop\MILA NYAA\visual nuevo\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa\obj\Debug\Turky'sGym_Programa.pdb
