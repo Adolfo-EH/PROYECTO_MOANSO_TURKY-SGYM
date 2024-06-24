@@ -37,3 +37,14 @@ C:\Users\eslar\OneDrive\Documentos\Curso_Moanso\CODE_MOANSO\CapaLógica\obj\Debu
 C:\Users\eslar\OneDrive\Documentos\Curso_Moanso\CODE_MOANSO\CapaLógica\obj\Debug\CapaLógica.csproj.Up2Date
 C:\Users\eslar\OneDrive\Documentos\Curso_Moanso\CODE_MOANSO\CapaLógica\obj\Debug\CapaLógica.dll
 C:\Users\eslar\OneDrive\Documentos\Curso_Moanso\CODE_MOANSO\CapaLógica\obj\Debug\CapaLógica.pdb
+C:\MOANSITO\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\bin\Debug\CapaLógica.dll
+C:\MOANSITO\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\bin\Debug\CapaLógica.pdb
+C:\MOANSITO\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\bin\Debug\CapaDatos.dll
+C:\MOANSITO\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\bin\Debug\CapaEntidad.dll
+C:\MOANSITO\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\bin\Debug\CapaDatos.pdb
+C:\MOANSITO\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\bin\Debug\CapaEntidad.pdb
+C:\MOANSITO\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\obj\Debug\CapaLógica.csproj.AssemblyReference.cache
+C:\MOANSITO\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\obj\Debug\CapaLógica.csproj.CoreCompileInputs.cache
+C:\MOANSITO\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\obj\Debug\CapaLógica.csproj.Up2Date
+C:\MOANSITO\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\obj\Debug\CapaLógica.dll
+C:\MOANSITO\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\obj\Debug\CapaLógica.pdb

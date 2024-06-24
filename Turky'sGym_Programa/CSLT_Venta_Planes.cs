@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Turky_sGym_Programa
 {
-    public partial class Consulta_Servicio_Cliente : Form
+    public partial class CSLT_Venta_Planes : Form
     {
-        public Consulta_Servicio_Cliente()
+        public CSLT_Venta_Planes()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -372,6 +372,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "CORE_VENTA_SERVICIOS";
             this.Text = "CORE_VENTA_SERVICIOS";
+            this.Load += new System.EventHandler(this.CORE_VENTA_SERVICIOS_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgVentaServicios)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

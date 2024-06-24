@@ -10,22 +10,32 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CapaPresentación
+namespace Turky_sGym_Programa
 {
-    public partial class formMetodoPago : Form
+    public partial class CRUD_Metodo_Pago : Form
     {
-        public formMetodoPago()
+        public CRUD_Metodo_Pago()
         {
             InitializeComponent();
             listarMetodoPago();
             groupMetodo.Enabled = false;
-
         }
+
+        public void listarMetodoPago()
+        {
+            dgvMetodoPago.DataSource = logMetodoPago.Instancia.ListarMetodoPago();
+        }
+
         public void LimpiarVariables()
         {
             lbID.Text = "00";
             txtNombre.Clear();
-            txtTipo.Clear();   
+            txtTipo.Clear();
+        }
+
+        private void CRUD_Metodo_Pago_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -35,12 +45,7 @@ namespace CapaPresentación
             LimpiarVariables();
         }
 
-        public void listarMetodoPago()
-        {
-            dgvMetodoPago.DataSource = logMetodoPago.Instancia.ListarMetodoPago();
-        }
-
-        private void btnEditar_Click(object sender, EventArgs e)
+        private void btnHabilitar_Click(object sender, EventArgs e)
         {
             try
             {
@@ -75,11 +80,6 @@ namespace CapaPresentación
             listarMetodoPago();
         }
 
-        private void btnRegresar_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnInsertar_Click(object sender, EventArgs e)
         {
             try
@@ -99,7 +99,6 @@ namespace CapaPresentación
             listarMetodoPago();
         }
 
-
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             groupMetodo.Enabled = false;
@@ -112,11 +111,6 @@ namespace CapaPresentación
             txtNombre.Text = filaActual.Cells[1].Value.ToString();
             txtTipo.Text = filaActual.Cells[2].Value.ToString();
             cbxEstadoMetodoPago.Checked = Convert.ToBoolean(filaActual.Cells[3].Value);
-        }
-
-        private void formMetodoPago_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

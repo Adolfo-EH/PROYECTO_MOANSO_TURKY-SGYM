@@ -83,5 +83,10 @@ namespace Turky_sGym_Programa
         {
 
         }
+
+        private void CORE_VENTA_SERVICIOS_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Turky_sGym_Programa
 {
-    public partial class Clientes : Form
+    public partial class CSLT_Venta_Productos : Form
     {
-        public Clientes()
+        public CSLT_Venta_Productos()
         {
             InitializeComponent();
         }

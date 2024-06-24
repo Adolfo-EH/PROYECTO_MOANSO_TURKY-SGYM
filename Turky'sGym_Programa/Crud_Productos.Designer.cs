@@ -1,6 +1,6 @@
 ﻿namespace Turky_sGym_Programa
 {
-    partial class Crud_Productos
+    partial class CRUD_Productos
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.Titulo = new System.Windows.Forms.Label();
             this.grbDatosProducto = new System.Windows.Forms.GroupBox();
             this.cbxEstadoProducto = new System.Windows.Forms.CheckBox();
             this.btnModificar = new System.Windows.Forms.Button();
@@ -36,7 +38,6 @@
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.txtMarca = new System.Windows.Forms.TextBox();
             this.cmbCategoria = new System.Windows.Forms.ComboBox();
             this.lbPrecio = new System.Windows.Forms.Label();
             this.lbCantidad = new System.Windows.Forms.Label();
@@ -50,15 +51,39 @@
             this.btnRegresar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.dgvStockProducto = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.Titulo = new System.Windows.Forms.Label();
+            this.cbMarca = new System.Windows.Forms.ComboBox();
+            this.panel1.SuspendLayout();
             this.grbDatosProducto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStockProducto)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DarkCyan;
+            this.panel1.Controls.Add(this.Titulo);
+            this.panel1.Location = new System.Drawing.Point(-5, -3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1000, 74);
+            this.panel1.TabIndex = 24;
+            // 
+            // Titulo
+            // 
+            this.Titulo.AutoSize = true;
+            this.Titulo.BackColor = System.Drawing.Color.Transparent;
+            this.Titulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Titulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Titulo.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Titulo.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.Titulo.Location = new System.Drawing.Point(338, 22);
+            this.Titulo.Name = "Titulo";
+            this.Titulo.Size = new System.Drawing.Size(198, 31);
+            this.Titulo.TabIndex = 1;
+            this.Titulo.Text = "PRODUCTOS";
+            this.Titulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // grbDatosProducto
             // 
+            this.grbDatosProducto.Controls.Add(this.cbMarca);
             this.grbDatosProducto.Controls.Add(this.cbxEstadoProducto);
             this.grbDatosProducto.Controls.Add(this.btnModificar);
             this.grbDatosProducto.Controls.Add(this.btnCancelar);
@@ -66,7 +91,6 @@
             this.grbDatosProducto.Controls.Add(this.txtPrecio);
             this.grbDatosProducto.Controls.Add(this.txtCantidad);
             this.grbDatosProducto.Controls.Add(this.txtDescripcion);
-            this.grbDatosProducto.Controls.Add(this.txtMarca);
             this.grbDatosProducto.Controls.Add(this.cmbCategoria);
             this.grbDatosProducto.Controls.Add(this.lbPrecio);
             this.grbDatosProducto.Controls.Add(this.lbCantidad);
@@ -76,17 +100,17 @@
             this.grbDatosProducto.Controls.Add(this.lbID);
             this.grbDatosProducto.Controls.Add(this.lbIDpro);
             this.grbDatosProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbDatosProducto.Location = new System.Drawing.Point(133, 386);
+            this.grbDatosProducto.Location = new System.Drawing.Point(85, 359);
             this.grbDatosProducto.Name = "grbDatosProducto";
             this.grbDatosProducto.Size = new System.Drawing.Size(535, 264);
-            this.grbDatosProducto.TabIndex = 11;
+            this.grbDatosProducto.TabIndex = 23;
             this.grbDatosProducto.TabStop = false;
             this.grbDatosProducto.Text = "Datos del Producto";
             // 
             // cbxEstadoProducto
             // 
             this.cbxEstadoProducto.AutoSize = true;
-            this.cbxEstadoProducto.Location = new System.Drawing.Point(331, 76);
+            this.cbxEstadoProducto.Location = new System.Drawing.Point(233, 47);
             this.cbxEstadoProducto.Name = "cbxEstadoProducto";
             this.cbxEstadoProducto.Size = new System.Drawing.Size(72, 20);
             this.cbxEstadoProducto.TabIndex = 29;
@@ -95,13 +119,13 @@
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(418, 142);
+            this.btnModificar.Location = new System.Drawing.Point(418, 135);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(93, 35);
             this.btnModificar.TabIndex = 14;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
-            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click_1);
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnCancelar
             // 
@@ -111,7 +135,7 @@
             this.btnCancelar.TabIndex = 13;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click_1);
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnInsertar
             // 
@@ -121,20 +145,20 @@
             this.btnInsertar.TabIndex = 12;
             this.btnInsertar.Text = "Insertar";
             this.btnInsertar.UseVisualStyleBackColor = true;
-            this.btnInsertar.Click += new System.EventHandler(this.btnInsertar_Click_1);
+            this.btnInsertar.Click += new System.EventHandler(this.btnInsertar_Click);
             // 
             // txtPrecio
             // 
             this.txtPrecio.Location = new System.Drawing.Point(166, 223);
             this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(136, 22);
+            this.txtPrecio.Size = new System.Drawing.Size(139, 22);
             this.txtPrecio.TabIndex = 11;
             // 
             // txtCantidad
             // 
             this.txtCantidad.Location = new System.Drawing.Point(166, 185);
             this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(136, 22);
+            this.txtCantidad.Size = new System.Drawing.Size(139, 22);
             this.txtCantidad.TabIndex = 10;
             // 
             // txtDescripcion
@@ -143,13 +167,6 @@
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(139, 22);
             this.txtDescripcion.TabIndex = 9;
-            // 
-            // txtMarca
-            // 
-            this.txtMarca.Location = new System.Drawing.Point(166, 113);
-            this.txtMarca.Name = "txtMarca";
-            this.txtMarca.Size = new System.Drawing.Size(139, 22);
-            this.txtMarca.TabIndex = 8;
             // 
             // cmbCategoria
             // 
@@ -229,43 +246,42 @@
             // btnEditar
             // 
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.Location = new System.Drawing.Point(800, 224);
+            this.btnEditar.Location = new System.Drawing.Point(752, 197);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(100, 50);
-            this.btnEditar.TabIndex = 10;
+            this.btnEditar.TabIndex = 22;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
-            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click_1);
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnInhabilitar
             // 
             this.btnInhabilitar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInhabilitar.Location = new System.Drawing.Point(800, 314);
+            this.btnInhabilitar.Location = new System.Drawing.Point(752, 287);
             this.btnInhabilitar.Name = "btnInhabilitar";
             this.btnInhabilitar.Size = new System.Drawing.Size(100, 50);
-            this.btnInhabilitar.TabIndex = 9;
+            this.btnInhabilitar.TabIndex = 21;
             this.btnInhabilitar.Text = "Inhabilitar";
             this.btnInhabilitar.UseVisualStyleBackColor = true;
-            this.btnInhabilitar.Click += new System.EventHandler(this.btnInhabilitar_Click_1);
+            this.btnInhabilitar.Click += new System.EventHandler(this.btnInhabilitar_Click);
             // 
             // btnRegresar
             // 
             this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Location = new System.Drawing.Point(800, 408);
+            this.btnRegresar.Location = new System.Drawing.Point(752, 381);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(100, 50);
-            this.btnRegresar.TabIndex = 8;
+            this.btnRegresar.TabIndex = 20;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = true;
-            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // btnNuevo
             // 
             this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.Location = new System.Drawing.Point(800, 134);
+            this.btnNuevo.Location = new System.Drawing.Point(752, 107);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(100, 50);
-            this.btnNuevo.TabIndex = 7;
+            this.btnNuevo.TabIndex = 19;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
@@ -273,43 +289,27 @@
             // dgvStockProducto
             // 
             this.dgvStockProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvStockProducto.Location = new System.Drawing.Point(133, 125);
+            this.dgvStockProducto.Location = new System.Drawing.Point(85, 98);
             this.dgvStockProducto.Name = "dgvStockProducto";
             this.dgvStockProducto.ReadOnly = true;
             this.dgvStockProducto.RowHeadersWidth = 51;
             this.dgvStockProducto.Size = new System.Drawing.Size(535, 239);
-            this.dgvStockProducto.TabIndex = 6;
+            this.dgvStockProducto.TabIndex = 18;
             this.dgvStockProducto.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStockProducto_CellDoubleClick);
             // 
-            // panel1
+            // cbMarca
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkCyan;
-            this.panel1.Controls.Add(this.Titulo);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1000, 74);
-            this.panel1.TabIndex = 17;
+            this.cbMarca.FormattingEnabled = true;
+            this.cbMarca.Location = new System.Drawing.Point(166, 110);
+            this.cbMarca.Name = "cbMarca";
+            this.cbMarca.Size = new System.Drawing.Size(139, 24);
+            this.cbMarca.TabIndex = 30;
             // 
-            // Titulo
-            // 
-            this.Titulo.AutoSize = true;
-            this.Titulo.BackColor = System.Drawing.Color.Transparent;
-            this.Titulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Titulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Titulo.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Titulo.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.Titulo.Location = new System.Drawing.Point(338, 22);
-            this.Titulo.Name = "Titulo";
-            this.Titulo.Size = new System.Drawing.Size(198, 31);
-            this.Titulo.TabIndex = 1;
-            this.Titulo.Text = "PRODUCTOS";
-            this.Titulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Crud_Productos
+            // CRUD_Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(999, 661);
+            this.ClientSize = new System.Drawing.Size(936, 660);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.grbDatosProducto);
             this.Controls.Add(this.btnEditar);
@@ -317,27 +317,30 @@
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.dgvStockProducto);
-            this.Name = "Crud_Productos";
-            this.Text = "Crud_StockProductos";
+            this.Name = "CRUD_Productos";
+            this.Text = "CRUD_Productos";
+            this.Load += new System.EventHandler(this.CRUD_Productos_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.grbDatosProducto.ResumeLayout(false);
             this.grbDatosProducto.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStockProducto)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label Titulo;
         private System.Windows.Forms.GroupBox grbDatosProducto;
+        private System.Windows.Forms.CheckBox cbxEstadoProducto;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnInsertar;
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.TextBox txtCantidad;
         private System.Windows.Forms.TextBox txtDescripcion;
-        private System.Windows.Forms.TextBox txtMarca;
         private System.Windows.Forms.ComboBox cmbCategoria;
         private System.Windows.Forms.Label lbPrecio;
         private System.Windows.Forms.Label lbCantidad;
@@ -351,8 +354,6 @@
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.DataGridView dgvStockProducto;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label Titulo;
-        private System.Windows.Forms.CheckBox cbxEstadoProducto;
+        private System.Windows.Forms.ComboBox cbMarca;
     }
 }

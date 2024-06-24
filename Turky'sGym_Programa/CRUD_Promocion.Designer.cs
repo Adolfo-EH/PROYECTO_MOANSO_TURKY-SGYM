@@ -1,6 +1,6 @@
 ﻿namespace Turky_sGym_Programa
 {
-    partial class Crud_Promociones
+    partial class CRUD_Promocion
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.Titulo = new System.Windows.Forms.Label();
             this.btnRegresar = new System.Windows.Forms.Button();
             this.dgvPromocion = new System.Windows.Forms.DataGridView();
             this.gbPromocion = new System.Windows.Forms.GroupBox();
+            this.cbxPromocion = new System.Windows.Forms.CheckBox();
             this.dtpDuracion = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -46,34 +49,56 @@
             this.btnInhabilitar = new System.Windows.Forms.Button();
             this.btnHabilitar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.Titulo = new System.Windows.Forms.Label();
-            this.cbxPromocion = new System.Windows.Forms.CheckBox();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPromocion)).BeginInit();
             this.gbPromocion.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DarkCyan;
+            this.panel1.Controls.Add(this.Titulo);
+            this.panel1.Location = new System.Drawing.Point(-1, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(957, 74);
+            this.panel1.TabIndex = 23;
+            // 
+            // Titulo
+            // 
+            this.Titulo.AutoSize = true;
+            this.Titulo.BackColor = System.Drawing.Color.Transparent;
+            this.Titulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Titulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Titulo.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Titulo.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.Titulo.Location = new System.Drawing.Point(348, 22);
+            this.Titulo.Name = "Titulo";
+            this.Titulo.Size = new System.Drawing.Size(232, 31);
+            this.Titulo.TabIndex = 1;
+            this.Titulo.Text = "PROMOCIONES";
+            this.Titulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnRegresar
             // 
-            this.btnRegresar.Location = new System.Drawing.Point(694, 394);
+            this.btnRegresar.Location = new System.Drawing.Point(692, 555);
             this.btnRegresar.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(110, 51);
-            this.btnRegresar.TabIndex = 12;
-            this.btnRegresar.Text = "Regresar";
+            this.btnRegresar.TabIndex = 22;
+            this.btnRegresar.Text = "REGRESAR";
             this.btnRegresar.UseVisualStyleBackColor = true;
             // 
             // dgvPromocion
             // 
             this.dgvPromocion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPromocion.Location = new System.Drawing.Point(120, 96);
+            this.dgvPromocion.Location = new System.Drawing.Point(118, 96);
             this.dgvPromocion.Margin = new System.Windows.Forms.Padding(2);
             this.dgvPromocion.Name = "dgvPromocion";
             this.dgvPromocion.RowHeadersWidth = 51;
             this.dgvPromocion.RowTemplate.Height = 24;
             this.dgvPromocion.Size = new System.Drawing.Size(511, 228);
-            this.dgvPromocion.TabIndex = 7;
+            this.dgvPromocion.TabIndex = 17;
+            this.dgvPromocion.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPromocion_CellDoubleClick);
             // 
             // gbPromocion
             // 
@@ -91,14 +116,24 @@
             this.gbPromocion.Controls.Add(this.lblTipoPromocion);
             this.gbPromocion.Controls.Add(this.lblIdPromocion);
             this.gbPromocion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbPromocion.Location = new System.Drawing.Point(122, 363);
+            this.gbPromocion.Location = new System.Drawing.Point(120, 394);
             this.gbPromocion.Margin = new System.Windows.Forms.Padding(2);
             this.gbPromocion.Name = "gbPromocion";
             this.gbPromocion.Padding = new System.Windows.Forms.Padding(2);
             this.gbPromocion.Size = new System.Drawing.Size(509, 212);
-            this.gbPromocion.TabIndex = 11;
+            this.gbPromocion.TabIndex = 21;
             this.gbPromocion.TabStop = false;
             this.gbPromocion.Text = "Promociones(Productos/Servicios)";
+            // 
+            // cbxPromocion
+            // 
+            this.cbxPromocion.AutoSize = true;
+            this.cbxPromocion.Location = new System.Drawing.Point(268, 29);
+            this.cbxPromocion.Name = "cbxPromocion";
+            this.cbxPromocion.Size = new System.Drawing.Size(72, 20);
+            this.cbxPromocion.TabIndex = 31;
+            this.cbxPromocion.Text = "Estado ";
+            this.cbxPromocion.UseVisualStyleBackColor = true;
             // 
             // dtpDuracion
             // 
@@ -224,77 +259,42 @@
             // 
             // btnInhabilitar
             // 
-            this.btnInhabilitar.Location = new System.Drawing.Point(694, 284);
+            this.btnInhabilitar.Location = new System.Drawing.Point(692, 284);
             this.btnInhabilitar.Margin = new System.Windows.Forms.Padding(2);
             this.btnInhabilitar.Name = "btnInhabilitar";
             this.btnInhabilitar.Size = new System.Drawing.Size(110, 51);
-            this.btnInhabilitar.TabIndex = 10;
+            this.btnInhabilitar.TabIndex = 20;
             this.btnInhabilitar.Text = "INHABILITAR";
             this.btnInhabilitar.UseVisualStyleBackColor = true;
             this.btnInhabilitar.Click += new System.EventHandler(this.btnInhabilitar_Click);
             // 
             // btnHabilitar
             // 
-            this.btnHabilitar.Location = new System.Drawing.Point(694, 195);
+            this.btnHabilitar.Location = new System.Drawing.Point(692, 195);
             this.btnHabilitar.Margin = new System.Windows.Forms.Padding(2);
             this.btnHabilitar.Name = "btnHabilitar";
             this.btnHabilitar.Size = new System.Drawing.Size(110, 51);
-            this.btnHabilitar.TabIndex = 9;
+            this.btnHabilitar.TabIndex = 19;
             this.btnHabilitar.Text = "HABILITAR";
             this.btnHabilitar.UseVisualStyleBackColor = true;
             this.btnHabilitar.Click += new System.EventHandler(this.btnHabilitar_Click);
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(694, 98);
+            this.btnNuevo.Location = new System.Drawing.Point(692, 98);
             this.btnNuevo.Margin = new System.Windows.Forms.Padding(2);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(110, 51);
-            this.btnNuevo.TabIndex = 8;
+            this.btnNuevo.TabIndex = 18;
             this.btnNuevo.Text = "NUEVO";
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.DarkCyan;
-            this.panel1.Controls.Add(this.Titulo);
-            this.panel1.Location = new System.Drawing.Point(1, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(957, 74);
-            this.panel1.TabIndex = 16;
-            // 
-            // Titulo
-            // 
-            this.Titulo.AutoSize = true;
-            this.Titulo.BackColor = System.Drawing.Color.Transparent;
-            this.Titulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Titulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Titulo.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Titulo.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.Titulo.Location = new System.Drawing.Point(348, 22);
-            this.Titulo.Name = "Titulo";
-            this.Titulo.Size = new System.Drawing.Size(232, 31);
-            this.Titulo.TabIndex = 1;
-            this.Titulo.Text = "PROMOCIONES";
-            this.Titulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Titulo.Click += new System.EventHandler(this.Titulo_Click);
-            // 
-            // cbxPromocion
-            // 
-            this.cbxPromocion.AutoSize = true;
-            this.cbxPromocion.Location = new System.Drawing.Point(268, 31);
-            this.cbxPromocion.Name = "cbxPromocion";
-            this.cbxPromocion.Size = new System.Drawing.Size(72, 20);
-            this.cbxPromocion.TabIndex = 31;
-            this.cbxPromocion.Text = "Estado ";
-            this.cbxPromocion.UseVisualStyleBackColor = true;
-            // 
-            // Crud_Promociones
+            // CRUD_Promocion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(960, 608);
+            this.ClientSize = new System.Drawing.Size(955, 666);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.dgvPromocion);
@@ -302,22 +302,26 @@
             this.Controls.Add(this.btnInhabilitar);
             this.Controls.Add(this.btnHabilitar);
             this.Controls.Add(this.btnNuevo);
-            this.Name = "Crud_Promociones";
-            this.Text = "Crud_Promociones";
+            this.Name = "CRUD_Promocion";
+            this.Text = "CRUD_Promocion";
+            this.Load += new System.EventHandler(this.CRUD_Promocion_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPromocion)).EndInit();
             this.gbPromocion.ResumeLayout(false);
             this.gbPromocion.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label Titulo;
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.DataGridView dgvPromocion;
         private System.Windows.Forms.GroupBox gbPromocion;
+        private System.Windows.Forms.CheckBox cbxPromocion;
         private System.Windows.Forms.DateTimePicker dtpDuracion;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCancelar;
@@ -333,8 +337,5 @@
         private System.Windows.Forms.Button btnInhabilitar;
         private System.Windows.Forms.Button btnHabilitar;
         private System.Windows.Forms.Button btnNuevo;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label Titulo;
-        private System.Windows.Forms.CheckBox cbxPromocion;
     }
 }

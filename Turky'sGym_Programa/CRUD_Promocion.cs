@@ -12,23 +12,31 @@ using System.Windows.Forms;
 
 namespace Turky_sGym_Programa
 {
-    public partial class Crud_Promociones : Form
+    public partial class CRUD_Promocion : Form
     {
-        public Crud_Promociones()
+        public CRUD_Promocion()
         {
             InitializeComponent();
             listarPromocion();
             gbPromocion.Enabled = false;
         }
 
-        private void Titulo_Click(object sender, EventArgs e)
-        {
-
-        }
-
         public void listarPromocion()
         {
             dgvPromocion.DataSource = logPromocion.Instancia.ListarPromocion();
+        }
+
+        public void LimpiarVariables()
+        {
+            lbID.Text = "00";
+            cmbTipoProm.SelectedIndex = 0;
+            txtNombre.Clear();
+            txtDescuento.Clear();
+        }
+
+        private void CRUD_Promocion_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -101,12 +109,16 @@ namespace Turky_sGym_Programa
             gbPromocion.Enabled = false;
             LimpiarVariables();
         }
-        public void LimpiarVariables()
+
+        private void dgvPromocion_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            lbID.Text = "00";
-            cmbTipoProm.SelectedIndex = 0;
-            txtNombre.Clear();
-            txtDescuento.Clear();
+            DataGridViewRow filaActual = dgvPromocion.Rows[e.RowIndex];
+            lbID.Text = filaActual.Cells[0].Value.ToString();
+            cmbTipoProm.Text = filaActual.Cells[1].Value.ToString();
+            txtNombre.Text = filaActual.Cells[2].Value.ToString();
+            txtDescuento.Text = filaActual.Cells[3].Value.ToString();
+            dtpDuracion.Text = filaActual.Cells[4].Value.ToString();
+            cbxPromocion.Checked = Convert.ToBoolean(filaActual.Cells[5].Value);
         }
     }
 }
