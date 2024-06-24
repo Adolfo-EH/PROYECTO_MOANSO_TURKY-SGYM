@@ -89,6 +89,7 @@
             this.btnHabilitarS.TabIndex = 78;
             this.btnHabilitarS.Text = "HABILITAR";
             this.btnHabilitarS.UseVisualStyleBackColor = true;
+            this.btnHabilitarS.Click += new System.EventHandler(this.btnHabilitarS_Click);
             // 
             // btnInhabilitarS
             // 
@@ -99,6 +100,7 @@
             this.btnInhabilitarS.TabIndex = 76;
             this.btnInhabilitarS.Text = "INHABILITAR";
             this.btnInhabilitarS.UseVisualStyleBackColor = true;
+            this.btnInhabilitarS.Click += new System.EventHandler(this.btnInhabilitarS_Click);
             // 
             // btnCrearS
             // 
@@ -118,6 +120,7 @@
             this.dgvServicios.Name = "dgvServicios";
             this.dgvServicios.Size = new System.Drawing.Size(641, 296);
             this.dgvServicios.TabIndex = 74;
+            this.dgvServicios.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvServicios_CellMouseClick);
             // 
             // gbServicio
             // 
@@ -143,6 +146,7 @@
             this.btnCancelarS.TabIndex = 75;
             this.btnCancelarS.Text = "CANCELAR";
             this.btnCancelarS.UseVisualStyleBackColor = true;
+            this.btnCancelarS.Click += new System.EventHandler(this.btnCancelarS_Click);
             // 
             // btnInsertarS
             // 
@@ -152,6 +156,7 @@
             this.btnInsertarS.TabIndex = 73;
             this.btnInsertarS.Text = "INSERTAR";
             this.btnInsertarS.UseVisualStyleBackColor = true;
+            this.btnInsertarS.Click += new System.EventHandler(this.btnInsertarS_Click);
             // 
             // txtNomSer
             // 

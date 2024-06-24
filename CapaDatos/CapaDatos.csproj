@@ -47,6 +47,7 @@
     <Compile Include="datMetodoPago.cs" />
     <Compile Include="datProducto.cs" />
     <Compile Include="datPromocion.cs" />
+    <Compile Include="datServicios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

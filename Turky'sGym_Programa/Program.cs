@@ -17,7 +17,7 @@ namespace Turky_sGym_Programa
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CRUD_Marca());
+            Application.Run(new CRUD_Servicios());
         }
     }
 }

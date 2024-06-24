@@ -16,3 +16,12 @@ C:\MARCA-CATEGORIA\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\obj\Debug\CapaDatos.cspr
 C:\MARCA-CATEGORIA\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\obj\Debug\CapaDatos.csproj.Up2Date
 C:\MARCA-CATEGORIA\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\obj\Debug\CapaDatos.dll
 C:\MARCA-CATEGORIA\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\eslar\OneDrive\Documentos\Curso_Moanso\CODE_MOANSO\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\eslar\OneDrive\Documentos\Curso_Moanso\CODE_MOANSO\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\eslar\OneDrive\Documentos\Curso_Moanso\CODE_MOANSO\CapaDatos\bin\Debug\CapaEntidad.dll
+C:\Users\eslar\OneDrive\Documentos\Curso_Moanso\CODE_MOANSO\CapaDatos\bin\Debug\CapaEntidad.pdb
+C:\Users\eslar\OneDrive\Documentos\Curso_Moanso\CODE_MOANSO\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+C:\Users\eslar\OneDrive\Documentos\Curso_Moanso\CODE_MOANSO\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\eslar\OneDrive\Documentos\Curso_Moanso\CODE_MOANSO\CapaDatos\obj\Debug\CapaDatos.csproj.Up2Date
+C:\Users\eslar\OneDrive\Documentos\Curso_Moanso\CODE_MOANSO\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\eslar\OneDrive\Documentos\Curso_Moanso\CODE_MOANSO\CapaDatos\obj\Debug\CapaDatos.pdb

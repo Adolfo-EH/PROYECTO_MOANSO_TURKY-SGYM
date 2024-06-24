@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CapaEntidad;
+using CapaLógica;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +18,18 @@ namespace Turky_sGym_Programa
         {
             InitializeComponent();
             gbServicio.Enabled = false;
+            listarServicio();
+        }
+        public void listarServicio()
+        {
+            dgvServicios.DataSource = logServicios.Instancia.ListarServicio();
+        }
+
+        public void LimpiarVariables()
+        {
+            lblIDSer.Text = "00";
+            txtNomSer.Clear();
+            cbEstadoServicio.Checked = false;
         }
 
         private void lblVentaServicios_Click(object sender, EventArgs e)
@@ -31,6 +45,72 @@ namespace Turky_sGym_Programa
         private void btnCrearS_Click(object sender, EventArgs e)
         {
             gbServicio.Enabled = true;
+        }
+
+        private void dgvServicios_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            DataGridViewRow filaActual = dgvServicios.Rows[e.RowIndex];
+            lblIDSer.Text = filaActual.Cells[0].Value.ToString();
+            txtNomSer.Text = filaActual.Cells[1].Value.ToString();
+            cbEstadoServicio.Checked = Convert.ToBoolean(filaActual.Cells[2].Value);
+        }
+
+        private void btnInhabilitarS_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                entServicios sv = new entServicios();
+                sv.idServicio = int.Parse(lblIDSer.Text.Trim());
+                logServicios.Instancia.DeshabilitarServicio(sv);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error.." + ex);
+            }
+            LimpiarVariables();
+            gbServicio.Enabled = false;
+            listarServicio();
+        }
+
+        private void btnHabilitarS_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                entServicios sv = new entServicios();
+                sv.idServicio = int.Parse(lblIDSer.Text.Trim());
+                logServicios.Instancia.HabilitarServicio(sv);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error.." + ex);
+            }
+            LimpiarVariables();
+            gbServicio.Enabled = false;
+            listarServicio();
+        }
+
+        private void btnInsertarS_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                entServicios sv = new entServicios();
+                sv.nombreSV = txtNomSer.Text.Trim();
+                sv.estServicio = cbEstadoServicio.Checked; 
+                logServicios.Instancia.InsertaServicio(sv);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error.." + ex);
+            }
+            LimpiarVariables();
+            gbServicio.Enabled = false;
+            listarServicio();
+        }
+
+        private void btnCancelarS_Click(object sender, EventArgs e)
+        {
+            LimpiarVariables();
+            gbServicio.Enabled = false;
         }
     }
 }
