@@ -44,6 +44,7 @@
     <Compile Include="entCategoria.cs" />
     <Compile Include="entMarca.cs" />
     <Compile Include="entMetodoPago.cs" />
+    <Compile Include="entPlan.cs" />
     <Compile Include="entProducto.cs" />
     <Compile Include="entPromocion.cs" />
     <Compile Include="entServicios.cs" />

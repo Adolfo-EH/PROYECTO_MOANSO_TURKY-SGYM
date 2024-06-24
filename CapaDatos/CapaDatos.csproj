@@ -45,6 +45,7 @@
     <Compile Include="datCategoria.cs" />
     <Compile Include="datMarca.cs" />
     <Compile Include="datMetodoPago.cs" />
+    <Compile Include="datPlan.cs" />
     <Compile Include="datProducto.cs" />
     <Compile Include="datPromocion.cs" />
     <Compile Include="datServicios.cs" />
