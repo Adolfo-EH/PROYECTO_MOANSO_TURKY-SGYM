@@ -1,6 +1,6 @@
 ﻿namespace Turky_sGym_Programa
 {
-    partial class CRUD_Planes
+    partial class CRUD_Membresía
     {
         /// <summary>
         /// Required designer variable.
@@ -37,6 +37,7 @@
             this.servicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbPlanes = new System.Windows.Forms.GroupBox();
+            this.dtpDuracion = new System.Windows.Forms.DateTimePicker();
             this.cbEstado = new System.Windows.Forms.CheckBox();
             this.lbID = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -53,7 +54,6 @@
             this.btnNuevo = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.dtpDuracion = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlan)).BeginInit();
             this.gbPlanes.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -61,22 +61,22 @@
             // 
             // btnhabilitar
             // 
-            this.btnhabilitar.Location = new System.Drawing.Point(940, 219);
+            this.btnhabilitar.Location = new System.Drawing.Point(944, 229);
             this.btnhabilitar.Margin = new System.Windows.Forms.Padding(2);
             this.btnhabilitar.Name = "btnhabilitar";
             this.btnhabilitar.Size = new System.Drawing.Size(110, 51);
-            this.btnhabilitar.TabIndex = 29;
+            this.btnhabilitar.TabIndex = 36;
             this.btnhabilitar.Text = "HABILITAR";
             this.btnhabilitar.UseVisualStyleBackColor = true;
             this.btnhabilitar.Click += new System.EventHandler(this.btnhabilitar_Click);
             // 
             // btnRegresar
             // 
-            this.btnRegresar.Location = new System.Drawing.Point(940, 274);
+            this.btnRegresar.Location = new System.Drawing.Point(944, 284);
             this.btnRegresar.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(110, 51);
-            this.btnRegresar.TabIndex = 27;
+            this.btnRegresar.TabIndex = 34;
             this.btnRegresar.Text = "REGRESAR";
             this.btnRegresar.UseVisualStyleBackColor = true;
             // 
@@ -89,14 +89,15 @@
             this.duracion,
             this.servicio,
             this.estado});
-            this.dgvPlan.Location = new System.Drawing.Point(58, 104);
+            this.dgvPlan.Location = new System.Drawing.Point(30, 114);
             this.dgvPlan.Margin = new System.Windows.Forms.Padding(2);
             this.dgvPlan.Name = "dgvPlan";
             this.dgvPlan.RowHeadersWidth = 51;
             this.dgvPlan.RowTemplate.Height = 24;
-            this.dgvPlan.Size = new System.Drawing.Size(842, 228);
-            this.dgvPlan.TabIndex = 23;
+            this.dgvPlan.Size = new System.Drawing.Size(874, 228);
+            this.dgvPlan.TabIndex = 30;
             this.dgvPlan.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPlan_CellDoubleClick);
+            this.dgvPlan.DoubleClick += new System.EventHandler(this.dgvPlan_DoubleClick);
             // 
             // plan
             // 
@@ -139,19 +140,26 @@
             this.gbPlanes.Controls.Add(this.txtPrecio);
             this.gbPlanes.Controls.Add(this.lblTipoPromocion);
             this.gbPlanes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbPlanes.Location = new System.Drawing.Point(26, 369);
+            this.gbPlanes.Location = new System.Drawing.Point(30, 379);
             this.gbPlanes.Margin = new System.Windows.Forms.Padding(2);
             this.gbPlanes.Name = "gbPlanes";
             this.gbPlanes.Padding = new System.Windows.Forms.Padding(2);
             this.gbPlanes.Size = new System.Drawing.Size(1024, 262);
-            this.gbPlanes.TabIndex = 26;
+            this.gbPlanes.TabIndex = 33;
             this.gbPlanes.TabStop = false;
             this.gbPlanes.Text = "Planes";
+            // 
+            // dtpDuracion
+            // 
+            this.dtpDuracion.Location = new System.Drawing.Point(140, 171);
+            this.dtpDuracion.Name = "dtpDuracion";
+            this.dtpDuracion.Size = new System.Drawing.Size(239, 22);
+            this.dtpDuracion.TabIndex = 25;
             // 
             // cbEstado
             // 
             this.cbEstado.AutoSize = true;
-            this.cbEstado.Location = new System.Drawing.Point(407, 51);
+            this.cbEstado.Location = new System.Drawing.Point(310, 51);
             this.cbEstado.Name = "cbEstado";
             this.cbEstado.Size = new System.Drawing.Size(69, 20);
             this.cbEstado.TabIndex = 24;
@@ -264,22 +272,22 @@
             // 
             // btnInhabilitar
             // 
-            this.btnInhabilitar.Location = new System.Drawing.Point(940, 164);
+            this.btnInhabilitar.Location = new System.Drawing.Point(944, 174);
             this.btnInhabilitar.Margin = new System.Windows.Forms.Padding(2);
             this.btnInhabilitar.Name = "btnInhabilitar";
             this.btnInhabilitar.Size = new System.Drawing.Size(110, 51);
-            this.btnInhabilitar.TabIndex = 25;
+            this.btnInhabilitar.TabIndex = 32;
             this.btnInhabilitar.Text = "INHABILITAR";
             this.btnInhabilitar.UseVisualStyleBackColor = true;
             this.btnInhabilitar.Click += new System.EventHandler(this.btnInhabilitar_Click);
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(940, 109);
+            this.btnNuevo.Location = new System.Drawing.Point(944, 119);
             this.btnNuevo.Margin = new System.Windows.Forms.Padding(2);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(110, 51);
-            this.btnNuevo.TabIndex = 24;
+            this.btnNuevo.TabIndex = 31;
             this.btnNuevo.Text = "NUEVO";
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
@@ -288,10 +296,11 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkCyan;
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(0, -1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1117, 68);
-            this.panel1.TabIndex = 28;
+            this.panel1.Size = new System.Drawing.Size(1097, 68);
+            this.panel1.TabIndex = 35;
             // 
             // label2
             // 
@@ -300,22 +309,15 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(457, 20);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(127, 31);
+            this.label2.Size = new System.Drawing.Size(185, 31);
             this.label2.TabIndex = 13;
-            this.label2.Text = "PLANES";
+            this.label2.Text = "MEMBRESÍA";
             // 
-            // dtpDuracion
-            // 
-            this.dtpDuracion.Location = new System.Drawing.Point(140, 171);
-            this.dtpDuracion.Name = "dtpDuracion";
-            this.dtpDuracion.Size = new System.Drawing.Size(200, 22);
-            this.dtpDuracion.TabIndex = 25;
-            // 
-            // CRUD_Planes
+            // CRUD_Membresía
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1107, 664);
+            this.ClientSize = new System.Drawing.Size(1097, 726);
             this.Controls.Add(this.btnhabilitar);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.dgvPlan);
@@ -323,8 +325,9 @@
             this.Controls.Add(this.btnInhabilitar);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.panel1);
-            this.Name = "CRUD_Planes";
-            this.Text = "Form1";
+            this.Name = "CRUD_Membresía";
+            this.Text = "CRUD_Membresía";
+            this.Load += new System.EventHandler(this.CRUD_Membresía_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlan)).EndInit();
             this.gbPlanes.ResumeLayout(false);
             this.gbPlanes.PerformLayout();
@@ -345,6 +348,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn servicio;
         private System.Windows.Forms.DataGridViewTextBoxColumn estado;
         private System.Windows.Forms.GroupBox gbPlanes;
+        private System.Windows.Forms.DateTimePicker dtpDuracion;
+        private System.Windows.Forms.CheckBox cbEstado;
+        private System.Windows.Forms.Label lbID;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox cmbServicio;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtPlan;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCancelar;
@@ -356,11 +365,5 @@
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cmbServicio;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.CheckBox cbEstado;
-        private System.Windows.Forms.Label lbID;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker dtpDuracion;
     }
 }

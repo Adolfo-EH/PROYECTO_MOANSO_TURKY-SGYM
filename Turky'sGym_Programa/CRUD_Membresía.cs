@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace Turky_sGym_Programa
 {
-    public partial class CRUD_Planes : Form
+    public partial class CRUD_Membresía : Form
     {
-        public CRUD_Planes()
+        public CRUD_Membresía()
         {
             InitializeComponent();
             listarPlan();
@@ -24,6 +24,19 @@ namespace Turky_sGym_Programa
         public void listarPlan()
         {
             dgvPlan.DataSource = logPlan.Instancia.ListarPlan();
+        }
+
+        private void LimpiarVariables()
+        {
+            lbID.Text = "";
+            txtPlan.Clear();
+            txtPrecio.Clear();
+            cmbServicio.SelectedIndex = 0;
+        }
+
+        private void CRUD_Membresía_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -67,14 +80,6 @@ namespace Turky_sGym_Programa
             listarPlan();
         }
 
-        private void LimpiarVariables()
-        {
-            lbID.Text = "";
-            txtPlan.Clear();
-            txtPrecio.Clear();
-            cmbServicio.SelectedIndex = 0;
-        }
-
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             //insertar
@@ -96,6 +101,11 @@ namespace Turky_sGym_Programa
             listarPlan();
         }
 
+        private void dgvPlan_DoubleClick(object sender, EventArgs e)
+        {
+
+        }
+
         private void dgvPlan_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewRow filaActual = dgvPlan.Rows[e.RowIndex];
@@ -104,5 +114,11 @@ namespace Turky_sGym_Programa
             txtPrecio.Text = filaActual.Cells[2].Value.ToString();
             cbEstado.Checked = Convert.ToBoolean(filaActual.Cells[3].Value);
         }
+
+        private void CRUD_Planes_Load(object sender, EventArgs e)
+        {
+
+        }
     }
+    
 }

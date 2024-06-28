@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Turky_sGym_Programa
 {
-    public partial class CORE_VENTA_SERVICIOS : Form
+    public partial class CORE_VENTA_MEMBRESÍA : Form
     {
         private Dictionary<string, string> precios;
-        public CORE_VENTA_SERVICIOS()
+        public CORE_VENTA_MEMBRESÍA()
         {
             InitializeComponent();
             InicializarPrecios();
@@ -37,6 +37,11 @@ namespace Turky_sGym_Programa
             });
         }
 
+        private void CORE_VENTA_MEMBRESÍA_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void cbxTipoPlan_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cbxTipoPlan.SelectedItem != null)
@@ -47,46 +52,6 @@ namespace Turky_sGym_Programa
                     lblPrecio.Text = precios[seleccion];
                 }
             }
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblPrecio_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_2(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_3(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnConsultarVentas_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void CORE_VENTA_SERVICIOS_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

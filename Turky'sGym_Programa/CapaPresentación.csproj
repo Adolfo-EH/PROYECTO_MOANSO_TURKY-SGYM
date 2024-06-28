@@ -50,17 +50,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CSLT_Venta_Membresía.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CSLT_Venta_Membresía.Designer.cs">
+      <DependentUpon>CSLT_Venta_Membresía.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORE_MONITOREO_CLIENTES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORE_MONITOREO_CLIENTES.Designer.cs">
+      <DependentUpon>CORE_MONITOREO_CLIENTES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORE_VENTA_MEMBRESÍA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORE_VENTA_MEMBRESÍA.Designer.cs">
+      <DependentUpon>CORE_VENTA_MEMBRESÍA.cs</DependentUpon>
+    </Compile>
     <Compile Include="CORE_VENTA_PRODUCTOS.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CORE_VENTA_PRODUCTOS.Designer.cs">
       <DependentUpon>CORE_VENTA_PRODUCTOS.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CORE_VENTA_SERVICIOS.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CORE_VENTA_SERVICIOS.Designer.cs">
-      <DependentUpon>CORE_VENTA_SERVICIOS.cs</DependentUpon>
     </Compile>
     <Compile Include="CRUD_Categoría.cs">
       <SubType>Form</SubType>
@@ -73,6 +85,12 @@
     </Compile>
     <Compile Include="CRUD_Clientes.Designer.cs">
       <DependentUpon>CRUD_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD_Membresía.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD_Membresía.Designer.cs">
+      <DependentUpon>CRUD_Membresía.cs</DependentUpon>
     </Compile>
     <Compile Include="CRUD_Metodo_Pago.cs">
       <SubType>Form</SubType>
@@ -110,18 +128,6 @@
     <Compile Include="CSLT_Venta_Productos.Designer.cs">
       <DependentUpon>CSLT_Venta_Productos.cs</DependentUpon>
     </Compile>
-    <Compile Include="CSLT_Venta_Planes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CSLT_Venta_Planes.Designer.cs">
-      <DependentUpon>CSLT_Venta_Planes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CRUD_Planes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CRUD_Planes.Designer.cs">
-      <DependentUpon>CRUD_Planes.cs</DependentUpon>
-    </Compile>
     <Compile Include="CRUD_Marca.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,11 +136,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CORE_MONITOREO_CLIENTES.resx">
+      <DependentUpon>CORE_MONITOREO_CLIENTES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORE_VENTA_MEMBRESÍA.resx">
+      <DependentUpon>CORE_VENTA_MEMBRESÍA.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CORE_VENTA_PRODUCTOS.resx">
       <DependentUpon>CORE_VENTA_PRODUCTOS.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CORE_VENTA_SERVICIOS.resx">
-      <DependentUpon>CORE_VENTA_SERVICIOS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CRUD_Categoría.resx">
       <DependentUpon>CRUD_Categoría.cs</DependentUpon>
@@ -142,14 +151,14 @@
     <EmbeddedResource Include="CRUD_Clientes.resx">
       <DependentUpon>CRUD_Clientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CRUD_Membresía.resx">
+      <DependentUpon>CRUD_Membresía.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CRUD_Metodo_Pago.resx">
       <DependentUpon>CRUD_Metodo_Pago.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CRUD_Monitoreo_Clientes.resx">
       <DependentUpon>CRUD_Monitoreo_Clientes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CRUD_Planes.resx">
-      <DependentUpon>CRUD_Planes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CRUD_Productos.resx">
       <DependentUpon>CRUD_Productos.cs</DependentUpon>
@@ -160,11 +169,11 @@
     <EmbeddedResource Include="CRUD_Servicios.resx">
       <DependentUpon>CRUD_Servicios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CSLT_Venta_Membresía.resx">
+      <DependentUpon>CSLT_Venta_Membresía.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CSLT_Venta_Productos.resx">
       <DependentUpon>CSLT_Venta_Productos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CSLT_Venta_Planes.resx">
-      <DependentUpon>CSLT_Venta_Planes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CRUD_Marca.resx">
       <DependentUpon>CRUD_Marca.cs</DependentUpon>

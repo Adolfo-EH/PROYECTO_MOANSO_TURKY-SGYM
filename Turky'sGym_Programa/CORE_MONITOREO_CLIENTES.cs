@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Turky_sGym_Programa
 {
-    public partial class CRUD_Monitoreo_Clientes : Form
+    public partial class CORE_MONITOREO_CLIENTES : Form
     {
-        public CRUD_Monitoreo_Clientes()
+        public CORE_MONITOREO_CLIENTES()
         {
             InitializeComponent();
-        }
-
-        private void CRUD_Monitoreo_Clientes_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
