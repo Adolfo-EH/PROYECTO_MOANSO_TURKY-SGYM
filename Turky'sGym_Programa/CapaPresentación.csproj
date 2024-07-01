@@ -104,12 +104,6 @@
     <Compile Include="CRUD_Metodo_Pago.Designer.cs">
       <DependentUpon>CRUD_Metodo_Pago.cs</DependentUpon>
     </Compile>
-    <Compile Include="CRUD_Monitoreo_Clientes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CRUD_Monitoreo_Clientes.Designer.cs">
-      <DependentUpon>CRUD_Monitoreo_Clientes.cs</DependentUpon>
-    </Compile>
     <Compile Include="CRUD_Productos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,9 +159,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CRUD_Metodo_Pago.resx">
       <DependentUpon>CRUD_Metodo_Pago.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CRUD_Monitoreo_Clientes.resx">
-      <DependentUpon>CRUD_Monitoreo_Clientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CRUD_Productos.resx">
       <DependentUpon>CRUD_Productos.cs</DependentUpon>

@@ -16,5 +16,10 @@ namespace Turky_sGym_Programa
         {
             InitializeComponent();
         }
+
+        private void CORE_MONITOREO_CLIENTES_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

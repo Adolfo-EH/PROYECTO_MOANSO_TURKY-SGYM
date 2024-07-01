@@ -519,6 +519,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "CORE_MONITOREO_CLIENTES";
             this.Text = "CORE_MONITOREO_CLIENTES";
+            this.Load += new System.EventHandler(this.CORE_MONITOREO_CLIENTES_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMonitoreoClientes)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
