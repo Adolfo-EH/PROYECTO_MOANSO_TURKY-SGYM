@@ -112,5 +112,10 @@ namespace Turky_sGym_Programa
             txtTipo.Text = filaActual.Cells[2].Value.ToString();
             cbxEstadoMetodoPago.Checked = Convert.ToBoolean(filaActual.Cells[3].Value);
         }
+
+        private void txtTipo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

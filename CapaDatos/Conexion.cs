@@ -17,8 +17,9 @@ namespace CapaDatos
         }
         public SqlConnection Conectar()
         {
+            //en Initial Catalog tienen que poner el nombre de la base de datos utilizada
             SqlConnection cn = new SqlConnection();
-            cn.ConnectionString = "Data Source=localhost; Initial Catalog = TurkysGymBDJ;" +//"User ID=sa; Password = 123";
+            cn.ConnectionString = "Data Source=localhost; Initial Catalog = formaP;" +//"User ID=sa; Password = 123";
             "Integrated Security=true";
             return cn;
         }

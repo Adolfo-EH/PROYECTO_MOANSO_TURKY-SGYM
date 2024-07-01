@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CRUD_Forma_Pago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD_Forma_Pago.Designer.cs">
+      <DependentUpon>CRUD_Forma_Pago.cs</DependentUpon>
+    </Compile>
     <Compile Include="CSLT_Venta_Membresía.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CRUD_Clientes.resx">
       <DependentUpon>CRUD_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD_Forma_Pago.resx">
+      <DependentUpon>CRUD_Forma_Pago.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CRUD_Membresía.resx">
       <DependentUpon>CRUD_Membresía.cs</DependentUpon>

@@ -143,10 +143,11 @@
             // 
             // txtTipo
             // 
-            this.txtTipo.Location = new System.Drawing.Point(43, 114);
+            this.txtTipo.Location = new System.Drawing.Point(59, 114);
             this.txtTipo.Name = "txtTipo";
-            this.txtTipo.Size = new System.Drawing.Size(116, 20);
+            this.txtTipo.Size = new System.Drawing.Size(100, 20);
             this.txtTipo.TabIndex = 5;
+            this.txtTipo.TextChanged += new System.EventHandler(this.txtTipo_TextChanged);
             // 
             // txtNombre
             // 
@@ -167,7 +168,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 117);
+            this.label3.Location = new System.Drawing.Point(21, 117);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(31, 13);
             this.label3.TabIndex = 2;

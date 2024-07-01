@@ -34,3 +34,12 @@ C:\MOANSITO\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\obj\Debug\CapaDatos.csproj.Core
 C:\MOANSITO\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\obj\Debug\CapaDatos.csproj.Up2Date
 C:\MOANSITO\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\obj\Debug\CapaDatos.dll
 C:\MOANSITO\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\obj\Debug\CapaDatos.pdb
+D:\COMIT\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\bin\Debug\CapaDatos.dll
+D:\COMIT\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\bin\Debug\CapaDatos.pdb
+D:\COMIT\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\bin\Debug\CapaEntidad.dll
+D:\COMIT\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\bin\Debug\CapaEntidad.pdb
+D:\COMIT\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+D:\COMIT\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+D:\COMIT\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\obj\Debug\CapaDatos.csproj.Up2Date
+D:\COMIT\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\obj\Debug\CapaDatos.dll
+D:\COMIT\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\obj\Debug\CapaDatos.pdb
