@@ -53,9 +53,10 @@
             this.panel1.AllowDrop = true;
             this.panel1.BackColor = System.Drawing.Color.DarkCyan;
             this.panel1.Controls.Add(this.lblVentaServicios);
-            this.panel1.Location = new System.Drawing.Point(-143, -6);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1086, 69);
+            this.panel1.Size = new System.Drawing.Size(1177, 79);
             this.panel1.TabIndex = 64;
             // 
             // lblVentaServicios
@@ -63,7 +64,7 @@
             this.lblVentaServicios.AutoSize = true;
             this.lblVentaServicios.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVentaServicios.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblVentaServicios.Location = new System.Drawing.Point(526, 24);
+            this.lblVentaServicios.Location = new System.Drawing.Point(510, 25);
             this.lblVentaServicios.Name = "lblVentaServicios";
             this.lblVentaServicios.Size = new System.Drawing.Size(172, 31);
             this.lblVentaServicios.TabIndex = 44;
@@ -73,7 +74,7 @@
             // btnRegresarS
             // 
             this.btnRegresarS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresarS.Location = new System.Drawing.Point(721, 521);
+            this.btnRegresarS.Location = new System.Drawing.Point(875, 570);
             this.btnRegresarS.Name = "btnRegresarS";
             this.btnRegresarS.Size = new System.Drawing.Size(140, 60);
             this.btnRegresarS.TabIndex = 79;
@@ -83,7 +84,7 @@
             // btnHabilitarS
             // 
             this.btnHabilitarS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHabilitarS.Location = new System.Drawing.Point(721, 206);
+            this.btnHabilitarS.Location = new System.Drawing.Point(875, 255);
             this.btnHabilitarS.Name = "btnHabilitarS";
             this.btnHabilitarS.Size = new System.Drawing.Size(140, 60);
             this.btnHabilitarS.TabIndex = 78;
@@ -94,7 +95,7 @@
             // btnInhabilitarS
             // 
             this.btnInhabilitarS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInhabilitarS.Location = new System.Drawing.Point(721, 329);
+            this.btnInhabilitarS.Location = new System.Drawing.Point(875, 378);
             this.btnInhabilitarS.Name = "btnInhabilitarS";
             this.btnInhabilitarS.Size = new System.Drawing.Size(140, 60);
             this.btnInhabilitarS.TabIndex = 76;
@@ -105,7 +106,7 @@
             // btnCrearS
             // 
             this.btnCrearS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCrearS.Location = new System.Drawing.Point(721, 106);
+            this.btnCrearS.Location = new System.Drawing.Point(875, 155);
             this.btnCrearS.Name = "btnCrearS";
             this.btnCrearS.Size = new System.Drawing.Size(140, 60);
             this.btnCrearS.TabIndex = 75;
@@ -116,7 +117,7 @@
             // dgvServicios
             // 
             this.dgvServicios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvServicios.Location = new System.Drawing.Point(28, 106);
+            this.dgvServicios.Location = new System.Drawing.Point(182, 155);
             this.dgvServicios.Name = "dgvServicios";
             this.dgvServicios.Size = new System.Drawing.Size(641, 296);
             this.dgvServicios.TabIndex = 74;
@@ -131,7 +132,7 @@
             this.gbServicio.Controls.Add(this.label1);
             this.gbServicio.Controls.Add(this.label2);
             this.gbServicio.Controls.Add(this.cbEstadoServicio);
-            this.gbServicio.Location = new System.Drawing.Point(28, 429);
+            this.gbServicio.Location = new System.Drawing.Point(182, 478);
             this.gbServicio.Name = "gbServicio";
             this.gbServicio.Size = new System.Drawing.Size(641, 152);
             this.gbServicio.TabIndex = 77;
@@ -208,7 +209,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(942, 630);
+            this.ClientSize = new System.Drawing.Size(1177, 630);
             this.Controls.Add(this.btnRegresarS);
             this.Controls.Add(this.btnHabilitarS);
             this.Controls.Add(this.btnInhabilitarS);

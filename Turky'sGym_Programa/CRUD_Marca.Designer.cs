@@ -51,7 +51,7 @@
             // btnRegresarM
             // 
             this.btnRegresarM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresarM.Location = new System.Drawing.Point(740, 539);
+            this.btnRegresarM.Location = new System.Drawing.Point(866, 592);
             this.btnRegresarM.Name = "btnRegresarM";
             this.btnRegresarM.Size = new System.Drawing.Size(143, 38);
             this.btnRegresarM.TabIndex = 86;
@@ -61,7 +61,7 @@
             // btnHabilitarM
             // 
             this.btnHabilitarM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHabilitarM.Location = new System.Drawing.Point(740, 164);
+            this.btnHabilitarM.Location = new System.Drawing.Point(866, 217);
             this.btnHabilitarM.Name = "btnHabilitarM";
             this.btnHabilitarM.Size = new System.Drawing.Size(143, 38);
             this.btnHabilitarM.TabIndex = 85;
@@ -72,7 +72,7 @@
             // btnInhabilitarM
             // 
             this.btnInhabilitarM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInhabilitarM.Location = new System.Drawing.Point(740, 232);
+            this.btnInhabilitarM.Location = new System.Drawing.Point(866, 285);
             this.btnInhabilitarM.Name = "btnInhabilitarM";
             this.btnInhabilitarM.Size = new System.Drawing.Size(143, 38);
             this.btnInhabilitarM.TabIndex = 83;
@@ -83,7 +83,7 @@
             // btnCrearM
             // 
             this.btnCrearM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCrearM.Location = new System.Drawing.Point(740, 102);
+            this.btnCrearM.Location = new System.Drawing.Point(866, 155);
             this.btnCrearM.Name = "btnCrearM";
             this.btnCrearM.Size = new System.Drawing.Size(143, 38);
             this.btnCrearM.TabIndex = 82;
@@ -94,7 +94,7 @@
             // dgvMarca
             // 
             this.dgvMarca.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMarca.Location = new System.Drawing.Point(47, 102);
+            this.dgvMarca.Location = new System.Drawing.Point(173, 155);
             this.dgvMarca.Name = "dgvMarca";
             this.dgvMarca.Size = new System.Drawing.Size(641, 296);
             this.dgvMarca.TabIndex = 81;
@@ -109,7 +109,7 @@
             this.gbMarca.Controls.Add(this.label1);
             this.gbMarca.Controls.Add(this.label2);
             this.gbMarca.Controls.Add(this.cbEstadoMarca);
-            this.gbMarca.Location = new System.Drawing.Point(47, 425);
+            this.gbMarca.Location = new System.Drawing.Point(173, 478);
             this.gbMarca.Name = "gbMarca";
             this.gbMarca.Size = new System.Drawing.Size(641, 152);
             this.gbMarca.TabIndex = 84;
@@ -187,17 +187,20 @@
             this.panel1.AllowDrop = true;
             this.panel1.BackColor = System.Drawing.Color.DarkCyan;
             this.panel1.Controls.Add(this.f);
-            this.panel1.Location = new System.Drawing.Point(-94, -2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1086, 69);
+            this.panel1.Size = new System.Drawing.Size(1177, 79);
             this.panel1.TabIndex = 80;
             // 
             // f
             // 
+            this.f.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.f.AutoSize = true;
             this.f.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.f.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.f.Location = new System.Drawing.Point(464, 21);
+            this.f.Location = new System.Drawing.Point(513, 21);
             this.f.Name = "f";
             this.f.Size = new System.Drawing.Size(117, 31);
             this.f.TabIndex = 44;
@@ -207,7 +210,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(942, 631);
+            this.ClientSize = new System.Drawing.Size(1177, 659);
             this.Controls.Add(this.btnRegresarM);
             this.Controls.Add(this.btnHabilitarM);
             this.Controls.Add(this.btnInhabilitarM);
@@ -217,6 +220,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "CRUD_Marca";
             this.Text = "Marca";
+            this.Load += new System.EventHandler(this.CRUD_Marca_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMarca)).EndInit();
             this.gbMarca.ResumeLayout(false);
             this.gbMarca.PerformLayout();

@@ -28,7 +28,7 @@ namespace Turky_sGym_Programa
 
         private void LimpiarVariables()
         {
-            txtIDMem.Clear();
+            lbIDMembresia.Text = "00";
             txtMembresia.Clear();
             txtPrecio.Clear();
             cmbServicio.SelectedIndex = 0;
@@ -69,7 +69,7 @@ namespace Turky_sGym_Programa
             try
             {
                 entPlan pl = new entPlan();
-                pl.idPlan = int.Parse(txtIDMem.Text.Trim());
+                pl.idPlan = int.Parse(lbIDMembresia.Text.Trim());
                 logPlan.Instancia.HabilitarPlan(pl);
             }
             catch (Exception ex)
@@ -89,7 +89,7 @@ namespace Turky_sGym_Programa
                 entPlan pl = new entPlan();
                 pl.nombrePlan = txtMembresia.Text;
                 pl.precio = double.Parse(txtPrecio.Text.Trim());
-                pl.duracion = dtpDuracion.Value;
+                //pl.duracion = txtDuracionMem.Text;
                 pl.estPlan = cbEstado.Checked;
                 logPlan.Instancia.InsertaPlan(pl);
             }
@@ -105,7 +105,7 @@ namespace Turky_sGym_Programa
         private void dgvPlan_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewRow filaActual = dgvPlan.Rows[e.RowIndex];
-            lbID.Text = filaActual.Cells[0].Value.ToString();
+            lbIDMembresia.Text = filaActual.Cells[0].Value.ToString();
             txtMembresia.Text = filaActual.Cells[1].Value.ToString();
             txtPrecio.Text = filaActual.Cells[2].Value.ToString();
             cbEstado.Checked = Convert.ToBoolean(filaActual.Cells[3].Value);

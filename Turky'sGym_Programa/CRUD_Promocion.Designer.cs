@@ -58,20 +58,22 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkCyan;
             this.panel1.Controls.Add(this.Titulo);
-            this.panel1.Location = new System.Drawing.Point(-1, 0);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(957, 74);
+            this.panel1.Size = new System.Drawing.Size(1177, 79);
             this.panel1.TabIndex = 23;
             // 
             // Titulo
             // 
+            this.Titulo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Titulo.AutoSize = true;
             this.Titulo.BackColor = System.Drawing.Color.Transparent;
             this.Titulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Titulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Titulo.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Titulo.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.Titulo.Location = new System.Drawing.Point(348, 22);
+            this.Titulo.Location = new System.Drawing.Point(459, 22);
             this.Titulo.Name = "Titulo";
             this.Titulo.Size = new System.Drawing.Size(232, 31);
             this.Titulo.TabIndex = 1;
@@ -80,7 +82,7 @@
             // 
             // btnRegresar
             // 
-            this.btnRegresar.Location = new System.Drawing.Point(692, 555);
+            this.btnRegresar.Location = new System.Drawing.Point(840, 615);
             this.btnRegresar.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(110, 51);
@@ -91,7 +93,7 @@
             // dgvPromocion
             // 
             this.dgvPromocion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPromocion.Location = new System.Drawing.Point(25, 98);
+            this.dgvPromocion.Location = new System.Drawing.Point(173, 158);
             this.dgvPromocion.Margin = new System.Windows.Forms.Padding(2);
             this.dgvPromocion.Name = "dgvPromocion";
             this.dgvPromocion.RowHeadersWidth = 51;
@@ -116,7 +118,7 @@
             this.gbPromocion.Controls.Add(this.lblTipoPromocion);
             this.gbPromocion.Controls.Add(this.lblIdPromocion);
             this.gbPromocion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbPromocion.Location = new System.Drawing.Point(120, 394);
+            this.gbPromocion.Location = new System.Drawing.Point(268, 454);
             this.gbPromocion.Margin = new System.Windows.Forms.Padding(2);
             this.gbPromocion.Name = "gbPromocion";
             this.gbPromocion.Padding = new System.Windows.Forms.Padding(2);
@@ -259,7 +261,7 @@
             // 
             // btnInhabilitar
             // 
-            this.btnInhabilitar.Location = new System.Drawing.Point(692, 284);
+            this.btnInhabilitar.Location = new System.Drawing.Point(840, 344);
             this.btnInhabilitar.Margin = new System.Windows.Forms.Padding(2);
             this.btnInhabilitar.Name = "btnInhabilitar";
             this.btnInhabilitar.Size = new System.Drawing.Size(110, 51);
@@ -270,7 +272,7 @@
             // 
             // btnHabilitar
             // 
-            this.btnHabilitar.Location = new System.Drawing.Point(692, 195);
+            this.btnHabilitar.Location = new System.Drawing.Point(840, 255);
             this.btnHabilitar.Margin = new System.Windows.Forms.Padding(2);
             this.btnHabilitar.Name = "btnHabilitar";
             this.btnHabilitar.Size = new System.Drawing.Size(110, 51);
@@ -281,7 +283,7 @@
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(692, 98);
+            this.btnNuevo.Location = new System.Drawing.Point(840, 158);
             this.btnNuevo.Margin = new System.Windows.Forms.Padding(2);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(110, 51);
@@ -294,7 +296,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(955, 666);
+            this.ClientSize = new System.Drawing.Size(1177, 687);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.dgvPromocion);

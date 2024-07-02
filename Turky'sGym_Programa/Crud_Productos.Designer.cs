@@ -63,20 +63,22 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkCyan;
             this.panel1.Controls.Add(this.Titulo);
-            this.panel1.Location = new System.Drawing.Point(-5, -3);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1000, 74);
+            this.panel1.Size = new System.Drawing.Size(1177, 79);
             this.panel1.TabIndex = 24;
             // 
             // Titulo
             // 
+            this.Titulo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Titulo.AutoSize = true;
             this.Titulo.BackColor = System.Drawing.Color.Transparent;
             this.Titulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Titulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Titulo.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Titulo.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.Titulo.Location = new System.Drawing.Point(338, 22);
+            this.Titulo.Location = new System.Drawing.Point(483, 25);
             this.Titulo.Name = "Titulo";
             this.Titulo.Size = new System.Drawing.Size(198, 31);
             this.Titulo.TabIndex = 1;
@@ -104,7 +106,7 @@
             this.grbDatosProducto.Controls.Add(this.lbID);
             this.grbDatosProducto.Controls.Add(this.lbIDpro);
             this.grbDatosProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbDatosProducto.Location = new System.Drawing.Point(85, 359);
+            this.grbDatosProducto.Location = new System.Drawing.Point(244, 413);
             this.grbDatosProducto.Name = "grbDatosProducto";
             this.grbDatosProducto.Size = new System.Drawing.Size(535, 289);
             this.grbDatosProducto.TabIndex = 23;
@@ -275,7 +277,7 @@
             // btnEditar
             // 
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.Location = new System.Drawing.Point(695, 198);
+            this.btnEditar.Location = new System.Drawing.Point(854, 252);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(100, 50);
             this.btnEditar.TabIndex = 22;
@@ -286,7 +288,7 @@
             // btnInhabilitar
             // 
             this.btnInhabilitar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInhabilitar.Location = new System.Drawing.Point(695, 287);
+            this.btnInhabilitar.Location = new System.Drawing.Point(854, 341);
             this.btnInhabilitar.Name = "btnInhabilitar";
             this.btnInhabilitar.Size = new System.Drawing.Size(100, 50);
             this.btnInhabilitar.TabIndex = 21;
@@ -297,7 +299,7 @@
             // btnRegresar
             // 
             this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Location = new System.Drawing.Point(695, 598);
+            this.btnRegresar.Location = new System.Drawing.Point(854, 652);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(100, 50);
             this.btnRegresar.TabIndex = 20;
@@ -307,7 +309,7 @@
             // btnNuevo
             // 
             this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.Location = new System.Drawing.Point(695, 98);
+            this.btnNuevo.Location = new System.Drawing.Point(854, 152);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(100, 50);
             this.btnNuevo.TabIndex = 19;
@@ -318,7 +320,7 @@
             // dgvStockProducto
             // 
             this.dgvStockProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvStockProducto.Location = new System.Drawing.Point(85, 98);
+            this.dgvStockProducto.Location = new System.Drawing.Point(244, 152);
             this.dgvStockProducto.Name = "dgvStockProducto";
             this.dgvStockProducto.ReadOnly = true;
             this.dgvStockProducto.RowHeadersWidth = 51;
@@ -330,7 +332,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(936, 660);
+            this.ClientSize = new System.Drawing.Size(1177, 724);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.grbDatosProducto);
             this.Controls.Add(this.btnEditar);

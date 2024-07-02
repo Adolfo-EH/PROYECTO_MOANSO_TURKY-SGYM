@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lblVentaServicios = new System.Windows.Forms.Label();
             this.dgvCategoria = new System.Windows.Forms.DataGridView();
             this.btnCrearC = new System.Windows.Forms.Button();
             this.btnInhabilitarC = new System.Windows.Forms.Button();
@@ -43,35 +41,17 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnHabilitarC = new System.Windows.Forms.Button();
             this.btnRegresarC = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblVentaServicios = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategoria)).BeginInit();
             this.gbCategoría.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.DarkCyan;
-            this.panel1.Controls.Add(this.lblVentaServicios);
-            this.panel1.Location = new System.Drawing.Point(-117, -1);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1098, 71);
-            this.panel1.TabIndex = 64;
-            // 
-            // lblVentaServicios
-            // 
-            this.lblVentaServicios.AutoSize = true;
-            this.lblVentaServicios.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVentaServicios.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblVentaServicios.Location = new System.Drawing.Point(486, 20);
-            this.lblVentaServicios.Name = "lblVentaServicios";
-            this.lblVentaServicios.Size = new System.Drawing.Size(184, 31);
-            this.lblVentaServicios.TabIndex = 44;
-            this.lblVentaServicios.Text = "CATEGORÍA";
             // 
             // dgvCategoria
             // 
             this.dgvCategoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCategoria.Location = new System.Drawing.Point(24, 91);
+            this.dgvCategoria.Location = new System.Drawing.Point(180, 152);
             this.dgvCategoria.Name = "dgvCategoria";
             this.dgvCategoria.RowHeadersWidth = 51;
             this.dgvCategoria.Size = new System.Drawing.Size(641, 296);
@@ -83,7 +63,7 @@
             // btnCrearC
             // 
             this.btnCrearC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCrearC.Location = new System.Drawing.Point(717, 91);
+            this.btnCrearC.Location = new System.Drawing.Point(873, 152);
             this.btnCrearC.Name = "btnCrearC";
             this.btnCrearC.Size = new System.Drawing.Size(143, 38);
             this.btnCrearC.TabIndex = 66;
@@ -94,7 +74,7 @@
             // btnInhabilitarC
             // 
             this.btnInhabilitarC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInhabilitarC.Location = new System.Drawing.Point(717, 222);
+            this.btnInhabilitarC.Location = new System.Drawing.Point(873, 283);
             this.btnInhabilitarC.Name = "btnInhabilitarC";
             this.btnInhabilitarC.Size = new System.Drawing.Size(143, 38);
             this.btnInhabilitarC.TabIndex = 67;
@@ -139,7 +119,7 @@
             this.gbCategoría.Controls.Add(this.label1);
             this.gbCategoría.Controls.Add(this.label2);
             this.gbCategoría.Controls.Add(this.cbEstadoCategoría);
-            this.gbCategoría.Location = new System.Drawing.Point(24, 414);
+            this.gbCategoría.Location = new System.Drawing.Point(180, 475);
             this.gbCategoría.Name = "gbCategoría";
             this.gbCategoría.Size = new System.Drawing.Size(641, 152);
             this.gbCategoría.TabIndex = 71;
@@ -187,7 +167,7 @@
             // btnHabilitarC
             // 
             this.btnHabilitarC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHabilitarC.Location = new System.Drawing.Point(717, 153);
+            this.btnHabilitarC.Location = new System.Drawing.Point(873, 214);
             this.btnHabilitarC.Name = "btnHabilitarC";
             this.btnHabilitarC.Size = new System.Drawing.Size(143, 38);
             this.btnHabilitarC.TabIndex = 72;
@@ -198,18 +178,42 @@
             // btnRegresarC
             // 
             this.btnRegresarC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresarC.Location = new System.Drawing.Point(717, 288);
+            this.btnRegresarC.Location = new System.Drawing.Point(873, 349);
             this.btnRegresarC.Name = "btnRegresarC";
             this.btnRegresarC.Size = new System.Drawing.Size(143, 38);
             this.btnRegresarC.TabIndex = 73;
             this.btnRegresarC.Text = "REGRESAR";
             this.btnRegresarC.UseVisualStyleBackColor = true;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DarkCyan;
+            this.panel1.Controls.Add(this.lblVentaServicios);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1177, 79);
+            this.panel1.TabIndex = 64;
+            // 
+            // lblVentaServicios
+            // 
+            this.lblVentaServicios.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblVentaServicios.AutoSize = true;
+            this.lblVentaServicios.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVentaServicios.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblVentaServicios.Location = new System.Drawing.Point(486, 20);
+            this.lblVentaServicios.Name = "lblVentaServicios";
+            this.lblVentaServicios.Size = new System.Drawing.Size(184, 31);
+            this.lblVentaServicios.TabIndex = 44;
+            this.lblVentaServicios.Text = "CATEGORÍA";
+            // 
             // CRUD_Categoría
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(974, 588);
+            this.ClientSize = new System.Drawing.Size(1177, 651);
             this.Controls.Add(this.btnRegresarC);
             this.Controls.Add(this.btnHabilitarC);
             this.Controls.Add(this.btnInhabilitarC);
@@ -220,19 +224,16 @@
             this.Name = "CRUD_Categoría";
             this.Text = "CRUD_Categoría";
             this.Load += new System.EventHandler(this.CRUD_Categoría_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategoria)).EndInit();
             this.gbCategoría.ResumeLayout(false);
             this.gbCategoría.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label lblVentaServicios;
         private System.Windows.Forms.DataGridView dgvCategoria;
         private System.Windows.Forms.Button btnCrearC;
         private System.Windows.Forms.Button btnInhabilitarC;
@@ -246,5 +247,7 @@
         private System.Windows.Forms.Button btnHabilitarC;
         private System.Windows.Forms.Button btnCancelarC;
         private System.Windows.Forms.Button btnRegresarC;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblVentaServicios;
     }
 }

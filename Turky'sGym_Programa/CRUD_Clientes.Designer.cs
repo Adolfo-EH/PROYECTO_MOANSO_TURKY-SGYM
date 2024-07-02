@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -47,37 +45,18 @@
             this.btn_clientes_inhabilitar = new System.Windows.Forms.Button();
             this.btn_clientes_aniadir = new System.Windows.Forms.Button();
             this.btrn_clientes_modificar = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.DarkCyan;
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Location = new System.Drawing.Point(-22, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(845, 73);
-            this.panel1.TabIndex = 28;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(331, 24);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(156, 31);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "CLIENTES";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(269, 115);
+            this.label6.Location = new System.Drawing.Point(466, 158);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(66, 16);
@@ -98,7 +77,7 @@
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(14, 112);
+            this.groupBox1.Location = new System.Drawing.Point(211, 155);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
@@ -210,7 +189,7 @@
             // dgvClientes
             // 
             this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvClientes.Location = new System.Drawing.Point(262, 136);
+            this.dgvClientes.Location = new System.Drawing.Point(459, 179);
             this.dgvClientes.Margin = new System.Windows.Forms.Padding(2);
             this.dgvClientes.Name = "dgvClientes";
             this.dgvClientes.RowHeadersWidth = 51;
@@ -220,7 +199,7 @@
             // 
             // btn_clientes_inhabilitar
             // 
-            this.btn_clientes_inhabilitar.Location = new System.Drawing.Point(520, 112);
+            this.btn_clientes_inhabilitar.Location = new System.Drawing.Point(717, 155);
             this.btn_clientes_inhabilitar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_clientes_inhabilitar.Name = "btn_clientes_inhabilitar";
             this.btn_clientes_inhabilitar.Size = new System.Drawing.Size(63, 19);
@@ -230,7 +209,7 @@
             // 
             // btn_clientes_aniadir
             // 
-            this.btn_clientes_aniadir.Location = new System.Drawing.Point(351, 112);
+            this.btn_clientes_aniadir.Location = new System.Drawing.Point(548, 155);
             this.btn_clientes_aniadir.Margin = new System.Windows.Forms.Padding(2);
             this.btn_clientes_aniadir.Name = "btn_clientes_aniadir";
             this.btn_clientes_aniadir.Size = new System.Drawing.Size(63, 19);
@@ -240,7 +219,7 @@
             // 
             // btrn_clientes_modificar
             // 
-            this.btrn_clientes_modificar.Location = new System.Drawing.Point(435, 112);
+            this.btrn_clientes_modificar.Location = new System.Drawing.Point(632, 155);
             this.btrn_clientes_modificar.Margin = new System.Windows.Forms.Padding(2);
             this.btrn_clientes_modificar.Name = "btrn_clientes_modificar";
             this.btrn_clientes_modificar.Size = new System.Drawing.Size(63, 19);
@@ -248,11 +227,35 @@
             this.btrn_clientes_modificar.Text = "⚙️";
             this.btrn_clientes_modificar.UseVisualStyleBackColor = true;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DarkCyan;
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1177, 79);
+            this.panel1.TabIndex = 28;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(504, 23);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(156, 31);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "CLIENTES";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // CRUD_Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(819, 475);
+            this.ClientSize = new System.Drawing.Size(1177, 662);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.groupBox1);
@@ -262,20 +265,17 @@
             this.Controls.Add(this.btrn_clientes_modificar);
             this.Name = "CRUD_Clientes";
             this.Text = "CRUD_Clientes";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button1;
@@ -293,5 +293,7 @@
         private System.Windows.Forms.Button btn_clientes_inhabilitar;
         private System.Windows.Forms.Button btn_clientes_aniadir;
         private System.Windows.Forms.Button btrn_clientes_modificar;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label7;
     }
 }

@@ -51,7 +51,7 @@
             // btnRegresarFP
             // 
             this.btnRegresarFP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresarFP.Location = new System.Drawing.Point(614, 441);
+            this.btnRegresarFP.Location = new System.Drawing.Point(809, 488);
             this.btnRegresarFP.Name = "btnRegresarFP";
             this.btnRegresarFP.Size = new System.Drawing.Size(100, 50);
             this.btnRegresarFP.TabIndex = 42;
@@ -62,7 +62,7 @@
             // btnInhabilitarFP
             // 
             this.btnInhabilitarFP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInhabilitarFP.Location = new System.Drawing.Point(614, 258);
+            this.btnInhabilitarFP.Location = new System.Drawing.Point(809, 305);
             this.btnInhabilitarFP.Name = "btnInhabilitarFP";
             this.btnInhabilitarFP.Size = new System.Drawing.Size(100, 50);
             this.btnInhabilitarFP.TabIndex = 41;
@@ -73,7 +73,7 @@
             // btnHabilitarFP
             // 
             this.btnHabilitarFP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHabilitarFP.Location = new System.Drawing.Point(614, 182);
+            this.btnHabilitarFP.Location = new System.Drawing.Point(809, 229);
             this.btnHabilitarFP.Name = "btnHabilitarFP";
             this.btnHabilitarFP.Size = new System.Drawing.Size(100, 50);
             this.btnHabilitarFP.TabIndex = 40;
@@ -84,7 +84,7 @@
             // btnNuevoFP
             // 
             this.btnNuevoFP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevoFP.Location = new System.Drawing.Point(614, 101);
+            this.btnNuevoFP.Location = new System.Drawing.Point(809, 148);
             this.btnNuevoFP.Name = "btnNuevoFP";
             this.btnNuevoFP.Size = new System.Drawing.Size(100, 50);
             this.btnNuevoFP.TabIndex = 39;
@@ -101,7 +101,7 @@
             this.groupForma.Controls.Add(this.lbIDFP);
             this.groupForma.Controls.Add(this.label3);
             this.groupForma.Controls.Add(this.label1);
-            this.groupForma.Location = new System.Drawing.Point(63, 341);
+            this.groupForma.Location = new System.Drawing.Point(258, 388);
             this.groupForma.Name = "groupForma";
             this.groupForma.Size = new System.Drawing.Size(506, 150);
             this.groupForma.TabIndex = 38;
@@ -175,7 +175,7 @@
             // dgvFormaPago
             // 
             this.dgvFormaPago.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFormaPago.Location = new System.Drawing.Point(63, 101);
+            this.dgvFormaPago.Location = new System.Drawing.Point(258, 148);
             this.dgvFormaPago.Name = "dgvFormaPago";
             this.dgvFormaPago.ReadOnly = true;
             this.dgvFormaPago.Size = new System.Drawing.Size(506, 207);
@@ -189,15 +189,17 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(770, 80);
+            this.panel1.Size = new System.Drawing.Size(1177, 79);
             this.panel1.TabIndex = 36;
             // 
             // label7
             // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(253, 24);
+            this.label7.Location = new System.Drawing.Point(459, 24);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(255, 31);
             this.label7.TabIndex = 8;
@@ -208,7 +210,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(770, 554);
+            this.ClientSize = new System.Drawing.Size(1177, 554);
             this.Controls.Add(this.btnRegresarFP);
             this.Controls.Add(this.btnInhabilitarFP);
             this.Controls.Add(this.btnHabilitarFP);
@@ -241,8 +243,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvFormaPago;
+        private System.Windows.Forms.TextBox txtTipoFP;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtTipoFP;
     }
 }

@@ -53,7 +53,7 @@
             // btnRegresar
             // 
             this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Location = new System.Drawing.Point(583, 438);
+            this.btnRegresar.Location = new System.Drawing.Point(838, 499);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(100, 50);
             this.btnRegresar.TabIndex = 35;
@@ -64,7 +64,7 @@
             // btnInhabilitar
             // 
             this.btnInhabilitar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInhabilitar.Location = new System.Drawing.Point(583, 236);
+            this.btnInhabilitar.Location = new System.Drawing.Point(838, 297);
             this.btnInhabilitar.Name = "btnInhabilitar";
             this.btnInhabilitar.Size = new System.Drawing.Size(100, 50);
             this.btnInhabilitar.TabIndex = 34;
@@ -75,7 +75,7 @@
             // btnHabilitar
             // 
             this.btnHabilitar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHabilitar.Location = new System.Drawing.Point(583, 170);
+            this.btnHabilitar.Location = new System.Drawing.Point(838, 231);
             this.btnHabilitar.Name = "btnHabilitar";
             this.btnHabilitar.Size = new System.Drawing.Size(100, 50);
             this.btnHabilitar.TabIndex = 33;
@@ -86,7 +86,7 @@
             // btnNuevo
             // 
             this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.Location = new System.Drawing.Point(583, 100);
+            this.btnNuevo.Location = new System.Drawing.Point(838, 161);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(100, 50);
             this.btnNuevo.TabIndex = 32;
@@ -105,7 +105,7 @@
             this.groupMetodo.Controls.Add(this.label3);
             this.groupMetodo.Controls.Add(this.label2);
             this.groupMetodo.Controls.Add(this.label1);
-            this.groupMetodo.Location = new System.Drawing.Point(32, 340);
+            this.groupMetodo.Location = new System.Drawing.Point(287, 401);
             this.groupMetodo.Name = "groupMetodo";
             this.groupMetodo.Size = new System.Drawing.Size(506, 155);
             this.groupMetodo.TabIndex = 31;
@@ -196,7 +196,7 @@
             // dgvMetodoPago
             // 
             this.dgvMetodoPago.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMetodoPago.Location = new System.Drawing.Point(32, 100);
+            this.dgvMetodoPago.Location = new System.Drawing.Point(287, 161);
             this.dgvMetodoPago.Name = "dgvMetodoPago";
             this.dgvMetodoPago.ReadOnly = true;
             this.dgvMetodoPago.Size = new System.Drawing.Size(506, 207);
@@ -207,9 +207,10 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkCyan;
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Location = new System.Drawing.Point(-1, 0);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(788, 80);
+            this.panel1.Size = new System.Drawing.Size(1177, 79);
             this.panel1.TabIndex = 29;
             // 
             // label7
@@ -217,7 +218,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(249, 25);
+            this.label7.Location = new System.Drawing.Point(433, 22);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(277, 31);
             this.label7.TabIndex = 8;
@@ -228,7 +229,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(776, 554);
+            this.ClientSize = new System.Drawing.Size(1177, 628);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.btnInhabilitar);
             this.Controls.Add(this.btnHabilitar);

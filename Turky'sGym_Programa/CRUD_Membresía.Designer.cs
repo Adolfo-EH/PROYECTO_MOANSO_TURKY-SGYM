@@ -32,7 +32,6 @@
             this.btnRegresar = new System.Windows.Forms.Button();
             this.dgvPlan = new System.Windows.Forms.DataGridView();
             this.gbPlanes = new System.Windows.Forms.GroupBox();
-            this.dtpDuracion = new System.Windows.Forms.DateTimePicker();
             this.cbEstado = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
             this.cmbServicio = new System.Windows.Forms.ComboBox();
@@ -46,9 +45,10 @@
             this.holi = new System.Windows.Forms.Label();
             this.btnInhabilitar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
+            this.lbIDMembresia = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtIDMem = new System.Windows.Forms.TextBox();
+            this.txtDuracionMem = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlan)).BeginInit();
             this.gbPlanes.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -56,7 +56,7 @@
             // 
             // btnhabilitar
             // 
-            this.btnhabilitar.Location = new System.Drawing.Point(944, 207);
+            this.btnhabilitar.Location = new System.Drawing.Point(984, 257);
             this.btnhabilitar.Margin = new System.Windows.Forms.Padding(2);
             this.btnhabilitar.Name = "btnhabilitar";
             this.btnhabilitar.Size = new System.Drawing.Size(110, 51);
@@ -67,7 +67,7 @@
             // 
             // btnRegresar
             // 
-            this.btnRegresar.Location = new System.Drawing.Point(944, 590);
+            this.btnRegresar.Location = new System.Drawing.Point(984, 640);
             this.btnRegresar.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(110, 51);
@@ -78,7 +78,7 @@
             // dgvPlan
             // 
             this.dgvPlan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPlan.Location = new System.Drawing.Point(30, 114);
+            this.dgvPlan.Location = new System.Drawing.Point(70, 164);
             this.dgvPlan.Margin = new System.Windows.Forms.Padding(2);
             this.dgvPlan.Name = "dgvPlan";
             this.dgvPlan.RowHeadersWidth = 51;
@@ -89,8 +89,8 @@
             // 
             // gbPlanes
             // 
-            this.gbPlanes.Controls.Add(this.txtIDMem);
-            this.gbPlanes.Controls.Add(this.dtpDuracion);
+            this.gbPlanes.Controls.Add(this.txtDuracionMem);
+            this.gbPlanes.Controls.Add(this.lbIDMembresia);
             this.gbPlanes.Controls.Add(this.cbEstado);
             this.gbPlanes.Controls.Add(this.label4);
             this.gbPlanes.Controls.Add(this.cmbServicio);
@@ -103,7 +103,7 @@
             this.gbPlanes.Controls.Add(this.txtPrecio);
             this.gbPlanes.Controls.Add(this.holi);
             this.gbPlanes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbPlanes.Location = new System.Drawing.Point(30, 379);
+            this.gbPlanes.Location = new System.Drawing.Point(70, 429);
             this.gbPlanes.Margin = new System.Windows.Forms.Padding(2);
             this.gbPlanes.Name = "gbPlanes";
             this.gbPlanes.Padding = new System.Windows.Forms.Padding(2);
@@ -111,13 +111,6 @@
             this.gbPlanes.TabIndex = 33;
             this.gbPlanes.TabStop = false;
             this.gbPlanes.Text = "Planes";
-            // 
-            // dtpDuracion
-            // 
-            this.dtpDuracion.Location = new System.Drawing.Point(140, 171);
-            this.dtpDuracion.Name = "dtpDuracion";
-            this.dtpDuracion.Size = new System.Drawing.Size(239, 22);
-            this.dtpDuracion.TabIndex = 25;
             // 
             // cbEstado
             // 
@@ -226,7 +219,7 @@
             // 
             // btnInhabilitar
             // 
-            this.btnInhabilitar.Location = new System.Drawing.Point(944, 291);
+            this.btnInhabilitar.Location = new System.Drawing.Point(984, 341);
             this.btnInhabilitar.Margin = new System.Windows.Forms.Padding(2);
             this.btnInhabilitar.Name = "btnInhabilitar";
             this.btnInhabilitar.Size = new System.Drawing.Size(110, 51);
@@ -237,7 +230,7 @@
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(944, 119);
+            this.btnNuevo.Location = new System.Drawing.Point(984, 169);
             this.btnNuevo.Margin = new System.Windows.Forms.Padding(2);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(110, 51);
@@ -246,6 +239,15 @@
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
+            // lbIDMembresia
+            // 
+            this.lbIDMembresia.AutoSize = true;
+            this.lbIDMembresia.Location = new System.Drawing.Point(140, 55);
+            this.lbIDMembresia.Name = "lbIDMembresia";
+            this.lbIDMembresia.Size = new System.Drawing.Size(21, 16);
+            this.lbIDMembresia.TabIndex = 26;
+            this.lbIDMembresia.Text = "00";
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkCyan;
@@ -253,32 +255,35 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1097, 68);
+            this.panel1.Size = new System.Drawing.Size(1177, 79);
             this.panel1.TabIndex = 35;
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(457, 20);
+            this.label2.Location = new System.Drawing.Point(452, 21);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(185, 31);
             this.label2.TabIndex = 13;
             this.label2.Text = "MEMBRESÍA";
             // 
-            // txtIDMem
+            // txtDuracionMem
             // 
-            this.txtIDMem.Location = new System.Drawing.Point(140, 52);
-            this.txtIDMem.Name = "txtIDMem";
-            this.txtIDMem.Size = new System.Drawing.Size(133, 22);
-            this.txtIDMem.TabIndex = 26;
+            this.txtDuracionMem.Location = new System.Drawing.Point(140, 169);
+            this.txtDuracionMem.Name = "txtDuracionMem";
+            this.txtDuracionMem.Size = new System.Drawing.Size(239, 22);
+            this.txtDuracionMem.TabIndex = 27;
             // 
             // CRUD_Membresía
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1097, 726);
+            this.ClientSize = new System.Drawing.Size(1177, 726);
             this.Controls.Add(this.btnhabilitar);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.dgvPlan);
@@ -304,7 +309,6 @@
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.DataGridView dgvPlan;
         private System.Windows.Forms.GroupBox gbPlanes;
-        private System.Windows.Forms.DateTimePicker dtpDuracion;
         private System.Windows.Forms.CheckBox cbEstado;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cmbServicio;
@@ -318,8 +322,9 @@
         private System.Windows.Forms.Label holi;
         private System.Windows.Forms.Button btnInhabilitar;
         private System.Windows.Forms.Button btnNuevo;
+        private System.Windows.Forms.Label lbIDMembresia;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtIDMem;
+        private System.Windows.Forms.TextBox txtDuracionMem;
     }
 }

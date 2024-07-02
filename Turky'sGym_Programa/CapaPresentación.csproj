@@ -134,6 +134,18 @@
     <Compile Include="CRUD_Marca.Designer.cs">
       <DependentUpon>CRUD_Marca.cs</DependentUpon>
     </Compile>
+    <Compile Include="LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.Designer.cs">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAIN_Interfaz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAIN_Interfaz.Designer.cs">
+      <DependentUpon>MAIN_Interfaz.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CORE_MONITOREO_CLIENTES.resx">
@@ -178,6 +190,12 @@
     <EmbeddedResource Include="CRUD_Marca.resx">
       <DependentUpon>CRUD_Marca.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN.resx">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAIN_Interfaz.resx">
+      <DependentUpon>MAIN_Interfaz.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -214,6 +232,53 @@
       <Name>CapaLógica</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\ISOLOGO TURKY%27S GYM BLANCO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-carrito-de-compras-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pesa-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-lista-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-categorias-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-etiqueta-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-estante-de-licor-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-clientes-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-servicios-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-tarjeta-de-identificación-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-servicios-301.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-tarjeta-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\billetes-de-banco %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-venta-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-configuración-del-administrador-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-salida-de-emergencia-30.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

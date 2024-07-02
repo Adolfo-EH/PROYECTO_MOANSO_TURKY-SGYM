@@ -92,3 +92,14 @@ D:\qwe\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\obj\Debug\CapaLógica.csproj.CoreC
 D:\qwe\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\obj\Debug\CapaLógica.csproj.Up2Date
 D:\qwe\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\obj\Debug\CapaLógica.dll
 D:\qwe\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\obj\Debug\CapaLógica.pdb
+D:\comi_moanso\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\obj\Debug\CapaLógica.csproj.AssemblyReference.cache
+D:\comi_moanso\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\obj\Debug\CapaLógica.csproj.CoreCompileInputs.cache
+D:\comi_moanso\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\obj\Debug\CapaLógica.dll
+D:\comi_moanso\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\obj\Debug\CapaLógica.pdb
+D:\comi_moanso\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\bin\Debug\CapaLógica.dll
+D:\comi_moanso\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\bin\Debug\CapaLógica.pdb
+D:\comi_moanso\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\bin\Debug\CapaDatos.dll
+D:\comi_moanso\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\bin\Debug\CapaEntidad.dll
+D:\comi_moanso\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\bin\Debug\CapaDatos.pdb
+D:\comi_moanso\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\bin\Debug\CapaEntidad.pdb
+D:\comi_moanso\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\obj\Debug\CapaLógica.csproj.Up2Date

@@ -103,5 +103,10 @@ namespace Turky_sGym_Programa
             LimpiarVariables();
             gbMarca.Enabled = false;
         }
+
+        private void CRUD_Marca_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

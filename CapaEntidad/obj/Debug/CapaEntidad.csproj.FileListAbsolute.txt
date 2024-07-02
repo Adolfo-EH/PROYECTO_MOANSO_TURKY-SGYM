@@ -46,3 +46,9 @@ D:\qwe\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\obj\Debug\CapaEntidad.csproj.Assem
 D:\qwe\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
 D:\qwe\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\obj\Debug\CapaEntidad.dll
 D:\qwe\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\obj\Debug\CapaEntidad.pdb
+D:\comi_moanso\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\bin\Debug\CapaEntidad.dll
+D:\comi_moanso\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\bin\Debug\CapaEntidad.pdb
+D:\comi_moanso\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+D:\comi_moanso\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+D:\comi_moanso\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\obj\Debug\CapaEntidad.dll
+D:\comi_moanso\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\obj\Debug\CapaEntidad.pdb
