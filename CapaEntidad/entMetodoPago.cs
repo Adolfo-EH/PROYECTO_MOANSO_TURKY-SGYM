@@ -10,7 +10,7 @@ namespace CapaEntidad
     {
         public int idMetodoPago { get; set; }
         public string nombre { get; set; }
-        public string tipo { get; set; }
+        public int TipometodopagoID { get; set; }
         public Boolean estMetodoPago { get; set; }
     }
 }

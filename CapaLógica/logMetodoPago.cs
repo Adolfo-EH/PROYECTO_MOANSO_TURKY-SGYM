@@ -2,6 +2,7 @@
 using CapaEntidad;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,14 +33,20 @@ namespace CapaLógica
         {
             datMetodoPago.Instancia.InsertarMetodoPago(mp);
         }
+        ///habilita
         public void HabilitarMetodoPago(entMetodoPago mp)
         {
             datMetodoPago.Instancia.HabilitarMetodoPago(mp);
         }
-
+        ///deshabilita
         public void DeshabilitarMetodoPago(entMetodoPago mp)
         {
             datMetodoPago.Instancia.DeshabilitarMetodoPago(mp);
+        }
+        ///cargar tipo metodopago
+        public DataTable CargarMetodoPago()
+        {
+            return datMetodoPago.Instancia.CargarTipoMetodo();
         }
         #endregion metodos
     }

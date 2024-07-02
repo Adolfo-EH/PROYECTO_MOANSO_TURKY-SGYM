@@ -30,12 +30,13 @@ namespace Turky_sGym_Programa
         {
             lbID.Text = "00";
             txtNombre.Clear();
-            txtTipo.Clear();
         }
 
         private void CRUD_Metodo_Pago_Load(object sender, EventArgs e)
         {
-
+            cmbTipoMetPag.DataSource = logMetodoPago.Instancia.CargarMetodoPago();
+            cmbTipoMetPag.DisplayMember = "NomTipometodoP";
+            cmbTipoMetPag.ValueMember = "TipometodopagoID";
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -86,7 +87,7 @@ namespace Turky_sGym_Programa
             {
                 entMetodoPago mp = new entMetodoPago();
                 mp.nombre = txtNombre.Text.Trim();
-                mp.tipo = txtTipo.Text.Trim();
+                mp.TipometodopagoID = Convert.ToInt32(cmbTipoMetPag.SelectedValue);
                 mp.estMetodoPago = cbxEstadoMetodoPago.Checked;
                 logMetodoPago.Instancia.InsertaMetodoPago(mp);
             }
@@ -109,13 +110,18 @@ namespace Turky_sGym_Programa
             DataGridViewRow filaActual = dgvMetodoPago.Rows[e.RowIndex];
             lbID.Text = filaActual.Cells[0].Value.ToString();
             txtNombre.Text = filaActual.Cells[1].Value.ToString();
-            txtTipo.Text = filaActual.Cells[2].Value.ToString();
+            cmbTipoMetPag.Text = filaActual.Cells[2].Value.ToString();
             cbxEstadoMetodoPago.Checked = Convert.ToBoolean(filaActual.Cells[3].Value);
         }
 
         private void txtTipo_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

@@ -61,3 +61,12 @@ D:\MOANSO_ESTE_ES\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
 D:\MOANSO_ESTE_ES\CapaDatos\obj\Debug\CapaDatos.csproj.Up2Date
 D:\MOANSO_ESTE_ES\CapaDatos\obj\Debug\CapaDatos.dll
 D:\MOANSO_ESTE_ES\CapaDatos\obj\Debug\CapaDatos.pdb
+D:\qwe\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\bin\Debug\CapaDatos.dll
+D:\qwe\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\bin\Debug\CapaDatos.pdb
+D:\qwe\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\bin\Debug\CapaEntidad.dll
+D:\qwe\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\bin\Debug\CapaEntidad.pdb
+D:\qwe\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+D:\qwe\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+D:\qwe\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\obj\Debug\CapaDatos.csproj.Up2Date
+D:\qwe\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\obj\Debug\CapaDatos.dll
+D:\qwe\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\obj\Debug\CapaDatos.pdb

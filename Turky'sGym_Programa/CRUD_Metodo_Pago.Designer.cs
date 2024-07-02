@@ -36,7 +36,6 @@
             this.cbxEstadoMetodoPago = new System.Windows.Forms.CheckBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnInsertar = new System.Windows.Forms.Button();
-            this.txtTipo = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.lbID = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,6 +44,7 @@
             this.dgvMetodoPago = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
+            this.cmbTipoMetPag = new System.Windows.Forms.ComboBox();
             this.groupMetodo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMetodoPago)).BeginInit();
             this.panel1.SuspendLayout();
@@ -59,6 +59,7 @@
             this.btnRegresar.TabIndex = 35;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = true;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // btnInhabilitar
             // 
@@ -95,10 +96,10 @@
             // 
             // groupMetodo
             // 
+            this.groupMetodo.Controls.Add(this.cmbTipoMetPag);
             this.groupMetodo.Controls.Add(this.cbxEstadoMetodoPago);
             this.groupMetodo.Controls.Add(this.btnCancelar);
             this.groupMetodo.Controls.Add(this.btnInsertar);
-            this.groupMetodo.Controls.Add(this.txtTipo);
             this.groupMetodo.Controls.Add(this.txtNombre);
             this.groupMetodo.Controls.Add(this.lbID);
             this.groupMetodo.Controls.Add(this.label3);
@@ -141,19 +142,11 @@
             this.btnInsertar.UseVisualStyleBackColor = true;
             this.btnInsertar.Click += new System.EventHandler(this.btnInsertar_Click);
             // 
-            // txtTipo
-            // 
-            this.txtTipo.Location = new System.Drawing.Point(59, 114);
-            this.txtTipo.Name = "txtTipo";
-            this.txtTipo.Size = new System.Drawing.Size(100, 20);
-            this.txtTipo.TabIndex = 5;
-            this.txtTipo.TextChanged += new System.EventHandler(this.txtTipo_TextChanged);
-            // 
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(59, 65);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(100, 20);
+            this.txtNombre.Size = new System.Drawing.Size(121, 20);
             this.txtNombre.TabIndex = 4;
             // 
             // lbID
@@ -223,6 +216,14 @@
             this.label7.Text = "MÉTODO DE PAGO";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // cmbTipoMetPag
+            // 
+            this.cmbTipoMetPag.FormattingEnabled = true;
+            this.cmbTipoMetPag.Location = new System.Drawing.Point(59, 117);
+            this.cmbTipoMetPag.Name = "cmbTipoMetPag";
+            this.cmbTipoMetPag.Size = new System.Drawing.Size(121, 21);
+            this.cmbTipoMetPag.TabIndex = 31;
+            // 
             // CRUD_Metodo_Pago
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -257,7 +258,6 @@
         private System.Windows.Forms.CheckBox cbxEstadoMetodoPago;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnInsertar;
-        private System.Windows.Forms.TextBox txtTipo;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label lbID;
         private System.Windows.Forms.Label label3;
@@ -266,5 +266,6 @@
         private System.Windows.Forms.DataGridView dgvMetodoPago;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox cmbTipoMetPag;
     }
 }

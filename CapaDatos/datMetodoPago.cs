@@ -40,9 +40,9 @@ namespace CapaDatos
                 while (dr.Read())
                 {
                     entMetodoPago mp = new entMetodoPago();
-                    mp.idMetodoPago = Convert.ToInt32(dr["MetodoDePagoID"]);
-                    mp.nombre = dr["nombre"].ToString();
-                    mp.tipo = dr["tipo"].ToString();
+                    mp.idMetodoPago = Convert.ToInt32(dr["MetododepagoID"]);
+                    mp.nombre = dr["NomMetodo"].ToString();
+                    mp.TipometodopagoID = Convert.ToInt32(dr["TipometodopagoID"]);
                     mp.estMetodoPago = Convert.ToBoolean(dr["estMetodo"]);
                     lista.Add(mp);
                 }
@@ -67,8 +67,8 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spInsertarMetodoPago", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@nombre", mp.nombre);
-                cmd.Parameters.AddWithValue("@tipo", mp.tipo);
+                cmd.Parameters.AddWithValue("@NomMetodo", mp.nombre);
+                cmd.Parameters.AddWithValue("@TipometodopagoID", mp.TipometodopagoID);
                 cmd.Parameters.AddWithValue("@estMetodo", mp.estMetodoPago);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
@@ -134,6 +134,16 @@ namespace CapaDatos
             }
             finally { cmd.Connection.Close(); }
             return delete;
+        }
+
+        public DataTable CargarTipoMetodo()
+        {
+            SqlConnection cn = Conexion.Instancia.Conectar();
+            SqlDataAdapter da = new SqlDataAdapter("spCargarTipoMetodo", cn);
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
         }
         #endregion metodos
     }
