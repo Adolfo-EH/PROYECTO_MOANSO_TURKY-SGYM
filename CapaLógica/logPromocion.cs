@@ -2,6 +2,7 @@
 using CapaEntidad;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -44,6 +45,11 @@ namespace CapaLógica
         public void HabilitarPromocion(entPromocion pr)
         {
             datPromocion.Instancia.HabilitarPromocion(pr);
+        }
+
+        public DataTable CargarTipoPromocion()
+        {
+            return datPromocion.Instancia.CargarTipoPromocion();
         }
         #endregion metodos
     }

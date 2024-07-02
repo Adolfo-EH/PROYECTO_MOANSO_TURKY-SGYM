@@ -40,11 +40,11 @@ namespace CapaDatos
                 while (dr.Read())
                 {
                     entPromocion pr = new entPromocion();
-                    pr.idPromocion = Convert.ToInt32(dr["IDPromocion"]);
-                    pr.idTipodePromocion = Convert.ToInt32(dr["IDTipodePromocion"]);
-                    pr.nombre = dr["Nombre"].ToString();
+                    pr.idPromocion = Convert.ToInt32(dr["PromocionID"]);
+                    pr.idTipodePromocion = Convert.ToInt32(dr["TipopromocionID"]);
+                    pr.nombre = dr["NomPromocion"].ToString();
                     pr.descuento = Convert.ToDouble(dr["Descuento"]);
-                    pr.duracion = Convert.ToDateTime(dr["Duracion"]);
+                    pr.duracion = Convert.ToDateTime(dr["DuracionProm"]);
                     pr.estPromocion = Convert.ToBoolean(dr["estPromocion"]);
                     lista.Add(pr);
                 }
@@ -69,10 +69,10 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spInsertarPromocion", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@IDTipodePromocion", pr.idTipodePromocion);
-                cmd.Parameters.AddWithValue("@nombre", pr.nombre);
-                cmd.Parameters.AddWithValue("@descuento", pr.descuento);
-                cmd.Parameters.AddWithValue("@duracion", pr.duracion);
+                cmd.Parameters.AddWithValue("@TipopromocionID", pr.idTipodePromocion);
+                cmd.Parameters.AddWithValue("@NomPromocion", pr.nombre);
+                cmd.Parameters.AddWithValue("@Descuento", pr.descuento);
+                cmd.Parameters.AddWithValue("@DuracionProm", pr.duracion);
                 cmd.Parameters.AddWithValue("@estPromocion", pr.estPromocion);
 
                 cn.Open();
@@ -133,7 +133,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spDeshabilitarPromocion", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@idPromocion", pr.idPromocion);
+                cmd.Parameters.AddWithValue("@PromocionID", pr.idPromocion);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -157,7 +157,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spHabilitarPromocion", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@idPromocion", pr.idPromocion);
+                cmd.Parameters.AddWithValue("@PromocionID", pr.idPromocion);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -172,6 +172,17 @@ namespace CapaDatos
             finally { cmd.Connection.Close(); }
             return delete;
         }
+
+        public DataTable CargarTipoPromocion()
+        {
+            SqlConnection cn = Conexion.Instancia.Conectar();
+            SqlDataAdapter da = new SqlDataAdapter("spCargarTipoPromocion", cn);
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+
         #endregion metodos
     }
 }

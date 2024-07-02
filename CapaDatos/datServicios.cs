@@ -42,7 +42,7 @@ namespace CapaDatos
                 while (dr.Read())
                 {
                     entServicios sv = new entServicios();
-                    sv.nombreSV = dr["Nombre"].ToString();
+                    sv.nombreSV = dr["NomServicio"].ToString();
                     sv.idServicio = Convert.ToInt32(dr["ServiciosID"]);
                     sv.estServicio = Convert.ToBoolean(dr["estServicio"]);
                     lista.Add(sv);
@@ -70,7 +70,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spInsertarServicio", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@nombreSV", sv.nombreSV);
+                cmd.Parameters.AddWithValue("@NomServicio", sv.nombreSV);
                 cmd.Parameters.AddWithValue("@estServicio", sv.estServicio);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
@@ -97,7 +97,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spHabilitarServicio", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@idServicio", sv.idServicio);
+                cmd.Parameters.AddWithValue("@ServiciosID", sv.idServicio);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -123,7 +123,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spDeshabilitarServicio", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@idServicio", sv.idServicio);
+                cmd.Parameters.AddWithValue("@ServiciosID", sv.idServicio);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)

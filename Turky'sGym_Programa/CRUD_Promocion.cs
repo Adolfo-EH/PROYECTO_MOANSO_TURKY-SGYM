@@ -36,7 +36,9 @@ namespace Turky_sGym_Programa
 
         private void CRUD_Promocion_Load(object sender, EventArgs e)
         {
-
+            cmbTipoProm.DataSource = logPromocion.Instancia.CargarTipoPromocion();
+            cmbTipoProm.DisplayMember = "NomTipopromo";
+            cmbTipoProm.ValueMember = "TipoPromocionID";
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -88,7 +90,7 @@ namespace Turky_sGym_Programa
             try
             {
                 entPromocion pr = new entPromocion();
-                pr.idTipodePromocion = int.Parse(cmbTipoProm.Text.Trim());
+                pr.idTipodePromocion = Convert.ToInt32(cmbTipoProm.SelectedValue);
                 pr.nombre = txtNombre.Text.Trim();
                 pr.descuento = double.Parse(txtDescuento.Text.Trim());
                 pr.duracion = dtpDuracion.Value;

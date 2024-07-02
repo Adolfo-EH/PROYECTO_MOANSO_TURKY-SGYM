@@ -43,3 +43,12 @@ D:\COMIT\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCom
 D:\COMIT\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\obj\Debug\CapaDatos.csproj.Up2Date
 D:\COMIT\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\obj\Debug\CapaDatos.dll
 D:\COMIT\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\dominick\Desktop\clone 2\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\dominick\Desktop\clone 2\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\dominick\Desktop\clone 2\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\bin\Debug\CapaEntidad.dll
+C:\Users\dominick\Desktop\clone 2\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\bin\Debug\CapaEntidad.pdb
+C:\Users\dominick\Desktop\clone 2\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+C:\Users\dominick\Desktop\clone 2\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\dominick\Desktop\clone 2\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
+C:\Users\dominick\Desktop\clone 2\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\dominick\Desktop\clone 2\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\obj\Debug\CapaDatos.pdb
