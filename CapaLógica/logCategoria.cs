@@ -46,6 +46,11 @@ namespace CapaLógica
         {
             datCategoria.Instancia.DeshabilitarCategoria(Cat);
         }
+        //condicion
+        public Boolean ExisteNombreCategoria(string NomCategoria)
+        {
+            return datCategoria.Instancia.ExisteNombreCategoria(NomCategoria);
+        }
         #endregion metodos
     }
 }

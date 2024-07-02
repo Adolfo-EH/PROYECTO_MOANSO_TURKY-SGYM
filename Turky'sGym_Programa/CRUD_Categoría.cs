@@ -47,7 +47,7 @@ namespace Turky_sGym_Programa
 
         private void dgvCategoría_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+
         }
 
         private void btnInhabilitarC_Click(object sender, EventArgs e)
@@ -55,7 +55,7 @@ namespace Turky_sGym_Programa
             try
             {
                 entCategoria Cat = new entCategoria();
-                Cat.idCategoria = int.Parse(lblIDCat.Text.Trim());
+                Cat.CategoriaID = int.Parse(lblIDCat.Text.Trim());
                 logCategoria.Instancia.DeshabilitarCategoria(Cat);
             }
             catch (Exception ex)
@@ -71,10 +71,21 @@ namespace Turky_sGym_Programa
         {
             try
             {
-                entCategoria Cat = new entCategoria();
-                Cat.nombreC = txtNomCat.Text.Trim();
-                Cat.estCategoria = cbEstadoCategoría.Checked;
-                logCategoria.Instancia.InsertaCategoria(Cat);
+                string nombreCategoria = txtNomCat.Text.Trim();
+                if (logCategoria.Instancia.ExisteNombreCategoria(nombreCategoria))
+                {
+                    MessageBox.Show("El nombre de la categoría ya existe. Por favor, elija otro nombre.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    entCategoria Cat = new entCategoria();
+                    Cat.NomCategoria = nombreCategoria;
+                    Cat.estCategoria = cbEstadoCategoría.Checked;
+                    logCategoria.Instancia.InsertaCategoria(Cat);
+                    LimpiarVariables();
+                    gbCategoría.Enabled = false;
+                    listarCategoria();
+                }
             }
             catch (Exception ex)
             {
@@ -96,7 +107,7 @@ namespace Turky_sGym_Programa
             try
             {
                 entCategoria Cat = new entCategoria();
-                Cat.idCategoria = int.Parse(lblIDCat.Text.Trim());
+                Cat.CategoriaID = int.Parse(lblIDCat.Text.Trim());
                 logCategoria.Instancia.HabilitarCategoria(Cat);
             }
             catch (Exception ex)

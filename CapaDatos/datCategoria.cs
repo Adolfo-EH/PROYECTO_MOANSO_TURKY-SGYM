@@ -42,8 +42,8 @@ namespace CapaDatos
                 while (dr.Read())
                 {
                     entCategoria Cat = new entCategoria();
-                    Cat.nombreC = dr["Nombre"].ToString();
-                    Cat.idCategoria = Convert.ToInt32(dr["CategoríaID"]);
+                    Cat.NomCategoria = dr["NomCategoria"].ToString();
+                    Cat.CategoriaID = Convert.ToInt32(dr["CategoriaID"]);
                     Cat.estCategoria = Convert.ToBoolean(dr["estCategoria"]);
                     lista.Add(Cat);
                 }
@@ -60,6 +60,31 @@ namespace CapaDatos
             return lista;
         }
 
+        public Boolean ExisteNombreCategoria(string NomCategoria)
+        {
+            SqlCommand cmd = null;
+            Boolean existe = false;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spExisteNombreCategoria", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@NomCategoria", NomCategoria);
+                cn.Open();
+                int count = (int)cmd.ExecuteScalar();
+                if (count > 0)
+                {
+                    existe = true;
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return existe;
+        }
+
         /////////////////////////InsertaCategoria
         public Boolean InsertarCategoria(entCategoria Cat)
         {
@@ -70,7 +95,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spInsertarCategoria", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@nombreC", Cat.nombreC);
+                cmd.Parameters.AddWithValue("@NomCategoria", Cat.NomCategoria);
                 cmd.Parameters.AddWithValue("@estCategoria", Cat.estCategoria);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
@@ -97,7 +122,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spHabilitarCategoria", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@idCategoria", Cat.idCategoria);
+                cmd.Parameters.AddWithValue("@CategoriaID", Cat.CategoriaID);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -123,7 +148,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spDeshabilitarCategoria", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@idCategoria", Cat.idCategoria);
+                cmd.Parameters.AddWithValue("@CategoriaID", Cat.CategoriaID);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
