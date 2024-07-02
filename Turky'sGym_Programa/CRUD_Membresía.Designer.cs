@@ -31,29 +31,24 @@
             this.btnhabilitar = new System.Windows.Forms.Button();
             this.btnRegresar = new System.Windows.Forms.Button();
             this.dgvPlan = new System.Windows.Forms.DataGridView();
-            this.plan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.duracion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.servicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbPlanes = new System.Windows.Forms.GroupBox();
             this.dtpDuracion = new System.Windows.Forms.DateTimePicker();
             this.cbEstado = new System.Windows.Forms.CheckBox();
-            this.lbID = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.cmbServicio = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtPlan = new System.Windows.Forms.TextBox();
+            this.txtMembresia = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.lblNombre = new System.Windows.Forms.Label();
             this.txtPrecio = new System.Windows.Forms.TextBox();
-            this.lblTipoPromocion = new System.Windows.Forms.Label();
+            this.holi = new System.Windows.Forms.Label();
             this.btnInhabilitar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.txtIDMem = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlan)).BeginInit();
             this.gbPlanes.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -61,7 +56,7 @@
             // 
             // btnhabilitar
             // 
-            this.btnhabilitar.Location = new System.Drawing.Point(944, 229);
+            this.btnhabilitar.Location = new System.Drawing.Point(944, 207);
             this.btnhabilitar.Margin = new System.Windows.Forms.Padding(2);
             this.btnhabilitar.Name = "btnhabilitar";
             this.btnhabilitar.Size = new System.Drawing.Size(110, 51);
@@ -72,7 +67,7 @@
             // 
             // btnRegresar
             // 
-            this.btnRegresar.Location = new System.Drawing.Point(944, 284);
+            this.btnRegresar.Location = new System.Drawing.Point(944, 590);
             this.btnRegresar.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(110, 51);
@@ -83,12 +78,6 @@
             // dgvPlan
             // 
             this.dgvPlan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPlan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.plan,
-            this.precio,
-            this.duracion,
-            this.servicio,
-            this.estado});
             this.dgvPlan.Location = new System.Drawing.Point(30, 114);
             this.dgvPlan.Margin = new System.Windows.Forms.Padding(2);
             this.dgvPlan.Name = "dgvPlan";
@@ -97,54 +86,28 @@
             this.dgvPlan.Size = new System.Drawing.Size(874, 228);
             this.dgvPlan.TabIndex = 30;
             this.dgvPlan.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPlan_CellDoubleClick);
-            this.dgvPlan.DoubleClick += new System.EventHandler(this.dgvPlan_DoubleClick);
-            // 
-            // plan
-            // 
-            this.plan.HeaderText = "PLAN";
-            this.plan.Name = "plan";
-            // 
-            // precio
-            // 
-            this.precio.HeaderText = "PRECIO";
-            this.precio.Name = "precio";
-            // 
-            // duracion
-            // 
-            this.duracion.HeaderText = "DURACION";
-            this.duracion.Name = "duracion";
-            // 
-            // servicio
-            // 
-            this.servicio.HeaderText = "SERVICIO";
-            this.servicio.Name = "servicio";
-            // 
-            // estado
-            // 
-            this.estado.HeaderText = "ESTADO";
-            this.estado.Name = "estado";
             // 
             // gbPlanes
             // 
+            this.gbPlanes.Controls.Add(this.txtIDMem);
             this.gbPlanes.Controls.Add(this.dtpDuracion);
             this.gbPlanes.Controls.Add(this.cbEstado);
-            this.gbPlanes.Controls.Add(this.lbID);
             this.gbPlanes.Controls.Add(this.label4);
             this.gbPlanes.Controls.Add(this.cmbServicio);
             this.gbPlanes.Controls.Add(this.label3);
-            this.gbPlanes.Controls.Add(this.txtPlan);
+            this.gbPlanes.Controls.Add(this.txtMembresia);
             this.gbPlanes.Controls.Add(this.label1);
             this.gbPlanes.Controls.Add(this.btnCancelar);
             this.gbPlanes.Controls.Add(this.btnGuardar);
             this.gbPlanes.Controls.Add(this.lblNombre);
             this.gbPlanes.Controls.Add(this.txtPrecio);
-            this.gbPlanes.Controls.Add(this.lblTipoPromocion);
+            this.gbPlanes.Controls.Add(this.holi);
             this.gbPlanes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbPlanes.Location = new System.Drawing.Point(30, 379);
             this.gbPlanes.Margin = new System.Windows.Forms.Padding(2);
             this.gbPlanes.Name = "gbPlanes";
             this.gbPlanes.Padding = new System.Windows.Forms.Padding(2);
-            this.gbPlanes.Size = new System.Drawing.Size(1024, 262);
+            this.gbPlanes.Size = new System.Drawing.Size(874, 262);
             this.gbPlanes.TabIndex = 33;
             this.gbPlanes.TabStop = false;
             this.gbPlanes.Text = "Planes";
@@ -166,15 +129,6 @@
             this.cbEstado.Text = "Estado";
             this.cbEstado.UseVisualStyleBackColor = true;
             // 
-            // lbID
-            // 
-            this.lbID.AutoSize = true;
-            this.lbID.Location = new System.Drawing.Point(140, 57);
-            this.lbID.Name = "lbID";
-            this.lbID.Size = new System.Drawing.Size(21, 16);
-            this.lbID.TabIndex = 23;
-            this.lbID.Text = "00";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -187,7 +141,7 @@
             // cmbServicio
             // 
             this.cmbServicio.FormattingEnabled = true;
-            this.cmbServicio.Location = new System.Drawing.Point(706, 84);
+            this.cmbServicio.Location = new System.Drawing.Point(542, 49);
             this.cmbServicio.Name = "cmbServicio";
             this.cmbServicio.Size = new System.Drawing.Size(168, 24);
             this.cmbServicio.TabIndex = 20;
@@ -195,18 +149,18 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(572, 87);
+            this.label3.Location = new System.Drawing.Point(408, 52);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(128, 16);
             this.label3.TabIndex = 19;
             this.label3.Text = "Servicios a agregar:";
             // 
-            // txtPlan
+            // txtMembresia
             // 
-            this.txtPlan.Location = new System.Drawing.Point(140, 89);
-            this.txtPlan.Name = "txtPlan";
-            this.txtPlan.Size = new System.Drawing.Size(239, 22);
-            this.txtPlan.TabIndex = 18;
+            this.txtMembresia.Location = new System.Drawing.Point(140, 89);
+            this.txtMembresia.Name = "txtMembresia";
+            this.txtMembresia.Size = new System.Drawing.Size(239, 22);
+            this.txtMembresia.TabIndex = 18;
             // 
             // label1
             // 
@@ -224,9 +178,9 @@
             this.btnCancelar.Location = new System.Drawing.Point(575, 158);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(69, 32);
+            this.btnCancelar.Size = new System.Drawing.Size(91, 32);
             this.btnCancelar.TabIndex = 9;
-            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = true;
             // 
             // btnGuardar
@@ -234,9 +188,9 @@
             this.btnGuardar.Location = new System.Drawing.Point(437, 158);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(69, 32);
+            this.btnGuardar.Size = new System.Drawing.Size(87, 32);
             this.btnGuardar.TabIndex = 8;
-            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.Text = "INSERTAR";
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
@@ -259,20 +213,20 @@
             this.txtPrecio.Size = new System.Drawing.Size(239, 22);
             this.txtPrecio.TabIndex = 5;
             // 
-            // lblTipoPromocion
+            // holi
             // 
-            this.lblTipoPromocion.AutoSize = true;
-            this.lblTipoPromocion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipoPromocion.Location = new System.Drawing.Point(89, 95);
-            this.lblTipoPromocion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTipoPromocion.Name = "lblTipoPromocion";
-            this.lblTipoPromocion.Size = new System.Drawing.Size(37, 16);
-            this.lblTipoPromocion.TabIndex = 1;
-            this.lblTipoPromocion.Text = "Plan:";
+            this.holi.AutoSize = true;
+            this.holi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.holi.Location = new System.Drawing.Point(48, 95);
+            this.holi.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.holi.Name = "holi";
+            this.holi.Size = new System.Drawing.Size(78, 16);
+            this.holi.TabIndex = 1;
+            this.holi.Text = "Membresia:";
             // 
             // btnInhabilitar
             // 
-            this.btnInhabilitar.Location = new System.Drawing.Point(944, 174);
+            this.btnInhabilitar.Location = new System.Drawing.Point(944, 291);
             this.btnInhabilitar.Margin = new System.Windows.Forms.Padding(2);
             this.btnInhabilitar.Name = "btnInhabilitar";
             this.btnInhabilitar.Size = new System.Drawing.Size(110, 51);
@@ -313,6 +267,13 @@
             this.label2.TabIndex = 13;
             this.label2.Text = "MEMBRESÍA";
             // 
+            // txtIDMem
+            // 
+            this.txtIDMem.Location = new System.Drawing.Point(140, 52);
+            this.txtIDMem.Name = "txtIDMem";
+            this.txtIDMem.Size = new System.Drawing.Size(133, 22);
+            this.txtIDMem.TabIndex = 26;
+            // 
             // CRUD_Membresía
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -342,28 +303,23 @@
         private System.Windows.Forms.Button btnhabilitar;
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.DataGridView dgvPlan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn plan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn precio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn duracion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn servicio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn estado;
         private System.Windows.Forms.GroupBox gbPlanes;
         private System.Windows.Forms.DateTimePicker dtpDuracion;
         private System.Windows.Forms.CheckBox cbEstado;
-        private System.Windows.Forms.Label lbID;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cmbServicio;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtPlan;
+        private System.Windows.Forms.TextBox txtMembresia;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.TextBox txtPrecio;
-        private System.Windows.Forms.Label lblTipoPromocion;
+        private System.Windows.Forms.Label holi;
         private System.Windows.Forms.Button btnInhabilitar;
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtIDMem;
     }
 }

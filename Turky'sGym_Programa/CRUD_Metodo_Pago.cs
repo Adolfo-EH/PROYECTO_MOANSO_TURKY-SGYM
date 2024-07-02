@@ -30,6 +30,8 @@ namespace Turky_sGym_Programa
         {
             lbID.Text = "00";
             txtNombre.Clear();
+            cmbTipoMetPag.SelectedIndex = 0;
+            cbxEstadoMetodoPago.Checked = false;
         }
 
         private void CRUD_Metodo_Pago_Load(object sender, EventArgs e)
@@ -112,11 +114,6 @@ namespace Turky_sGym_Programa
             txtNombre.Text = filaActual.Cells[1].Value.ToString();
             cmbTipoMetPag.Text = filaActual.Cells[2].Value.ToString();
             cbxEstadoMetodoPago.Checked = Convert.ToBoolean(filaActual.Cells[3].Value);
-        }
-
-        private void txtTipo_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void btnRegresar_Click(object sender, EventArgs e)

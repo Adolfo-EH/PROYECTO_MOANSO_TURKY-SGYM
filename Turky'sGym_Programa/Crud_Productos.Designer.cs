@@ -31,6 +31,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.Titulo = new System.Windows.Forms.Label();
             this.grbDatosProducto = new System.Windows.Forms.GroupBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.cbMarca = new System.Windows.Forms.ComboBox();
             this.cbxEstadoProducto = new System.Windows.Forms.CheckBox();
             this.btnModificar = new System.Windows.Forms.Button();
@@ -52,8 +54,6 @@
             this.btnRegresar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.dgvStockProducto = new System.Windows.Forms.DataGridView();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.grbDatosProducto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStockProducto)).BeginInit();
@@ -111,6 +111,22 @@
             this.grbDatosProducto.TabStop = false;
             this.grbDatosProducto.Text = "Datos del Producto";
             // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(166, 148);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(139, 22);
+            this.txtNombre.TabIndex = 32;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(69, 151);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 16);
+            this.label1.TabIndex = 31;
+            this.label1.Text = "Nombre:";
+            // 
             // cbMarca
             // 
             this.cbMarca.FormattingEnabled = true;
@@ -135,7 +151,7 @@
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(93, 35);
             this.btnModificar.TabIndex = 14;
-            this.btnModificar.Text = "Modificar";
+            this.btnModificar.Text = "MODIFICAR";
             this.btnModificar.UseVisualStyleBackColor = true;
             this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
@@ -145,7 +161,7 @@
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(93, 35);
             this.btnCancelar.TabIndex = 13;
-            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
@@ -155,7 +171,7 @@
             this.btnInsertar.Name = "btnInsertar";
             this.btnInsertar.Size = new System.Drawing.Size(93, 35);
             this.btnInsertar.TabIndex = 12;
-            this.btnInsertar.Text = "Insertar";
+            this.btnInsertar.Text = "INSERTAR";
             this.btnInsertar.UseVisualStyleBackColor = true;
             this.btnInsertar.Click += new System.EventHandler(this.btnInsertar_Click);
             // 
@@ -259,43 +275,43 @@
             // btnEditar
             // 
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.Location = new System.Drawing.Point(752, 197);
+            this.btnEditar.Location = new System.Drawing.Point(695, 198);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(100, 50);
             this.btnEditar.TabIndex = 22;
-            this.btnEditar.Text = "Editar";
+            this.btnEditar.Text = "EDITAR";
             this.btnEditar.UseVisualStyleBackColor = true;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnInhabilitar
             // 
             this.btnInhabilitar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInhabilitar.Location = new System.Drawing.Point(752, 287);
+            this.btnInhabilitar.Location = new System.Drawing.Point(695, 287);
             this.btnInhabilitar.Name = "btnInhabilitar";
             this.btnInhabilitar.Size = new System.Drawing.Size(100, 50);
             this.btnInhabilitar.TabIndex = 21;
-            this.btnInhabilitar.Text = "Inhabilitar";
+            this.btnInhabilitar.Text = "INHABILITAR";
             this.btnInhabilitar.UseVisualStyleBackColor = true;
             this.btnInhabilitar.Click += new System.EventHandler(this.btnInhabilitar_Click);
             // 
             // btnRegresar
             // 
             this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Location = new System.Drawing.Point(752, 381);
+            this.btnRegresar.Location = new System.Drawing.Point(695, 598);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(100, 50);
             this.btnRegresar.TabIndex = 20;
-            this.btnRegresar.Text = "Regresar";
+            this.btnRegresar.Text = "REGRESAR";
             this.btnRegresar.UseVisualStyleBackColor = true;
             // 
             // btnNuevo
             // 
             this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.Location = new System.Drawing.Point(752, 107);
+            this.btnNuevo.Location = new System.Drawing.Point(695, 98);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(100, 50);
             this.btnNuevo.TabIndex = 19;
-            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.Text = "NUEVO";
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
@@ -309,22 +325,6 @@
             this.dgvStockProducto.Size = new System.Drawing.Size(535, 239);
             this.dgvStockProducto.TabIndex = 18;
             this.dgvStockProducto.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStockProducto_CellDoubleClick);
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(166, 148);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(139, 22);
-            this.txtNombre.TabIndex = 32;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(69, 151);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 16);
-            this.label1.TabIndex = 31;
-            this.label1.Text = "Nombre:";
             // 
             // CRUD_Productos
             // 

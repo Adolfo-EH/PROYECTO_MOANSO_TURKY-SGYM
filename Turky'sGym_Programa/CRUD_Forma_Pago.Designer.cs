@@ -33,6 +33,7 @@
             this.btnHabilitarFP = new System.Windows.Forms.Button();
             this.btnNuevoFP = new System.Windows.Forms.Button();
             this.groupForma = new System.Windows.Forms.GroupBox();
+            this.txtTipoFP = new System.Windows.Forms.TextBox();
             this.cbxEstadoFP = new System.Windows.Forms.CheckBox();
             this.btnCancelarFP = new System.Windows.Forms.Button();
             this.btnInsertarFP = new System.Windows.Forms.Button();
@@ -42,7 +43,6 @@
             this.dgvFormaPago = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtTipoFP = new System.Windows.Forms.TextBox();
             this.groupForma.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFormaPago)).BeginInit();
             this.panel1.SuspendLayout();
@@ -51,11 +51,11 @@
             // btnRegresarFP
             // 
             this.btnRegresarFP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresarFP.Location = new System.Drawing.Point(614, 406);
+            this.btnRegresarFP.Location = new System.Drawing.Point(614, 441);
             this.btnRegresarFP.Name = "btnRegresarFP";
             this.btnRegresarFP.Size = new System.Drawing.Size(100, 50);
             this.btnRegresarFP.TabIndex = 42;
-            this.btnRegresarFP.Text = "Regresar";
+            this.btnRegresarFP.Text = "REGRESAR";
             this.btnRegresarFP.UseVisualStyleBackColor = true;
             this.btnRegresarFP.Click += new System.EventHandler(this.btnRegresarFP_Click);
             // 
@@ -66,7 +66,7 @@
             this.btnInhabilitarFP.Name = "btnInhabilitarFP";
             this.btnInhabilitarFP.Size = new System.Drawing.Size(100, 50);
             this.btnInhabilitarFP.TabIndex = 41;
-            this.btnInhabilitarFP.Text = "Inhabilitar";
+            this.btnInhabilitarFP.Text = "INHABILITAR";
             this.btnInhabilitarFP.UseVisualStyleBackColor = true;
             this.btnInhabilitarFP.Click += new System.EventHandler(this.btnInhabilitarFP_Click);
             // 
@@ -77,7 +77,7 @@
             this.btnHabilitarFP.Name = "btnHabilitarFP";
             this.btnHabilitarFP.Size = new System.Drawing.Size(100, 50);
             this.btnHabilitarFP.TabIndex = 40;
-            this.btnHabilitarFP.Text = "Habilitar";
+            this.btnHabilitarFP.Text = "HABILITAR";
             this.btnHabilitarFP.UseVisualStyleBackColor = true;
             this.btnHabilitarFP.Click += new System.EventHandler(this.btnHabilitarFP_Click);
             // 
@@ -88,7 +88,7 @@
             this.btnNuevoFP.Name = "btnNuevoFP";
             this.btnNuevoFP.Size = new System.Drawing.Size(100, 50);
             this.btnNuevoFP.TabIndex = 39;
-            this.btnNuevoFP.Text = "Nuevo";
+            this.btnNuevoFP.Text = "NUEVO";
             this.btnNuevoFP.UseVisualStyleBackColor = true;
             this.btnNuevoFP.Click += new System.EventHandler(this.btnNuevoFP_Click);
             // 
@@ -108,6 +108,13 @@
             this.groupForma.TabStop = false;
             this.groupForma.Text = "Datos de Forma de Pago";
             // 
+            // txtTipoFP
+            // 
+            this.txtTipoFP.Location = new System.Drawing.Point(61, 65);
+            this.txtTipoFP.Name = "txtTipoFP";
+            this.txtTipoFP.Size = new System.Drawing.Size(236, 20);
+            this.txtTipoFP.TabIndex = 31;
+            // 
             // cbxEstadoFP
             // 
             this.cbxEstadoFP.AutoSize = true;
@@ -124,7 +131,7 @@
             this.btnCancelarFP.Name = "btnCancelarFP";
             this.btnCancelarFP.Size = new System.Drawing.Size(93, 35);
             this.btnCancelarFP.TabIndex = 29;
-            this.btnCancelarFP.Text = "Cancelar";
+            this.btnCancelarFP.Text = "CANCELAR";
             this.btnCancelarFP.UseVisualStyleBackColor = true;
             this.btnCancelarFP.Click += new System.EventHandler(this.btnCancelarFP_Click);
             // 
@@ -134,7 +141,7 @@
             this.btnInsertarFP.Name = "btnInsertarFP";
             this.btnInsertarFP.Size = new System.Drawing.Size(93, 35);
             this.btnInsertarFP.TabIndex = 13;
-            this.btnInsertarFP.Text = "Insertar";
+            this.btnInsertarFP.Text = "INSERTAR";
             this.btnInsertarFP.UseVisualStyleBackColor = true;
             this.btnInsertarFP.Click += new System.EventHandler(this.btnInsertarFP_Click);
             // 
@@ -197,13 +204,6 @@
             this.label7.Text = "FORMA DE PAGO";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtTipoFP
-            // 
-            this.txtTipoFP.Location = new System.Drawing.Point(61, 65);
-            this.txtTipoFP.Name = "txtTipoFP";
-            this.txtTipoFP.Size = new System.Drawing.Size(236, 20);
-            this.txtTipoFP.TabIndex = 31;
-            // 
             // CRUD_Forma_Pago
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -218,7 +218,6 @@
             this.Controls.Add(this.panel1);
             this.Name = "CRUD_Forma_Pago";
             this.Text = "CRUD_Forma_Pago";
-            this.Load += new System.EventHandler(this.CRUD_Forma_Pago_Load);
             this.groupForma.ResumeLayout(false);
             this.groupForma.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFormaPago)).EndInit();

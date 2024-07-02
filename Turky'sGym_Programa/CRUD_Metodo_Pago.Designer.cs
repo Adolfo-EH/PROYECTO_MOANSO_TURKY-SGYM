@@ -33,6 +33,7 @@
             this.btnHabilitar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.groupMetodo = new System.Windows.Forms.GroupBox();
+            this.cmbTipoMetPag = new System.Windows.Forms.ComboBox();
             this.cbxEstadoMetodoPago = new System.Windows.Forms.CheckBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnInsertar = new System.Windows.Forms.Button();
@@ -44,7 +45,6 @@
             this.dgvMetodoPago = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.cmbTipoMetPag = new System.Windows.Forms.ComboBox();
             this.groupMetodo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMetodoPago)).BeginInit();
             this.panel1.SuspendLayout();
@@ -57,7 +57,7 @@
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(100, 50);
             this.btnRegresar.TabIndex = 35;
-            this.btnRegresar.Text = "Regresar";
+            this.btnRegresar.Text = "REGRESAR";
             this.btnRegresar.UseVisualStyleBackColor = true;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
@@ -68,7 +68,7 @@
             this.btnInhabilitar.Name = "btnInhabilitar";
             this.btnInhabilitar.Size = new System.Drawing.Size(100, 50);
             this.btnInhabilitar.TabIndex = 34;
-            this.btnInhabilitar.Text = "Inhabilitar";
+            this.btnInhabilitar.Text = "INHABILITAR";
             this.btnInhabilitar.UseVisualStyleBackColor = true;
             this.btnInhabilitar.Click += new System.EventHandler(this.btnInhabilitar_Click);
             // 
@@ -79,7 +79,7 @@
             this.btnHabilitar.Name = "btnHabilitar";
             this.btnHabilitar.Size = new System.Drawing.Size(100, 50);
             this.btnHabilitar.TabIndex = 33;
-            this.btnHabilitar.Text = "Habilitar";
+            this.btnHabilitar.Text = "HABILITAR";
             this.btnHabilitar.UseVisualStyleBackColor = true;
             this.btnHabilitar.Click += new System.EventHandler(this.btnHabilitar_Click);
             // 
@@ -90,7 +90,7 @@
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(100, 50);
             this.btnNuevo.TabIndex = 32;
-            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.Text = "NUEVO";
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
@@ -112,6 +112,14 @@
             this.groupMetodo.TabStop = false;
             this.groupMetodo.Text = "Datos de Método de Pago";
             // 
+            // cmbTipoMetPag
+            // 
+            this.cmbTipoMetPag.FormattingEnabled = true;
+            this.cmbTipoMetPag.Location = new System.Drawing.Point(59, 117);
+            this.cmbTipoMetPag.Name = "cmbTipoMetPag";
+            this.cmbTipoMetPag.Size = new System.Drawing.Size(121, 21);
+            this.cmbTipoMetPag.TabIndex = 31;
+            // 
             // cbxEstadoMetodoPago
             // 
             this.cbxEstadoMetodoPago.AutoSize = true;
@@ -128,7 +136,7 @@
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(93, 35);
             this.btnCancelar.TabIndex = 29;
-            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
@@ -138,7 +146,7 @@
             this.btnInsertar.Name = "btnInsertar";
             this.btnInsertar.Size = new System.Drawing.Size(93, 35);
             this.btnInsertar.TabIndex = 13;
-            this.btnInsertar.Text = "Insertar";
+            this.btnInsertar.Text = "INSERTAR";
             this.btnInsertar.UseVisualStyleBackColor = true;
             this.btnInsertar.Click += new System.EventHandler(this.btnInsertar_Click);
             // 
@@ -216,19 +224,11 @@
             this.label7.Text = "MÉTODO DE PAGO";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // cmbTipoMetPag
-            // 
-            this.cmbTipoMetPag.FormattingEnabled = true;
-            this.cmbTipoMetPag.Location = new System.Drawing.Point(59, 117);
-            this.cmbTipoMetPag.Name = "cmbTipoMetPag";
-            this.cmbTipoMetPag.Size = new System.Drawing.Size(121, 21);
-            this.cmbTipoMetPag.TabIndex = 31;
-            // 
             // CRUD_Metodo_Pago
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(785, 554);
+            this.ClientSize = new System.Drawing.Size(776, 554);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.btnInhabilitar);
             this.Controls.Add(this.btnHabilitar);

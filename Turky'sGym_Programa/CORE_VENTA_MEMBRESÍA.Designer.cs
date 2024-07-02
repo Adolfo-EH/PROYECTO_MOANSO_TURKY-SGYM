@@ -87,7 +87,7 @@
             this.btnConsultarVentas.Name = "btnConsultarVentas";
             this.btnConsultarVentas.Size = new System.Drawing.Size(125, 41);
             this.btnConsultarVentas.TabIndex = 62;
-            this.btnConsultarVentas.Text = "CONSULTAR VENTAS";
+            this.btnConsultarVentas.Text = "BUSCAR VENTA";
             this.btnConsultarVentas.UseVisualStyleBackColor = true;
             // 
             // cbMetodoPagoS
@@ -123,7 +123,7 @@
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(125, 41);
             this.btnSalir.TabIndex = 58;
-            this.btnSalir.Text = "SALIR";
+            this.btnSalir.Text = "REGRESAR";
             this.btnSalir.UseVisualStyleBackColor = true;
             // 
             // btnAnularVenta
@@ -141,7 +141,7 @@
             this.btnRegistroServicio.Name = "btnRegistroServicio";
             this.btnRegistroServicio.Size = new System.Drawing.Size(125, 41);
             this.btnRegistroServicio.TabIndex = 56;
-            this.btnRegistroServicio.Text = "REGISTRAR VENTA";
+            this.btnRegistroServicio.Text = "INSERTAR VENTA";
             this.btnRegistroServicio.UseVisualStyleBackColor = true;
             // 
             // btnEditarFecha

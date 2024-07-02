@@ -27,7 +27,8 @@ namespace Turky_sGym_Programa
         public void LimpiarVariables()
         {
             lbIDFP.Text = "00";
-            txtTipoFP.Text = string.Empty;  
+            txtTipoFP.Clear();
+            cbxEstadoFP.Checked = false;
         }
         private void dgvFormaPago_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -35,11 +36,6 @@ namespace Turky_sGym_Programa
             lbIDFP.Text = filaActual.Cells[0].Value.ToString();
             txtTipoFP.Text = filaActual.Cells[1].Value.ToString();
             cbxEstadoFP.Checked = Convert.ToBoolean(filaActual.Cells[2].Value);
-        }
-
-        private void CRUD_Forma_Pago_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void btnNuevoFP_Click(object sender, EventArgs e)

@@ -32,6 +32,7 @@ namespace Turky_sGym_Programa
             cmbTipoProm.SelectedIndex = 0;
             txtNombre.Clear();
             txtDescuento.Clear();
+            cbxPromocion.Checked = false;
         }
 
         private void CRUD_Promocion_Load(object sender, EventArgs e)

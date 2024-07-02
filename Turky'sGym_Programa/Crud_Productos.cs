@@ -35,6 +35,7 @@ namespace Turky_sGym_Programa
             txtCantidad.Clear();
             txtNombre.Clear();
             txtDescripcion.Clear();
+            cbxEstadoProducto.Checked = false;
         }
 
         private void CRUD_Productos_Load(object sender, EventArgs e)

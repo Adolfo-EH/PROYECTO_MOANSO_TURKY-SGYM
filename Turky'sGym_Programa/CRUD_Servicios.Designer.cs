@@ -73,9 +73,9 @@
             // btnRegresarS
             // 
             this.btnRegresarS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresarS.Location = new System.Drawing.Point(721, 303);
+            this.btnRegresarS.Location = new System.Drawing.Point(721, 521);
             this.btnRegresarS.Name = "btnRegresarS";
-            this.btnRegresarS.Size = new System.Drawing.Size(143, 38);
+            this.btnRegresarS.Size = new System.Drawing.Size(140, 60);
             this.btnRegresarS.TabIndex = 79;
             this.btnRegresarS.Text = "REGRESAR";
             this.btnRegresarS.UseVisualStyleBackColor = true;
@@ -83,9 +83,9 @@
             // btnHabilitarS
             // 
             this.btnHabilitarS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHabilitarS.Location = new System.Drawing.Point(721, 237);
+            this.btnHabilitarS.Location = new System.Drawing.Point(721, 206);
             this.btnHabilitarS.Name = "btnHabilitarS";
-            this.btnHabilitarS.Size = new System.Drawing.Size(143, 38);
+            this.btnHabilitarS.Size = new System.Drawing.Size(140, 60);
             this.btnHabilitarS.TabIndex = 78;
             this.btnHabilitarS.Text = "HABILITAR";
             this.btnHabilitarS.UseVisualStyleBackColor = true;
@@ -94,9 +94,9 @@
             // btnInhabilitarS
             // 
             this.btnInhabilitarS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInhabilitarS.Location = new System.Drawing.Point(721, 172);
+            this.btnInhabilitarS.Location = new System.Drawing.Point(721, 329);
             this.btnInhabilitarS.Name = "btnInhabilitarS";
-            this.btnInhabilitarS.Size = new System.Drawing.Size(143, 38);
+            this.btnInhabilitarS.Size = new System.Drawing.Size(140, 60);
             this.btnInhabilitarS.TabIndex = 76;
             this.btnInhabilitarS.Text = "INHABILITAR";
             this.btnInhabilitarS.UseVisualStyleBackColor = true;
@@ -107,9 +107,9 @@
             this.btnCrearS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrearS.Location = new System.Drawing.Point(721, 106);
             this.btnCrearS.Name = "btnCrearS";
-            this.btnCrearS.Size = new System.Drawing.Size(143, 38);
+            this.btnCrearS.Size = new System.Drawing.Size(140, 60);
             this.btnCrearS.TabIndex = 75;
-            this.btnCrearS.Text = "CREAR";
+            this.btnCrearS.Text = "NUEVO";
             this.btnCrearS.UseVisualStyleBackColor = true;
             this.btnCrearS.Click += new System.EventHandler(this.btnCrearS_Click);
             // 

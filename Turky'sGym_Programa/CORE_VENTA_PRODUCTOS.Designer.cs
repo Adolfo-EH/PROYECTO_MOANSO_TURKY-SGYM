@@ -140,7 +140,7 @@
             this.btnRegistroVProducto.Name = "btnRegistroVProducto";
             this.btnRegistroVProducto.Size = new System.Drawing.Size(125, 41);
             this.btnRegistroVProducto.TabIndex = 51;
-            this.btnRegistroVProducto.Text = "REGISTRAR VENTA";
+            this.btnRegistroVProducto.Text = "INSERTAR VENTA";
             this.btnRegistroVProducto.UseVisualStyleBackColor = true;
             // 
             // lblFechaRegistroMostrarP

@@ -51,7 +51,7 @@
             // btnRegresarM
             // 
             this.btnRegresarM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresarM.Location = new System.Drawing.Point(740, 299);
+            this.btnRegresarM.Location = new System.Drawing.Point(740, 539);
             this.btnRegresarM.Name = "btnRegresarM";
             this.btnRegresarM.Size = new System.Drawing.Size(143, 38);
             this.btnRegresarM.TabIndex = 86;
@@ -61,7 +61,7 @@
             // btnHabilitarM
             // 
             this.btnHabilitarM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHabilitarM.Location = new System.Drawing.Point(740, 233);
+            this.btnHabilitarM.Location = new System.Drawing.Point(740, 164);
             this.btnHabilitarM.Name = "btnHabilitarM";
             this.btnHabilitarM.Size = new System.Drawing.Size(143, 38);
             this.btnHabilitarM.TabIndex = 85;
@@ -72,7 +72,7 @@
             // btnInhabilitarM
             // 
             this.btnInhabilitarM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInhabilitarM.Location = new System.Drawing.Point(740, 168);
+            this.btnInhabilitarM.Location = new System.Drawing.Point(740, 232);
             this.btnInhabilitarM.Name = "btnInhabilitarM";
             this.btnInhabilitarM.Size = new System.Drawing.Size(143, 38);
             this.btnInhabilitarM.TabIndex = 83;
@@ -87,7 +87,7 @@
             this.btnCrearM.Name = "btnCrearM";
             this.btnCrearM.Size = new System.Drawing.Size(143, 38);
             this.btnCrearM.TabIndex = 82;
-            this.btnCrearM.Text = "CREAR";
+            this.btnCrearM.Text = "NUEVO";
             this.btnCrearM.UseVisualStyleBackColor = true;
             this.btnCrearM.Click += new System.EventHandler(this.btnCrearM_Click);
             // 
@@ -207,7 +207,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(926, 631);
+            this.ClientSize = new System.Drawing.Size(942, 631);
             this.Controls.Add(this.btnRegresarM);
             this.Controls.Add(this.btnHabilitarM);
             this.Controls.Add(this.btnInhabilitarM);
@@ -217,7 +217,6 @@
             this.Controls.Add(this.panel1);
             this.Name = "CRUD_Marca";
             this.Text = "Marca";
-            this.Load += new System.EventHandler(this.Marca_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMarca)).EndInit();
             this.gbMarca.ResumeLayout(false);
             this.gbMarca.PerformLayout();

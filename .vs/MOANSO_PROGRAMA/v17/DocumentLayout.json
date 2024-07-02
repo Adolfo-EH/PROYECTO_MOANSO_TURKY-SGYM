@@ -1,7 +1,84 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\brin_\\source\\repos\\PROYECTO_MOANSO_TURKY-SGYM\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\MOANSO_Botones\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|d:\\moanso_botones\\turky\u0027sgym_programa\\core_venta_productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|solutionrelative:turky\u0027sgym_programa\\core_venta_productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|d:\\moanso_botones\\turky\u0027sgym_programa\\crud_membres\u00EDa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|solutionrelative:turky\u0027sgym_programa\\crud_membres\u00EDa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|d:\\moanso_botones\\turky\u0027sgym_programa\\crud_membres\u00EDa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|solutionrelative:turky\u0027sgym_programa\\crud_membres\u00EDa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|d:\\moanso_botones\\turky\u0027sgym_programa\\crud_servicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|solutionrelative:turky\u0027sgym_programa\\crud_servicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|d:\\moanso_botones\\turky\u0027sgym_programa\\core_venta_membres\u00EDa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|solutionrelative:turky\u0027sgym_programa\\core_venta_membres\u00EDa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D4338B3-1D8A-4436-AE5C-4F764EF67553}|CapaEntidad\\CapaEntidad.csproj|d:\\moanso_botones\\capaentidad\\entplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D4338B3-1D8A-4436-AE5C-4F764EF67553}|CapaEntidad\\CapaEntidad.csproj|solutionrelative:capaentidad\\entplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|d:\\moanso_botones\\turky\u0027sgym_programa\\crud_promocion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|solutionrelative:turky\u0027sgym_programa\\crud_promocion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|d:\\moanso_botones\\turky\u0027sgym_programa\\crud_promocion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|solutionrelative:turky\u0027sgym_programa\\crud_promocion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|d:\\moanso_botones\\turky\u0027sgym_programa\\crud_productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|solutionrelative:turky\u0027sgym_programa\\crud_productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|d:\\moanso_botones\\turky\u0027sgym_programa\\crud_productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|solutionrelative:turky\u0027sgym_programa\\crud_productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|d:\\moanso_botones\\turky\u0027sgym_programa\\crud_metodo_pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|solutionrelative:turky\u0027sgym_programa\\crud_metodo_pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|d:\\moanso_botones\\turky\u0027sgym_programa\\crud_metodo_pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|solutionrelative:turky\u0027sgym_programa\\crud_metodo_pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|d:\\moanso_botones\\turky\u0027sgym_programa\\crud_categor\u00EDa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|solutionrelative:turky\u0027sgym_programa\\crud_categor\u00EDa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|d:\\moanso_botones\\turky\u0027sgym_programa\\crud_clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|solutionrelative:turky\u0027sgym_programa\\crud_clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|d:\\moanso_botones\\turky\u0027sgym_programa\\crud_servicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|solutionrelative:turky\u0027sgym_programa\\crud_servicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|d:\\moanso_botones\\turky\u0027sgym_programa\\core_monitoreo_clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|solutionrelative:turky\u0027sgym_programa\\core_monitoreo_clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|d:\\moanso_botones\\turky\u0027sgym_programa\\cslt_venta_membres\u00EDa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|solutionrelative:turky\u0027sgym_programa\\cslt_venta_membres\u00EDa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|d:\\moanso_botones\\turky\u0027sgym_programa\\cslt_venta_productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|solutionrelative:turky\u0027sgym_programa\\cslt_venta_productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|d:\\moanso_botones\\turky\u0027sgym_programa\\core_monitoreo_clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|solutionrelative:turky\u0027sgym_programa\\core_monitoreo_clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +99,241 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "entPlan.cs",
+              "DocumentMoniker": "D:\\MOANSO_Botones\\CapaEntidad\\entPlan.cs",
+              "RelativeDocumentMoniker": "CapaEntidad\\entPlan.cs",
+              "ToolTip": "D:\\MOANSO_Botones\\CapaEntidad\\entPlan.cs",
+              "RelativeToolTip": "CapaEntidad\\entPlan.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T19:52:17.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CRUD_Membres\u00EDa.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\MOANSO_Botones\\Turky\u0027sGym_Programa\\CRUD_Membres\u00EDa.cs",
+              "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\CRUD_Membres\u00EDa.cs",
+              "ToolTip": "D:\\MOANSO_Botones\\Turky\u0027sGym_Programa\\CRUD_Membres\u00EDa.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Turky\u0027sGym_Programa\\CRUD_Membres\u00EDa.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T18:50:09.965Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CRUD_Membres\u00EDa.cs",
+              "DocumentMoniker": "D:\\MOANSO_Botones\\Turky\u0027sGym_Programa\\CRUD_Membres\u00EDa.cs",
+              "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\CRUD_Membres\u00EDa.cs",
+              "ToolTip": "D:\\MOANSO_Botones\\Turky\u0027sGym_Programa\\CRUD_Membres\u00EDa.cs",
+              "RelativeToolTip": "Turky\u0027sGym_Programa\\CRUD_Membres\u00EDa.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAmwEUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T19:26:53.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CRUD_Servicios.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\MOANSO_Botones\\Turky\u0027sGym_Programa\\CRUD_Servicios.cs",
+              "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\CRUD_Servicios.cs",
+              "ToolTip": "D:\\MOANSO_Botones\\Turky\u0027sGym_Programa\\CRUD_Servicios.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Turky\u0027sGym_Programa\\CRUD_Servicios.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T18:57:54.194Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CORE_VENTA_MEMBRES\u00CDA.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\MOANSO_Botones\\Turky\u0027sGym_Programa\\CORE_VENTA_MEMBRES\u00CDA.cs",
+              "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\CORE_VENTA_MEMBRES\u00CDA.cs",
+              "ToolTip": "D:\\MOANSO_Botones\\Turky\u0027sGym_Programa\\CORE_VENTA_MEMBRES\u00CDA.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Turky\u0027sGym_Programa\\CORE_VENTA_MEMBRES\u00CDA.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T18:40:33.271Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CORE_VENTA_PRODUCTOS.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\MOANSO_Botones\\Turky\u0027sGym_Programa\\CORE_VENTA_PRODUCTOS.cs",
+              "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\CORE_VENTA_PRODUCTOS.cs",
+              "ToolTip": "D:\\MOANSO_Botones\\Turky\u0027sGym_Programa\\CORE_VENTA_PRODUCTOS.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Turky\u0027sGym_Programa\\CORE_VENTA_PRODUCTOS.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T18:45:31.827Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CRUD_Promocion.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\MOANSO_Botones\\Turky\u0027sGym_Programa\\CRUD_Promocion.cs",
+              "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\CRUD_Promocion.cs",
+              "ToolTip": "D:\\MOANSO_Botones\\Turky\u0027sGym_Programa\\CRUD_Promocion.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Turky\u0027sGym_Programa\\CRUD_Promocion.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T18:57:25.038Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CRUD_Promocion.cs",
+              "DocumentMoniker": "D:\\MOANSO_Botones\\Turky\u0027sGym_Programa\\CRUD_Promocion.cs",
+              "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\CRUD_Promocion.cs",
+              "ToolTip": "D:\\MOANSO_Botones\\Turky\u0027sGym_Programa\\CRUD_Promocion.cs",
+              "RelativeToolTip": "Turky\u0027sGym_Programa\\CRUD_Promocion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T19:23:37.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CRUD_Productos.cs",
+              "DocumentMoniker": "D:\\MOANSO_Botones\\Turky\u0027sGym_Programa\\Crud_Productos.cs",
+              "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\Crud_Productos.cs",
+              "ToolTip": "D:\\MOANSO_Botones\\Turky\u0027sGym_Programa\\Crud_Productos.cs",
+              "RelativeToolTip": "Turky\u0027sGym_Programa\\Crud_Productos.cs",
+              "ViewState": "AQIAAIYAAAAAAAAAAAAwwJwAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T19:28:30.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CRUD_Productos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\MOANSO_Botones\\Turky\u0027sGym_Programa\\Crud_Productos.cs",
+              "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\Crud_Productos.cs",
+              "ToolTip": "D:\\MOANSO_Botones\\Turky\u0027sGym_Programa\\Crud_Productos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Turky\u0027sGym_Programa\\Crud_Productos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T18:56:22.484Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CRUD_Metodo_Pago.cs",
+              "DocumentMoniker": "D:\\MOANSO_Botones\\Turky\u0027sGym_Programa\\CRUD_Metodo_Pago.cs",
+              "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\CRUD_Metodo_Pago.cs",
+              "ToolTip": "D:\\MOANSO_Botones\\Turky\u0027sGym_Programa\\CRUD_Metodo_Pago.cs",
+              "RelativeToolTip": "Turky\u0027sGym_Programa\\CRUD_Metodo_Pago.cs",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAqwHQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T19:25:01.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CRUD_Metodo_Pago.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\MOANSO_Botones\\Turky\u0027sGym_Programa\\CRUD_Metodo_Pago.cs",
+              "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\CRUD_Metodo_Pago.cs",
+              "ToolTip": "D:\\MOANSO_Botones\\Turky\u0027sGym_Programa\\CRUD_Metodo_Pago.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Turky\u0027sGym_Programa\\CRUD_Metodo_Pago.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T18:53:19.659Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CRUD_Categor\u00EDa.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\MOANSO_Botones\\Turky\u0027sGym_Programa\\CRUD_Categor\u00EDa.cs",
+              "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\CRUD_Categor\u00EDa.cs",
+              "ToolTip": "D:\\MOANSO_Botones\\Turky\u0027sGym_Programa\\CRUD_Categor\u00EDa.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Turky\u0027sGym_Programa\\CRUD_Categor\u00EDa.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T18:48:47.415Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CRUD_Clientes.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\MOANSO_Botones\\Turky\u0027sGym_Programa\\CRUD_Clientes.cs",
+              "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\CRUD_Clientes.cs",
+              "ToolTip": "D:\\MOANSO_Botones\\Turky\u0027sGym_Programa\\CRUD_Clientes.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Turky\u0027sGym_Programa\\CRUD_Clientes.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T18:49:00.035Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CRUD_Servicios.cs",
+              "DocumentMoniker": "D:\\MOANSO_Botones\\Turky\u0027sGym_Programa\\CRUD_Servicios.cs",
+              "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\CRUD_Servicios.cs",
+              "ToolTip": "D:\\MOANSO_Botones\\Turky\u0027sGym_Programa\\CRUD_Servicios.cs",
+              "RelativeToolTip": "Turky\u0027sGym_Programa\\CRUD_Servicios.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAmwB8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T19:22:56.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CORE_MONITOREO_CLIENTES.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\MOANSO_Botones\\Turky\u0027sGym_Programa\\CORE_MONITOREO_CLIENTES.cs",
+              "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\CORE_MONITOREO_CLIENTES.cs",
+              "ToolTip": "D:\\MOANSO_Botones\\Turky\u0027sGym_Programa\\CORE_MONITOREO_CLIENTES.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Turky\u0027sGym_Programa\\CORE_MONITOREO_CLIENTES.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T18:40:14.404Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CSLT_Venta_Membres\u00EDa.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\MOANSO_Botones\\Turky\u0027sGym_Programa\\CSLT_Venta_Membres\u00EDa.cs",
+              "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\CSLT_Venta_Membres\u00EDa.cs",
+              "ToolTip": "D:\\MOANSO_Botones\\Turky\u0027sGym_Programa\\CSLT_Venta_Membres\u00EDa.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Turky\u0027sGym_Programa\\CSLT_Venta_Membres\u00EDa.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T18:59:09.664Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CSLT_Venta_Productos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\MOANSO_Botones\\Turky\u0027sGym_Programa\\CSLT_Venta_Productos.cs",
+              "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\CSLT_Venta_Productos.cs",
+              "ToolTip": "D:\\MOANSO_Botones\\Turky\u0027sGym_Programa\\CSLT_Venta_Productos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Turky\u0027sGym_Programa\\CSLT_Venta_Productos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T18:59:13.168Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CORE_MONITOREO_CLIENTES.cs",
+              "DocumentMoniker": "D:\\MOANSO_Botones\\Turky\u0027sGym_Programa\\CORE_MONITOREO_CLIENTES.cs",
+              "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\CORE_MONITOREO_CLIENTES.cs",
+              "ToolTip": "D:\\MOANSO_Botones\\Turky\u0027sGym_Programa\\CORE_MONITOREO_CLIENTES.cs",
+              "RelativeToolTip": "Turky\u0027sGym_Programa\\CORE_MONITOREO_CLIENTES.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAqwBcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T18:42:10.041Z",
+              "EditorCaption": ""
             }
           ]
         }

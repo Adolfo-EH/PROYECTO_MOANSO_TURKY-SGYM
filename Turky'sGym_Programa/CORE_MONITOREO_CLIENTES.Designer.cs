@@ -30,7 +30,7 @@
         {
             this.txbDNImonitoreo = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.btnInhabilitarM = new System.Windows.Forms.Button();
+            this.btnAnular = new System.Windows.Forms.Button();
             this.txbPantorilla = new System.Windows.Forms.TextBox();
             this.txbCuadriceps = new System.Windows.Forms.TextBox();
             this.txbCadera = new System.Windows.Forms.TextBox();
@@ -56,7 +56,6 @@
             this.txbGrasa = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.dgvMonitoreoClientes = new System.Windows.Forms.DataGridView();
-            this.btnModificarM = new System.Windows.Forms.Button();
             this.btnNuevoM = new System.Windows.Forms.Button();
             this.btnBuscarMonitoreo = new System.Windows.Forms.Button();
             this.txbTalla = new System.Windows.Forms.TextBox();
@@ -73,6 +72,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnRegresar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMonitoreoClientes)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -94,14 +94,14 @@
             this.label20.TabIndex = 175;
             this.label20.Text = "DNI:";
             // 
-            // btnInhabilitarM
+            // btnAnular
             // 
-            this.btnInhabilitarM.Location = new System.Drawing.Point(840, 200);
-            this.btnInhabilitarM.Name = "btnInhabilitarM";
-            this.btnInhabilitarM.Size = new System.Drawing.Size(95, 23);
-            this.btnInhabilitarM.TabIndex = 174;
-            this.btnInhabilitarM.Text = "INHABILITAR";
-            this.btnInhabilitarM.UseVisualStyleBackColor = true;
+            this.btnAnular.Location = new System.Drawing.Point(840, 129);
+            this.btnAnular.Name = "btnAnular";
+            this.btnAnular.Size = new System.Drawing.Size(95, 23);
+            this.btnAnular.TabIndex = 174;
+            this.btnAnular.Text = "ANULAR";
+            this.btnAnular.UseVisualStyleBackColor = true;
             // 
             // txbPantorilla
             // 
@@ -313,32 +313,23 @@
             // dgvMonitoreoClientes
             // 
             this.dgvMonitoreoClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMonitoreoClientes.Location = new System.Drawing.Point(501, 272);
+            this.dgvMonitoreoClientes.Location = new System.Drawing.Point(501, 268);
             this.dgvMonitoreoClientes.Name = "dgvMonitoreoClientes";
             this.dgvMonitoreoClientes.Size = new System.Drawing.Size(434, 347);
             this.dgvMonitoreoClientes.TabIndex = 149;
             // 
-            // btnModificarM
-            // 
-            this.btnModificarM.Location = new System.Drawing.Point(840, 165);
-            this.btnModificarM.Name = "btnModificarM";
-            this.btnModificarM.Size = new System.Drawing.Size(95, 23);
-            this.btnModificarM.TabIndex = 148;
-            this.btnModificarM.Text = "MODIFICAR";
-            this.btnModificarM.UseVisualStyleBackColor = true;
-            // 
             // btnNuevoM
             // 
-            this.btnNuevoM.Location = new System.Drawing.Point(840, 129);
+            this.btnNuevoM.Location = new System.Drawing.Point(840, 96);
             this.btnNuevoM.Name = "btnNuevoM";
             this.btnNuevoM.Size = new System.Drawing.Size(95, 23);
             this.btnNuevoM.TabIndex = 147;
-            this.btnNuevoM.Text = "NUEVO";
+            this.btnNuevoM.Text = "INSERTAR";
             this.btnNuevoM.UseVisualStyleBackColor = true;
             // 
             // btnBuscarMonitoreo
             // 
-            this.btnBuscarMonitoreo.Location = new System.Drawing.Point(840, 95);
+            this.btnBuscarMonitoreo.Location = new System.Drawing.Point(840, 162);
             this.btnBuscarMonitoreo.Name = "btnBuscarMonitoreo";
             this.btnBuscarMonitoreo.Size = new System.Drawing.Size(95, 23);
             this.btnBuscarMonitoreo.TabIndex = 146;
@@ -468,14 +459,24 @@
             this.label1.TabIndex = 45;
             this.label1.Text = "MONITOREO CLIENTES";
             // 
+            // btnRegresar
+            // 
+            this.btnRegresar.Location = new System.Drawing.Point(840, 196);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(95, 23);
+            this.btnRegresar.TabIndex = 178;
+            this.btnRegresar.Text = "REGRESAR";
+            this.btnRegresar.UseVisualStyleBackColor = true;
+            // 
             // CORE_MONITOREO_CLIENTES
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1066, 687);
+            this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.txbDNImonitoreo);
             this.Controls.Add(this.label20);
-            this.Controls.Add(this.btnInhabilitarM);
+            this.Controls.Add(this.btnAnular);
             this.Controls.Add(this.txbPantorilla);
             this.Controls.Add(this.txbCuadriceps);
             this.Controls.Add(this.txbCadera);
@@ -501,7 +502,6 @@
             this.Controls.Add(this.txbGrasa);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.dgvMonitoreoClientes);
-            this.Controls.Add(this.btnModificarM);
             this.Controls.Add(this.btnNuevoM);
             this.Controls.Add(this.btnBuscarMonitoreo);
             this.Controls.Add(this.txbTalla);
@@ -532,7 +532,7 @@
 
         private System.Windows.Forms.TextBox txbDNImonitoreo;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Button btnInhabilitarM;
+        private System.Windows.Forms.Button btnAnular;
         private System.Windows.Forms.TextBox txbPantorilla;
         private System.Windows.Forms.TextBox txbCuadriceps;
         private System.Windows.Forms.TextBox txbCadera;
@@ -558,7 +558,6 @@
         private System.Windows.Forms.TextBox txbGrasa;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DataGridView dgvMonitoreoClientes;
-        private System.Windows.Forms.Button btnModificarM;
         private System.Windows.Forms.Button btnNuevoM;
         private System.Windows.Forms.Button btnBuscarMonitoreo;
         private System.Windows.Forms.TextBox txbTalla;
@@ -575,5 +574,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnRegresar;
     }
 }

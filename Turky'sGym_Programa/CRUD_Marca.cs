@@ -33,11 +33,6 @@ namespace Turky_sGym_Programa
             cbEstadoMarca.Checked = false;
         }
 
-        private void Marca_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnCrearM_Click(object sender, EventArgs e)
         {
             gbMarca.Enabled = true;
