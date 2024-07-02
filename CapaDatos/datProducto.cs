@@ -11,6 +11,7 @@ namespace CapaDatos
 {
     public class datProducto
     {
+
         #region sigleton
         //Patron Singleton
         // Variable estática para la instancia
@@ -40,12 +41,13 @@ namespace CapaDatos
                 while (dr.Read())
                 {
                     entProducto pr = new entProducto();
-                    pr.idProducto = Convert.ToInt32(dr["IDProducto"]);
-                    pr.idCategoria = Convert.ToInt32(dr["IDCategoria"]);
-                    pr.marca = dr["Marca"].ToString();
-                    pr.tipo = dr["Tipo"].ToString();
-                    pr.cantidad = Convert.ToInt32(dr["Cantidad"]);
-                    pr.precio = Convert.ToDouble(dr["Precio"]);
+                    pr.idProducto = Convert.ToInt32(dr["ProductosID"]);
+                    pr.idCategoria = Convert.ToInt32(dr["CategoriaID"]);
+                    pr.idMarca = Convert.ToInt32(dr["MarcaID"]);
+                    pr.NomPro = dr["NomProducto"].ToString();
+                    pr.Descripcion = dr["Descripcion"].ToString();
+                    pr.cantidad = Convert.ToInt32(dr["Stock"]);
+                    pr.precio = Convert.ToDouble(dr["PrecioProd"]);
                     pr.estProducto = Convert.ToBoolean(dr["estProducto"]);
                     lista.Add(pr);
                 }
@@ -70,11 +72,12 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spInsertarProducto", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@IDCategoria", pr.idCategoria);
-                cmd.Parameters.AddWithValue("@marca", pr.marca);
-                cmd.Parameters.AddWithValue("@tipo", pr.tipo);
-                cmd.Parameters.AddWithValue("@cantidad", pr.cantidad);
-                cmd.Parameters.AddWithValue("@precio", pr.precio);
+                cmd.Parameters.AddWithValue("@CategoriaID", pr.idCategoria);
+                cmd.Parameters.AddWithValue("@MarcaID", pr.idMarca);
+                cmd.Parameters.AddWithValue("@NomProducto", pr.NomPro);
+                cmd.Parameters.AddWithValue("@Descripcion", pr.Descripcion);
+                cmd.Parameters.AddWithValue("@Stock", pr.cantidad);
+                cmd.Parameters.AddWithValue("@PrecioProd", pr.precio);
                 cmd.Parameters.AddWithValue("@estProducto", pr.estProducto);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
@@ -100,14 +103,15 @@ namespace CapaDatos
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spEditarProducto", cn);
+                cmd = new SqlCommand("spEditaProducto", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@IDProducto", pr.idProducto);
-                cmd.Parameters.AddWithValue("@IDCategoria", pr.idCategoria);
-                cmd.Parameters.AddWithValue("@marca", pr.marca);
-                cmd.Parameters.AddWithValue("@tipo", pr.tipo);
-                cmd.Parameters.AddWithValue("@cantidad", pr.cantidad);
-                cmd.Parameters.AddWithValue("@precio", pr.precio);
+                cmd.Parameters.AddWithValue("@ProductosID", pr.idProducto);
+                cmd.Parameters.AddWithValue("@CategoriaID", pr.idCategoria);
+                cmd.Parameters.AddWithValue("@MarcaID", pr.idMarca);
+                cmd.Parameters.AddWithValue("@NomProducto", pr.NomPro);
+                cmd.Parameters.AddWithValue("@Descripcion", pr.Descripcion);
+                cmd.Parameters.AddWithValue("@Stock", pr.cantidad);
+                cmd.Parameters.AddWithValue("@PrecioProd", pr.precio);
                 cmd.Parameters.AddWithValue("@estProducto", pr.estProducto);
 
                 cn.Open();
@@ -135,7 +139,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spDeshabilitarProducto", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@idProducto", pr.idProducto);
+                cmd.Parameters.AddWithValue("@ProductoID", pr.idProducto);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -149,6 +153,29 @@ namespace CapaDatos
             }
             finally { cmd.Connection.Close(); }
             return delete;
+        }
+
+        public DataTable CargarCategoria()
+        {
+            SqlConnection cn = Conexion.Instancia.Conectar();
+            SqlDataAdapter da = new SqlDataAdapter("spCargarCategoria", cn);
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+
+        public DataTable CargarMarca(int idMarca)
+        {
+            SqlCommand cmd = null;
+            SqlConnection cn = Conexion.Instancia.Conectar();
+            cmd = new SqlCommand("spCargarMarca", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@CategoriaID", idMarca);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
         }
         #endregion metodos
     }

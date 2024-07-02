@@ -70,3 +70,14 @@ C:\Users\dominick\Desktop\clone 2\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\obj\Deb
 C:\Users\dominick\Desktop\clone 2\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\obj\Debug\CapaLógica.csproj.CopyComplete
 C:\Users\dominick\Desktop\clone 2\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\obj\Debug\CapaLógica.dll
 C:\Users\dominick\Desktop\clone 2\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\obj\Debug\CapaLógica.pdb
+D:\MOANSO_ESTE_ES\CapaLógica\bin\Debug\CapaLógica.dll
+D:\MOANSO_ESTE_ES\CapaLógica\bin\Debug\CapaLógica.pdb
+D:\MOANSO_ESTE_ES\CapaLógica\bin\Debug\CapaDatos.dll
+D:\MOANSO_ESTE_ES\CapaLógica\bin\Debug\CapaEntidad.dll
+D:\MOANSO_ESTE_ES\CapaLógica\bin\Debug\CapaDatos.pdb
+D:\MOANSO_ESTE_ES\CapaLógica\bin\Debug\CapaEntidad.pdb
+D:\MOANSO_ESTE_ES\CapaLógica\obj\Debug\CapaLógica.csproj.AssemblyReference.cache
+D:\MOANSO_ESTE_ES\CapaLógica\obj\Debug\CapaLógica.csproj.CoreCompileInputs.cache
+D:\MOANSO_ESTE_ES\CapaLógica\obj\Debug\CapaLógica.csproj.Up2Date
+D:\MOANSO_ESTE_ES\CapaLógica\obj\Debug\CapaLógica.dll
+D:\MOANSO_ESTE_ES\CapaLógica\obj\Debug\CapaLógica.pdb

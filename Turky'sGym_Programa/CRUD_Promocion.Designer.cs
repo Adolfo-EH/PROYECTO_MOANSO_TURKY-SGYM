@@ -130,7 +130,7 @@
             this.cbxPromocion.AutoSize = true;
             this.cbxPromocion.Location = new System.Drawing.Point(268, 29);
             this.cbxPromocion.Name = "cbxPromocion";
-            this.cbxPromocion.Size = new System.Drawing.Size(73, 20);
+            this.cbxPromocion.Size = new System.Drawing.Size(72, 20);
             this.cbxPromocion.TabIndex = 31;
             this.cbxPromocion.Text = "Estado ";
             this.cbxPromocion.UseVisualStyleBackColor = true;
@@ -149,7 +149,7 @@
             this.label1.Location = new System.Drawing.Point(65, 169);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 16);
+            this.label1.Size = new System.Drawing.Size(61, 16);
             this.label1.TabIndex = 10;
             this.label1.Text = "Duración";
             // 
@@ -190,7 +190,7 @@
             this.lblNombre.Location = new System.Drawing.Point(70, 102);
             this.lblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(57, 16);
+            this.lblNombre.Size = new System.Drawing.Size(56, 16);
             this.lblNombre.TabIndex = 6;
             this.lblNombre.Text = "Nombre";
             // 
@@ -209,7 +209,7 @@
             this.lblDescuento.Location = new System.Drawing.Point(54, 138);
             this.lblDescuento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDescuento.Name = "lblDescuento";
-            this.lblDescuento.Size = new System.Drawing.Size(73, 16);
+            this.lblDescuento.Size = new System.Drawing.Size(72, 16);
             this.lblDescuento.TabIndex = 4;
             this.lblDescuento.Text = "Descuento";
             // 
@@ -219,7 +219,7 @@
             this.lbID.Location = new System.Drawing.Point(137, 29);
             this.lbID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbID.Name = "lbID";
-            this.lbID.Size = new System.Drawing.Size(22, 16);
+            this.lbID.Size = new System.Drawing.Size(21, 16);
             this.lbID.TabIndex = 3;
             this.lbID.Text = "00";
             // 
@@ -242,7 +242,7 @@
             this.lblTipoPromocion.Location = new System.Drawing.Point(4, 62);
             this.lblTipoPromocion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTipoPromocion.Name = "lblTipoPromocion";
-            this.lblTipoPromocion.Size = new System.Drawing.Size(123, 16);
+            this.lblTipoPromocion.Size = new System.Drawing.Size(122, 16);
             this.lblTipoPromocion.TabIndex = 1;
             this.lblTipoPromocion.Text = "Tipo de Promoción";
             // 
@@ -253,7 +253,7 @@
             this.lblIdPromocion.Location = new System.Drawing.Point(43, 29);
             this.lblIdPromocion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblIdPromocion.Name = "lblIdPromocion";
-            this.lblIdPromocion.Size = new System.Drawing.Size(84, 16);
+            this.lblIdPromocion.Size = new System.Drawing.Size(83, 16);
             this.lblIdPromocion.TabIndex = 0;
             this.lblIdPromocion.Text = "IdPromoción";
             // 

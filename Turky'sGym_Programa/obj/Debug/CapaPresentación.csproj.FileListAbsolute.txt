@@ -265,3 +265,33 @@ C:\Users\dominick\Desktop\clone 2\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa
 C:\Users\dominick\Desktop\clone 2\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa\obj\Debug\CapaPresentación.csproj.CopyComplete
 C:\Users\dominick\Desktop\clone 2\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa\obj\Debug\Turky'sGym_Programa.exe
 C:\Users\dominick\Desktop\clone 2\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa\obj\Debug\Turky'sGym_Programa.pdb
+D:\MOANSO_ESTE_ES\Turky'sGym_Programa\bin\Debug\Turky'sGym_Programa.exe.config
+D:\MOANSO_ESTE_ES\Turky'sGym_Programa\bin\Debug\Turky'sGym_Programa.exe
+D:\MOANSO_ESTE_ES\Turky'sGym_Programa\bin\Debug\Turky'sGym_Programa.pdb
+D:\MOANSO_ESTE_ES\Turky'sGym_Programa\bin\Debug\CapaEntidad.dll
+D:\MOANSO_ESTE_ES\Turky'sGym_Programa\bin\Debug\CapaLógica.dll
+D:\MOANSO_ESTE_ES\Turky'sGym_Programa\bin\Debug\CapaDatos.dll
+D:\MOANSO_ESTE_ES\Turky'sGym_Programa\bin\Debug\CapaEntidad.pdb
+D:\MOANSO_ESTE_ES\Turky'sGym_Programa\bin\Debug\CapaLógica.pdb
+D:\MOANSO_ESTE_ES\Turky'sGym_Programa\bin\Debug\CapaDatos.pdb
+D:\MOANSO_ESTE_ES\Turky'sGym_Programa\obj\Debug\CapaPresentación.csproj.AssemblyReference.cache
+D:\MOANSO_ESTE_ES\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.CORE_MONITOREO_CLIENTES.resources
+D:\MOANSO_ESTE_ES\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.CORE_VENTA_MEMBRESÍA.resources
+D:\MOANSO_ESTE_ES\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.CORE_VENTA_PRODUCTOS.resources
+D:\MOANSO_ESTE_ES\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.CRUD_Categoría.resources
+D:\MOANSO_ESTE_ES\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.CRUD_Clientes.resources
+D:\MOANSO_ESTE_ES\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.CRUD_Forma_Pago.resources
+D:\MOANSO_ESTE_ES\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.CRUD_Membresía.resources
+D:\MOANSO_ESTE_ES\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.CRUD_Metodo_Pago.resources
+D:\MOANSO_ESTE_ES\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.CRUD_Productos.resources
+D:\MOANSO_ESTE_ES\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.CRUD_Promocion.resources
+D:\MOANSO_ESTE_ES\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.CRUD_Servicios.resources
+D:\MOANSO_ESTE_ES\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.CSLT_Venta_Membresía.resources
+D:\MOANSO_ESTE_ES\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.CSLT_Venta_Productos.resources
+D:\MOANSO_ESTE_ES\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.CRUD_Marca.resources
+D:\MOANSO_ESTE_ES\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.Properties.Resources.resources
+D:\MOANSO_ESTE_ES\Turky'sGym_Programa\obj\Debug\CapaPresentación.csproj.GenerateResource.cache
+D:\MOANSO_ESTE_ES\Turky'sGym_Programa\obj\Debug\CapaPresentación.csproj.CoreCompileInputs.cache
+D:\MOANSO_ESTE_ES\Turky'sGym_Programa\obj\Debug\CapaPres.314295FC.Up2Date
+D:\MOANSO_ESTE_ES\Turky'sGym_Programa\obj\Debug\Turky'sGym_Programa.exe
+D:\MOANSO_ESTE_ES\Turky'sGym_Programa\obj\Debug\Turky'sGym_Programa.pdb

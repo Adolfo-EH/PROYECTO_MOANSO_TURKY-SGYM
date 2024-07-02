@@ -10,8 +10,9 @@ namespace CapaEntidad
     {
         public int idProducto { get; set; }
         public int idCategoria { get; set; }
-        public string marca { get; set; }
-        public string tipo { get; set; }
+        public int idMarca { get; set; }
+        public string NomPro { get; set; }
+        public string Descripcion { get; set; }
         public int cantidad { get; set; }
         public double precio { get; set; }
         public Boolean estProducto { get; set; }

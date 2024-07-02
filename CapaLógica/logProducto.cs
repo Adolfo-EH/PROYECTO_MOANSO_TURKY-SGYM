@@ -2,6 +2,7 @@
 using CapaEntidad;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -41,6 +42,16 @@ namespace CapaLógica
         public void DeshabilitarProducto(entProducto pr)
         {
             datProducto.Instancia.DeshabilitarProducto(pr);
+        }
+
+        public DataTable CargarCategoria()
+        {
+            return datProducto.Instancia.CargarCategoria();
+        }
+
+        public DataTable CargarMarca(int idMarca)
+        {
+            return datProducto.Instancia.CargarMarca(idMarca);
         }
         #endregion metodos
     }

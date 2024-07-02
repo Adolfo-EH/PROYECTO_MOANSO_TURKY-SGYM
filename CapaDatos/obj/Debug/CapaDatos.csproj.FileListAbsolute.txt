@@ -52,3 +52,12 @@ C:\Users\dominick\Desktop\clone 2\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\obj\Debug
 C:\Users\dominick\Desktop\clone 2\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
 C:\Users\dominick\Desktop\clone 2\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\dominick\Desktop\clone 2\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\obj\Debug\CapaDatos.pdb
+D:\MOANSO_ESTE_ES\CapaDatos\bin\Debug\CapaDatos.dll
+D:\MOANSO_ESTE_ES\CapaDatos\bin\Debug\CapaDatos.pdb
+D:\MOANSO_ESTE_ES\CapaDatos\bin\Debug\CapaEntidad.dll
+D:\MOANSO_ESTE_ES\CapaDatos\bin\Debug\CapaEntidad.pdb
+D:\MOANSO_ESTE_ES\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+D:\MOANSO_ESTE_ES\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+D:\MOANSO_ESTE_ES\CapaDatos\obj\Debug\CapaDatos.csproj.Up2Date
+D:\MOANSO_ESTE_ES\CapaDatos\obj\Debug\CapaDatos.dll
+D:\MOANSO_ESTE_ES\CapaDatos\obj\Debug\CapaDatos.pdb

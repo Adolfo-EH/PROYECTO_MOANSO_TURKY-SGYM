@@ -31,6 +31,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.Titulo = new System.Windows.Forms.Label();
             this.grbDatosProducto = new System.Windows.Forms.GroupBox();
+            this.cbMarca = new System.Windows.Forms.ComboBox();
             this.cbxEstadoProducto = new System.Windows.Forms.CheckBox();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -51,7 +52,8 @@
             this.btnRegresar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.dgvStockProducto = new System.Windows.Forms.DataGridView();
-            this.cbMarca = new System.Windows.Forms.ComboBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.grbDatosProducto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStockProducto)).BeginInit();
@@ -83,6 +85,8 @@
             // 
             // grbDatosProducto
             // 
+            this.grbDatosProducto.Controls.Add(this.txtNombre);
+            this.grbDatosProducto.Controls.Add(this.label1);
             this.grbDatosProducto.Controls.Add(this.cbMarca);
             this.grbDatosProducto.Controls.Add(this.cbxEstadoProducto);
             this.grbDatosProducto.Controls.Add(this.btnModificar);
@@ -102,10 +106,18 @@
             this.grbDatosProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbDatosProducto.Location = new System.Drawing.Point(85, 359);
             this.grbDatosProducto.Name = "grbDatosProducto";
-            this.grbDatosProducto.Size = new System.Drawing.Size(535, 264);
+            this.grbDatosProducto.Size = new System.Drawing.Size(535, 289);
             this.grbDatosProducto.TabIndex = 23;
             this.grbDatosProducto.TabStop = false;
             this.grbDatosProducto.Text = "Datos del Producto";
+            // 
+            // cbMarca
+            // 
+            this.cbMarca.FormattingEnabled = true;
+            this.cbMarca.Location = new System.Drawing.Point(166, 110);
+            this.cbMarca.Name = "cbMarca";
+            this.cbMarca.Size = new System.Drawing.Size(139, 24);
+            this.cbMarca.TabIndex = 30;
             // 
             // cbxEstadoProducto
             // 
@@ -149,21 +161,21 @@
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(166, 223);
+            this.txtPrecio.Location = new System.Drawing.Point(166, 254);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(139, 22);
             this.txtPrecio.TabIndex = 11;
             // 
             // txtCantidad
             // 
-            this.txtCantidad.Location = new System.Drawing.Point(166, 185);
+            this.txtCantidad.Location = new System.Drawing.Point(166, 216);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(139, 22);
             this.txtCantidad.TabIndex = 10;
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(166, 148);
+            this.txtDescripcion.Location = new System.Drawing.Point(166, 179);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(139, 22);
             this.txtDescripcion.TabIndex = 9;
@@ -179,11 +191,12 @@
             this.cmbCategoria.Name = "cmbCategoria";
             this.cmbCategoria.Size = new System.Drawing.Size(139, 24);
             this.cmbCategoria.TabIndex = 7;
+            this.cmbCategoria.SelectedIndexChanged += new System.EventHandler(this.cmbCategoria_SelectedIndexChanged);
             // 
             // lbPrecio
             // 
             this.lbPrecio.AutoSize = true;
-            this.lbPrecio.Location = new System.Drawing.Point(79, 226);
+            this.lbPrecio.Location = new System.Drawing.Point(79, 257);
             this.lbPrecio.Name = "lbPrecio";
             this.lbPrecio.Size = new System.Drawing.Size(49, 16);
             this.lbPrecio.TabIndex = 6;
@@ -192,7 +205,7 @@
             // lbCantidad
             // 
             this.lbCantidad.AutoSize = true;
-            this.lbCantidad.Location = new System.Drawing.Point(64, 188);
+            this.lbCantidad.Location = new System.Drawing.Point(64, 219);
             this.lbCantidad.Name = "lbCantidad";
             this.lbCantidad.Size = new System.Drawing.Size(64, 16);
             this.lbCantidad.TabIndex = 5;
@@ -201,7 +214,7 @@
             // lbTipo
             // 
             this.lbTipo.AutoSize = true;
-            this.lbTipo.Location = new System.Drawing.Point(48, 151);
+            this.lbTipo.Location = new System.Drawing.Point(48, 182);
             this.lbTipo.Name = "lbTipo";
             this.lbTipo.Size = new System.Drawing.Size(82, 16);
             this.lbTipo.TabIndex = 4;
@@ -297,13 +310,21 @@
             this.dgvStockProducto.TabIndex = 18;
             this.dgvStockProducto.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStockProducto_CellDoubleClick);
             // 
-            // cbMarca
+            // txtNombre
             // 
-            this.cbMarca.FormattingEnabled = true;
-            this.cbMarca.Location = new System.Drawing.Point(166, 110);
-            this.cbMarca.Name = "cbMarca";
-            this.cbMarca.Size = new System.Drawing.Size(139, 24);
-            this.cbMarca.TabIndex = 30;
+            this.txtNombre.Location = new System.Drawing.Point(166, 148);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(139, 22);
+            this.txtNombre.TabIndex = 32;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(69, 151);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 16);
+            this.label1.TabIndex = 31;
+            this.label1.Text = "Nombre:";
             // 
             // CRUD_Productos
             // 
@@ -355,5 +376,7 @@
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.DataGridView dgvStockProducto;
         private System.Windows.Forms.ComboBox cbMarca;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.Label label1;
     }
 }
