@@ -14,11 +14,13 @@ namespace Turky_sGym_Programa
 {
     public partial class CRUD_Membresía : Form
     {
+        private Dictionary<int, string> serviciosSeleccionados;
         public CRUD_Membresía()
         {
             InitializeComponent();
             listarPlan();
             gbPlanes.Enabled = false;
+            serviciosSeleccionados = new Dictionary<int, string>();
         }
 
         public void listarPlan()
@@ -31,13 +33,15 @@ namespace Turky_sGym_Programa
             lbIDMembresia.Text = "00";
             txtMembresia.Clear();
             txtPrecio.Clear();
-            cmbServicio.SelectedIndex = 0;
             cbEstado.Checked = false;
         }
 
         private void CRUD_Membresía_Load(object sender, EventArgs e)
         {
 
+            cmbServicio.DataSource = logServicios.Instancia.CargarServicio();
+            cmbServicio.DisplayMember = "NomServicio";
+            cmbServicio.ValueMember = "ServiciosID";
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -52,7 +56,7 @@ namespace Turky_sGym_Programa
             try
             {
                 entMembresia pl = new entMembresia();
-                pl.idMembresia = int.Parse(txtMembresia.Text.Trim());
+                pl.idMembresia = int.Parse(lbIDMembresia.Text.Trim());
                 logMembresia.Instancia.DeshabilitarMembresia(pl);
             }
             catch (Exception ex)
@@ -83,23 +87,28 @@ namespace Turky_sGym_Programa
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            //insertar
+            int idMeb;
             try
             {
-                entMembresia pl = new entMembresia();
-                pl.nombreMemb = txtMembresia.Text;
-                pl.precio = double.Parse(txtPrecio.Text.Trim());
-                //pl.duracion = txtDuracionMem.Text;
-                pl.estMembresia = cbEstado.Checked;
-                logMembresia.Instancia.InsertaMembresia(pl);
+                entMembresia m = new entMembresia();
+
+                m.nombreMeb = txtMembresia.Text.Trim();
+                m.duracion = txtDuracionMem.Text.Trim();
+                m.precio = Double.Parse(txtPrecio.Text.Trim());
+                m.estMembresia = cbEstado.Checked;
+
+                idMeb = logMembresia.Instancia.InsertaMembresia(m);
+
+                GuardarSerMemb(idMeb);
+                LimpiarVariables();
+                gbPlanes.Enabled = false;
+                listarPlan();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error.." + ex);
+                MessageBox.Show("error" + ex);
+                throw ex;
             }
-            LimpiarVariables();
-            gbPlanes.Enabled = false;
-            listarPlan();
         }
 
         private void dgvPlan_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -107,8 +116,37 @@ namespace Turky_sGym_Programa
             DataGridViewRow filaActual = dgvPlan.Rows[e.RowIndex];
             lbIDMembresia.Text = filaActual.Cells[0].Value.ToString();
             txtMembresia.Text = filaActual.Cells[1].Value.ToString();
-            txtPrecio.Text = filaActual.Cells[2].Value.ToString();
-            cbEstado.Checked = Convert.ToBoolean(filaActual.Cells[3].Value);
+            txtDuracionMem.Text = filaActual.Cells[3].Value.ToString();
+            txtPrecio.Text = filaActual.Cells[4].Value.ToString();
+            cbEstado.Checked = Convert.ToBoolean(filaActual.Cells[5].Value);
+        }
+
+        private void GuardarSerMemb(int cod)
+        {
+            foreach (var item in serviciosSeleccionados)
+            {
+                int servicioID = item.Key;
+                logMembresia.Instancia.InsertaSerMemb(servicioID, cod);
+            }
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            // Obtener el servicio seleccionado en el ComboBox
+            var selectedService = cmbServicio.SelectedItem as DataRowView;
+
+            if (selectedService != null)
+            {
+                int servicioID = (int)selectedService["ServiciosID"];
+                string servicioNombre = selectedService["NomServicio"].ToString();
+
+                // Añadir el servicio al diccionario y al ListBox
+                if (!serviciosSeleccionados.ContainsKey(servicioID))
+                {
+                    serviciosSeleccionados.Add(servicioID, servicioNombre);
+                    listServicios.Items.Add(servicioNombre);
+                }
+            }
         }
     }
     

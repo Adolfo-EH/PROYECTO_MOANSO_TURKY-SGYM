@@ -29,9 +29,21 @@ namespace CapaLógica
             return datMembresia.Instancia.ListarMembresia();
         }
         ///inserta
-        public void InsertaMembresia(entMembresia pl)
+        public int InsertaMembresia(entMembresia pl)
         {
-            datMembresia.Instancia.InsertarMembresia(pl);
+            int a;
+            try
+            {
+                a = datMembresia.Instancia.InsertarMembresia(pl);
+            }
+            catch (Exception e)
+            { throw e; }
+
+            return a;
+        }
+        public void InsertaSerMemb(int idSer, int idMemb)
+        {
+            datMembresia.Instancia.InsertarSerMemb(idSer, idMemb);
         }
         //edita
         public void HabilitarMembresia(entMembresia pl)

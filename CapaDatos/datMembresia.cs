@@ -25,7 +25,7 @@ namespace CapaDatos
         }
         #endregion singleton
 
-        #region MEMBRESIA
+        #region metodos
 
         ////////////////////listado
         public List<entMembresia> ListarMembresia()
@@ -42,12 +42,13 @@ namespace CapaDatos
                 while (dr.Read())
                 {
                     entMembresia pl = new entMembresia();
+
                     pl.idMembresia = Convert.ToInt32(dr["MembresiaID"]);
-                    pl.nombreMemb = dr["NombreMemb"].ToString();
-                    pl.nombreServicio = dr["Nombre"].ToString();
-                    pl.precio = Convert.ToDouble(dr["Precio"]);
-                    pl.duracion = Convert.ToDateTime(dr["Duracion"]);
-                    pl.estMembresia = Convert.ToBoolean(dr["estPlan"]);
+                    pl.nombreMeb = dr["NomMembresia"].ToString();
+                    pl.nombreSer = dr["NomServicio"].ToString();
+                    pl.duracion = dr["DuracionMemb"].ToString();
+                    pl.precio = Convert.ToDouble(dr["PrecioMemb"]);
+                    pl.estMembresia = Convert.ToBoolean(dr["estMembresia"]);
                     lista.Add(pl);
                 }
             }
@@ -63,20 +64,47 @@ namespace CapaDatos
         }
 
         /////////////////////////Insertar
-        public Boolean InsertarMembresia(entMembresia pl)
+        public int InsertarMembresia(entMembresia pl)
+        {
+            SqlCommand cmd = null;
+            int idMeb = 0;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spInsertarMembresia", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.AddWithValue("@NomMembresia", pl.nombreMeb);
+                cmd.Parameters.AddWithValue("@DuracionMemb", pl.duracion);
+                cmd.Parameters.AddWithValue("@PrecioMemb", pl.precio);
+                cmd.Parameters.AddWithValue("@estMembresia", pl.estMembresia);
+
+                SqlParameter m = new SqlParameter("@retorno", DbType.Int32);
+                m.Direction = ParameterDirection.ReturnValue;
+                cmd.Parameters.Add(m);
+                cn.Open();
+                cmd.ExecuteNonQuery();
+                idMeb = Convert.ToInt16(cmd.Parameters["@retorno"].Value);
+                return idMeb;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+        }
+
+        public Boolean InsertarSerMemb(int idServicio, int idMembresia)
         {
             SqlCommand cmd = null;
             Boolean inserta = false;
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spInsertarPlan", cn);
+                cmd = new SqlCommand("spInsertarSerMemb", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@PlanID", pl.idMembresia);
-                cmd.Parameters.AddWithValue("@Precio", pl.precio);
-                cmd.Parameters.AddWithValue("@Duracion", pl.duracion);
-                cmd.Parameters.AddWithValue("@estPlan", pl.estMembresia);
-                cmd.Parameters.AddWithValue("@NombrePlan", pl.nombreMemb);
+                cmd.Parameters.AddWithValue("@ServicioID", idServicio);
+                cmd.Parameters.AddWithValue("@MembresiaID", idMembresia);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -100,9 +128,9 @@ namespace CapaDatos
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spHabilitarPlan", cn);
+                cmd = new SqlCommand("spHabilitarMembresia", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@idPlan", pl.idMembresia);
+                cmd.Parameters.AddWithValue("@MembresiaID", pl.idMembresia);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -126,9 +154,9 @@ namespace CapaDatos
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spDeshabilitarPLan", cn);
+                cmd = new SqlCommand("spDeshabilitarMembresia", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@idPlan", pl.idMembresia);
+                cmd.Parameters.AddWithValue("@MembresiaID", pl.idMembresia);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -143,6 +171,6 @@ namespace CapaDatos
             finally { cmd.Connection.Close(); }
             return delete;
         }
-        #endregion MEMBRESIA
+        #endregion metodos
     }
 }

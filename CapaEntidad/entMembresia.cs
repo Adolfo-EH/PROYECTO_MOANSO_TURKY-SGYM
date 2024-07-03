@@ -9,10 +9,10 @@ namespace CapaEntidad
     public class entMembresia
     {
         public int idMembresia { get; set; }
-        public string nombreMemb { get; set; }
-        public string nombreServicio { get; set; } 
+        public string nombreMeb { get; set; }
+        public string nombreSer { get; set; }
+        public string duracion { get; set; }
         public Double precio { get; set; }
-        public DateTime duracion { get; set; }
-        public Boolean estMembresia{ get; set; }
+        public Boolean estMembresia { get; set; }
     }
 }

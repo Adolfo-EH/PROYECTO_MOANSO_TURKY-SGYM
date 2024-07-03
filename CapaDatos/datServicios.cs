@@ -138,6 +138,16 @@ namespace CapaDatos
             finally { cmd.Connection.Close(); }
             return delete;
         }
+        public DataTable CargarServicio()
+        {
+            SqlConnection cn = Conexion.Instancia.Conectar();
+            SqlDataAdapter da = new SqlDataAdapter("spCargarServicio", cn);
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+
 
         #endregion SERVICIOS
     }

@@ -136,3 +136,14 @@ C:\Users\brin_\Source\Repos\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\obj\Debug\Cap
 C:\Users\brin_\Source\Repos\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\obj\Debug\CapaLógica.csproj.Up2Date
 C:\Users\brin_\Source\Repos\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\obj\Debug\CapaLógica.dll
 C:\Users\brin_\Source\Repos\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\obj\Debug\CapaLógica.pdb
+C:\Users\John Roncal\Desktop\CHI_MOANSO\CapaLógica\bin\Debug\CapaLógica.dll
+C:\Users\John Roncal\Desktop\CHI_MOANSO\CapaLógica\bin\Debug\CapaLógica.pdb
+C:\Users\John Roncal\Desktop\CHI_MOANSO\CapaLógica\bin\Debug\CapaDatos.dll
+C:\Users\John Roncal\Desktop\CHI_MOANSO\CapaLógica\bin\Debug\CapaEntidad.dll
+C:\Users\John Roncal\Desktop\CHI_MOANSO\CapaLógica\bin\Debug\CapaDatos.pdb
+C:\Users\John Roncal\Desktop\CHI_MOANSO\CapaLógica\bin\Debug\CapaEntidad.pdb
+C:\Users\John Roncal\Desktop\CHI_MOANSO\CapaLógica\obj\Debug\CapaLógica.csproj.AssemblyReference.cache
+C:\Users\John Roncal\Desktop\CHI_MOANSO\CapaLógica\obj\Debug\CapaLógica.csproj.CoreCompileInputs.cache
+C:\Users\John Roncal\Desktop\CHI_MOANSO\CapaLógica\obj\Debug\CapaLógica.csproj.Up2Date
+C:\Users\John Roncal\Desktop\CHI_MOANSO\CapaLógica\obj\Debug\CapaLógica.dll
+C:\Users\John Roncal\Desktop\CHI_MOANSO\CapaLógica\obj\Debug\CapaLógica.pdb

@@ -2,6 +2,7 @@
 using CapaEntidad;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -46,6 +47,11 @@ namespace CapaLógica
         {
             datServicios.Instancia.DeshabilitarServicio(sv);
         }
+        public DataTable CargarServicio()
+        {
+            return datServicios.Instancia.CargarServicio();
+        }
+
         #endregion metodos
     }
 }

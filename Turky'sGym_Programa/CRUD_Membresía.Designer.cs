@@ -32,6 +32,8 @@
             this.btnRegresar = new System.Windows.Forms.Button();
             this.dgvPlan = new System.Windows.Forms.DataGridView();
             this.gbPlanes = new System.Windows.Forms.GroupBox();
+            this.txtDuracionMem = new System.Windows.Forms.TextBox();
+            this.lbIDMembresia = new System.Windows.Forms.Label();
             this.cbEstado = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
             this.cmbServicio = new System.Windows.Forms.ComboBox();
@@ -45,10 +47,10 @@
             this.holi = new System.Windows.Forms.Label();
             this.btnInhabilitar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
-            this.lbIDMembresia = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtDuracionMem = new System.Windows.Forms.TextBox();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.listServicios = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlan)).BeginInit();
             this.gbPlanes.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -56,7 +58,7 @@
             // 
             // btnhabilitar
             // 
-            this.btnhabilitar.Location = new System.Drawing.Point(984, 257);
+            this.btnhabilitar.Location = new System.Drawing.Point(983, 201);
             this.btnhabilitar.Margin = new System.Windows.Forms.Padding(2);
             this.btnhabilitar.Name = "btnhabilitar";
             this.btnhabilitar.Size = new System.Drawing.Size(110, 51);
@@ -67,7 +69,7 @@
             // 
             // btnRegresar
             // 
-            this.btnRegresar.Location = new System.Drawing.Point(984, 640);
+            this.btnRegresar.Location = new System.Drawing.Point(983, 584);
             this.btnRegresar.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(110, 51);
@@ -78,7 +80,7 @@
             // dgvPlan
             // 
             this.dgvPlan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPlan.Location = new System.Drawing.Point(70, 164);
+            this.dgvPlan.Location = new System.Drawing.Point(69, 108);
             this.dgvPlan.Margin = new System.Windows.Forms.Padding(2);
             this.dgvPlan.Name = "dgvPlan";
             this.dgvPlan.RowHeadersWidth = 51;
@@ -89,6 +91,8 @@
             // 
             // gbPlanes
             // 
+            this.gbPlanes.Controls.Add(this.listServicios);
+            this.gbPlanes.Controls.Add(this.btnAgregar);
             this.gbPlanes.Controls.Add(this.txtDuracionMem);
             this.gbPlanes.Controls.Add(this.lbIDMembresia);
             this.gbPlanes.Controls.Add(this.cbEstado);
@@ -103,7 +107,7 @@
             this.gbPlanes.Controls.Add(this.txtPrecio);
             this.gbPlanes.Controls.Add(this.holi);
             this.gbPlanes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbPlanes.Location = new System.Drawing.Point(70, 429);
+            this.gbPlanes.Location = new System.Drawing.Point(69, 373);
             this.gbPlanes.Margin = new System.Windows.Forms.Padding(2);
             this.gbPlanes.Name = "gbPlanes";
             this.gbPlanes.Padding = new System.Windows.Forms.Padding(2);
@@ -112,10 +116,26 @@
             this.gbPlanes.TabStop = false;
             this.gbPlanes.Text = "Planes";
             // 
+            // txtDuracionMem
+            // 
+            this.txtDuracionMem.Location = new System.Drawing.Point(140, 143);
+            this.txtDuracionMem.Name = "txtDuracionMem";
+            this.txtDuracionMem.Size = new System.Drawing.Size(239, 22);
+            this.txtDuracionMem.TabIndex = 27;
+            // 
+            // lbIDMembresia
+            // 
+            this.lbIDMembresia.AutoSize = true;
+            this.lbIDMembresia.Location = new System.Drawing.Point(97, 37);
+            this.lbIDMembresia.Name = "lbIDMembresia";
+            this.lbIDMembresia.Size = new System.Drawing.Size(21, 16);
+            this.lbIDMembresia.TabIndex = 26;
+            this.lbIDMembresia.Text = "00";
+            // 
             // cbEstado
             // 
             this.cbEstado.AutoSize = true;
-            this.cbEstado.Location = new System.Drawing.Point(310, 51);
+            this.cbEstado.Location = new System.Drawing.Point(285, 36);
             this.cbEstado.Name = "cbEstado";
             this.cbEstado.Size = new System.Drawing.Size(69, 20);
             this.cbEstado.TabIndex = 24;
@@ -125,7 +145,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(105, 55);
+            this.label4.Location = new System.Drawing.Point(62, 37);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(21, 16);
             this.label4.TabIndex = 22;
@@ -134,7 +154,7 @@
             // cmbServicio
             // 
             this.cmbServicio.FormattingEnabled = true;
-            this.cmbServicio.Location = new System.Drawing.Point(542, 49);
+            this.cmbServicio.Location = new System.Drawing.Point(553, 42);
             this.cmbServicio.Name = "cmbServicio";
             this.cmbServicio.Size = new System.Drawing.Size(168, 24);
             this.cmbServicio.TabIndex = 20;
@@ -142,7 +162,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(408, 52);
+            this.label3.Location = new System.Drawing.Point(419, 45);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(128, 16);
             this.label3.TabIndex = 19;
@@ -150,7 +170,7 @@
             // 
             // txtMembresia
             // 
-            this.txtMembresia.Location = new System.Drawing.Point(140, 89);
+            this.txtMembresia.Location = new System.Drawing.Point(140, 84);
             this.txtMembresia.Name = "txtMembresia";
             this.txtMembresia.Size = new System.Drawing.Size(239, 22);
             this.txtMembresia.TabIndex = 18;
@@ -159,7 +179,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(62, 171);
+            this.label1.Location = new System.Drawing.Point(62, 145);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 16);
@@ -168,7 +188,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(575, 158);
+            this.btnCancelar.Location = new System.Drawing.Point(598, 200);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(91, 32);
@@ -178,7 +198,7 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(437, 158);
+            this.btnGuardar.Location = new System.Drawing.Point(460, 200);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(87, 32);
@@ -191,7 +211,7 @@
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(77, 129);
+            this.lblNombre.Location = new System.Drawing.Point(77, 208);
             this.lblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(49, 16);
@@ -200,7 +220,7 @@
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(140, 126);
+            this.txtPrecio.Location = new System.Drawing.Point(140, 205);
             this.txtPrecio.Margin = new System.Windows.Forms.Padding(2);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(239, 22);
@@ -210,7 +230,7 @@
             // 
             this.holi.AutoSize = true;
             this.holi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.holi.Location = new System.Drawing.Point(48, 95);
+            this.holi.Location = new System.Drawing.Point(48, 90);
             this.holi.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.holi.Name = "holi";
             this.holi.Size = new System.Drawing.Size(78, 16);
@@ -219,7 +239,7 @@
             // 
             // btnInhabilitar
             // 
-            this.btnInhabilitar.Location = new System.Drawing.Point(984, 341);
+            this.btnInhabilitar.Location = new System.Drawing.Point(983, 285);
             this.btnInhabilitar.Margin = new System.Windows.Forms.Padding(2);
             this.btnInhabilitar.Name = "btnInhabilitar";
             this.btnInhabilitar.Size = new System.Drawing.Size(110, 51);
@@ -230,7 +250,7 @@
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(984, 169);
+            this.btnNuevo.Location = new System.Drawing.Point(983, 113);
             this.btnNuevo.Margin = new System.Windows.Forms.Padding(2);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(110, 51);
@@ -238,15 +258,6 @@
             this.btnNuevo.Text = "NUEVO";
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
-            // 
-            // lbIDMembresia
-            // 
-            this.lbIDMembresia.AutoSize = true;
-            this.lbIDMembresia.Location = new System.Drawing.Point(140, 55);
-            this.lbIDMembresia.Name = "lbIDMembresia";
-            this.lbIDMembresia.Size = new System.Drawing.Size(21, 16);
-            this.lbIDMembresia.TabIndex = 26;
-            this.lbIDMembresia.Text = "00";
             // 
             // panel1
             // 
@@ -272,12 +283,25 @@
             this.label2.TabIndex = 13;
             this.label2.Text = "MEMBRESÍA";
             // 
-            // txtDuracionMem
+            // btnAgregar
             // 
-            this.txtDuracionMem.Location = new System.Drawing.Point(140, 169);
-            this.txtDuracionMem.Name = "txtDuracionMem";
-            this.txtDuracionMem.Size = new System.Drawing.Size(239, 22);
-            this.txtDuracionMem.TabIndex = 27;
+            this.btnAgregar.Location = new System.Drawing.Point(754, 37);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(87, 32);
+            this.btnAgregar.TabIndex = 28;
+            this.btnAgregar.Text = "AGREGAR";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // listServicios
+            // 
+            this.listServicios.FormattingEnabled = true;
+            this.listServicios.ItemHeight = 16;
+            this.listServicios.Location = new System.Drawing.Point(460, 84);
+            this.listServicios.Name = "listServicios";
+            this.listServicios.Size = new System.Drawing.Size(229, 100);
+            this.listServicios.TabIndex = 29;
             // 
             // CRUD_Membresía
             // 
@@ -326,5 +350,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtDuracionMem;
+        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.ListBox listServicios;
     }
 }
