@@ -1,7 +1,28 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\eslar\\OneDrive\\Documentos\\Curso_Moanso\\CODE_MOANSO\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\comismoaso\\PROYECTO_MOANSO_TURKY-SGYM\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|d:\\comismoaso\\proyecto_moanso_turky-sgym\\turky\u0027sgym_programa\\crud_forma_pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|solutionrelative:turky\u0027sgym_programa\\crud_forma_pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|d:\\comismoaso\\proyecto_moanso_turky-sgym\\turky\u0027sgym_programa\\crud_forma_pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64769021-152B-482E-B152-7752AA7C377F}|Turky\u0027sGym_Programa\\CapaPresentaci\u00F3n.csproj|solutionrelative:turky\u0027sgym_programa\\crud_forma_pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8719CA10-1097-4A28-8A73-5881850D61D0}|CapaL\u00F3gica\\CapaL\u00F3gica.csproj|d:\\comismoaso\\proyecto_moanso_turky-sgym\\capal\u00F3gica\\logformapago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8719CA10-1097-4A28-8A73-5881850D61D0}|CapaL\u00F3gica\\CapaL\u00F3gica.csproj|solutionrelative:capal\u00F3gica\\logformapago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D4338B3-1D8A-4436-AE5C-4F764EF67553}|CapaEntidad\\CapaEntidad.csproj|d:\\comismoaso\\proyecto_moanso_turky-sgym\\capaentidad\\entformapago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D4338B3-1D8A-4436-AE5C-4F764EF67553}|CapaEntidad\\CapaEntidad.csproj|solutionrelative:capaentidad\\entformapago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EF94DC8-2057-441F-B546-18F5A19BBF94}|CapaDatos\\CapaDatos.csproj|d:\\comismoaso\\proyecto_moanso_turky-sgym\\capadatos\\datformapago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EF94DC8-2057-441F-B546-18F5A19BBF94}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\datformapago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +43,70 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CRUD_Forma_Pago.cs",
+              "DocumentMoniker": "D:\\comismoaso\\PROYECTO_MOANSO_TURKY-SGYM\\Turky\u0027sGym_Programa\\CRUD_Forma_Pago.cs",
+              "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\CRUD_Forma_Pago.cs",
+              "ToolTip": "D:\\comismoaso\\PROYECTO_MOANSO_TURKY-SGYM\\Turky\u0027sGym_Programa\\CRUD_Forma_Pago.cs",
+              "RelativeToolTip": "Turky\u0027sGym_Programa\\CRUD_Forma_Pago.cs",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAgwHMAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T02:10:14.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CRUD_Forma_Pago.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\comismoaso\\PROYECTO_MOANSO_TURKY-SGYM\\Turky\u0027sGym_Programa\\CRUD_Forma_Pago.cs",
+              "RelativeDocumentMoniker": "Turky\u0027sGym_Programa\\CRUD_Forma_Pago.cs",
+              "ToolTip": "D:\\comismoaso\\PROYECTO_MOANSO_TURKY-SGYM\\Turky\u0027sGym_Programa\\CRUD_Forma_Pago.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Turky\u0027sGym_Programa\\CRUD_Forma_Pago.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T02:10:13.147Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "logFormaPago.cs",
+              "DocumentMoniker": "D:\\comismoaso\\PROYECTO_MOANSO_TURKY-SGYM\\CapaL\u00F3gica\\logFormaPago.cs",
+              "RelativeDocumentMoniker": "CapaL\u00F3gica\\logFormaPago.cs",
+              "ToolTip": "D:\\comismoaso\\PROYECTO_MOANSO_TURKY-SGYM\\CapaL\u00F3gica\\logFormaPago.cs",
+              "RelativeToolTip": "CapaL\u00F3gica\\logFormaPago.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAA1wDEAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T02:09:52.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "entFormaPago.cs",
+              "DocumentMoniker": "D:\\comismoaso\\PROYECTO_MOANSO_TURKY-SGYM\\CapaEntidad\\entFormaPago.cs",
+              "RelativeDocumentMoniker": "CapaEntidad\\entFormaPago.cs",
+              "ToolTip": "D:\\comismoaso\\PROYECTO_MOANSO_TURKY-SGYM\\CapaEntidad\\entFormaPago.cs",
+              "RelativeToolTip": "CapaEntidad\\entFormaPago.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T02:09:42.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "datFormaPago.cs",
+              "DocumentMoniker": "D:\\comismoaso\\PROYECTO_MOANSO_TURKY-SGYM\\CapaDatos\\datFormaPago.cs",
+              "RelativeDocumentMoniker": "CapaDatos\\datFormaPago.cs",
+              "ToolTip": "D:\\comismoaso\\PROYECTO_MOANSO_TURKY-SGYM\\CapaDatos\\datFormaPago.cs",
+              "RelativeToolTip": "CapaDatos\\datFormaPago.cs",
+              "ViewState": "AQIAAIwAAAAAAAAAAAAwwDsAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T02:05:15.488Z",
+              "EditorCaption": ""
             }
           ]
         }

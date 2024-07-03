@@ -8,8 +8,8 @@ namespace CapaEntidad
 {
     public class entFormaPago
     {
-        public int idFormaPago { get; set; }
-        public string nombreF { get; set; }
-        public Boolean estFormaPago { get; set; }
+        public int FormadepagoID { get; set; }
+        public string NomForma { get; set; }
+        public Boolean estForma { get; set; }
     }
 }

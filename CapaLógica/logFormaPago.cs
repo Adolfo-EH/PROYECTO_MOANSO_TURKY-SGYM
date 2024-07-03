@@ -42,6 +42,11 @@ namespace CapaLógica
         {
             datFormaPago.Instancia.DeshabilitarFormaPago(fp);
         }
+
+        public Boolean ExisteFormaPago(string NomForma)
+        {
+            return datFormaPago.Instancia.ExisteFormaPago(NomForma);
+        }
         #endregion metodos
     }
 }

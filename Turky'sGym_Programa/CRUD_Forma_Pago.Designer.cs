@@ -220,6 +220,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "CRUD_Forma_Pago";
             this.Text = "CRUD_Forma_Pago";
+            this.Load += new System.EventHandler(this.CRUD_Forma_Pago_Load);
             this.groupForma.ResumeLayout(false);
             this.groupForma.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFormaPago)).EndInit();

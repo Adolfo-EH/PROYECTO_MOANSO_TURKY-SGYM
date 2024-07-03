@@ -39,11 +39,11 @@ namespace CapaDatos
                 SqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
-                    entFormaPago mp = new entFormaPago();
-                    mp.idFormaPago = Convert.ToInt32(dr["FormaPagoID"]);
-                    mp.nombreF = dr["nombre"].ToString();
-                    mp.estFormaPago = Convert.ToBoolean(dr["estForma"]);
-                    lista.Add(mp);
+                    entFormaPago fp = new entFormaPago();
+                    fp.FormadepagoID = Convert.ToInt32(dr["FormadepagoID"]);
+                    fp.NomForma = dr["NomForma"].ToString();
+                    fp.estForma = Convert.ToBoolean(dr["estForma"]);
+                    lista.Add(fp);
                 }
             }
             catch (Exception e)
@@ -57,6 +57,7 @@ namespace CapaDatos
             return lista;
         }
 
+        //insertaFormaPago
         public Boolean InsertarFormaPago(entFormaPago fp)
         {
             SqlCommand cmd = null;
@@ -66,8 +67,8 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spInsertarFormaPago", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@nombre", fp.nombreF);
-                cmd.Parameters.AddWithValue("@estForma", fp.estFormaPago);
+                cmd.Parameters.AddWithValue("@NomForma", fp.NomForma);
+                cmd.Parameters.AddWithValue("@estForma", fp.estForma);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -83,6 +84,7 @@ namespace CapaDatos
             return inserta;
         }
 
+        //habilitaFormaPago
         public Boolean HabilitarFormaPago(entFormaPago fp)
         {
             SqlCommand cmd = null;
@@ -92,7 +94,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spHabilitarFormaPago", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@idFormaPago", fp.idFormaPago);
+                cmd.Parameters.AddWithValue("@FormadepagoID", fp.FormadepagoID);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -108,7 +110,7 @@ namespace CapaDatos
             return delete;
         }
 
-        //deshabilitaCliente
+        //deshabilitaFormaPago
         public Boolean DeshabilitarFormaPago(entFormaPago fp)
         {
             SqlCommand cmd = null;
@@ -118,7 +120,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spDeshabilitarFormaPago", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@idFormaPago", fp.idFormaPago);
+                cmd.Parameters.AddWithValue("@FormadepagoID", fp.FormadepagoID);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -132,6 +134,32 @@ namespace CapaDatos
             }
             finally { cmd.Connection.Close(); }
             return delete;
+        }
+
+        //ValidacionFormaPago
+        public Boolean ExisteFormaPago(string NomForma)
+        {
+            SqlCommand cmd = null;
+            Boolean existe = false;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spExisteFormaPago", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@NomForma", NomForma);
+                cn.Open();
+                int count = (int)cmd.ExecuteScalar();
+                if (count > 0)
+                {
+                    existe = true;
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return existe;
         }
         #endregion FORMA DE PAGO
     }

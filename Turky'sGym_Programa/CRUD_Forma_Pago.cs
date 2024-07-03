@@ -50,8 +50,8 @@ namespace Turky_sGym_Programa
             try
             {
                 entFormaPago fp = new entFormaPago();
-                fp.idFormaPago = int.Parse(lbIDFP.Text.Trim());
-                fp.estFormaPago = cbxEstadoFP.Checked;
+                fp.FormadepagoID = int.Parse(lbIDFP.Text.Trim());
+                fp.estForma = cbxEstadoFP.Checked;
                 logFormaPago.Instancia.HabilitarFormaPago(fp);
             }
             catch (Exception ex)
@@ -68,7 +68,7 @@ namespace Turky_sGym_Programa
             try
             {
                 entFormaPago fp = new entFormaPago();
-                fp.idFormaPago = int.Parse(lbIDFP.Text.Trim());
+                fp.FormadepagoID = int.Parse(lbIDFP.Text.Trim());
                 logFormaPago.Instancia.DeshabilitarFormaPago(fp);
             }
             catch (Exception ex)
@@ -84,10 +84,21 @@ namespace Turky_sGym_Programa
         {
             try
             {
-                entFormaPago fp = new entFormaPago();
-                fp.nombreF = txtTipoFP.Text.Trim();   
-                fp.estFormaPago = cbxEstadoFP.Checked;
-                logFormaPago.Instancia.InsertarFormaPago(fp);
+                string nombreFormaPago = txtTipoFP.Text.Trim();
+                if (logFormaPago.Instancia.ExisteFormaPago(nombreFormaPago))
+                {
+                    MessageBox.Show("El nombre de la forma de pago ya existe", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    entFormaPago fp = new entFormaPago();
+                    fp.NomForma = nombreFormaPago;
+                    fp.estForma = cbxEstadoFP.Checked;
+                    logFormaPago.Instancia.InsertarFormaPago(fp);
+                    LimpiarVariables();
+                    groupForma.Enabled = false;
+                    listarFormaPago();
+                }
             }
             catch (Exception ex)
             {
@@ -100,12 +111,19 @@ namespace Turky_sGym_Programa
 
         private void btnCancelarFP_Click(object sender, EventArgs e)
         {
+
+            LimpiarVariables();
             groupForma.Enabled = false;
         }
 
         private void btnRegresarFP_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void CRUD_Forma_Pago_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
