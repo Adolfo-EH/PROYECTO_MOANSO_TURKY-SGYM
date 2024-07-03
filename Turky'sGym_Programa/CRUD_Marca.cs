@@ -36,6 +36,8 @@ namespace Turky_sGym_Programa
         private void btnCrearM_Click(object sender, EventArgs e)
         {
             gbMarca.Enabled = true;
+            btnInsertarM.Visible = true;
+            LimpiarVariables();
         }
 
         private void dgvMarca_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -52,6 +54,7 @@ namespace Turky_sGym_Programa
             {
                 entMarca mr = new entMarca();
                 mr.idMarca = int.Parse(lblIDMarca.Text.Trim());
+                mr.estMarca = cbEstadoMarca.Checked;
                 logMarca.Instancia.DeshabilitarMarca(mr);
             }
             catch (Exception ex)
@@ -69,6 +72,7 @@ namespace Turky_sGym_Programa
             {
                 entMarca mr = new entMarca();
                 mr.idMarca = int.Parse(lblIDMarca.Text.Trim());
+                mr.estMarca = cbEstadoMarca.Checked;
                 logMarca.Instancia.HabilitarMarca(mr);
             }
             catch (Exception ex)
@@ -85,7 +89,7 @@ namespace Turky_sGym_Programa
             try
             {
                 entMarca mr = new entMarca();
-                mr.nombreM = txtNomMarca.Text.Trim();
+                mr.nomMarca = txtNomMarca.Text.Trim();
                 mr.estMarca = cbEstadoMarca.Checked;
                 logMarca.Instancia.InsertaMarca(mr);
             }
@@ -105,6 +109,23 @@ namespace Turky_sGym_Programa
         }
 
         private void CRUD_Marca_Load(object sender, EventArgs e)
+        {
+            cbxCategoriaM.DataSource = logMarca.Instancia.CargarCategoria();
+            cbxCategoriaM.DisplayMember = "NomCategoria";
+            cbxCategoriaM.ValueMember = "CategoriaID";
+        }
+
+        private void dgvMarca_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void cbxCategoriaM_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNomMarca_TextChanged(object sender, EventArgs e)
         {
 
         }
