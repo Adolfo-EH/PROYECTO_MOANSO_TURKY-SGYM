@@ -25,7 +25,7 @@ namespace CapaDatos
         }
         #endregion singleton
 
-        #region metodos
+        #region PROMOCION
         public List<entPromocion> ListarPromocion()
         {
             SqlCommand cmd = null;
@@ -183,6 +183,6 @@ namespace CapaDatos
             return dt;
         }
 
-        #endregion metodos
+        #endregion PROMOCION
     }
 }

@@ -25,7 +25,7 @@ namespace CapaDatos
         }
         #endregion singleton
 
-        #region metodos
+        #region METODO DE PAGO
         public List<entMetodoPago> ListarMetodoPago()
         {
             SqlCommand cmd = null;
@@ -145,6 +145,6 @@ namespace CapaDatos
             da.Fill(dt);
             return dt;
         }
-        #endregion metodos
+        #endregion METODO DE PAGO
     }
 }

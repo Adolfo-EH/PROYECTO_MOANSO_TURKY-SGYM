@@ -30,7 +30,6 @@ namespace Turky_sGym_Programa
         {
             lbID.Text = "00";
             txtNombre.Clear();
-            cmbTipoMetPag.SelectedIndex = 0;
             cbxEstadoMetodoPago.Checked = false;
         }
 

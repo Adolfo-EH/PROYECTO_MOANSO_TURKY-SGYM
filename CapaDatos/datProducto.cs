@@ -26,7 +26,7 @@ namespace CapaDatos
         }
         #endregion singleton
 
-        #region metodos
+        #region PRODUCTO
         public List<entProducto> ListarProducto()
         {
             SqlCommand cmd = null;
@@ -177,6 +177,6 @@ namespace CapaDatos
             da.Fill(dt);
             return dt;
         }
-        #endregion metodos
+        #endregion PRODUCTO
     }
 }

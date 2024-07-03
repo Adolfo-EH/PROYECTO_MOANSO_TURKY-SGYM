@@ -25,7 +25,7 @@ namespace CapaDatos
         }
         #endregion singleton
 
-        #region metodos
+        #region FORMA DE PAGO
         public List<entFormaPago> ListarFormaPago()
         {
             SqlCommand cmd = null;
@@ -133,6 +133,6 @@ namespace CapaDatos
             finally { cmd.Connection.Close(); }
             return delete;
         }
-        #endregion metodos
+        #endregion FORMA DE PAGO
     }
 }

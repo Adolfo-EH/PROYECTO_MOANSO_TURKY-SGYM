@@ -25,7 +25,7 @@ namespace CapaDatos
         }
         #endregion singleton
 
-        #region Servicios
+        #region SERVICIOS
 
         ////////////////////listado de Servicios
         public List<entServicios> ListarServicios()
@@ -139,6 +139,6 @@ namespace CapaDatos
             return delete;
         }
 
-        #endregion Servicios
+        #endregion SERVICIOS
     }
 }

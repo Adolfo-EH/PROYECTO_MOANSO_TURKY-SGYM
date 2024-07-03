@@ -21,6 +21,7 @@ namespace CapaLógica
             }
         }
         #endregion singleton
+
         #region metodos
         ///listado
         public List<entFormaPago> ListarFormaPago()

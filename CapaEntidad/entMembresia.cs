@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace CapaEntidad
 {
-    public class entPlan
+    public class entMembresia
     {
-        public int idPlan { get; set; }
-        public string nombrePlan { get; set; }
+        public int idMembresia { get; set; }
+        public string nombreMemb { get; set; }
         public string nombreServicio { get; set; } 
         public Double precio { get; set; }
         public DateTime duracion { get; set; }
-        public Boolean estPlan{ get; set; }
+        public Boolean estMembresia{ get; set; }
     }
 }

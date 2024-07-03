@@ -25,7 +25,7 @@ namespace CapaDatos
         }
         #endregion singleton
 
-        #region marca
+        #region MARCA
 
         ////////////////////listado de Marcas
         public List<entMarca> ListarMarcas()
@@ -138,7 +138,7 @@ namespace CapaDatos
             finally { cmd.Connection.Close(); }
             return delete;
         }
-        #endregion marca
+        #endregion MARCA
 
     }
 }

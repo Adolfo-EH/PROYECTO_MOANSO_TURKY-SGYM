@@ -23,7 +23,7 @@ namespace Turky_sGym_Programa
 
         public void listarPlan()
         {
-            dgvPlan.DataSource = logPlan.Instancia.ListarPlan();
+            dgvPlan.DataSource = logMembresia.Instancia.ListarMembresia();
         }
 
         private void LimpiarVariables()
@@ -51,9 +51,9 @@ namespace Turky_sGym_Programa
         {
             try
             {
-                entPlan pl = new entPlan();
-                pl.idPlan = int.Parse(txtMembresia.Text.Trim());
-                logPlan.Instancia.DeshabilitarPlan(pl);
+                entMembresia pl = new entMembresia();
+                pl.idMembresia = int.Parse(txtMembresia.Text.Trim());
+                logMembresia.Instancia.DeshabilitarMembresia(pl);
             }
             catch (Exception ex)
             {
@@ -68,9 +68,9 @@ namespace Turky_sGym_Programa
         {
             try
             {
-                entPlan pl = new entPlan();
-                pl.idPlan = int.Parse(lbIDMembresia.Text.Trim());
-                logPlan.Instancia.HabilitarPlan(pl);
+                entMembresia pl = new entMembresia();
+                pl.idMembresia = int.Parse(lbIDMembresia.Text.Trim());
+                logMembresia.Instancia.HabilitarMembresia(pl);
             }
             catch (Exception ex)
             {
@@ -86,12 +86,12 @@ namespace Turky_sGym_Programa
             //insertar
             try
             {
-                entPlan pl = new entPlan();
-                pl.nombrePlan = txtMembresia.Text;
+                entMembresia pl = new entMembresia();
+                pl.nombreMemb = txtMembresia.Text;
                 pl.precio = double.Parse(txtPrecio.Text.Trim());
                 //pl.duracion = txtDuracionMem.Text;
-                pl.estPlan = cbEstado.Checked;
-                logPlan.Instancia.InsertaPlan(pl);
+                pl.estMembresia = cbEstado.Checked;
+                logMembresia.Instancia.InsertaMembresia(pl);
             }
             catch (Exception ex)
             {

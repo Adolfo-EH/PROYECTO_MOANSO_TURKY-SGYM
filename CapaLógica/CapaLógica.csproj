@@ -45,7 +45,7 @@
     <Compile Include="logFormaPago.cs" />
     <Compile Include="logMarca.cs" />
     <Compile Include="logMetodoPago.cs" />
-    <Compile Include="logPlan.cs" />
+    <Compile Include="logMembresia.cs" />
     <Compile Include="logProducto.cs" />
     <Compile Include="logPromocion.cs" />
     <Compile Include="logServicios.cs" />

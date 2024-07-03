@@ -25,7 +25,7 @@ namespace CapaDatos
         }
         #endregion singleton
 
-        #region categoria
+        #region CATEGORIA
 
         ////////////////////listado de Categorias
         public List<entCategoria> ListarCategorias()
@@ -163,7 +163,7 @@ namespace CapaDatos
             finally { cmd.Connection.Close(); }
             return delete;
         }
-        #endregion categoria
+        #endregion CATEGORIA
 
     }
 }

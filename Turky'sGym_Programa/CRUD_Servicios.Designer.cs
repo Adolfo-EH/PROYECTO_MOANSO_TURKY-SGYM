@@ -74,7 +74,7 @@
             // btnRegresarS
             // 
             this.btnRegresarS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresarS.Location = new System.Drawing.Point(875, 570);
+            this.btnRegresarS.Location = new System.Drawing.Point(875, 533);
             this.btnRegresarS.Name = "btnRegresarS";
             this.btnRegresarS.Size = new System.Drawing.Size(140, 60);
             this.btnRegresarS.TabIndex = 79;
@@ -84,7 +84,7 @@
             // btnHabilitarS
             // 
             this.btnHabilitarS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHabilitarS.Location = new System.Drawing.Point(875, 255);
+            this.btnHabilitarS.Location = new System.Drawing.Point(875, 218);
             this.btnHabilitarS.Name = "btnHabilitarS";
             this.btnHabilitarS.Size = new System.Drawing.Size(140, 60);
             this.btnHabilitarS.TabIndex = 78;
@@ -95,7 +95,7 @@
             // btnInhabilitarS
             // 
             this.btnInhabilitarS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInhabilitarS.Location = new System.Drawing.Point(875, 378);
+            this.btnInhabilitarS.Location = new System.Drawing.Point(875, 341);
             this.btnInhabilitarS.Name = "btnInhabilitarS";
             this.btnInhabilitarS.Size = new System.Drawing.Size(140, 60);
             this.btnInhabilitarS.TabIndex = 76;
@@ -106,7 +106,7 @@
             // btnCrearS
             // 
             this.btnCrearS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCrearS.Location = new System.Drawing.Point(875, 155);
+            this.btnCrearS.Location = new System.Drawing.Point(875, 118);
             this.btnCrearS.Name = "btnCrearS";
             this.btnCrearS.Size = new System.Drawing.Size(140, 60);
             this.btnCrearS.TabIndex = 75;
@@ -117,7 +117,7 @@
             // dgvServicios
             // 
             this.dgvServicios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvServicios.Location = new System.Drawing.Point(182, 155);
+            this.dgvServicios.Location = new System.Drawing.Point(182, 118);
             this.dgvServicios.Name = "dgvServicios";
             this.dgvServicios.Size = new System.Drawing.Size(641, 296);
             this.dgvServicios.TabIndex = 74;
@@ -132,7 +132,7 @@
             this.gbServicio.Controls.Add(this.label1);
             this.gbServicio.Controls.Add(this.label2);
             this.gbServicio.Controls.Add(this.cbEstadoServicio);
-            this.gbServicio.Location = new System.Drawing.Point(182, 478);
+            this.gbServicio.Location = new System.Drawing.Point(182, 441);
             this.gbServicio.Name = "gbServicio";
             this.gbServicio.Size = new System.Drawing.Size(641, 152);
             this.gbServicio.TabIndex = 77;
