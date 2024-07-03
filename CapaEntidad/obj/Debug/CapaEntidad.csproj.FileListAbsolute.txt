@@ -64,3 +64,9 @@ C:\Users\Renzo Ulloa\Desktop\MOANSO, ESTE SI ES FINAL\CapaEntidad\obj\Debug\Capa
 C:\Users\Renzo Ulloa\Desktop\MOANSO, ESTE SI ES FINAL\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
 C:\Users\Renzo Ulloa\Desktop\MOANSO, ESTE SI ES FINAL\CapaEntidad\obj\Debug\CapaEntidad.dll
 C:\Users\Renzo Ulloa\Desktop\MOANSO, ESTE SI ES FINAL\CapaEntidad\obj\Debug\CapaEntidad.pdb
+C:\Users\brin_\Source\Repos\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\bin\Debug\CapaEntidad.dll
+C:\Users\brin_\Source\Repos\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\bin\Debug\CapaEntidad.pdb
+C:\Users\brin_\Source\Repos\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+C:\Users\brin_\Source\Repos\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+C:\Users\brin_\Source\Repos\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\obj\Debug\CapaEntidad.dll
+C:\Users\brin_\Source\Repos\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\obj\Debug\CapaEntidad.pdb

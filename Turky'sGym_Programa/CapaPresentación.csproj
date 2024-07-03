@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CRUD_Administrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD_Administrador.Designer.cs">
+      <DependentUpon>CRUD_Administrador.cs</DependentUpon>
+    </Compile>
     <Compile Include="CRUD_Forma_Pago.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CORE_VENTA_PRODUCTOS.resx">
       <DependentUpon>CORE_VENTA_PRODUCTOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD_Administrador.resx">
+      <DependentUpon>CRUD_Administrador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CRUD_Categoría.resx">
       <DependentUpon>CRUD_Categoría.cs</DependentUpon>

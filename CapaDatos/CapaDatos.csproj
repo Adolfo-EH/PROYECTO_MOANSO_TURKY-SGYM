@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.cs" />
+    <Compile Include="datAdministrador.cs" />
     <Compile Include="datCategoria.cs" />
     <Compile Include="datFormaPago.cs" />
     <Compile Include="datMarca.cs" />
