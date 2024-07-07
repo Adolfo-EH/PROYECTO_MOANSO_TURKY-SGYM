@@ -119,5 +119,10 @@ namespace Turky_sGym_Programa
         {
             Close();
         }
+
+        private void cmbTipoMetPag_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

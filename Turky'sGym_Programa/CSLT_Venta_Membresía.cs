@@ -46,6 +46,11 @@ namespace Turky_sGym_Programa
                 MessageBox.Show("Por favor, ingrese un término de búsqueda.");
             }
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }

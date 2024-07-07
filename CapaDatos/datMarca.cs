@@ -42,9 +42,9 @@ namespace CapaDatos
                 while (dr.Read())
                 {
                     entMarca mr = new entMarca();
-                    mr.nomMarca = dr["NomMarca"].ToString();
                     mr.CategoriaID = Convert.ToInt32(dr["CategoriaID"]);
                     mr.idMarca = Convert.ToInt32(dr["MarcaID"]);
+                    mr.nomMarca = dr["NomMarca"].ToString();
                     mr.estMarca = Convert.ToBoolean(dr["estMarca"]);
                     lista.Add(mr);
                 }
@@ -71,9 +71,9 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spInsertarMarca", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@CategoriaID", mr.CategoriaID);
                 cmd.Parameters.AddWithValue("@nomMarca", mr.nomMarca);
                 cmd.Parameters.AddWithValue("@estMarca", mr.estMarca);
-                cmd.Parameters.AddWithValue("@CategoriaID", mr.CategoriaID);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)

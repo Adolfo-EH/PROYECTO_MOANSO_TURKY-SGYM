@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.btnEditarAd = new System.Windows.Forms.Button();
-            this.btnRegresarAd = new System.Windows.Forms.Button();
             this.btnHabilitarAd = new System.Windows.Forms.Button();
             this.btnInhabilitarAd = new System.Windows.Forms.Button();
             this.btnCrearAd = new System.Windows.Forms.Button();
@@ -55,34 +54,20 @@
             // btnEditarAd
             // 
             this.btnEditarAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditarAd.Location = new System.Drawing.Point(1164, 438);
-            this.btnEditarAd.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEditarAd.Location = new System.Drawing.Point(536, 578);
             this.btnEditarAd.Name = "btnEditarAd";
-            this.btnEditarAd.Size = new System.Drawing.Size(191, 47);
+            this.btnEditarAd.Size = new System.Drawing.Size(100, 50);
             this.btnEditarAd.TabIndex = 87;
-            this.btnEditarAd.Text = "MODIFICAR";
+            this.btnEditarAd.Text = "EDITAR";
             this.btnEditarAd.UseVisualStyleBackColor = true;
             this.btnEditarAd.Click += new System.EventHandler(this.btnEditarAd_Click);
-            // 
-            // btnRegresarAd
-            // 
-            this.btnRegresarAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresarAd.Location = new System.Drawing.Point(1164, 520);
-            this.btnRegresarAd.Margin = new System.Windows.Forms.Padding(4);
-            this.btnRegresarAd.Name = "btnRegresarAd";
-            this.btnRegresarAd.Size = new System.Drawing.Size(191, 47);
-            this.btnRegresarAd.TabIndex = 86;
-            this.btnRegresarAd.Text = "REGRESAR";
-            this.btnRegresarAd.UseVisualStyleBackColor = true;
-            this.btnRegresarAd.Click += new System.EventHandler(this.btnRegresarAd_Click);
             // 
             // btnHabilitarAd
             // 
             this.btnHabilitarAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHabilitarAd.Location = new System.Drawing.Point(1164, 276);
-            this.btnHabilitarAd.Margin = new System.Windows.Forms.Padding(4);
+            this.btnHabilitarAd.Location = new System.Drawing.Point(536, 396);
             this.btnHabilitarAd.Name = "btnHabilitarAd";
-            this.btnHabilitarAd.Size = new System.Drawing.Size(191, 47);
+            this.btnHabilitarAd.Size = new System.Drawing.Size(100, 50);
             this.btnHabilitarAd.TabIndex = 85;
             this.btnHabilitarAd.Text = "HABILITAR";
             this.btnHabilitarAd.UseVisualStyleBackColor = true;
@@ -91,10 +76,9 @@
             // btnInhabilitarAd
             // 
             this.btnInhabilitarAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInhabilitarAd.Location = new System.Drawing.Point(1164, 355);
-            this.btnInhabilitarAd.Margin = new System.Windows.Forms.Padding(4);
+            this.btnInhabilitarAd.Location = new System.Drawing.Point(536, 484);
             this.btnInhabilitarAd.Name = "btnInhabilitarAd";
-            this.btnInhabilitarAd.Size = new System.Drawing.Size(191, 47);
+            this.btnInhabilitarAd.Size = new System.Drawing.Size(100, 50);
             this.btnInhabilitarAd.TabIndex = 84;
             this.btnInhabilitarAd.Text = "INHABILITAR";
             this.btnInhabilitarAd.UseVisualStyleBackColor = true;
@@ -103,10 +87,9 @@
             // btnCrearAd
             // 
             this.btnCrearAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCrearAd.Location = new System.Drawing.Point(1164, 201);
-            this.btnCrearAd.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCrearAd.Location = new System.Drawing.Point(536, 305);
             this.btnCrearAd.Name = "btnCrearAd";
-            this.btnCrearAd.Size = new System.Drawing.Size(191, 47);
+            this.btnCrearAd.Size = new System.Drawing.Size(100, 50);
             this.btnCrearAd.TabIndex = 83;
             this.btnCrearAd.Text = "NUEVO";
             this.btnCrearAd.UseVisualStyleBackColor = true;
@@ -124,21 +107,18 @@
             this.gbAdministrador.Controls.Add(this.lblUsuarioAd);
             this.gbAdministrador.Controls.Add(this.label2);
             this.gbAdministrador.Controls.Add(this.cbEstadoAdmin);
-            this.gbAdministrador.Location = new System.Drawing.Point(240, 599);
-            this.gbAdministrador.Margin = new System.Windows.Forms.Padding(4);
+            this.gbAdministrador.Location = new System.Drawing.Point(12, 94);
             this.gbAdministrador.Name = "gbAdministrador";
-            this.gbAdministrador.Padding = new System.Windows.Forms.Padding(4);
-            this.gbAdministrador.Size = new System.Drawing.Size(855, 187);
+            this.gbAdministrador.Size = new System.Drawing.Size(641, 193);
             this.gbAdministrador.TabIndex = 82;
             this.gbAdministrador.TabStop = false;
             this.gbAdministrador.Text = "Administrador";
             // 
             // btnActualizarAd
             // 
-            this.btnActualizarAd.Location = new System.Drawing.Point(671, 77);
-            this.btnActualizarAd.Margin = new System.Windows.Forms.Padding(4);
+            this.btnActualizarAd.Location = new System.Drawing.Point(539, 73);
             this.btnActualizarAd.Name = "btnActualizarAd";
-            this.btnActualizarAd.Size = new System.Drawing.Size(153, 49);
+            this.btnActualizarAd.Size = new System.Drawing.Size(85, 45);
             this.btnActualizarAd.TabIndex = 78;
             this.btnActualizarAd.Text = "ACTUALIZAR";
             this.btnActualizarAd.UseVisualStyleBackColor = true;
@@ -146,29 +126,26 @@
             // 
             // txtPassAd
             // 
-            this.txtPassAd.Location = new System.Drawing.Point(177, 121);
-            this.txtPassAd.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPassAd.Location = new System.Drawing.Point(93, 97);
             this.txtPassAd.Name = "txtPassAd";
-            this.txtPassAd.Size = new System.Drawing.Size(248, 22);
+            this.txtPassAd.Size = new System.Drawing.Size(254, 20);
             this.txtPassAd.TabIndex = 77;
             // 
             // lblPassAd
             // 
             this.lblPassAd.AutoSize = true;
             this.lblPassAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassAd.Location = new System.Drawing.Point(8, 121);
-            this.lblPassAd.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPassAd.Location = new System.Drawing.Point(6, 98);
             this.lblPassAd.Name = "lblPassAd";
-            this.lblPassAd.Size = new System.Drawing.Size(100, 20);
+            this.lblPassAd.Size = new System.Drawing.Size(79, 16);
             this.lblPassAd.TabIndex = 76;
             this.lblPassAd.Text = "Contraseña:";
             // 
             // btnCancelarAd
             // 
-            this.btnCancelarAd.Location = new System.Drawing.Point(671, 136);
-            this.btnCancelarAd.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCancelarAd.Location = new System.Drawing.Point(539, 133);
             this.btnCancelarAd.Name = "btnCancelarAd";
-            this.btnCancelarAd.Size = new System.Drawing.Size(153, 43);
+            this.btnCancelarAd.Size = new System.Drawing.Size(85, 45);
             this.btnCancelarAd.TabIndex = 75;
             this.btnCancelarAd.Text = "CANCELAR";
             this.btnCancelarAd.UseVisualStyleBackColor = true;
@@ -176,30 +153,27 @@
             // 
             // btnAceptarAd
             // 
-            this.btnAceptarAd.Location = new System.Drawing.Point(671, 18);
-            this.btnAceptarAd.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAceptarAd.Location = new System.Drawing.Point(539, 16);
             this.btnAceptarAd.Name = "btnAceptarAd";
-            this.btnAceptarAd.Size = new System.Drawing.Size(153, 49);
+            this.btnAceptarAd.Size = new System.Drawing.Size(85, 45);
             this.btnAceptarAd.TabIndex = 73;
-            this.btnAceptarAd.Text = "ACEPTAR";
+            this.btnAceptarAd.Text = "INSERTAR";
             this.btnAceptarAd.UseVisualStyleBackColor = true;
             this.btnAceptarAd.Click += new System.EventHandler(this.btnAceptarAd_Click);
             // 
             // txtUsuarioAd
             // 
-            this.txtUsuarioAd.Location = new System.Drawing.Point(177, 82);
-            this.txtUsuarioAd.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUsuarioAd.Location = new System.Drawing.Point(93, 66);
             this.txtUsuarioAd.Name = "txtUsuarioAd";
-            this.txtUsuarioAd.Size = new System.Drawing.Size(248, 22);
+            this.txtUsuarioAd.Size = new System.Drawing.Size(254, 20);
             this.txtUsuarioAd.TabIndex = 69;
             // 
             // lblIDAdmin
             // 
             this.lblIDAdmin.AutoSize = true;
-            this.lblIDAdmin.Location = new System.Drawing.Point(173, 39);
-            this.lblIDAdmin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblIDAdmin.Location = new System.Drawing.Point(91, 32);
             this.lblIDAdmin.Name = "lblIDAdmin";
-            this.lblIDAdmin.Size = new System.Drawing.Size(21, 16);
+            this.lblIDAdmin.Size = new System.Drawing.Size(19, 13);
             this.lblIDAdmin.TabIndex = 72;
             this.lblIDAdmin.Text = "00";
             // 
@@ -207,20 +181,18 @@
             // 
             this.lblUsuarioAd.AutoSize = true;
             this.lblUsuarioAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuarioAd.Location = new System.Drawing.Point(8, 82);
-            this.lblUsuarioAd.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUsuarioAd.Location = new System.Drawing.Point(6, 67);
             this.lblUsuarioAd.Name = "lblUsuarioAd";
-            this.lblUsuarioAd.Size = new System.Drawing.Size(78, 20);
+            this.lblUsuarioAd.Size = new System.Drawing.Size(61, 16);
             this.lblUsuarioAd.TabIndex = 68;
             this.lblUsuarioAd.Text = "Usurario:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(137, 39);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(64, 32);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(23, 16);
+            this.label2.Size = new System.Drawing.Size(21, 13);
             this.label2.TabIndex = 71;
             this.label2.Text = "ID:";
             // 
@@ -228,10 +200,9 @@
             // 
             this.cbEstadoAdmin.AutoSize = true;
             this.cbEstadoAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbEstadoAdmin.Location = new System.Drawing.Point(335, 36);
-            this.cbEstadoAdmin.Margin = new System.Windows.Forms.Padding(4);
+            this.cbEstadoAdmin.Location = new System.Drawing.Point(278, 29);
             this.cbEstadoAdmin.Name = "cbEstadoAdmin";
-            this.cbEstadoAdmin.Size = new System.Drawing.Size(83, 24);
+            this.cbEstadoAdmin.Size = new System.Drawing.Size(69, 20);
             this.cbEstadoAdmin.TabIndex = 70;
             this.cbEstadoAdmin.Text = "Estado";
             this.cbEstadoAdmin.UseVisualStyleBackColor = true;
@@ -239,12 +210,11 @@
             // dgvAdministrador
             // 
             this.dgvAdministrador.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAdministrador.Location = new System.Drawing.Point(240, 201);
-            this.dgvAdministrador.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvAdministrador.Location = new System.Drawing.Point(659, 85);
             this.dgvAdministrador.Name = "dgvAdministrador";
             this.dgvAdministrador.ReadOnly = true;
             this.dgvAdministrador.RowHeadersWidth = 51;
-            this.dgvAdministrador.Size = new System.Drawing.Size(855, 364);
+            this.dgvAdministrador.Size = new System.Drawing.Size(525, 836);
             this.dgvAdministrador.TabIndex = 81;
             this.dgvAdministrador.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAdministrador_CellDoubleClick);
             // 
@@ -254,9 +224,8 @@
             this.panel1.Controls.Add(this.lblVentaServicios);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1569, 97);
+            this.panel1.Size = new System.Drawing.Size(1184, 79);
             this.panel1.TabIndex = 80;
             // 
             // lblVentaServicios
@@ -267,26 +236,25 @@
             this.lblVentaServicios.AutoSize = true;
             this.lblVentaServicios.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVentaServicios.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblVentaServicios.Location = new System.Drawing.Point(612, 25);
-            this.lblVentaServicios.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblVentaServicios.Location = new System.Drawing.Point(462, 21);
             this.lblVentaServicios.Name = "lblVentaServicios";
-            this.lblVentaServicios.Size = new System.Drawing.Size(367, 39);
+            this.lblVentaServicios.Size = new System.Drawing.Size(295, 31);
             this.lblVentaServicios.TabIndex = 44;
             this.lblVentaServicios.Text = "ADMINISTRADORES";
             // 
             // CRUD_Administrador
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1569, 801);
+            this.ClientSize = new System.Drawing.Size(1184, 921);
             this.Controls.Add(this.btnEditarAd);
-            this.Controls.Add(this.btnRegresarAd);
             this.Controls.Add(this.btnHabilitarAd);
             this.Controls.Add(this.btnInhabilitarAd);
             this.Controls.Add(this.btnCrearAd);
             this.Controls.Add(this.gbAdministrador);
             this.Controls.Add(this.dgvAdministrador);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CRUD_Administrador";
             this.Text = "CRUD_Administrador";
             this.gbAdministrador.ResumeLayout(false);
@@ -301,7 +269,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnEditarAd;
-        private System.Windows.Forms.Button btnRegresarAd;
         private System.Windows.Forms.Button btnHabilitarAd;
         private System.Windows.Forms.Button btnInhabilitarAd;
         private System.Windows.Forms.Button btnCrearAd;

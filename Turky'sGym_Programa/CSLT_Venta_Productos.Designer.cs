@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnRegresar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnBuscarProducto = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -39,23 +38,13 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnRegresar
-            // 
-            this.btnRegresar.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Location = new System.Drawing.Point(142, 424);
-            this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(94, 33);
-            this.btnRegresar.TabIndex = 20;
-            this.btnRegresar.Text = "Regresar";
-            this.btnRegresar.UseVisualStyleBackColor = true;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(407, 111);
+            this.dataGridView1.Location = new System.Drawing.Point(371, 81);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(487, 346);
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(562, 480);
             this.dataGridView1.TabIndex = 19;
             // 
             // btnBuscarProducto
@@ -81,7 +70,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(21, 149);
+            this.dateTimePicker1.Location = new System.Drawing.Point(21, 146);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(250, 22);
             this.dateTimePicker1.TabIndex = 16;
@@ -90,9 +79,9 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkCyan;
             this.panel1.Controls.Add(this.Titulo);
-            this.panel1.Location = new System.Drawing.Point(-15, 0);
+            this.panel1.Location = new System.Drawing.Point(-2, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(948, 74);
+            this.panel1.Size = new System.Drawing.Size(935, 75);
             this.panel1.TabIndex = 21;
             // 
             // Titulo
@@ -102,18 +91,17 @@
             this.Titulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Titulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Titulo.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Titulo.Location = new System.Drawing.Point(109, 24);
+            this.Titulo.Location = new System.Drawing.Point(309, 19);
             this.Titulo.Name = "Titulo";
-            this.Titulo.Size = new System.Drawing.Size(719, 31);
+            this.Titulo.Size = new System.Drawing.Size(342, 31);
             this.Titulo.TabIndex = 1;
-            this.Titulo.Text = "CONSULTAR PRODUCTOS VENDIDOS POR FECHA";
+            this.Titulo.Text = "CONSULTA DE VENTAS";
             // 
             // CSLT_Venta_Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(928, 563);
-            this.Controls.Add(this.btnRegresar);
+            this.ClientSize = new System.Drawing.Size(934, 561);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnBuscarProducto);
             this.Controls.Add(this.label1);
@@ -130,8 +118,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnBuscarProducto;
         private System.Windows.Forms.Label label1;

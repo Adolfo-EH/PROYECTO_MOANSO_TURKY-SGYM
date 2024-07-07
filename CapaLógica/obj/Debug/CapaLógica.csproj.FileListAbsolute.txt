@@ -169,3 +169,14 @@ C:\Users\dominick\Desktop\pruebaGit\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\obj\D
 C:\Users\dominick\Desktop\pruebaGit\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\obj\Debug\CapaLógica.csproj.CopyComplete
 C:\Users\dominick\Desktop\pruebaGit\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\obj\Debug\CapaLógica.dll
 C:\Users\dominick\Desktop\pruebaGit\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\obj\Debug\CapaLógica.pdb
+C:\Users\USER\Downloads\PROYECTO\CapaLógica\bin\Debug\CapaLógica.dll
+C:\Users\USER\Downloads\PROYECTO\CapaLógica\bin\Debug\CapaLógica.pdb
+C:\Users\USER\Downloads\PROYECTO\CapaLógica\bin\Debug\CapaDatos.dll
+C:\Users\USER\Downloads\PROYECTO\CapaLógica\bin\Debug\CapaEntidad.dll
+C:\Users\USER\Downloads\PROYECTO\CapaLógica\bin\Debug\CapaDatos.pdb
+C:\Users\USER\Downloads\PROYECTO\CapaLógica\bin\Debug\CapaEntidad.pdb
+C:\Users\USER\Downloads\PROYECTO\CapaLógica\obj\Debug\CapaLógica.csproj.AssemblyReference.cache
+C:\Users\USER\Downloads\PROYECTO\CapaLógica\obj\Debug\CapaLógica.csproj.CoreCompileInputs.cache
+C:\Users\USER\Downloads\PROYECTO\CapaLógica\obj\Debug\CapaLógica.csproj.Up2Date
+C:\Users\USER\Downloads\PROYECTO\CapaLógica\obj\Debug\CapaLógica.dll
+C:\Users\USER\Downloads\PROYECTO\CapaLógica\obj\Debug\CapaLógica.pdb

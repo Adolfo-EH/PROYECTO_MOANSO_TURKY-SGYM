@@ -148,6 +148,11 @@ namespace Turky_sGym_Programa
                 }
             }
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }

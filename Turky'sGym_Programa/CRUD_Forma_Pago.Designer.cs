@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnRegresarFP = new System.Windows.Forms.Button();
             this.btnInhabilitarFP = new System.Windows.Forms.Button();
             this.btnHabilitarFP = new System.Windows.Forms.Button();
             this.btnNuevoFP = new System.Windows.Forms.Button();
@@ -48,21 +47,10 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnRegresarFP
-            // 
-            this.btnRegresarFP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresarFP.Location = new System.Drawing.Point(809, 488);
-            this.btnRegresarFP.Name = "btnRegresarFP";
-            this.btnRegresarFP.Size = new System.Drawing.Size(100, 50);
-            this.btnRegresarFP.TabIndex = 42;
-            this.btnRegresarFP.Text = "REGRESAR";
-            this.btnRegresarFP.UseVisualStyleBackColor = true;
-            this.btnRegresarFP.Click += new System.EventHandler(this.btnRegresarFP_Click);
-            // 
             // btnInhabilitarFP
             // 
             this.btnInhabilitarFP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInhabilitarFP.Location = new System.Drawing.Point(809, 305);
+            this.btnInhabilitarFP.Location = new System.Drawing.Point(499, 479);
             this.btnInhabilitarFP.Name = "btnInhabilitarFP";
             this.btnInhabilitarFP.Size = new System.Drawing.Size(100, 50);
             this.btnInhabilitarFP.TabIndex = 41;
@@ -73,7 +61,7 @@
             // btnHabilitarFP
             // 
             this.btnHabilitarFP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHabilitarFP.Location = new System.Drawing.Point(809, 229);
+            this.btnHabilitarFP.Location = new System.Drawing.Point(499, 374);
             this.btnHabilitarFP.Name = "btnHabilitarFP";
             this.btnHabilitarFP.Size = new System.Drawing.Size(100, 50);
             this.btnHabilitarFP.TabIndex = 40;
@@ -84,7 +72,7 @@
             // btnNuevoFP
             // 
             this.btnNuevoFP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevoFP.Location = new System.Drawing.Point(809, 148);
+            this.btnNuevoFP.Location = new System.Drawing.Point(499, 276);
             this.btnNuevoFP.Name = "btnNuevoFP";
             this.btnNuevoFP.Size = new System.Drawing.Size(100, 50);
             this.btnNuevoFP.TabIndex = 39;
@@ -101,16 +89,16 @@
             this.groupForma.Controls.Add(this.lbIDFP);
             this.groupForma.Controls.Add(this.label3);
             this.groupForma.Controls.Add(this.label1);
-            this.groupForma.Location = new System.Drawing.Point(258, 388);
+            this.groupForma.Location = new System.Drawing.Point(12, 97);
             this.groupForma.Name = "groupForma";
-            this.groupForma.Size = new System.Drawing.Size(506, 150);
+            this.groupForma.Size = new System.Drawing.Size(587, 150);
             this.groupForma.TabIndex = 38;
             this.groupForma.TabStop = false;
             this.groupForma.Text = "Datos de Forma de Pago";
             // 
             // txtTipoFP
             // 
-            this.txtTipoFP.Location = new System.Drawing.Point(61, 65);
+            this.txtTipoFP.Location = new System.Drawing.Point(111, 62);
             this.txtTipoFP.Name = "txtTipoFP";
             this.txtTipoFP.Size = new System.Drawing.Size(236, 20);
             this.txtTipoFP.TabIndex = 31;
@@ -118,7 +106,7 @@
             // cbxEstadoFP
             // 
             this.cbxEstadoFP.AutoSize = true;
-            this.cbxEstadoFP.Location = new System.Drawing.Point(235, 29);
+            this.cbxEstadoFP.Location = new System.Drawing.Point(285, 28);
             this.cbxEstadoFP.Name = "cbxEstadoFP";
             this.cbxEstadoFP.Size = new System.Drawing.Size(62, 17);
             this.cbxEstadoFP.TabIndex = 30;
@@ -127,9 +115,9 @@
             // 
             // btnCancelarFP
             // 
-            this.btnCancelarFP.Location = new System.Drawing.Point(392, 91);
+            this.btnCancelarFP.Location = new System.Drawing.Point(487, 88);
             this.btnCancelarFP.Name = "btnCancelarFP";
-            this.btnCancelarFP.Size = new System.Drawing.Size(93, 35);
+            this.btnCancelarFP.Size = new System.Drawing.Size(87, 45);
             this.btnCancelarFP.TabIndex = 29;
             this.btnCancelarFP.Text = "CANCELAR";
             this.btnCancelarFP.UseVisualStyleBackColor = true;
@@ -137,9 +125,9 @@
             // 
             // btnInsertarFP
             // 
-            this.btnInsertarFP.Location = new System.Drawing.Point(392, 29);
+            this.btnInsertarFP.Location = new System.Drawing.Point(487, 19);
             this.btnInsertarFP.Name = "btnInsertarFP";
-            this.btnInsertarFP.Size = new System.Drawing.Size(93, 35);
+            this.btnInsertarFP.Size = new System.Drawing.Size(87, 45);
             this.btnInsertarFP.TabIndex = 13;
             this.btnInsertarFP.Text = "INSERTAR";
             this.btnInsertarFP.UseVisualStyleBackColor = true;
@@ -148,7 +136,7 @@
             // lbIDFP
             // 
             this.lbIDFP.AutoSize = true;
-            this.lbIDFP.Location = new System.Drawing.Point(58, 26);
+            this.lbIDFP.Location = new System.Drawing.Point(111, 29);
             this.lbIDFP.Name = "lbIDFP";
             this.lbIDFP.Size = new System.Drawing.Size(19, 13);
             this.lbIDFP.TabIndex = 3;
@@ -159,14 +147,15 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(21, 65);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(31, 13);
+            this.label3.Size = new System.Drawing.Size(84, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Tipo:";
+            this.label3.Text = "Forma De Pago:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 26);
+            this.label1.Location = new System.Drawing.Point(84, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(21, 13);
             this.label1.TabIndex = 0;
@@ -175,10 +164,10 @@
             // dgvFormaPago
             // 
             this.dgvFormaPago.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFormaPago.Location = new System.Drawing.Point(258, 148);
+            this.dgvFormaPago.Location = new System.Drawing.Point(618, 85);
             this.dgvFormaPago.Name = "dgvFormaPago";
             this.dgvFormaPago.ReadOnly = true;
-            this.dgvFormaPago.Size = new System.Drawing.Size(506, 207);
+            this.dgvFormaPago.Size = new System.Drawing.Size(566, 835);
             this.dgvFormaPago.TabIndex = 37;
             this.dgvFormaPago.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFormaPago_CellDoubleClick);
             // 
@@ -189,7 +178,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1177, 79);
+            this.panel1.Size = new System.Drawing.Size(1184, 79);
             this.panel1.TabIndex = 36;
             // 
             // label7
@@ -199,7 +188,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(459, 24);
+            this.label7.Location = new System.Drawing.Point(478, 20);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(255, 31);
             this.label7.TabIndex = 8;
@@ -210,8 +199,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1177, 554);
-            this.Controls.Add(this.btnRegresarFP);
+            this.ClientSize = new System.Drawing.Size(1184, 921);
             this.Controls.Add(this.btnInhabilitarFP);
             this.Controls.Add(this.btnHabilitarFP);
             this.Controls.Add(this.btnNuevoFP);
@@ -231,8 +219,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnRegresarFP;
         private System.Windows.Forms.Button btnInhabilitarFP;
         private System.Windows.Forms.Button btnHabilitarFP;
         private System.Windows.Forms.Button btnNuevoFP;

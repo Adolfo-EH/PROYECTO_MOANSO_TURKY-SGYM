@@ -31,7 +31,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.btnEditar = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.btnDeshabilitarCli = new System.Windows.Forms.Button();
             this.btnHabilitarCli = new System.Windows.Forms.Button();
             this.btnNuevoCli = new System.Windows.Forms.Button();
@@ -62,7 +61,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1177, 79);
+            this.panel1.Size = new System.Drawing.Size(1184, 79);
             this.panel1.TabIndex = 28;
             // 
             // label7
@@ -72,7 +71,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(504, 23);
+            this.label7.Location = new System.Drawing.Point(528, 22);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(156, 31);
             this.label7.TabIndex = 8;
@@ -82,41 +81,31 @@
             // btnEditar
             // 
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.Location = new System.Drawing.Point(762, 563);
+            this.btnEditar.Location = new System.Drawing.Point(1072, 246);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(115, 41);
+            this.btnEditar.Size = new System.Drawing.Size(100, 50);
             this.btnEditar.TabIndex = 51;
             this.btnEditar.Text = "EDITAR";
             this.btnEditar.UseVisualStyleBackColor = true;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
-            // btnSalir
-            // 
-            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(762, 766);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(115, 41);
-            this.btnSalir.TabIndex = 50;
-            this.btnSalir.Text = "SALIR";
-            this.btnSalir.UseVisualStyleBackColor = true;
-            // 
             // btnDeshabilitarCli
             // 
             this.btnDeshabilitarCli.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeshabilitarCli.Location = new System.Drawing.Point(762, 702);
+            this.btnDeshabilitarCli.Location = new System.Drawing.Point(1072, 441);
             this.btnDeshabilitarCli.Name = "btnDeshabilitarCli";
-            this.btnDeshabilitarCli.Size = new System.Drawing.Size(115, 41);
+            this.btnDeshabilitarCli.Size = new System.Drawing.Size(100, 50);
             this.btnDeshabilitarCli.TabIndex = 49;
-            this.btnDeshabilitarCli.Text = "DESHABILITAR";
+            this.btnDeshabilitarCli.Text = "INHABILITAR";
             this.btnDeshabilitarCli.UseVisualStyleBackColor = true;
             this.btnDeshabilitarCli.Click += new System.EventHandler(this.btnDeshabilitarCli_Click);
             // 
             // btnHabilitarCli
             // 
             this.btnHabilitarCli.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHabilitarCli.Location = new System.Drawing.Point(762, 631);
+            this.btnHabilitarCli.Location = new System.Drawing.Point(1072, 343);
             this.btnHabilitarCli.Name = "btnHabilitarCli";
-            this.btnHabilitarCli.Size = new System.Drawing.Size(115, 41);
+            this.btnHabilitarCli.Size = new System.Drawing.Size(100, 50);
             this.btnHabilitarCli.TabIndex = 48;
             this.btnHabilitarCli.Text = "HABILITAR";
             this.btnHabilitarCli.UseVisualStyleBackColor = true;
@@ -125,9 +114,9 @@
             // btnNuevoCli
             // 
             this.btnNuevoCli.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevoCli.Location = new System.Drawing.Point(762, 490);
+            this.btnNuevoCli.Location = new System.Drawing.Point(1072, 158);
             this.btnNuevoCli.Name = "btnNuevoCli";
-            this.btnNuevoCli.Size = new System.Drawing.Size(115, 41);
+            this.btnNuevoCli.Size = new System.Drawing.Size(100, 50);
             this.btnNuevoCli.TabIndex = 47;
             this.btnNuevoCli.Text = "NUEVO";
             this.btnNuevoCli.UseVisualStyleBackColor = true;
@@ -136,13 +125,14 @@
             // dgvClientes
             // 
             this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvClientes.Location = new System.Drawing.Point(118, 127);
+            this.dgvClientes.Location = new System.Drawing.Point(6, 84);
             this.dgvClientes.Margin = new System.Windows.Forms.Padding(2);
             this.dgvClientes.Name = "dgvClientes";
+            this.dgvClientes.ReadOnly = true;
             this.dgvClientes.RowHeadersWidth = 51;
             this.dgvClientes.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvClientes.RowTemplate.Height = 24;
-            this.dgvClientes.Size = new System.Drawing.Size(947, 330);
+            this.dgvClientes.Size = new System.Drawing.Size(1048, 498);
             this.dgvClientes.TabIndex = 45;
             this.dgvClientes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClientes_CellDoubleClick);
             // 
@@ -161,21 +151,21 @@
             this.grbDatCli.Controls.Add(this.label2);
             this.grbDatCli.Controls.Add(this.txtnomCli);
             this.grbDatCli.Controls.Add(this.label1);
-            this.grbDatCli.Location = new System.Drawing.Point(213, 485);
+            this.grbDatCli.Location = new System.Drawing.Point(11, 587);
             this.grbDatCli.Name = "grbDatCli";
-            this.grbDatCli.Size = new System.Drawing.Size(526, 322);
+            this.grbDatCli.Size = new System.Drawing.Size(1163, 322);
             this.grbDatCli.TabIndex = 46;
             this.grbDatCli.TabStop = false;
             this.grbDatCli.Text = "DATOS CLIENTE";
             // 
             // btnModificar
             // 
-            this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.Location = new System.Drawing.Point(386, 160);
+            this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.btnModificar.Location = new System.Drawing.Point(1050, 137);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(113, 38);
+            this.btnModificar.Size = new System.Drawing.Size(87, 45);
             this.btnModificar.TabIndex = 51;
-            this.btnModificar.Text = "MODIFICAR";
+            this.btnModificar.Text = "ACTUALIZAR";
             this.btnModificar.UseVisualStyleBackColor = true;
             this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
@@ -183,15 +173,15 @@
             // 
             this.txtDNICli.Location = new System.Drawing.Point(168, 100);
             this.txtDNICli.Name = "txtDNICli";
-            this.txtDNICli.Size = new System.Drawing.Size(199, 20);
+            this.txtDNICli.Size = new System.Drawing.Size(142, 20);
             this.txtDNICli.TabIndex = 50;
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(386, 220);
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.btnCancelar.Location = new System.Drawing.Point(1050, 248);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(113, 38);
+            this.btnCancelar.Size = new System.Drawing.Size(87, 45);
             this.btnCancelar.TabIndex = 49;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -199,12 +189,12 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(386, 100);
+            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.btnGuardar.Location = new System.Drawing.Point(1050, 31);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(113, 38);
+            this.btnGuardar.Size = new System.Drawing.Size(87, 45);
             this.btnGuardar.TabIndex = 44;
-            this.btnGuardar.Text = "GUARDAR";
+            this.btnGuardar.Text = "INSERTAR";
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
@@ -212,7 +202,7 @@
             // 
             this.cbxestCli.AutoSize = true;
             this.cbxestCli.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxestCli.Location = new System.Drawing.Point(167, 61);
+            this.cbxestCli.Location = new System.Drawing.Point(329, 100);
             this.cbxestCli.Name = "cbxestCli";
             this.cbxestCli.Size = new System.Drawing.Size(113, 20);
             this.cbxestCli.TabIndex = 48;
@@ -242,7 +232,7 @@
             // 
             this.txtTelCli.Location = new System.Drawing.Point(167, 238);
             this.txtTelCli.Name = "txtTelCli";
-            this.txtTelCli.Size = new System.Drawing.Size(200, 20);
+            this.txtTelCli.Size = new System.Drawing.Size(143, 20);
             this.txtTelCli.TabIndex = 44;
             // 
             // label3
@@ -276,7 +266,7 @@
             // 
             this.txtnomCli.Location = new System.Drawing.Point(167, 146);
             this.txtnomCli.Name = "txtnomCli";
-            this.txtnomCli.Size = new System.Drawing.Size(200, 20);
+            this.txtnomCli.Size = new System.Drawing.Size(438, 20);
             this.txtnomCli.TabIndex = 40;
             // 
             // label1
@@ -293,9 +283,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1177, 854);
+            this.ClientSize = new System.Drawing.Size(1184, 921);
             this.Controls.Add(this.btnEditar);
-            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnDeshabilitarCli);
             this.Controls.Add(this.btnHabilitarCli);
             this.Controls.Add(this.btnNuevoCli);
@@ -317,7 +306,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnEditar;
-        private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnDeshabilitarCli;
         private System.Windows.Forms.Button btnHabilitarCli;
         private System.Windows.Forms.Button btnNuevoCli;

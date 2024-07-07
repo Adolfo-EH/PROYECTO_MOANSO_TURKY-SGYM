@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.panelPantalla = new System.Windows.Forms.Panel();
             this.btnSalida = new System.Windows.Forms.Button();
             this.btnAdmin = new System.Windows.Forms.Button();
             this.btnPromo = new System.Windows.Forms.Button();
@@ -45,6 +44,7 @@
             this.btnVentMem = new System.Windows.Forms.Button();
             this.btnVentPro = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.panelPantalla = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,15 +71,6 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(220, 921);
             this.panelMenu.TabIndex = 0;
-            // 
-            // panelPantalla
-            // 
-            this.panelPantalla.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelPantalla.Location = new System.Drawing.Point(220, 0);
-            this.panelPantalla.Name = "panelPantalla";
-            this.panelPantalla.Size = new System.Drawing.Size(1193, 921);
-            this.panelPantalla.TabIndex = 1;
-            this.panelPantalla.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPantalla_Paint);
             // 
             // btnSalida
             // 
@@ -121,6 +112,7 @@
             this.btnAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAdmin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAdmin.UseVisualStyleBackColor = false;
+            this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
             // 
             // btnPromo
             // 
@@ -384,6 +376,15 @@
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(220, 79);
             this.panelLogo.TabIndex = 0;
+            // 
+            // panelPantalla
+            // 
+            this.panelPantalla.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelPantalla.Location = new System.Drawing.Point(220, 0);
+            this.panelPantalla.Name = "panelPantalla";
+            this.panelPantalla.Size = new System.Drawing.Size(1193, 921);
+            this.panelPantalla.TabIndex = 1;
+            this.panelPantalla.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPantalla_Paint);
             // 
             // MAIN_Interfaz
             // 

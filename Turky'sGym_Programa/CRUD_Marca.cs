@@ -89,6 +89,7 @@ namespace Turky_sGym_Programa
             try
             {
                 entMarca mr = new entMarca();
+                mr.CategoriaID = Convert.ToInt32(cbxCategoriaM.SelectedValue);
                 mr.nomMarca = txtNomMarca.Text.Trim();
                 mr.estMarca = cbEstadoMarca.Checked;
                 logMarca.Instancia.InsertaMarca(mr);

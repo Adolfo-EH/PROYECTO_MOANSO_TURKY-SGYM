@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnRegresar = new System.Windows.Forms.Button();
             this.btnInhabilitar = new System.Windows.Forms.Button();
             this.btnHabilitar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
@@ -50,21 +49,10 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnRegresar
-            // 
-            this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Location = new System.Drawing.Point(838, 499);
-            this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(100, 50);
-            this.btnRegresar.TabIndex = 35;
-            this.btnRegresar.Text = "REGRESAR";
-            this.btnRegresar.UseVisualStyleBackColor = true;
-            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
-            // 
             // btnInhabilitar
             // 
             this.btnInhabilitar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInhabilitar.Location = new System.Drawing.Point(838, 297);
+            this.btnInhabilitar.Location = new System.Drawing.Point(472, 506);
             this.btnInhabilitar.Name = "btnInhabilitar";
             this.btnInhabilitar.Size = new System.Drawing.Size(100, 50);
             this.btnInhabilitar.TabIndex = 34;
@@ -75,7 +63,7 @@
             // btnHabilitar
             // 
             this.btnHabilitar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHabilitar.Location = new System.Drawing.Point(838, 231);
+            this.btnHabilitar.Location = new System.Drawing.Point(472, 403);
             this.btnHabilitar.Name = "btnHabilitar";
             this.btnHabilitar.Size = new System.Drawing.Size(100, 50);
             this.btnHabilitar.TabIndex = 33;
@@ -86,7 +74,7 @@
             // btnNuevo
             // 
             this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.Location = new System.Drawing.Point(838, 161);
+            this.btnNuevo.Location = new System.Drawing.Point(472, 312);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(100, 50);
             this.btnNuevo.TabIndex = 32;
@@ -105,9 +93,9 @@
             this.groupMetodo.Controls.Add(this.label3);
             this.groupMetodo.Controls.Add(this.label2);
             this.groupMetodo.Controls.Add(this.label1);
-            this.groupMetodo.Location = new System.Drawing.Point(287, 401);
+            this.groupMetodo.Location = new System.Drawing.Point(12, 99);
             this.groupMetodo.Name = "groupMetodo";
-            this.groupMetodo.Size = new System.Drawing.Size(506, 155);
+            this.groupMetodo.Size = new System.Drawing.Size(560, 176);
             this.groupMetodo.TabIndex = 31;
             this.groupMetodo.TabStop = false;
             this.groupMetodo.Text = "Datos de Método de Pago";
@@ -119,11 +107,12 @@
             this.cmbTipoMetPag.Name = "cmbTipoMetPag";
             this.cmbTipoMetPag.Size = new System.Drawing.Size(121, 21);
             this.cmbTipoMetPag.TabIndex = 31;
+            this.cmbTipoMetPag.SelectedIndexChanged += new System.EventHandler(this.cmbTipoMetPag_SelectedIndexChanged);
             // 
             // cbxEstadoMetodoPago
             // 
             this.cbxEstadoMetodoPago.AutoSize = true;
-            this.cbxEstadoMetodoPago.Location = new System.Drawing.Point(235, 29);
+            this.cbxEstadoMetodoPago.Location = new System.Drawing.Point(292, 67);
             this.cbxEstadoMetodoPago.Name = "cbxEstadoMetodoPago";
             this.cbxEstadoMetodoPago.Size = new System.Drawing.Size(62, 17);
             this.cbxEstadoMetodoPago.TabIndex = 30;
@@ -132,9 +121,9 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(407, 109);
+            this.btnCancelar.Location = new System.Drawing.Point(454, 104);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(93, 35);
+            this.btnCancelar.Size = new System.Drawing.Size(87, 45);
             this.btnCancelar.TabIndex = 29;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -142,9 +131,9 @@
             // 
             // btnInsertar
             // 
-            this.btnInsertar.Location = new System.Drawing.Point(407, 29);
+            this.btnInsertar.Location = new System.Drawing.Point(454, 26);
             this.btnInsertar.Name = "btnInsertar";
-            this.btnInsertar.Size = new System.Drawing.Size(93, 35);
+            this.btnInsertar.Size = new System.Drawing.Size(87, 45);
             this.btnInsertar.TabIndex = 13;
             this.btnInsertar.Text = "INSERTAR";
             this.btnInsertar.UseVisualStyleBackColor = true;
@@ -154,13 +143,13 @@
             // 
             this.txtNombre.Location = new System.Drawing.Point(59, 65);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(121, 20);
+            this.txtNombre.Size = new System.Drawing.Size(217, 20);
             this.txtNombre.TabIndex = 4;
             // 
             // lbID
             // 
             this.lbID.AutoSize = true;
-            this.lbID.Location = new System.Drawing.Point(33, 26);
+            this.lbID.Location = new System.Drawing.Point(56, 26);
             this.lbID.Name = "lbID";
             this.lbID.Size = new System.Drawing.Size(19, 13);
             this.lbID.TabIndex = 3;
@@ -187,7 +176,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 26);
+            this.label1.Location = new System.Drawing.Point(29, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(21, 13);
             this.label1.TabIndex = 0;
@@ -196,10 +185,10 @@
             // dgvMetodoPago
             // 
             this.dgvMetodoPago.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMetodoPago.Location = new System.Drawing.Point(287, 161);
+            this.dgvMetodoPago.Location = new System.Drawing.Point(589, 85);
             this.dgvMetodoPago.Name = "dgvMetodoPago";
             this.dgvMetodoPago.ReadOnly = true;
-            this.dgvMetodoPago.Size = new System.Drawing.Size(506, 207);
+            this.dgvMetodoPago.Size = new System.Drawing.Size(595, 824);
             this.dgvMetodoPago.TabIndex = 30;
             this.dgvMetodoPago.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMetodoPago_CellDoubleClick);
             // 
@@ -210,7 +199,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1177, 79);
+            this.panel1.Size = new System.Drawing.Size(1184, 79);
             this.panel1.TabIndex = 29;
             // 
             // label7
@@ -218,7 +207,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(433, 22);
+            this.label7.Location = new System.Drawing.Point(460, 22);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(277, 31);
             this.label7.TabIndex = 8;
@@ -229,8 +218,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1177, 628);
-            this.Controls.Add(this.btnRegresar);
+            this.ClientSize = new System.Drawing.Size(1184, 921);
             this.Controls.Add(this.btnInhabilitar);
             this.Controls.Add(this.btnHabilitar);
             this.Controls.Add(this.btnNuevo);
@@ -250,8 +238,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Button btnInhabilitar;
         private System.Windows.Forms.Button btnHabilitar;
         private System.Windows.Forms.Button btnNuevo;

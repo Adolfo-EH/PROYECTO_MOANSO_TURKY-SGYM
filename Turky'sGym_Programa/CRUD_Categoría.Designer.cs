@@ -40,7 +40,6 @@
             this.lblIDCat = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnHabilitarC = new System.Windows.Forms.Button();
-            this.btnRegresarC = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblVentaServicios = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategoria)).BeginInit();
@@ -51,11 +50,11 @@
             // dgvCategoria
             // 
             this.dgvCategoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCategoria.Location = new System.Drawing.Point(180, 152);
+            this.dgvCategoria.Location = new System.Drawing.Point(659, 85);
             this.dgvCategoria.Name = "dgvCategoria";
             this.dgvCategoria.ReadOnly = true;
             this.dgvCategoria.RowHeadersWidth = 51;
-            this.dgvCategoria.Size = new System.Drawing.Size(641, 296);
+            this.dgvCategoria.Size = new System.Drawing.Size(525, 834);
             this.dgvCategoria.TabIndex = 65;
             this.dgvCategoria.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCategoría_CellContentDoubleClick);
             this.dgvCategoria.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCategoria_CellDoubleClick);
@@ -64,9 +63,9 @@
             // btnCrearC
             // 
             this.btnCrearC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCrearC.Location = new System.Drawing.Point(873, 152);
+            this.btnCrearC.Location = new System.Drawing.Point(535, 266);
             this.btnCrearC.Name = "btnCrearC";
-            this.btnCrearC.Size = new System.Drawing.Size(143, 38);
+            this.btnCrearC.Size = new System.Drawing.Size(100, 50);
             this.btnCrearC.TabIndex = 66;
             this.btnCrearC.Text = "NUEVO";
             this.btnCrearC.UseVisualStyleBackColor = true;
@@ -75,9 +74,9 @@
             // btnInhabilitarC
             // 
             this.btnInhabilitarC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInhabilitarC.Location = new System.Drawing.Point(873, 283);
+            this.btnInhabilitarC.Location = new System.Drawing.Point(535, 451);
             this.btnInhabilitarC.Name = "btnInhabilitarC";
-            this.btnInhabilitarC.Size = new System.Drawing.Size(143, 38);
+            this.btnInhabilitarC.Size = new System.Drawing.Size(100, 50);
             this.btnInhabilitarC.TabIndex = 67;
             this.btnInhabilitarC.Text = "INHABILITAR";
             this.btnInhabilitarC.UseVisualStyleBackColor = true;
@@ -120,7 +119,7 @@
             this.gbCategoría.Controls.Add(this.label1);
             this.gbCategoría.Controls.Add(this.label2);
             this.gbCategoría.Controls.Add(this.cbEstadoCategoría);
-            this.gbCategoría.Location = new System.Drawing.Point(180, 475);
+            this.gbCategoría.Location = new System.Drawing.Point(12, 94);
             this.gbCategoría.Name = "gbCategoría";
             this.gbCategoría.Size = new System.Drawing.Size(641, 152);
             this.gbCategoría.TabIndex = 71;
@@ -129,9 +128,9 @@
             // 
             // btnCancelarC
             // 
-            this.btnCancelarC.Location = new System.Drawing.Point(503, 90);
+            this.btnCancelarC.Location = new System.Drawing.Point(536, 91);
             this.btnCancelarC.Name = "btnCancelarC";
-            this.btnCancelarC.Size = new System.Drawing.Size(115, 35);
+            this.btnCancelarC.Size = new System.Drawing.Size(87, 45);
             this.btnCancelarC.TabIndex = 75;
             this.btnCancelarC.Text = "CANCELAR";
             this.btnCancelarC.UseVisualStyleBackColor = true;
@@ -139,9 +138,9 @@
             // 
             // btnInsertarC
             // 
-            this.btnInsertarC.Location = new System.Drawing.Point(503, 29);
+            this.btnInsertarC.Location = new System.Drawing.Point(536, 19);
             this.btnInsertarC.Name = "btnInsertarC";
-            this.btnInsertarC.Size = new System.Drawing.Size(115, 40);
+            this.btnInsertarC.Size = new System.Drawing.Size(85, 45);
             this.btnInsertarC.TabIndex = 73;
             this.btnInsertarC.Text = "INSERTAR";
             this.btnInsertarC.UseVisualStyleBackColor = true;
@@ -168,23 +167,13 @@
             // btnHabilitarC
             // 
             this.btnHabilitarC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHabilitarC.Location = new System.Drawing.Point(873, 214);
+            this.btnHabilitarC.Location = new System.Drawing.Point(535, 357);
             this.btnHabilitarC.Name = "btnHabilitarC";
-            this.btnHabilitarC.Size = new System.Drawing.Size(143, 38);
+            this.btnHabilitarC.Size = new System.Drawing.Size(100, 50);
             this.btnHabilitarC.TabIndex = 72;
             this.btnHabilitarC.Text = "HABILITAR";
             this.btnHabilitarC.UseVisualStyleBackColor = true;
             this.btnHabilitarC.Click += new System.EventHandler(this.btnHabilitarC_Click);
-            // 
-            // btnRegresarC
-            // 
-            this.btnRegresarC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresarC.Location = new System.Drawing.Point(873, 349);
-            this.btnRegresarC.Name = "btnRegresarC";
-            this.btnRegresarC.Size = new System.Drawing.Size(143, 38);
-            this.btnRegresarC.TabIndex = 73;
-            this.btnRegresarC.Text = "REGRESAR";
-            this.btnRegresarC.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -193,7 +182,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1177, 79);
+            this.panel1.Size = new System.Drawing.Size(1184, 79);
             this.panel1.TabIndex = 64;
             // 
             // lblVentaServicios
@@ -204,7 +193,7 @@
             this.lblVentaServicios.AutoSize = true;
             this.lblVentaServicios.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVentaServicios.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblVentaServicios.Location = new System.Drawing.Point(486, 20);
+            this.lblVentaServicios.Location = new System.Drawing.Point(510, 21);
             this.lblVentaServicios.Name = "lblVentaServicios";
             this.lblVentaServicios.Size = new System.Drawing.Size(184, 31);
             this.lblVentaServicios.TabIndex = 44;
@@ -214,8 +203,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1177, 651);
-            this.Controls.Add(this.btnRegresarC);
+            this.ClientSize = new System.Drawing.Size(1184, 921);
             this.Controls.Add(this.btnHabilitarC);
             this.Controls.Add(this.btnInhabilitarC);
             this.Controls.Add(this.btnCrearC);
@@ -246,9 +234,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnInsertarC;
         private System.Windows.Forms.Button btnHabilitarC;
-        private System.Windows.Forms.Button btnCancelarC;
-        private System.Windows.Forms.Button btnRegresarC;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblVentaServicios;
+        private System.Windows.Forms.Button btnCancelarC;
     }
 }

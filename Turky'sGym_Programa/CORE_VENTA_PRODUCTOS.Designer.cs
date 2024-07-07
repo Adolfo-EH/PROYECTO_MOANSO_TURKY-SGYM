@@ -206,6 +206,7 @@
             this.dtgVentaProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgVentaProductos.Location = new System.Drawing.Point(558, 154);
             this.dtgVentaProductos.Name = "dtgVentaProductos";
+            this.dtgVentaProductos.ReadOnly = true;
             this.dtgVentaProductos.Size = new System.Drawing.Size(520, 265);
             this.dtgVentaProductos.TabIndex = 43;
             // 
@@ -234,7 +235,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1177, 79);
+            this.panel1.Size = new System.Drawing.Size(1184, 79);
             this.panel1.TabIndex = 63;
             // 
             // lblVentaServicios
@@ -242,7 +243,7 @@
             this.lblVentaServicios.AutoSize = true;
             this.lblVentaServicios.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVentaServicios.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblVentaServicios.Location = new System.Drawing.Point(393, 18);
+            this.lblVentaServicios.Location = new System.Drawing.Point(453, 21);
             this.lblVentaServicios.Name = "lblVentaServicios";
             this.lblVentaServicios.Size = new System.Drawing.Size(302, 31);
             this.lblVentaServicios.TabIndex = 44;
@@ -252,7 +253,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1177, 624);
+            this.ClientSize = new System.Drawing.Size(1184, 921);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.lblCodPromocion);
             this.Controls.Add(this.cbxCantidadP);
