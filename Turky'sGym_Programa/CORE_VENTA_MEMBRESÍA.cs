@@ -53,5 +53,11 @@ namespace Turky_sGym_Programa
                 }
             }
         }
+
+        private void btnConsultarVentas_Click(object sender, EventArgs e)
+        {
+            CSLT_Venta_Membresía mainForm = new CSLT_Venta_Membresía();
+            mainForm.Show();
+        }
     }
 }

@@ -16,5 +16,36 @@ namespace Turky_sGym_Programa
         {
             InitializeComponent();
         }
+
+        private void btnBuscarVentaServicio_Click(object sender, EventArgs e)
+        {
+            string searchTerm = txbDNI_Consulta.Text.Trim();
+            if (!string.IsNullOrEmpty(searchTerm))
+            {
+
+                foreach (DataGridViewRow row in dgvConsultaPlanes.Rows)
+                {
+
+                    foreach (DataGridViewCell cell in row.Cells)
+                    {
+
+                        if (cell.Value != null && cell.Value.ToString().Contains(searchTerm))
+                        {
+                            // Resaltar la fila si se encuentra el término de búsqueda
+                            row.Selected = true;
+
+                            dgvConsultaPlanes.FirstDisplayedScrollingRowIndex = row.Index;
+
+                            break;
+                        }
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Por favor, ingrese un término de búsqueda.");
+            }
+        }
     }
+    
 }

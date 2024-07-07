@@ -82,3 +82,9 @@ C:\moasocomi\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\obj\Debug\CapaEntidad.csproj
 C:\moasocomi\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
 C:\moasocomi\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\obj\Debug\CapaEntidad.dll
 C:\moasocomi\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\obj\Debug\CapaEntidad.pdb
+C:\Users\dominick\Desktop\pruebaGit\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\bin\Debug\CapaEntidad.dll
+C:\Users\dominick\Desktop\pruebaGit\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\bin\Debug\CapaEntidad.pdb
+C:\Users\dominick\Desktop\pruebaGit\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+C:\Users\dominick\Desktop\pruebaGit\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+C:\Users\dominick\Desktop\pruebaGit\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\obj\Debug\CapaEntidad.dll
+C:\Users\dominick\Desktop\pruebaGit\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\obj\Debug\CapaEntidad.pdb

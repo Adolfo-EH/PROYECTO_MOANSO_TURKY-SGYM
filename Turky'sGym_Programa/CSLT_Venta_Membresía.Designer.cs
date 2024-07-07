@@ -32,9 +32,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnBuscarVentaServicio = new System.Windows.Forms.Button();
             this.btnRegresarVS = new System.Windows.Forms.Button();
-            this.txbDNI_Consulta = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dgvConsultaPlanes = new System.Windows.Forms.DataGridView();
+            this.txbDNI_Consulta = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultaPlanes)).BeginInit();
             this.SuspendLayout();
@@ -69,11 +69,12 @@
             this.btnBuscarVentaServicio.FlatAppearance.BorderSize = 0;
             this.btnBuscarVentaServicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarVentaServicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarVentaServicio.Location = new System.Drawing.Point(229, 88);
+            this.btnBuscarVentaServicio.Location = new System.Drawing.Point(240, 90);
             this.btnBuscarVentaServicio.Name = "btnBuscarVentaServicio";
             this.btnBuscarVentaServicio.Size = new System.Drawing.Size(20, 20);
             this.btnBuscarVentaServicio.TabIndex = 26;
             this.btnBuscarVentaServicio.UseVisualStyleBackColor = false;
+            this.btnBuscarVentaServicio.Click += new System.EventHandler(this.btnBuscarVentaServicio_Click);
             // 
             // btnRegresarVS
             // 
@@ -85,23 +86,13 @@
             this.btnRegresarVS.Text = "Regresar";
             this.btnRegresarVS.UseVisualStyleBackColor = true;
             // 
-            // txbDNI_Consulta
-            // 
-            this.txbDNI_Consulta.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txbDNI_Consulta.Location = new System.Drawing.Point(72, 88);
-            this.txbDNI_Consulta.Name = "txbDNI_Consulta";
-            this.txbDNI_Consulta.Size = new System.Drawing.Size(177, 20);
-            this.txbDNI_Consulta.TabIndex = 24;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(23, 90);
+            this.label2.Location = new System.Drawing.Point(22, 94);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 16);
+            this.label2.Size = new System.Drawing.Size(34, 16);
             this.label2.TabIndex = 23;
             this.label2.Text = "DNI:";
             // 
@@ -113,6 +104,13 @@
             this.dgvConsultaPlanes.Size = new System.Drawing.Size(474, 288);
             this.dgvConsultaPlanes.TabIndex = 22;
             // 
+            // txbDNI_Consulta
+            // 
+            this.txbDNI_Consulta.Location = new System.Drawing.Point(72, 90);
+            this.txbDNI_Consulta.Name = "txbDNI_Consulta";
+            this.txbDNI_Consulta.Size = new System.Drawing.Size(188, 20);
+            this.txbDNI_Consulta.TabIndex = 28;
+            // 
             // CSLT_Venta_Membresía
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -121,9 +119,9 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnBuscarVentaServicio);
             this.Controls.Add(this.btnRegresarVS);
-            this.Controls.Add(this.txbDNI_Consulta);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dgvConsultaPlanes);
+            this.Controls.Add(this.txbDNI_Consulta);
             this.Name = "CSLT_Venta_Membresía";
             this.Text = "CLST_Venta_Membresía";
             this.panel1.ResumeLayout(false);
@@ -140,8 +138,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnBuscarVentaServicio;
         private System.Windows.Forms.Button btnRegresarVS;
-        private System.Windows.Forms.TextBox txbDNI_Consulta;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dgvConsultaPlanes;
+        private System.Windows.Forms.TextBox txbDNI_Consulta;
     }
 }
