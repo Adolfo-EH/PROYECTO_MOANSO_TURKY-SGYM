@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CapaEntidad;
+using CapaLógica;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,133 @@ namespace Turky_sGym_Programa
         public CRUD_Clientes()
         {
             InitializeComponent();
+            grbDatCli.Enabled = false;
+            listarClientes();
+        }
+
+        public void listarClientes()
+        {
+            dgvClientes.DataSource = logCliente.Instancia.ListarClientes();
+            //ancho de la row 1
+            dgvClientes.Columns[1].Width = 500;
+        }
+        public void LimpiarVariables()
+        {
+            txtDNICli.Clear();
+            txtnomCli.Clear();
+            cbxestCli.Checked = false;
+            dtpFecNac.Value = DateTime.Now;
+            txtTelCli.Clear();
+        }
+        private void dgvClientes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow filaActual = dgvClientes.Rows[e.RowIndex];
+            txtDNICli.Text = filaActual.Cells[0].Value.ToString();
+            txtnomCli.Text = filaActual.Cells[1].Value.ToString();
+            dtpFecNac.Value = Convert.ToDateTime(filaActual.Cells[2].Value);
+            txtTelCli.Text = filaActual.Cells[3].Value.ToString();
+            cbxestCli.Checked = Convert.ToBoolean(filaActual.Cells[4].Value);
+        }
+
+        private void btnNuevoCli_Click(object sender, EventArgs e)
+        {
+            grbDatCli.Enabled = true;
+            btnGuardar.Visible = true;
+            btnModificar.Visible = false;
+            LimpiarVariables();
+        }
+
+        private void btnDeshabilitarCli_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                entCliente cl = new entCliente();
+                cl.ClienteID = int.Parse(txtDNICli.Text.Trim());
+                cl.estClienteMemb = cbxestCli.Checked;
+                logCliente.Instancia.DeshabilitarCliente(cl);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error.." + ex);
+            }
+            LimpiarVariables();
+            grbDatCli.Enabled = false;
+            listarClientes();
+        }
+
+        private void btnHabilitarCli_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                entCliente cl = new entCliente();
+                cl.ClienteID = int.Parse(txtDNICli.Text.Trim());
+                cl.estClienteMemb = cbxestCli.Checked;
+                logCliente.Instancia.HabilitarCliente(cl);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error.." + ex);
+            }
+            LimpiarVariables();
+            grbDatCli.Enabled = false;
+            listarClientes();
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                entCliente cl = new entCliente();
+                cl.ClienteID = int.Parse(txtDNICli.Text.Trim());
+                cl.NomCliente = txtnomCli.Text.Trim();
+                cl.FechaNac = dtpFecNac.Value;
+                cl.Telefono = int.Parse(txtTelCli.Text.Trim());
+                cl.estClienteMemb = cbxestCli.Checked;
+                logCliente.Instancia.InsertarCliente(cl);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error.." + ex);
+            }
+            LimpiarVariables();
+            grbDatCli.Enabled = false;
+            listarClientes();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            LimpiarVariables();
+            grbDatCli.Enabled = false;
+            btnModificar.Visible = true;
+            btnGuardar.Visible = true;
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            grbDatCli.Enabled = true;
+            btnModificar.Visible = true;
+            btnGuardar.Visible = false;
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                entCliente cl = new entCliente();
+                cl.ClienteID = int.Parse(txtDNICli.Text.Trim());
+                cl.NomCliente = txtnomCli.Text.Trim();
+                cl.FechaNac = dtpFecNac.Value;
+                cl.Telefono = int.Parse(txtTelCli.Text.Trim());
+                cl.estClienteMemb = cbxestCli.Checked;
+                logCliente.Instancia.EditarCliente(cl);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error.." + ex);
+            }
+            LimpiarVariables();
+            grbDatCli.Enabled = false;
+            listarClientes();
         }
     }
 }

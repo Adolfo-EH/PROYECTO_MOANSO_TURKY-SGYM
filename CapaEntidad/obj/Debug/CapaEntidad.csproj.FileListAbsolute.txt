@@ -76,3 +76,9 @@ C:\Users\John Roncal\Desktop\CHI_MOANSO\CapaEntidad\obj\Debug\CapaEntidad.csproj
 C:\Users\John Roncal\Desktop\CHI_MOANSO\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
 C:\Users\John Roncal\Desktop\CHI_MOANSO\CapaEntidad\obj\Debug\CapaEntidad.dll
 C:\Users\John Roncal\Desktop\CHI_MOANSO\CapaEntidad\obj\Debug\CapaEntidad.pdb
+C:\moasocomi\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\bin\Debug\CapaEntidad.dll
+C:\moasocomi\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\bin\Debug\CapaEntidad.pdb
+C:\moasocomi\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+C:\moasocomi\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+C:\moasocomi\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\obj\Debug\CapaEntidad.dll
+C:\moasocomi\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\obj\Debug\CapaEntidad.pdb
