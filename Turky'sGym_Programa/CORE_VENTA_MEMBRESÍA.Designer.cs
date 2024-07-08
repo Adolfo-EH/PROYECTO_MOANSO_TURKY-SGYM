@@ -28,302 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lblVentaServicios = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cmbFormaPagoM = new System.Windows.Forms.ComboBox();
+            this.btnBuscarCliente = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txbDNICliente = new System.Windows.Forms.TextBox();
+            this.lblDNICliente = new System.Windows.Forms.Label();
+            this.cmbPromocionM = new System.Windows.Forms.ComboBox();
             this.lblPromoción = new System.Windows.Forms.Label();
             this.btnConsultarVentas = new System.Windows.Forms.Button();
             this.cbMetodoPagoS = new System.Windows.Forms.ComboBox();
             this.lblMetodoPago = new System.Windows.Forms.Label();
-            this.btnBuscarCliente = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnAnularVenta = new System.Windows.Forms.Button();
             this.btnRegistroServicio = new System.Windows.Forms.Button();
-            this.btnEditarFecha = new System.Windows.Forms.Button();
-            this.lblFechaRegistroMostrar = new System.Windows.Forms.Label();
             this.lblFechaRegistro = new System.Windows.Forms.Label();
-            this.lblNombreCompletoCliente = new System.Windows.Forms.Label();
-            this.txbDNICliente = new System.Windows.Forms.TextBox();
-            this.lblDNICliente = new System.Windows.Forms.Label();
-            this.lblPrecio = new System.Windows.Forms.Label();
             this.lblPrecioAPagar = new System.Windows.Forms.Label();
             this.cbxTipoPlan = new System.Windows.Forms.ComboBox();
             this.lblTipoPlan = new System.Windows.Forms.Label();
             this.dtgVentaServicios = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txbEdadCliente = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label4 = new System.Windows.Forms.Label();
             this.txbTelefonoCliente = new System.Windows.Forms.TextBox();
             this.txbDNI_Cliente = new System.Windows.Forms.TextBox();
             this.txbNombreCliente = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblTelefonoCliente = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblVentaServicios = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgVentaServicios)).BeginInit();
             this.groupBox1.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(206, 201);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(186, 21);
-            this.comboBox1.TabIndex = 64;
-            // 
-            // lblPromoción
-            // 
-            this.lblPromoción.AutoSize = true;
-            this.lblPromoción.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPromoción.Location = new System.Drawing.Point(93, 206);
-            this.lblPromoción.Name = "lblPromoción";
-            this.lblPromoción.Size = new System.Drawing.Size(106, 16);
-            this.lblPromoción.TabIndex = 63;
-            this.lblPromoción.Text = "Cod. Promoción:";
-            // 
-            // btnConsultarVentas
-            // 
-            this.btnConsultarVentas.Location = new System.Drawing.Point(879, 566);
-            this.btnConsultarVentas.Name = "btnConsultarVentas";
-            this.btnConsultarVentas.Size = new System.Drawing.Size(125, 41);
-            this.btnConsultarVentas.TabIndex = 62;
-            this.btnConsultarVentas.Text = "CONSULTAR VENTAS";
-            this.btnConsultarVentas.UseVisualStyleBackColor = true;
-            this.btnConsultarVentas.Click += new System.EventHandler(this.btnConsultarVentas_Click);
-            // 
-            // cbMetodoPagoS
-            // 
-            this.cbMetodoPagoS.FormattingEnabled = true;
-            this.cbMetodoPagoS.Location = new System.Drawing.Point(207, 167);
-            this.cbMetodoPagoS.Name = "cbMetodoPagoS";
-            this.cbMetodoPagoS.Size = new System.Drawing.Size(185, 21);
-            this.cbMetodoPagoS.TabIndex = 61;
-            // 
-            // lblMetodoPago
-            // 
-            this.lblMetodoPago.AutoSize = true;
-            this.lblMetodoPago.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMetodoPago.Location = new System.Drawing.Point(88, 172);
-            this.lblMetodoPago.Name = "lblMetodoPago";
-            this.lblMetodoPago.Size = new System.Drawing.Size(111, 16);
-            this.lblMetodoPago.TabIndex = 60;
-            this.lblMetodoPago.Text = "Método de Pago:";
-            // 
-            // btnBuscarCliente
-            // 
-            this.btnBuscarCliente.Location = new System.Drawing.Point(409, 231);
-            this.btnBuscarCliente.Name = "btnBuscarCliente";
-            this.btnBuscarCliente.Size = new System.Drawing.Size(110, 29);
-            this.btnBuscarCliente.TabIndex = 59;
-            this.btnBuscarCliente.Text = "BUSCAR CLIENTE";
-            this.btnBuscarCliente.UseVisualStyleBackColor = true;
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.Location = new System.Drawing.Point(1010, 566);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(125, 41);
-            this.btnSalir.TabIndex = 58;
-            this.btnSalir.Text = "REGRESAR";
-            this.btnSalir.UseVisualStyleBackColor = true;
-            // 
-            // btnAnularVenta
-            // 
-            this.btnAnularVenta.Location = new System.Drawing.Point(748, 567);
-            this.btnAnularVenta.Name = "btnAnularVenta";
-            this.btnAnularVenta.Size = new System.Drawing.Size(125, 40);
-            this.btnAnularVenta.TabIndex = 57;
-            this.btnAnularVenta.Text = "ANULAR VENTA";
-            this.btnAnularVenta.UseVisualStyleBackColor = true;
-            // 
-            // btnRegistroServicio
-            // 
-            this.btnRegistroServicio.Location = new System.Drawing.Point(615, 566);
-            this.btnRegistroServicio.Name = "btnRegistroServicio";
-            this.btnRegistroServicio.Size = new System.Drawing.Size(125, 41);
-            this.btnRegistroServicio.TabIndex = 56;
-            this.btnRegistroServicio.Text = "INSERTAR VENTA";
-            this.btnRegistroServicio.UseVisualStyleBackColor = true;
-            // 
-            // btnEditarFecha
-            // 
-            this.btnEditarFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditarFecha.Location = new System.Drawing.Point(295, 414);
-            this.btnEditarFecha.Name = "btnEditarFecha";
-            this.btnEditarFecha.Size = new System.Drawing.Size(115, 28);
-            this.btnEditarFecha.TabIndex = 55;
-            this.btnEditarFecha.Text = "Editar Fecha";
-            this.btnEditarFecha.UseVisualStyleBackColor = true;
-            // 
-            // lblFechaRegistroMostrar
-            // 
-            this.lblFechaRegistroMostrar.AutoSize = true;
-            this.lblFechaRegistroMostrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFechaRegistroMostrar.Location = new System.Drawing.Point(210, 420);
-            this.lblFechaRegistroMostrar.Name = "lblFechaRegistroMostrar";
-            this.lblFechaRegistroMostrar.Size = new System.Drawing.Size(40, 16);
-            this.lblFechaRegistroMostrar.TabIndex = 54;
-            this.lblFechaRegistroMostrar.Text = "fecha";
-            // 
-            // lblFechaRegistro
-            // 
-            this.lblFechaRegistro.AutoSize = true;
-            this.lblFechaRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFechaRegistro.Location = new System.Drawing.Point(95, 420);
-            this.lblFechaRegistro.Name = "lblFechaRegistro";
-            this.lblFechaRegistro.Size = new System.Drawing.Size(105, 16);
-            this.lblFechaRegistro.TabIndex = 53;
-            this.lblFechaRegistro.Text = "Fecha  Registro:";
-            // 
-            // lblNombreCompletoCliente
-            // 
-            this.lblNombreCompletoCliente.AutoSize = true;
-            this.lblNombreCompletoCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreCompletoCliente.Location = new System.Drawing.Point(39, 286);
-            this.lblNombreCompletoCliente.Name = "lblNombreCompletoCliente";
-            this.lblNombreCompletoCliente.Size = new System.Drawing.Size(162, 16);
-            this.lblNombreCompletoCliente.TabIndex = 51;
-            this.lblNombreCompletoCliente.Text = "Nombre completo Cliente:";
-            // 
-            // txbDNICliente
-            // 
-            this.txbDNICliente.Location = new System.Drawing.Point(206, 235);
-            this.txbDNICliente.Name = "txbDNICliente";
-            this.txbDNICliente.Size = new System.Drawing.Size(186, 20);
-            this.txbDNICliente.TabIndex = 50;
-            // 
-            // lblDNICliente
-            // 
-            this.lblDNICliente.AutoSize = true;
-            this.lblDNICliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDNICliente.Location = new System.Drawing.Point(70, 235);
-            this.lblDNICliente.Name = "lblDNICliente";
-            this.lblDNICliente.Size = new System.Drawing.Size(129, 16);
-            this.lblDNICliente.TabIndex = 49;
-            this.lblDNICliente.Text = "Ingresar DNI Cliente:";
-            // 
-            // lblPrecio
-            // 
-            this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecio.Location = new System.Drawing.Point(206, 136);
-            this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(54, 16);
-            this.lblPrecio.TabIndex = 48;
-            this.lblPrecio.Text = "Sprecio";
-            // 
-            // lblPrecioAPagar
-            // 
-            this.lblPrecioAPagar.AutoSize = true;
-            this.lblPrecioAPagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecioAPagar.Location = new System.Drawing.Point(100, 136);
-            this.lblPrecioAPagar.Name = "lblPrecioAPagar";
-            this.lblPrecioAPagar.Size = new System.Drawing.Size(99, 16);
-            this.lblPrecioAPagar.TabIndex = 47;
-            this.lblPrecioAPagar.Text = "Precio a pagar:";
-            // 
-            // cbxTipoPlan
-            // 
-            this.cbxTipoPlan.FormattingEnabled = true;
-            this.cbxTipoPlan.Location = new System.Drawing.Point(206, 99);
-            this.cbxTipoPlan.Name = "cbxTipoPlan";
-            this.cbxTipoPlan.Size = new System.Drawing.Size(187, 21);
-            this.cbxTipoPlan.TabIndex = 46;
-            this.cbxTipoPlan.SelectedIndexChanged += new System.EventHandler(this.cbxTipoPlan_SelectedIndexChanged);
-            // 
-            // lblTipoPlan
-            // 
-            this.lblTipoPlan.AutoSize = true;
-            this.lblTipoPlan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipoPlan.Location = new System.Drawing.Point(114, 100);
-            this.lblTipoPlan.Name = "lblTipoPlan";
-            this.lblTipoPlan.Size = new System.Drawing.Size(86, 16);
-            this.lblTipoPlan.TabIndex = 45;
-            this.lblTipoPlan.Text = "Tipo de plan:";
-            // 
-            // dtgVentaServicios
-            // 
-            this.dtgVentaServicios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgVentaServicios.Location = new System.Drawing.Point(555, 85);
-            this.dtgVentaServicios.Name = "dtgVentaServicios";
-            this.dtgVentaServicios.ReadOnly = true;
-            this.dtgVentaServicios.Size = new System.Drawing.Size(629, 461);
-            this.dtgVentaServicios.TabIndex = 44;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.txbEdadCliente);
-            this.groupBox1.Controls.Add(this.txbTelefonoCliente);
-            this.groupBox1.Controls.Add(this.txbDNI_Cliente);
-            this.groupBox1.Controls.Add(this.txbNombreCliente);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.lblTelefonoCliente);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(23, 262);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(510, 143);
-            this.groupBox1.TabIndex = 52;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Datos Cliente:";
-            // 
-            // txbEdadCliente
-            // 
-            this.txbEdadCliente.Location = new System.Drawing.Point(185, 108);
-            this.txbEdadCliente.Name = "txbEdadCliente";
-            this.txbEdadCliente.Size = new System.Drawing.Size(74, 21);
-            this.txbEdadCliente.TabIndex = 15;
-            // 
-            // txbTelefonoCliente
-            // 
-            this.txbTelefonoCliente.Location = new System.Drawing.Point(185, 80);
-            this.txbTelefonoCliente.Name = "txbTelefonoCliente";
-            this.txbTelefonoCliente.Size = new System.Drawing.Size(184, 21);
-            this.txbTelefonoCliente.TabIndex = 14;
-            // 
-            // txbDNI_Cliente
-            // 
-            this.txbDNI_Cliente.Location = new System.Drawing.Point(185, 53);
-            this.txbDNI_Cliente.Name = "txbDNI_Cliente";
-            this.txbDNI_Cliente.Size = new System.Drawing.Size(130, 21);
-            this.txbDNI_Cliente.TabIndex = 13;
-            // 
-            // txbNombreCliente
-            // 
-            this.txbNombreCliente.Location = new System.Drawing.Point(185, 24);
-            this.txbNombreCliente.Name = "txbNombreCliente";
-            this.txbNombreCliente.Size = new System.Drawing.Size(307, 21);
-            this.txbNombreCliente.TabIndex = 12;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(91, 111);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 16);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Edad Cliente:";
-            // 
-            // lblTelefonoCliente
-            // 
-            this.lblTelefonoCliente.AutoSize = true;
-            this.lblTelefonoCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefonoCliente.Location = new System.Drawing.Point(70, 82);
-            this.lblTelefonoCliente.Name = "lblTelefonoCliente";
-            this.lblTelefonoCliente.Size = new System.Drawing.Size(108, 16);
-            this.lblTelefonoCliente.TabIndex = 10;
-            this.lblTelefonoCliente.Text = "Teléfono Cliente:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(100, 53);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 16);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "DNI Cliente:";
             // 
             // lblVentaServicios
             // 
@@ -347,27 +86,290 @@
             this.panel1.Size = new System.Drawing.Size(1184, 79);
             this.panel1.TabIndex = 65;
             // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(208, 561);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(186, 20);
+            this.dateTimePicker2.TabIndex = 90;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(208, 431);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(90, 20);
+            this.textBox1.TabIndex = 89;
+            // 
+            // cmbFormaPagoM
+            // 
+            this.cmbFormaPagoM.FormattingEnabled = true;
+            this.cmbFormaPagoM.Location = new System.Drawing.Point(208, 492);
+            this.cmbFormaPagoM.Name = "cmbFormaPagoM";
+            this.cmbFormaPagoM.Size = new System.Drawing.Size(187, 21);
+            this.cmbFormaPagoM.TabIndex = 88;
+            // 
+            // btnBuscarCliente
+            // 
+            this.btnBuscarCliente.Location = new System.Drawing.Point(421, 173);
+            this.btnBuscarCliente.Name = "btnBuscarCliente";
+            this.btnBuscarCliente.Size = new System.Drawing.Size(110, 29);
+            this.btnBuscarCliente.TabIndex = 81;
+            this.btnBuscarCliente.Text = "BUSCAR CLIENTE";
+            this.btnBuscarCliente.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(96, 497);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(104, 16);
+            this.label3.TabIndex = 87;
+            this.label3.Text = "Forma de Pago:";
+            // 
+            // txbDNICliente
+            // 
+            this.txbDNICliente.Location = new System.Drawing.Point(214, 178);
+            this.txbDNICliente.Name = "txbDNICliente";
+            this.txbDNICliente.Size = new System.Drawing.Size(186, 20);
+            this.txbDNICliente.TabIndex = 75;
+            // 
+            // lblDNICliente
+            // 
+            this.lblDNICliente.AutoSize = true;
+            this.lblDNICliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDNICliente.Location = new System.Drawing.Point(79, 179);
+            this.lblDNICliente.Name = "lblDNICliente";
+            this.lblDNICliente.Size = new System.Drawing.Size(129, 16);
+            this.lblDNICliente.TabIndex = 74;
+            this.lblDNICliente.Text = "Ingresar DNI Cliente:";
+            // 
+            // cmbPromocionM
+            // 
+            this.cmbPromocionM.FormattingEnabled = true;
+            this.cmbPromocionM.Location = new System.Drawing.Point(209, 524);
+            this.cmbPromocionM.Name = "cmbPromocionM";
+            this.cmbPromocionM.Size = new System.Drawing.Size(186, 21);
+            this.cmbPromocionM.TabIndex = 86;
+            // 
+            // lblPromoción
+            // 
+            this.lblPromoción.AutoSize = true;
+            this.lblPromoción.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPromoción.Location = new System.Drawing.Point(123, 529);
+            this.lblPromoción.Name = "lblPromoción";
+            this.lblPromoción.Size = new System.Drawing.Size(75, 16);
+            this.lblPromoción.TabIndex = 85;
+            this.lblPromoción.Text = "Promoción:";
+            // 
+            // btnConsultarVentas
+            // 
+            this.btnConsultarVentas.Location = new System.Drawing.Point(879, 595);
+            this.btnConsultarVentas.Name = "btnConsultarVentas";
+            this.btnConsultarVentas.Size = new System.Drawing.Size(125, 41);
+            this.btnConsultarVentas.TabIndex = 84;
+            this.btnConsultarVentas.Text = "CONSULTAR VENTAS";
+            this.btnConsultarVentas.UseVisualStyleBackColor = true;
+            // 
+            // cbMetodoPagoS
+            // 
+            this.cbMetodoPagoS.FormattingEnabled = true;
+            this.cbMetodoPagoS.Location = new System.Drawing.Point(208, 462);
+            this.cbMetodoPagoS.Name = "cbMetodoPagoS";
+            this.cbMetodoPagoS.Size = new System.Drawing.Size(187, 21);
+            this.cbMetodoPagoS.TabIndex = 83;
+            // 
+            // lblMetodoPago
+            // 
+            this.lblMetodoPago.AutoSize = true;
+            this.lblMetodoPago.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMetodoPago.Location = new System.Drawing.Point(91, 467);
+            this.lblMetodoPago.Name = "lblMetodoPago";
+            this.lblMetodoPago.Size = new System.Drawing.Size(111, 16);
+            this.lblMetodoPago.TabIndex = 82;
+            this.lblMetodoPago.Text = "Método de Pago:";
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(1010, 595);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(125, 41);
+            this.btnSalir.TabIndex = 80;
+            this.btnSalir.Text = "REGRESAR";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            // 
+            // btnAnularVenta
+            // 
+            this.btnAnularVenta.Location = new System.Drawing.Point(748, 596);
+            this.btnAnularVenta.Name = "btnAnularVenta";
+            this.btnAnularVenta.Size = new System.Drawing.Size(125, 40);
+            this.btnAnularVenta.TabIndex = 79;
+            this.btnAnularVenta.Text = "ANULAR VENTA";
+            this.btnAnularVenta.UseVisualStyleBackColor = true;
+            // 
+            // btnRegistroServicio
+            // 
+            this.btnRegistroServicio.Location = new System.Drawing.Point(615, 595);
+            this.btnRegistroServicio.Name = "btnRegistroServicio";
+            this.btnRegistroServicio.Size = new System.Drawing.Size(125, 41);
+            this.btnRegistroServicio.TabIndex = 78;
+            this.btnRegistroServicio.Text = "INSERTAR VENTA";
+            this.btnRegistroServicio.UseVisualStyleBackColor = true;
+            // 
+            // lblFechaRegistro
+            // 
+            this.lblFechaRegistro.AutoSize = true;
+            this.lblFechaRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaRegistro.Location = new System.Drawing.Point(92, 561);
+            this.lblFechaRegistro.Name = "lblFechaRegistro";
+            this.lblFechaRegistro.Size = new System.Drawing.Size(105, 16);
+            this.lblFechaRegistro.TabIndex = 77;
+            this.lblFechaRegistro.Text = "Fecha  Registro:";
+            // 
+            // lblPrecioAPagar
+            // 
+            this.lblPrecioAPagar.AutoSize = true;
+            this.lblPrecioAPagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrecioAPagar.Location = new System.Drawing.Point(82, 431);
+            this.lblPrecioAPagar.Name = "lblPrecioAPagar";
+            this.lblPrecioAPagar.Size = new System.Drawing.Size(120, 16);
+            this.lblPrecioAPagar.TabIndex = 73;
+            this.lblPrecioAPagar.Text = "Precio Membresía:";
+            // 
+            // cbxTipoPlan
+            // 
+            this.cbxTipoPlan.FormattingEnabled = true;
+            this.cbxTipoPlan.Location = new System.Drawing.Point(208, 396);
+            this.cbxTipoPlan.Name = "cbxTipoPlan";
+            this.cbxTipoPlan.Size = new System.Drawing.Size(187, 21);
+            this.cbxTipoPlan.TabIndex = 72;
+            // 
+            // lblTipoPlan
+            // 
+            this.lblTipoPlan.AutoSize = true;
+            this.lblTipoPlan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipoPlan.Location = new System.Drawing.Point(123, 397);
+            this.lblTipoPlan.Name = "lblTipoPlan";
+            this.lblTipoPlan.Size = new System.Drawing.Size(78, 16);
+            this.lblTipoPlan.TabIndex = 71;
+            this.lblTipoPlan.Text = "Membresía:";
+            // 
+            // dtgVentaServicios
+            // 
+            this.dtgVentaServicios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgVentaServicios.Location = new System.Drawing.Point(543, 114);
+            this.dtgVentaServicios.Name = "dtgVentaServicios";
+            this.dtgVentaServicios.ReadOnly = true;
+            this.dtgVentaServicios.Size = new System.Drawing.Size(629, 461);
+            this.dtgVentaServicios.TabIndex = 70;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.txbTelefonoCliente);
+            this.groupBox1.Controls.Add(this.txbDNI_Cliente);
+            this.groupBox1.Controls.Add(this.txbNombreCliente);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.lblTelefonoCliente);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(27, 220);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(510, 143);
+            this.groupBox1.TabIndex = 76;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Datos Cliente:";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(182, 111);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(186, 21);
+            this.dateTimePicker1.TabIndex = 17;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(12, 27);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(164, 16);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Nombre Completo Cliente:";
+            // 
+            // txbTelefonoCliente
+            // 
+            this.txbTelefonoCliente.Location = new System.Drawing.Point(184, 80);
+            this.txbTelefonoCliente.Name = "txbTelefonoCliente";
+            this.txbTelefonoCliente.Size = new System.Drawing.Size(131, 21);
+            this.txbTelefonoCliente.TabIndex = 14;
+            // 
+            // txbDNI_Cliente
+            // 
+            this.txbDNI_Cliente.Location = new System.Drawing.Point(185, 53);
+            this.txbDNI_Cliente.Name = "txbDNI_Cliente";
+            this.txbDNI_Cliente.Size = new System.Drawing.Size(130, 21);
+            this.txbDNI_Cliente.TabIndex = 13;
+            // 
+            // txbNombreCliente
+            // 
+            this.txbNombreCliente.Location = new System.Drawing.Point(185, 24);
+            this.txbNombreCliente.Name = "txbNombreCliente";
+            this.txbNombreCliente.Size = new System.Drawing.Size(307, 21);
+            this.txbNombreCliente.TabIndex = 12;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(13, 111);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(163, 16);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Fecha Nacimiento Cliente:";
+            // 
+            // lblTelefonoCliente
+            // 
+            this.lblTelefonoCliente.AutoSize = true;
+            this.lblTelefonoCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefonoCliente.Location = new System.Drawing.Point(70, 82);
+            this.lblTelefonoCliente.Name = "lblTelefonoCliente";
+            this.lblTelefonoCliente.Size = new System.Drawing.Size(108, 16);
+            this.lblTelefonoCliente.TabIndex = 10;
+            this.lblTelefonoCliente.Text = "Teléfono Cliente:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(100, 53);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(77, 16);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "DNI Cliente:";
+            // 
             // CORE_VENTA_MEMBRESÍA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1184, 921);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cmbFormaPagoM);
+            this.Controls.Add(this.btnBuscarCliente);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txbDNICliente);
+            this.Controls.Add(this.lblDNICliente);
+            this.Controls.Add(this.cmbPromocionM);
             this.Controls.Add(this.lblPromoción);
             this.Controls.Add(this.btnConsultarVentas);
             this.Controls.Add(this.cbMetodoPagoS);
             this.Controls.Add(this.lblMetodoPago);
-            this.Controls.Add(this.btnBuscarCliente);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnAnularVenta);
             this.Controls.Add(this.btnRegistroServicio);
-            this.Controls.Add(this.btnEditarFecha);
-            this.Controls.Add(this.lblFechaRegistroMostrar);
             this.Controls.Add(this.lblFechaRegistro);
-            this.Controls.Add(this.lblNombreCompletoCliente);
-            this.Controls.Add(this.txbDNICliente);
-            this.Controls.Add(this.lblDNICliente);
-            this.Controls.Add(this.lblPrecio);
             this.Controls.Add(this.lblPrecioAPagar);
             this.Controls.Add(this.cbxTipoPlan);
             this.Controls.Add(this.lblTipoPlan);
@@ -377,47 +379,47 @@
             this.Name = "CORE_VENTA_MEMBRESÍA";
             this.Text = "CORE_VENTA_MEMBRESÍA";
             this.Load += new System.EventHandler(this.CORE_VENTA_MEMBRESÍA_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgVentaServicios)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label lblVentaServicios;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox cmbFormaPagoM;
+        private System.Windows.Forms.Button btnBuscarCliente;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txbDNICliente;
+        private System.Windows.Forms.Label lblDNICliente;
+        private System.Windows.Forms.ComboBox cmbPromocionM;
         private System.Windows.Forms.Label lblPromoción;
         private System.Windows.Forms.Button btnConsultarVentas;
         private System.Windows.Forms.ComboBox cbMetodoPagoS;
         private System.Windows.Forms.Label lblMetodoPago;
-        private System.Windows.Forms.Button btnBuscarCliente;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnAnularVenta;
         private System.Windows.Forms.Button btnRegistroServicio;
-        private System.Windows.Forms.Button btnEditarFecha;
-        private System.Windows.Forms.Label lblFechaRegistroMostrar;
         private System.Windows.Forms.Label lblFechaRegistro;
-        private System.Windows.Forms.Label lblNombreCompletoCliente;
-        private System.Windows.Forms.TextBox txbDNICliente;
-        private System.Windows.Forms.Label lblDNICliente;
-        private System.Windows.Forms.Label lblPrecio;
         private System.Windows.Forms.Label lblPrecioAPagar;
         private System.Windows.Forms.ComboBox cbxTipoPlan;
         private System.Windows.Forms.Label lblTipoPlan;
         private System.Windows.Forms.DataGridView dtgVentaServicios;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txbEdadCliente;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txbTelefonoCliente;
         private System.Windows.Forms.TextBox txbDNI_Cliente;
         private System.Windows.Forms.TextBox txbNombreCliente;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblTelefonoCliente;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lblVentaServicios;
-        private System.Windows.Forms.Panel panel1;
     }
 }

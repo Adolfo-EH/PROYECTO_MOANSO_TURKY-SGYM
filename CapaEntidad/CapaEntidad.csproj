@@ -52,6 +52,7 @@
     <Compile Include="entPromocion.cs" />
     <Compile Include="entServicios.cs" />
     <Compile Include="entDetVentaProd.cs" />
+    <Compile Include="entVentaMem.cs" />
     <Compile Include="entVentaProd.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
