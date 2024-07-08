@@ -45,6 +45,7 @@
     <Compile Include="datAdministrador.cs" />
     <Compile Include="datCategoria.cs" />
     <Compile Include="datCliente.cs" />
+    <Compile Include="datRelFichaM.cs" />
     <Compile Include="datFormaPago.cs" />
     <Compile Include="datMarca.cs" />
     <Compile Include="datMetodoPago.cs" />

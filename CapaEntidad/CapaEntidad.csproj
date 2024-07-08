@@ -44,6 +44,7 @@
     <Compile Include="entAdministrador.cs" />
     <Compile Include="entCategoria.cs" />
     <Compile Include="entCliente.cs" />
+    <Compile Include="entRelFichaM.cs" />
     <Compile Include="entFormaPago.cs" />
     <Compile Include="entMarca.cs" />
     <Compile Include="entMetodoPago.cs" />

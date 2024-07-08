@@ -9,23 +9,54 @@ using CapaEntidad;
 
 namespace CapaDatos
 {
-    public class datCliente
+    public class datFichaMonitoreo
     {
         #region sigleton
         //Patron Singleton
         // Variable estática para la instancia
-        private static readonly datCliente _instancia = new datCliente();
+        private static readonly datFichaMonitoreo _instancia = new datFichaMonitoreo();
         //privado para evitar la instanciación directa
-        public static datCliente Instancia
+        public static datFichaMonitoreo Instancia
         {
             get
             {
-                return datCliente._instancia;
+                return datFichaMonitoreo._instancia;
             }
         }
         #endregion singleton
 
-        #region CLIENTE
+        #region FichaMonitoreo
+
+        public List<entFormaPago> ListarFormaPago()
+        {
+            SqlCommand cmd = null;
+            List<entFormaPago> lista = new List<entFormaPago>();
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar(); //singleton
+                cmd = new SqlCommand("spListarFormaPago", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    entFormaPago fp = new entFormaPago();
+                    fp.FormadepagoID = Convert.ToInt32(dr["FormadepagoID"]);
+                    fp.NomForma = dr["NomForma"].ToString();
+                    fp.estForma = Convert.ToBoolean(dr["estForma"]);
+                    lista.Add(fp);
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                cmd.Connection.Close();
+            }
+            return lista;
+        }
 
         ////////////////////listado de Clientes
         public List<entCliente> ListarClientes()
@@ -175,7 +206,7 @@ namespace CapaDatos
         }
 
 
-        #endregion CLIENTE
+        #endregion FichaMonitoreo
     }
 
 
