@@ -145,6 +145,20 @@ namespace CapaDatos
             da.Fill(dt);
             return dt;
         }
+
+        public DataTable CargarMetodoPago(int idTipo)
+        {
+            SqlCommand cmd = null;
+            SqlConnection cn = Conexion.Instancia.Conectar();
+            cmd = new SqlCommand("spCargarMetodoPago", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@TipoMetodoPagoID", idTipo);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+
         #endregion METODO DE PAGO
     }
 }

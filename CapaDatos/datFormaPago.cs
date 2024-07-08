@@ -161,6 +161,15 @@ namespace CapaDatos
             finally { cmd.Connection.Close(); }
             return existe;
         }
+        public DataTable CargarFormaPago()
+        {
+            SqlConnection cn = Conexion.Instancia.Conectar();
+            SqlDataAdapter da = new SqlDataAdapter("spCargarFormaPago", cn);
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
         #endregion FORMA DE PAGO
     }
 }

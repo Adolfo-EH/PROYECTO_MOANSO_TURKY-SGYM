@@ -35,7 +35,7 @@ namespace Turky_sGym_Programa
 
         private void CRUD_Metodo_Pago_Load(object sender, EventArgs e)
         {
-            cmbTipoMetPag.DataSource = logMetodoPago.Instancia.CargarMetodoPago();
+            cmbTipoMetPag.DataSource = logMetodoPago.Instancia.CargarTipoMetodoPago();
             cmbTipoMetPag.DisplayMember = "NomTipometodoP";
             cmbTipoMetPag.ValueMember = "TipometodopagoID";
         }

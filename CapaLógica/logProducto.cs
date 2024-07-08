@@ -54,6 +54,18 @@ namespace CapaLógica
         {
             return datProducto.Instancia.CargarMarca(idMarca);
         }
+        public DataTable CargarNombre(int idCat)
+        {
+            return datProducto.Instancia.CargarNombre(idCat);
+        }
+        public entProducto BuscarProductoId(int idProducto)
+        {
+            try
+            {
+                return datProducto.Instancia.BuscarProductoId(idProducto);
+            }
+            catch (Exception e) { throw e; }
+        }
         #endregion metodos
     }
 }

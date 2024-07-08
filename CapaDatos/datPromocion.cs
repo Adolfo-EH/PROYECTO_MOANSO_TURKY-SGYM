@@ -11,7 +11,7 @@ namespace CapaDatos
 {
     public class datPromocion
     {
-        #region sigleton
+       #region sigleton
         //Patron Singleton
         // Variable estática para la instancia
         private static readonly datPromocion _instancia = new datPromocion();
@@ -183,6 +183,45 @@ namespace CapaDatos
             return dt;
         }
 
+        public DataTable CargarPromocion(int tipoProm)
+        {
+            SqlCommand cmd = null;
+            SqlConnection cn = Conexion.Instancia.Conectar();
+            cmd = new SqlCommand("spCargarPromocion", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@TipoPromocionID", tipoProm);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+
+        public decimal ObtenerDescuento(int promocionID)
+        {
+            decimal descuento = 0;
+            SqlCommand cmd = null;
+            SqlConnection cn = Conexion.Instancia.Conectar();
+            try
+            {
+                cmd = new SqlCommand("spObtenerDescuento", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@PromocionID", promocionID);
+                cn.Open();
+                descuento = (decimal)cmd.ExecuteScalar();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                if (cn.State == ConnectionState.Open)
+                {
+                    cn.Close();
+                }
+            }
+            return descuento;
+        }
         #endregion PROMOCION
     }
 }

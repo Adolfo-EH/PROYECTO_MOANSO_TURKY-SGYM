@@ -47,11 +47,19 @@ namespace CapaLógica
         {
             datPromocion.Instancia.HabilitarPromocion(pr);
         }
-
         public DataTable CargarTipoPromocion()
         {
             return datPromocion.Instancia.CargarTipoPromocion();
         }
+        public DataTable CargarPromocion(int idVen)
+        {
+            return datPromocion.Instancia.CargarPromocion(idVen);
+        }
+        public decimal ObtenerDescuento(int promocionID)
+        {
+            return datPromocion.Instancia.ObtenerDescuento(promocionID);
+        }
+
         #endregion metodos
     }
 }

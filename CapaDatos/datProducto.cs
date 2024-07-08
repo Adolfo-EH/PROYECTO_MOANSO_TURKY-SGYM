@@ -11,7 +11,6 @@ namespace CapaDatos
 {
     public class datProducto
     {
-
         #region sigleton
         //Patron Singleton
         // Variable estática para la instancia
@@ -172,6 +171,48 @@ namespace CapaDatos
             cmd = new SqlCommand("spCargarMarca", cn);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@CategoriaID", idMarca);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+
+        public entProducto BuscarProductoId(int idProducto)
+        {
+            SqlCommand cmd = null;
+            entProducto Prod = new entProducto();
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spBuscaridProducto", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@ProductoID", idProducto);
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    Prod.idProducto = Convert.ToInt16(dr["ProductosID"]);
+                    Prod.Descripcion = dr["Descripcion"].ToString();
+                    Prod.cantidad = Convert.ToInt16(dr["Stock"]);
+                    Prod.precio = Convert.ToDouble(dr["PrecioProd"]);
+                    Prod.estProducto = Convert.ToBoolean(dr["estProducto"]);
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return Prod;
+        }
+
+            public DataTable CargarNombre(int idCat)
+        {
+            SqlCommand cmd = null;
+            SqlConnection cn = Conexion.Instancia.Conectar();
+            cmd = new SqlCommand("spCargarNombreProd", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@CategoriaID", idCat);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             da.Fill(dt);

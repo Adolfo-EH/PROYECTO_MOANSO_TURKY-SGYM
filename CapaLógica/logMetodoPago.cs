@@ -45,9 +45,15 @@ namespace CapaLógica
             datMetodoPago.Instancia.DeshabilitarMetodoPago(mp);
         }
         ///cargar tipo metodopago
-        public DataTable CargarMetodoPago()
+        ///cargar tipo metodopago
+        public DataTable CargarTipoMetodoPago()
         {
             return datMetodoPago.Instancia.CargarTipoMetodo();
+        }
+        ///cargar metodopago
+        public DataTable CargarMetodoPago(int idMetodo)
+        {
+            return datMetodoPago.Instancia.CargarMetodoPago(idMetodo);
         }
         #endregion metodos
     }
