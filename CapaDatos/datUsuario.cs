@@ -9,44 +9,45 @@ using System.Threading.Tasks;
 
 namespace CapaDatos
 {
-    public class datAdministrador
+    public class datUsuario
     {
         #region sigleton
         //Patron Singleton
         // Variable estática para la instancia
-        private static readonly datAdministrador _instancia = new datAdministrador();
+        private static readonly datUsuario _instancia = new datUsuario();
         //privado para evitar la instanciación directa
-        public static datAdministrador Instancia
+        public static datUsuario Instancia
         {
             get
             {
-                return datAdministrador._instancia;
+                return datUsuario._instancia;
             }
         }
         #endregion singleton
 
-        #region ADMINISTRADOR
+        #region USUARIO
 
-        //ListadoAdministrador
-        public List<entAdministrador> ListarAdministrador()
+        //ListadoUsuario
+        public List<entUsuario> ListarUsuario()
         {
             SqlCommand cmd = null;
-            List<entAdministrador> lista = new List<entAdministrador>();
+            List<entUsuario> lista = new List<entUsuario>();
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar(); //singleton
-                cmd = new SqlCommand("spListarAdministrador", cn);
+                cmd = new SqlCommand("spListarUsuario", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cn.Open();
                 SqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
-                    entAdministrador Admin = new entAdministrador();
-                    Admin.AdministradorID = Convert.ToInt32(dr["AdministradorID"]);
-                    Admin.Usuario = dr["Usuario"].ToString();
-                    Admin.Contraseña = dr["Contraseña"].ToString();
-                    Admin.estAdministrador = Convert.ToBoolean(dr["estAdministrador"]);
-                    lista.Add(Admin);
+                    entUsuario user = new entUsuario();
+                    user.UsuarioID = Convert.ToInt32(dr["UsuarioID"]);
+                    user.TipoUsuarioID = Convert.ToInt32(dr["TipousuarioID"]);
+                    user.Usuario = dr["Usuario"].ToString();
+                    user.Contraseña = dr["Clave"].ToString();
+                    user.estUsuario = Convert.ToBoolean(dr["estUsuario"]);
+                    lista.Add(user);
                 }
 
             }
@@ -62,18 +63,19 @@ namespace CapaDatos
         }
 
         //InsertarAdministrador
-        public Boolean InsertarAdministrador(entAdministrador Admin)
+        public Boolean InsertarUsuario(entUsuario User)
         {
             SqlCommand cmd = null;
             Boolean inserta = false;
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spInsertarAdministrador", cn);
+                cmd = new SqlCommand("spInsertarUsuario", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@Usuario", Admin.Usuario);
-                cmd.Parameters.AddWithValue("@Contraseña", Admin.Contraseña);
-                cmd.Parameters.AddWithValue("@estAdministrador", Admin.estAdministrador);
+                cmd.Parameters.AddWithValue("@TipoUsuarioID", User.TipoUsuarioID);
+                cmd.Parameters.AddWithValue("@Usuario", User.Usuario);
+                cmd.Parameters.AddWithValue("@Clave", User.Contraseña);
+                cmd.Parameters.AddWithValue("@estUsuario", User.estUsuario);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -89,17 +91,17 @@ namespace CapaDatos
             return inserta;
         }
 
-        //HabilitarAdministrador
-        public Boolean HabilitarAdministrador(entAdministrador Admin)
+        //HabilitarUsuario
+        public Boolean HabilitarUsuario(entUsuario User)
         {
             SqlCommand cmd = null;
             Boolean delete = false;
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spHabilitarAdministrador", cn);
+                cmd = new SqlCommand("spHabilitarUsuario", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@AdministradorID", Admin.AdministradorID);
+                cmd.Parameters.AddWithValue("@UsuarioID", User.UsuarioID);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -115,17 +117,17 @@ namespace CapaDatos
             return delete;
         }
 
-        //InhabilitarAdministrador
-        public Boolean DeshabilitarAdministrador(entAdministrador Admin)
+        //InhabilitarUsuario
+        public Boolean DeshabilitarUsuario(entUsuario User)
         {
             SqlCommand cmd = null;
             Boolean delete = false;
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spDeshabilitarAdministrador", cn);
+                cmd = new SqlCommand("spDeshabilitarUsuario", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@AdministradorID", Admin.AdministradorID);
+                cmd.Parameters.AddWithValue("@UsuarioID", User.UsuarioID);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -140,20 +142,21 @@ namespace CapaDatos
             finally { cmd.Connection.Close(); }
             return delete;
         }
-        //ModificarCliente
-        public Boolean ModificarAdministrador(entAdministrador Admin)
+        //ModificarUsuario
+        public Boolean ModificarUsuario(entUsuario User)
         {
             SqlCommand cmd = null;
             Boolean edita = false;
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spModificarAdministrador", cn);
+                cmd = new SqlCommand("spModificarUsuario", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@AdministradorID", Admin.AdministradorID);
-                cmd.Parameters.AddWithValue("@Usuario", Admin.Usuario);
-                cmd.Parameters.AddWithValue("@Contraseña", Admin.Contraseña);
-                cmd.Parameters.AddWithValue("@estAdministrador", Admin.estAdministrador);
+                cmd.Parameters.AddWithValue("@UsuarioID", User.UsuarioID);
+                cmd.Parameters.AddWithValue("@TipoUsuarioID", User.TipoUsuarioID);
+                cmd.Parameters.AddWithValue("@Usuario", User.Usuario);
+                cmd.Parameters.AddWithValue("@Contraseña", User.Contraseña);
+                cmd.Parameters.AddWithValue("@estUsuario", User.estUsuario);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -170,14 +173,14 @@ namespace CapaDatos
 
         }
         //CondicionExisteUsuario
-        public Boolean ExisteUsuarioAdministrador(string Usuario)
+        public Boolean ExisteUsuario(string Usuario)
         {
             SqlCommand cmd = null;
             Boolean existe = false;
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spExisteUsuarioAdministrador", cn);
+                cmd = new SqlCommand("spExisteUsuario", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@Usuario", Usuario);
                 cn.Open();
@@ -194,7 +197,16 @@ namespace CapaDatos
             finally { cmd.Connection.Close(); }
             return existe;
         }
-        #endregion ADMINISTRADOR
-
+        //CargarTipoUsuario
+        public DataTable CargarTipoUsuario()
+        {
+            SqlConnection cn = Conexion.Instancia.Conectar();
+            SqlDataAdapter da = new SqlDataAdapter("spCargarTipoUsuario", cn);
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+        #endregion USUARIO
     }
 }

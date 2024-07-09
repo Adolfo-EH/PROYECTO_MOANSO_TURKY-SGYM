@@ -9,54 +9,23 @@ using CapaEntidad;
 
 namespace CapaDatos
 {
-    public class datFichaMonitoreo
+    public class datCliente
     {
         #region sigleton
         //Patron Singleton
         // Variable estática para la instancia
-        private static readonly datFichaMonitoreo _instancia = new datFichaMonitoreo();
+        private static readonly datCliente _instancia = new datCliente();
         //privado para evitar la instanciación directa
-        public static datFichaMonitoreo Instancia
+        public static datCliente Instancia
         {
             get
             {
-                return datFichaMonitoreo._instancia;
+                return datCliente._instancia;
             }
         }
         #endregion singleton
 
-        #region FichaMonitoreo
-
-        public List<entFormaPago> ListarFormaPago()
-        {
-            SqlCommand cmd = null;
-            List<entFormaPago> lista = new List<entFormaPago>();
-            try
-            {
-                SqlConnection cn = Conexion.Instancia.Conectar(); //singleton
-                cmd = new SqlCommand("spListarFormaPago", cn);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cn.Open();
-                SqlDataReader dr = cmd.ExecuteReader();
-                while (dr.Read())
-                {
-                    entFormaPago fp = new entFormaPago();
-                    fp.FormadepagoID = Convert.ToInt32(dr["FormadepagoID"]);
-                    fp.NomForma = dr["NomForma"].ToString();
-                    fp.estForma = Convert.ToBoolean(dr["estForma"]);
-                    lista.Add(fp);
-                }
-            }
-            catch (Exception e)
-            {
-                throw e;
-            }
-            finally
-            {
-                cmd.Connection.Close();
-            }
-            return lista;
-        }
+        #region CLIENTE
 
         ////////////////////listado de Clientes
         public List<entCliente> ListarClientes()
@@ -205,9 +174,37 @@ namespace CapaDatos
             return edita;
         }
 
-
-        #endregion FichaMonitoreo
+        public entCliente BuscarClienteID(int ClienteID)
+        {
+            SqlCommand cmd = null;
+            entCliente cl = null;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spBuscarClienteID", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@ClienteID", ClienteID);
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    cl = new entCliente
+                    {
+                        ClienteID = Convert.ToInt32(dr["ClienteID"]),
+                        NomCliente = Convert.ToString(dr["NomCliente"])
+                    };
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                cmd.Connection.Close();
+            }
+            return cl;
+        }
+        #endregion CLIENTE
     }
-
-
 }

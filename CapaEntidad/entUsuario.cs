@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace CapaEntidad
 {
-    public class entAdministrador
+    public class entUsuario
     {
-        public int AdministradorID { get; set; }
+        public int UsuarioID { get; set; }
+        public int TipoUsuarioID { get; set; }
         public string Usuario { get; set; }
         public string Contraseña { get; set; }
-        public Boolean estAdministrador { get; set; }
+        public Boolean estUsuario { get; set; }
 
     }
 }

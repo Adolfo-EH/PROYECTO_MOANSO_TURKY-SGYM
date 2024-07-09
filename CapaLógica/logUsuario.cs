@@ -1,0 +1,67 @@
+﻿using CapaDatos;
+using CapaEntidad;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CapaLógica
+{
+    public class logUsuario
+    {
+        #region singleton
+        private static readonly logUsuario _instancia = new logUsuario();
+        //privado para evitar la instanciación directa
+        public static logUsuario Instancia
+        {
+            get
+            {
+                return logUsuario._instancia;
+            }
+        }
+        #endregion singleton
+
+        #region metodos
+        ///listado
+        public List<entUsuario> ListarUsuario()
+        {
+            return datUsuario.Instancia.ListarUsuario();
+        }
+
+        ///inserta
+        public void InsertarUsuario(entUsuario User)
+        {
+            datUsuario.Instancia.InsertarUsuario(User);
+        }
+
+        ///habilitar
+        public void HabilitarUsuario(entUsuario User)
+        {
+            datUsuario.Instancia.HabilitarUsuario(User);
+        }
+
+        ///deshabilitar
+        public void DeshabilitarUsuario(entUsuario User)
+        {
+            datUsuario.Instancia.DeshabilitarUsuario(User);
+        }
+
+        //modificar
+        public void ModificarUsuario(entUsuario User)
+        {
+            datUsuario.Instancia.ModificarUsuario(User);
+        }
+        //condicion
+        public Boolean ExisteUsuario(string User)
+        {
+            return datUsuario.Instancia.ExisteUsuario(User);
+        }
+        public DataTable CargarTipoUsuario()
+        {
+            return datUsuario.Instancia.CargarTipoUsuario();
+        }
+        #endregion metodos
+    }
+}

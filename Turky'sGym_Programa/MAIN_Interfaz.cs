@@ -109,7 +109,7 @@ namespace Turky_sGym_Programa
 
         private void btnAdmin_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new CRUD_Administrador());
+            OpenChildForm(new CRUD_Usuario());
         }
     }
 }

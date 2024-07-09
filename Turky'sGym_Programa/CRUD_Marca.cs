@@ -43,9 +43,9 @@ namespace Turky_sGym_Programa
         private void dgvMarca_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewRow filaActual = dgvMarca.Rows[e.RowIndex];
-            lblIDMarca.Text = filaActual.Cells[0].Value.ToString();
-            txtNomMarca.Text = filaActual.Cells[1].Value.ToString();
-            cbEstadoMarca.Checked = Convert.ToBoolean(filaActual.Cells[2].Value);
+            lblIDMarca.Text = filaActual.Cells[1].Value.ToString();
+            txtNomMarca.Text = filaActual.Cells[2].Value.ToString();
+            cbEstadoMarca.Checked = Convert.ToBoolean(filaActual.Cells[3].Value);
         }
 
         private void btnInhabilitarM_Click(object sender, EventArgs e)
