@@ -202,3 +202,14 @@ C:\Users\Usuario\OneDrive\Escritorio\HOLA\CapaLógica\obj\Debug\CapaLógica.cspr
 C:\Users\Usuario\OneDrive\Escritorio\HOLA\CapaLógica\obj\Debug\CapaLógica.csproj.Up2Date
 C:\Users\Usuario\OneDrive\Escritorio\HOLA\CapaLógica\obj\Debug\CapaLógica.dll
 C:\Users\Usuario\OneDrive\Escritorio\HOLA\CapaLógica\obj\Debug\CapaLógica.pdb
+C:\Users\Usuario\Desktop\234\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\bin\Debug\CapaLógica.dll
+C:\Users\Usuario\Desktop\234\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\bin\Debug\CapaLógica.pdb
+C:\Users\Usuario\Desktop\234\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\bin\Debug\CapaDatos.dll
+C:\Users\Usuario\Desktop\234\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\bin\Debug\CapaEntidad.dll
+C:\Users\Usuario\Desktop\234\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\bin\Debug\CapaDatos.pdb
+C:\Users\Usuario\Desktop\234\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\bin\Debug\CapaEntidad.pdb
+C:\Users\Usuario\Desktop\234\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\obj\Debug\CapaLógica.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\234\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\obj\Debug\CapaLógica.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\234\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\obj\Debug\CapaLógica.csproj.Up2Date
+C:\Users\Usuario\Desktop\234\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\obj\Debug\CapaLógica.dll
+C:\Users\Usuario\Desktop\234\PROYECTO_MOANSO_TURKY-SGYM\CapaLógica\obj\Debug\CapaLógica.pdb

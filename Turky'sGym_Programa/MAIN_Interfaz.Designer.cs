@@ -108,7 +108,7 @@
             this.btnAdmin.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.btnAdmin.Size = new System.Drawing.Size(220, 60);
             this.btnAdmin.TabIndex = 13;
-            this.btnAdmin.Text = "  ADMINISTRADOR";
+            this.btnAdmin.Text = "  CONFIGURACION     DE USUARIOS";
             this.btnAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAdmin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAdmin.UseVisualStyleBackColor = false;

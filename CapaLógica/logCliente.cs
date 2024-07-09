@@ -52,6 +52,16 @@ namespace CapaLógica
         {
             datCliente.Instancia.EditarCliente(cl);
         }
+
+        ///buscarIdCliente
+        public entCliente BuscarClienteID(int ClienteID)
+        {
+            try
+            {
+                return datCliente.Instancia.BuscarClienteID(ClienteID);
+            }
+            catch (Exception e) { throw e; }
+        }
         #endregion metodos
     }
 }
