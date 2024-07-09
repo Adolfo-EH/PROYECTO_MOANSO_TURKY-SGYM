@@ -207,6 +207,93 @@ namespace CapaDatos
             da.Fill(dt);
             return dt;
         }
+        public bool ValidarCredenciales(string nombreUsuario, string contraseña)
+        {
+            bool esValido = false;
+            SqlCommand cmd = null;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spValidarCredenciales", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Nombre", nombreUsuario);
+                cmd.Parameters.AddWithValue("@Contraseña", contraseña);
+                cn.Open();
+                int count = (int)cmd.ExecuteScalar();
+                esValido = count > 0;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                if (cmd != null && cmd.Connection != null)
+                    cmd.Connection.Close();
+            }
+            return esValido;
+        }
+        public entUsuario ObtenerUsuarioPorNombre(string nombreUsuario)
+        {
+            entUsuario usuario = null;
+            SqlCommand cmd = null;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spObtenerUsuarioPorNombre", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Nombre", nombreUsuario);
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    usuario = new entUsuario();
+                    usuario.UsuarioID = Convert.ToInt32(dr["UsuarioID"]);
+                    usuario.TipoUsuarioID = Convert.ToInt32(dr["TipousuarioID"]);
+                    usuario.Usuario = dr["Usuario"].ToString();
+                    usuario.Contraseña = dr["Clave"].ToString();
+                    usuario.estUsuario = Convert.ToBoolean(dr["estUsuario"]);
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                if (cmd != null && cmd.Connection != null)
+                    cmd.Connection.Close();
+            }
+            return usuario;
+        }
+        public int ObtenerTipousuarioIDPorNombre(string nombreUsuario)
+        {
+            int tipousuarioID = 0;
+            SqlCommand cmd = null;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spObtenerTipousuarioIDPorNombre", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Nombre", nombreUsuario);
+                cn.Open();
+                object result = cmd.ExecuteScalar();
+                if (result != null && result != DBNull.Value)
+                {
+                    tipousuarioID = Convert.ToInt32(result);
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                if (cmd != null && cmd.Connection != null)
+                    cmd.Connection.Close();
+            }
+            return tipousuarioID;
+        }
         #endregion USUARIO
     }
 }

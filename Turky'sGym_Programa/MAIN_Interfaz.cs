@@ -15,9 +15,30 @@ namespace Turky_sGym_Programa
     public partial class MAIN_Interfaz : Form
     {
         private Form activeForm;
-        public MAIN_Interfaz()
+        private int tipoUsuarioID;
+
+        public MAIN_Interfaz(int tipoUsuarioID)
         {
             InitializeComponent();
+            this.tipoUsuarioID = tipoUsuarioID;
+            VerificarAccesoAdmin();
+            OpenChildForm(new CRUD_Clientes());
+        }
+
+        private void VerificarAccesoAdmin()
+        {
+            if (tipoUsuarioID != 1)
+            {
+                btnCatPro.Enabled = false;
+                btnMarca.Enabled = false;
+                btnProd.Enabled = false;
+                btnMem.Enabled = false;
+                btnServicios.Enabled = false;
+                btnMetPago.Enabled = false;
+                btnFormPag.Enabled = false;
+                btnPromo.Enabled = false;
+                btnAdmin.Enabled = false;
+            }
         }
 
         private void OpenChildForm(Form childForm)
@@ -106,10 +127,16 @@ namespace Turky_sGym_Programa
         {
             OpenChildForm(new CRUD_Promocion());
         }
-
         private void btnAdmin_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new CRUD_Usuario());
+            if (tipoUsuarioID == 1)
+            {
+                OpenChildForm(new CRUD_Usuario());
+            }
+            else
+            {
+                MessageBox.Show("No tiene el nivel de acceso necesario para acceder a esta función.", "Acceso Denegado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }

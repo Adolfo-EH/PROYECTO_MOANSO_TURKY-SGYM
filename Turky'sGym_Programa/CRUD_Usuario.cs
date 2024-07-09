@@ -90,9 +90,17 @@ namespace Turky_sGym_Programa
             txtPassAd.Text = filaActual.Cells[3].Value.ToString();
             cbEstadoAdmin.Checked = Convert.ToBoolean(filaActual.Cells[4].Value);
         }
-
+        private void MostrarUsuarioLogueado()
+        {
+            entUsuario usuario = logUsuario.Instancia.ObtenerUsuarioLogueado();
+            if (usuario != null)
+            {
+                lblUsuario.Text = "Usuario: " + usuario.Usuario;
+            }
+        }
         private void CRUD_Usuario_Load(object sender, EventArgs e)
         {
+            MostrarUsuarioLogueado();
             cbxTipoUser.DataSource = logUsuario.Instancia.CargarTipoUsuario();
             cbxTipoUser.DisplayMember = "NomTipouser";
             cbxTipoUser.ValueMember = "TipousuarioID";

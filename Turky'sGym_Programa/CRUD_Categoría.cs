@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Turky_sGym_Programa;
 
 namespace Turky_sGym_Programa
 {
@@ -20,6 +21,14 @@ namespace Turky_sGym_Programa
             listarCategoria();
             gbCategoría.Enabled = false;
         }
+        private void MostrarUsuarioLogueado()
+        {
+            entUsuario usuario = logUsuario.Instancia.ObtenerUsuarioLogueado();
+            if (usuario != null)
+            {
+                lblUsuario.Text = "Usuario: " + usuario.Usuario;
+            }
+        }
 
         public void LimpiarVariables()
         {
@@ -30,7 +39,7 @@ namespace Turky_sGym_Programa
 
         private void CRUD_Categoría_Load(object sender, EventArgs e)
         {
-
+            MostrarUsuarioLogueado();
         }
 
         public void listarCategoria()
@@ -130,6 +139,11 @@ namespace Turky_sGym_Programa
             lblIDCat.Text = filaActual.Cells[0].Value.ToString();
             txtNomCat.Text = filaActual.Cells[1].Value.ToString();
             cbEstadoCategoría.Checked = Convert.ToBoolean(filaActual.Cells[2].Value);
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

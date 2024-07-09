@@ -48,6 +48,7 @@
             this.gbAdministrador = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cbxTipoUser = new System.Windows.Forms.ComboBox();
+            this.lblUsuario = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAdministrador)).BeginInit();
             this.panel1.SuspendLayout();
             this.gbAdministrador.SuspendLayout();
@@ -82,6 +83,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkCyan;
+            this.panel1.Controls.Add(this.lblUsuario);
             this.panel1.Controls.Add(this.lblVentaServicios);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -268,6 +270,18 @@
             this.cbxTipoUser.TabIndex = 79;
             this.cbxTipoUser.SelectedIndexChanged += new System.EventHandler(this.cbxTipoUser_SelectedIndexChanged);
             // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblUsuario.Location = new System.Drawing.Point(924, 24);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(103, 29);
+            this.lblUsuario.TabIndex = 95;
+            this.lblUsuario.Text = "Usuario";
+            // 
             // CRUD_Usuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -314,5 +328,6 @@
         private System.Windows.Forms.GroupBox gbAdministrador;
         private System.Windows.Forms.ComboBox cbxTipoUser;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblUsuario;
     }
 }

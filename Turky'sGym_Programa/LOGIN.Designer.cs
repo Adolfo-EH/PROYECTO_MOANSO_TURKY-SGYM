@@ -44,7 +44,7 @@
             this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInicio.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnInicio.Location = new System.Drawing.Point(291, 262);
+            this.btnInicio.Location = new System.Drawing.Point(291, 268);
             this.btnInicio.Name = "btnInicio";
             this.btnInicio.Size = new System.Drawing.Size(224, 35);
             this.btnInicio.TabIndex = 12;
@@ -122,6 +122,7 @@
             this.Controls.Add(this.panelRegistro);
             this.Name = "LOGIN";
             this.Text = "LOGIN";
+            this.Load += new System.EventHandler(this.LOGIN_Load);
             this.panelRegistro.ResumeLayout(false);
             this.panelRegistro.PerformLayout();
             this.ResumeLayout(false);

@@ -145,5 +145,17 @@ namespace Turky_sGym_Programa
             grbDatCli.Enabled = false;
             listarClientes();
         }
+        private void MostrarUsuarioLogueado()
+        {
+            entUsuario usuario = logUsuario.Instancia.ObtenerUsuarioLogueado();
+            if (usuario != null)
+            {
+                lblUsuario.Text = "Usuario: " + usuario.Usuario;
+            }
+        }
+        private void CRUD_Clientes_Load(object sender, EventArgs e)
+        {
+            MostrarUsuarioLogueado();
+        }
     }
 }

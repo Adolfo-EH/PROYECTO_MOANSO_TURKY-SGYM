@@ -33,12 +33,21 @@ namespace Turky_sGym_Programa
             lbIDMembresia.Text = "00";
             txtMembresia.Clear();
             txtPrecio.Clear();
+            txtDuracionMem.Clear();
+            //listServicios.Clear();
             cbEstado.Checked = false;
         }
-
+        private void MostrarUsuarioLogueado()
+        {
+            entUsuario usuario = logUsuario.Instancia.ObtenerUsuarioLogueado();
+            if (usuario != null)
+            {
+                lblUsuario.Text = "Usuario: " + usuario.Usuario;
+            }
+        }
         private void CRUD_Membresía_Load(object sender, EventArgs e)
         {
-
+            MostrarUsuarioLogueado();
             cmbServicio.DataSource = logServicios.Instancia.CargarServicio();
             cmbServicio.DisplayMember = "NomServicio";
             cmbServicio.ValueMember = "ServiciosID";
@@ -150,6 +159,21 @@ namespace Turky_sGym_Programa
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gbPlanes_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbServicio_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listServicios_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

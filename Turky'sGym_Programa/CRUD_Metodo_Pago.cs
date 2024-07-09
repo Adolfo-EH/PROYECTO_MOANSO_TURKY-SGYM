@@ -32,9 +32,17 @@ namespace Turky_sGym_Programa
             txtNombre.Clear();
             cbxEstadoMetodoPago.Checked = false;
         }
-
+        private void MostrarUsuarioLogueado()
+        {
+            entUsuario usuario = logUsuario.Instancia.ObtenerUsuarioLogueado();
+            if (usuario != null)
+            {
+                lblUsuario.Text = "Usuario: " + usuario.Usuario;
+            }
+        }
         private void CRUD_Metodo_Pago_Load(object sender, EventArgs e)
         {
+            MostrarUsuarioLogueado();
             cmbTipoMetPag.DataSource = logMetodoPago.Instancia.CargarTipoMetodoPago();
             cmbTipoMetPag.DisplayMember = "NomTipometodoP";
             cmbTipoMetPag.ValueMember = "TipometodopagoID";

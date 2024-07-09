@@ -35,9 +35,17 @@ namespace Turky_sGym_Programa
             txtDescuento.Clear();
             cbxPromocion.Checked = false;
         }
-
+        private void MostrarUsuarioLogueado()
+        {
+            entUsuario usuario = logUsuario.Instancia.ObtenerUsuarioLogueado();
+            if (usuario != null)
+            {
+                lblUsuario.Text = "Usuario: " + usuario.Usuario;
+            }
+        }
         private void CRUD_Promocion_Load(object sender, EventArgs e)
         {
+            MostrarUsuarioLogueado();
             cmbTipoProm.DataSource = logPromocion.Instancia.CargarTipoPromocion();
             cmbTipoProm.DisplayMember = "NomTipopromo";
             cmbTipoProm.ValueMember = "TipoPromocionID";

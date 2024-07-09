@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CapaEntidad;
+using CapaLógica;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,10 +18,17 @@ namespace Turky_sGym_Programa
         {
             InitializeComponent();
         }
-
+        private void MostrarUsuarioLogueado()
+        {
+            entUsuario usuario = logUsuario.Instancia.ObtenerUsuarioLogueado();
+            if (usuario != null)
+            {
+                lblUsuario.Text = "Usuario: " + usuario.Usuario;
+            }
+        }
         private void CORE_VENTA_MEMBRESÍA_Load(object sender, EventArgs e)
         {
-
+            MostrarUsuarioLogueado();
         }
 
         private void cbxTipoPlan_SelectedIndexChanged(object sender, EventArgs e)
@@ -31,6 +40,11 @@ namespace Turky_sGym_Programa
         {
             CSLT_Venta_Membresía mainForm = new CSLT_Venta_Membresía();
             mainForm.Show();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

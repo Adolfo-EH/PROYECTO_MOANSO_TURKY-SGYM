@@ -120,10 +120,17 @@ namespace Turky_sGym_Programa
         {
             Close();
         }
-
+        private void MostrarUsuarioLogueado()
+        {
+            entUsuario usuario = logUsuario.Instancia.ObtenerUsuarioLogueado();
+            if (usuario != null)
+            {
+                lblUsuario.Text = "Usuario: " + usuario.Usuario;
+            }
+        }
         private void CRUD_Forma_Pago_Load(object sender, EventArgs e)
         {
-
+            MostrarUsuarioLogueado();
         }
 
         private void label3_Click(object sender, EventArgs e)

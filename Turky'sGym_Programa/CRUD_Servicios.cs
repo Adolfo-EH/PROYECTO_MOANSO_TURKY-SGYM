@@ -36,10 +36,17 @@ namespace Turky_sGym_Programa
         {
 
         }
-
+        private void MostrarUsuarioLogueado()
+        {
+            entUsuario usuario = logUsuario.Instancia.ObtenerUsuarioLogueado();
+            if (usuario != null)
+            {
+                lblUsuario.Text = "Usuario: " + usuario.Usuario;
+            }
+        }
         private void CRUD_Servicios_Load(object sender, EventArgs e)
         {
-
+            MostrarUsuarioLogueado();
         }
 
         private void btnCrearS_Click(object sender, EventArgs e)

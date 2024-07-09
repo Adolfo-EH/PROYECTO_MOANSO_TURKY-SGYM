@@ -40,9 +40,17 @@ namespace Turky_sGym_Programa
             txtDescripcion.Clear();
             cbxEstadoProducto.Checked = false;
         }
-
+        private void MostrarUsuarioLogueado()
+        {
+            entUsuario usuario = logUsuario.Instancia.ObtenerUsuarioLogueado();
+            if (usuario != null)
+            {
+                lblUsuario.Text = "Usuario: " + usuario.Usuario;
+            }
+        }
         private void CRUD_Productos_Load(object sender, EventArgs e)
         {
+            MostrarUsuarioLogueado();
             cmbCategoria.DataSource = logProducto.Instancia.CargarCategoria();
             cmbCategoria.DisplayMember = "NomCategoria";
             cmbCategoria.ValueMember = "CategoriaID";

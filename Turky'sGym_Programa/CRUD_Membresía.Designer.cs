@@ -49,6 +49,7 @@
             this.btnInhabilitar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblUsuario = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlan)).BeginInit();
             this.gbPlanes.SuspendLayout();
@@ -106,6 +107,7 @@
             this.gbPlanes.TabIndex = 33;
             this.gbPlanes.TabStop = false;
             this.gbPlanes.Text = "Planes";
+            this.gbPlanes.Enter += new System.EventHandler(this.gbPlanes_Enter);
             // 
             // listServicios
             // 
@@ -115,6 +117,7 @@
             this.listServicios.Name = "listServicios";
             this.listServicios.Size = new System.Drawing.Size(229, 308);
             this.listServicios.TabIndex = 29;
+            this.listServicios.SelectedIndexChanged += new System.EventHandler(this.listServicios_SelectedIndexChanged);
             // 
             // btnAgregar
             // 
@@ -170,6 +173,7 @@
             this.cmbServicio.Name = "cmbServicio";
             this.cmbServicio.Size = new System.Drawing.Size(270, 24);
             this.cmbServicio.TabIndex = 20;
+            this.cmbServicio.SelectedIndexChanged += new System.EventHandler(this.cmbServicio_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -279,12 +283,25 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkCyan;
+            this.panel1.Controls.Add(this.lblUsuario);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1184, 79);
             this.panel1.TabIndex = 35;
+            // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblUsuario.Location = new System.Drawing.Point(924, 24);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(103, 29);
+            this.lblUsuario.TabIndex = 46;
+            this.lblUsuario.Text = "Usuario";
             // 
             // label2
             // 
@@ -347,5 +364,6 @@
         private System.Windows.Forms.TextBox txtDuracionMem;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.ListBox listServicios;
+        private System.Windows.Forms.Label lblUsuario;
     }
 }

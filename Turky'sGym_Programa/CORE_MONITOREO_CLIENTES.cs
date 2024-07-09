@@ -60,9 +60,17 @@ namespace Turky_sGym_Programa
             txbCuadriceps.Text = string.Empty;
             txbPantorilla.Text = string.Empty;
         }
+        private void MostrarUsuarioLogueado()
+        {
+            entUsuario usuario = logUsuario.Instancia.ObtenerUsuarioLogueado();
+            if (usuario != null)
+            {
+                lblUsuario.Text = "Usuario: " + usuario.Usuario;
+            }
+        }
         private void CORE_MONITOREO_CLIENTES_Load(object sender, EventArgs e)
         {
-
+            MostrarUsuarioLogueado();
         }
 
         private void txbDNImonitoreo_TextChanged(object sender, EventArgs e)

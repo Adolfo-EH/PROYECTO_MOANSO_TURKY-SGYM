@@ -58,6 +58,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblTelefonoCliente = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lblUsuario = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgVentaServicios)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -79,6 +82,7 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.DarkCyan;
+            this.panel1.Controls.Add(this.lblUsuario);
             this.panel1.Controls.Add(this.lblVentaServicios);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -87,14 +91,14 @@
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(208, 561);
+            this.dateTimePicker2.Location = new System.Drawing.Point(190, 543);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(186, 20);
             this.dateTimePicker2.TabIndex = 90;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(208, 431);
+            this.textBox1.Location = new System.Drawing.Point(191, 377);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(90, 20);
             this.textBox1.TabIndex = 89;
@@ -102,14 +106,14 @@
             // cmbFormaPagoM
             // 
             this.cmbFormaPagoM.FormattingEnabled = true;
-            this.cmbFormaPagoM.Location = new System.Drawing.Point(208, 492);
+            this.cmbFormaPagoM.Location = new System.Drawing.Point(190, 474);
             this.cmbFormaPagoM.Name = "cmbFormaPagoM";
             this.cmbFormaPagoM.Size = new System.Drawing.Size(187, 21);
             this.cmbFormaPagoM.TabIndex = 88;
             // 
             // btnBuscarCliente
             // 
-            this.btnBuscarCliente.Location = new System.Drawing.Point(421, 173);
+            this.btnBuscarCliente.Location = new System.Drawing.Point(405, 135);
             this.btnBuscarCliente.Name = "btnBuscarCliente";
             this.btnBuscarCliente.Size = new System.Drawing.Size(110, 29);
             this.btnBuscarCliente.TabIndex = 81;
@@ -120,7 +124,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(96, 497);
+            this.label3.Location = new System.Drawing.Point(78, 479);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(104, 16);
             this.label3.TabIndex = 87;
@@ -128,7 +132,7 @@
             // 
             // txbDNICliente
             // 
-            this.txbDNICliente.Location = new System.Drawing.Point(214, 178);
+            this.txbDNICliente.Location = new System.Drawing.Point(198, 140);
             this.txbDNICliente.Name = "txbDNICliente";
             this.txbDNICliente.Size = new System.Drawing.Size(186, 20);
             this.txbDNICliente.TabIndex = 75;
@@ -137,7 +141,7 @@
             // 
             this.lblDNICliente.AutoSize = true;
             this.lblDNICliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDNICliente.Location = new System.Drawing.Point(79, 179);
+            this.lblDNICliente.Location = new System.Drawing.Point(63, 141);
             this.lblDNICliente.Name = "lblDNICliente";
             this.lblDNICliente.Size = new System.Drawing.Size(129, 16);
             this.lblDNICliente.TabIndex = 74;
@@ -146,7 +150,7 @@
             // cmbPromocionM
             // 
             this.cmbPromocionM.FormattingEnabled = true;
-            this.cmbPromocionM.Location = new System.Drawing.Point(209, 524);
+            this.cmbPromocionM.Location = new System.Drawing.Point(191, 506);
             this.cmbPromocionM.Name = "cmbPromocionM";
             this.cmbPromocionM.Size = new System.Drawing.Size(186, 21);
             this.cmbPromocionM.TabIndex = 86;
@@ -155,7 +159,7 @@
             // 
             this.lblPromoción.AutoSize = true;
             this.lblPromoción.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPromoción.Location = new System.Drawing.Point(123, 529);
+            this.lblPromoción.Location = new System.Drawing.Point(105, 511);
             this.lblPromoción.Name = "lblPromoción";
             this.lblPromoción.Size = new System.Drawing.Size(75, 16);
             this.lblPromoción.TabIndex = 85;
@@ -163,7 +167,7 @@
             // 
             // btnConsultarVentas
             // 
-            this.btnConsultarVentas.Location = new System.Drawing.Point(990, 595);
+            this.btnConsultarVentas.Location = new System.Drawing.Point(983, 856);
             this.btnConsultarVentas.Name = "btnConsultarVentas";
             this.btnConsultarVentas.Size = new System.Drawing.Size(125, 41);
             this.btnConsultarVentas.TabIndex = 84;
@@ -173,7 +177,7 @@
             // cbMetodoPagoS
             // 
             this.cbMetodoPagoS.FormattingEnabled = true;
-            this.cbMetodoPagoS.Location = new System.Drawing.Point(208, 462);
+            this.cbMetodoPagoS.Location = new System.Drawing.Point(190, 444);
             this.cbMetodoPagoS.Name = "cbMetodoPagoS";
             this.cbMetodoPagoS.Size = new System.Drawing.Size(187, 21);
             this.cbMetodoPagoS.TabIndex = 83;
@@ -182,7 +186,7 @@
             // 
             this.lblMetodoPago.AutoSize = true;
             this.lblMetodoPago.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMetodoPago.Location = new System.Drawing.Point(91, 467);
+            this.lblMetodoPago.Location = new System.Drawing.Point(73, 445);
             this.lblMetodoPago.Name = "lblMetodoPago";
             this.lblMetodoPago.Size = new System.Drawing.Size(111, 16);
             this.lblMetodoPago.TabIndex = 82;
@@ -190,7 +194,7 @@
             // 
             // btnAnularVenta
             // 
-            this.btnAnularVenta.Location = new System.Drawing.Point(807, 596);
+            this.btnAnularVenta.Location = new System.Drawing.Point(800, 857);
             this.btnAnularVenta.Name = "btnAnularVenta";
             this.btnAnularVenta.Size = new System.Drawing.Size(125, 40);
             this.btnAnularVenta.TabIndex = 79;
@@ -199,7 +203,7 @@
             // 
             // btnRegistroServicio
             // 
-            this.btnRegistroServicio.Location = new System.Drawing.Point(615, 595);
+            this.btnRegistroServicio.Location = new System.Drawing.Point(608, 856);
             this.btnRegistroServicio.Name = "btnRegistroServicio";
             this.btnRegistroServicio.Size = new System.Drawing.Size(125, 41);
             this.btnRegistroServicio.TabIndex = 78;
@@ -210,7 +214,7 @@
             // 
             this.lblFechaRegistro.AutoSize = true;
             this.lblFechaRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFechaRegistro.Location = new System.Drawing.Point(92, 561);
+            this.lblFechaRegistro.Location = new System.Drawing.Point(74, 543);
             this.lblFechaRegistro.Name = "lblFechaRegistro";
             this.lblFechaRegistro.Size = new System.Drawing.Size(105, 16);
             this.lblFechaRegistro.TabIndex = 77;
@@ -220,7 +224,7 @@
             // 
             this.lblPrecioAPagar.AutoSize = true;
             this.lblPrecioAPagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecioAPagar.Location = new System.Drawing.Point(82, 431);
+            this.lblPrecioAPagar.Location = new System.Drawing.Point(63, 377);
             this.lblPrecioAPagar.Name = "lblPrecioAPagar";
             this.lblPrecioAPagar.Size = new System.Drawing.Size(120, 16);
             this.lblPrecioAPagar.TabIndex = 73;
@@ -229,7 +233,7 @@
             // cbxTipoPlan
             // 
             this.cbxTipoPlan.FormattingEnabled = true;
-            this.cbxTipoPlan.Location = new System.Drawing.Point(208, 396);
+            this.cbxTipoPlan.Location = new System.Drawing.Point(190, 342);
             this.cbxTipoPlan.Name = "cbxTipoPlan";
             this.cbxTipoPlan.Size = new System.Drawing.Size(187, 21);
             this.cbxTipoPlan.TabIndex = 72;
@@ -238,7 +242,7 @@
             // 
             this.lblTipoPlan.AutoSize = true;
             this.lblTipoPlan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipoPlan.Location = new System.Drawing.Point(123, 397);
+            this.lblTipoPlan.Location = new System.Drawing.Point(105, 343);
             this.lblTipoPlan.Name = "lblTipoPlan";
             this.lblTipoPlan.Size = new System.Drawing.Size(78, 16);
             this.lblTipoPlan.TabIndex = 71;
@@ -247,10 +251,10 @@
             // dtgVentaServicios
             // 
             this.dtgVentaServicios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgVentaServicios.Location = new System.Drawing.Point(543, 114);
+            this.dtgVentaServicios.Location = new System.Drawing.Point(540, 85);
             this.dtgVentaServicios.Name = "dtgVentaServicios";
             this.dtgVentaServicios.ReadOnly = true;
-            this.dtgVentaServicios.Size = new System.Drawing.Size(629, 461);
+            this.dtgVentaServicios.Size = new System.Drawing.Size(644, 750);
             this.dtgVentaServicios.TabIndex = 70;
             // 
             // groupBox1
@@ -264,7 +268,7 @@
             this.groupBox1.Controls.Add(this.lblTelefonoCliente);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(27, 220);
+            this.groupBox1.Location = new System.Drawing.Point(11, 182);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(510, 143);
             this.groupBox1.TabIndex = 76;
@@ -339,11 +343,44 @@
             this.label2.TabIndex = 9;
             this.label2.Text = "DNI Cliente:";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(190, 408);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(187, 21);
+            this.comboBox1.TabIndex = 92;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(20, 411);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(163, 16);
+            this.label5.TabIndex = 91;
+            this.label5.Text = "Tipo De Método de Pago:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblUsuario.Location = new System.Drawing.Point(924, 24);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(103, 29);
+            this.lblUsuario.TabIndex = 93;
+            this.lblUsuario.Text = "Usuario";
+            // 
             // CORE_VENTA_MEMBRESÍA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1184, 921);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.cmbFormaPagoM);
@@ -409,5 +446,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblTelefonoCliente;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblUsuario;
     }
 }

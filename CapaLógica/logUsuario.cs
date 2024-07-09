@@ -3,6 +3,7 @@ using CapaEntidad;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,7 @@ namespace CapaLógica
     public class logUsuario
     {
         #region singleton
+        private static entUsuario usuarioLogueado;
         private static readonly logUsuario _instancia = new logUsuario();
         //privado para evitar la instanciación directa
         public static logUsuario Instancia
@@ -61,6 +63,37 @@ namespace CapaLógica
         public DataTable CargarTipoUsuario()
         {
             return datUsuario.Instancia.CargarTipoUsuario();
+        }
+        public bool ValidarCredenciales(string nombreUsuario, string contraseña)
+        {
+            try
+            {
+                bool credencialesValidas = datUsuario.Instancia.ValidarCredenciales(nombreUsuario, contraseña);
+                if (credencialesValidas)
+                {
+                    usuarioLogueado = datUsuario.Instancia.ObtenerUsuarioPorNombre(nombreUsuario);
+                }
+                return credencialesValidas;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public entUsuario ObtenerUsuarioLogueado()
+        {
+            return usuarioLogueado;
+        }
+        public int ObtenerTipousuarioIDPorNombre(string nombreUsuario)
+        {
+            try
+            {
+                return datUsuario.Instancia.ObtenerTipousuarioIDPorNombre(nombreUsuario);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
         #endregion metodos
     }

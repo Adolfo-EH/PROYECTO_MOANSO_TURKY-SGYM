@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CapaEntidad;
+using CapaLógica;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -50,6 +52,18 @@ namespace Turky_sGym_Programa
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+        private void MostrarUsuarioLogueado()
+        {
+            entUsuario usuario = logUsuario.Instancia.ObtenerUsuarioLogueado();
+            if (usuario != null)
+            {
+                lblUsuario.Text = "Usuario: " + usuario.Usuario;
+            }
+        }
+        private void CSLT_Venta_Membresía_Load(object sender, EventArgs e)
+        {
+            MostrarUsuarioLogueado();
         }
     }
     

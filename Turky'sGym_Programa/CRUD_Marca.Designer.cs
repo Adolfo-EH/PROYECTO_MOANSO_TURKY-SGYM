@@ -44,6 +44,7 @@
             this.cbEstadoMarca = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.f = new System.Windows.Forms.Label();
+            this.lblUsuario = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMarca)).BeginInit();
             this.gbMarca.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -204,6 +205,7 @@
             // 
             this.panel1.AllowDrop = true;
             this.panel1.BackColor = System.Drawing.Color.DarkCyan;
+            this.panel1.Controls.Add(this.lblUsuario);
             this.panel1.Controls.Add(this.f);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -223,6 +225,18 @@
             this.f.Size = new System.Drawing.Size(117, 31);
             this.f.TabIndex = 44;
             this.f.Text = "MARCA";
+            // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblUsuario.Location = new System.Drawing.Point(924, 24);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(103, 29);
+            this.lblUsuario.TabIndex = 86;
+            this.lblUsuario.Text = "Usuario";
             // 
             // CRUD_Marca
             // 
@@ -264,5 +278,6 @@
         private System.Windows.Forms.Label f;
         private System.Windows.Forms.Label lblCategoriaM;
         private System.Windows.Forms.ComboBox cbxCategoriaM;
+        private System.Windows.Forms.Label lblUsuario;
     }
 }

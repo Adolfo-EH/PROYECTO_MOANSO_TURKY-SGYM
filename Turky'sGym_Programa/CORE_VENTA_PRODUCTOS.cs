@@ -18,9 +18,18 @@ namespace Turky_sGym_Programa
         {
             InitializeComponent();
         }
-
+        private void MostrarUsuarioLogueado()
+        {
+            entUsuario usuario = logUsuario.Instancia.ObtenerUsuarioLogueado();
+            if (usuario != null)
+            {
+                lblUsuario.Text = "Usuario: " + usuario.Usuario;
+            }
+        }
         private void CORE_VENTA_PRODUCTOS_Load(object sender, EventArgs e)
         {
+            MostrarUsuarioLogueado();
+
             cmbCategoria.DataSource = logProducto.Instancia.CargarCategoria();
             cmbCategoria.DisplayMember = "NomCategoria";
             cmbCategoria.ValueMember = "CategoriaID";

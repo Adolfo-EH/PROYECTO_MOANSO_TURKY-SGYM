@@ -108,14 +108,21 @@ namespace Turky_sGym_Programa
             LimpiarVariables();
             gbMarca.Enabled = false;
         }
-
+        private void MostrarUsuarioLogueado()
+        {
+            entUsuario usuario = logUsuario.Instancia.ObtenerUsuarioLogueado();
+            if (usuario != null)
+            {
+                lblUsuario.Text = "Usuario: " + usuario.Usuario;
+            }
+        }
         private void CRUD_Marca_Load(object sender, EventArgs e)
         {
+            MostrarUsuarioLogueado();
             cbxCategoriaM.DataSource = logMarca.Instancia.CargarCategoria();
             cbxCategoriaM.DisplayMember = "NomCategoria";
             cbxCategoriaM.ValueMember = "CategoriaID";
         }
-
         private void dgvMarca_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 

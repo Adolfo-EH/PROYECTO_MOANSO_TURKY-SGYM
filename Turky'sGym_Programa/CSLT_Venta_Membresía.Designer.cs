@@ -33,6 +33,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.dgvConsultaPlanes = new System.Windows.Forms.DataGridView();
             this.txbDNI_Consulta = new System.Windows.Forms.TextBox();
+            this.lblUsuario = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultaPlanes)).BeginInit();
             this.SuspendLayout();
@@ -40,6 +41,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkCyan;
+            this.panel1.Controls.Add(this.lblUsuario);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -86,6 +88,18 @@
             this.txbDNI_Consulta.Size = new System.Drawing.Size(188, 20);
             this.txbDNI_Consulta.TabIndex = 28;
             // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblUsuario.Location = new System.Drawing.Point(710, 25);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(103, 29);
+            this.lblUsuario.TabIndex = 46;
+            this.lblUsuario.Text = "Usuario";
+            // 
             // CSLT_Venta_Membresía
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -97,6 +111,7 @@
             this.Controls.Add(this.txbDNI_Consulta);
             this.Name = "CSLT_Venta_Membresía";
             this.Text = "CLST_Venta_Membresía";
+            this.Load += new System.EventHandler(this.CSLT_Venta_Membresía_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultaPlanes)).EndInit();
@@ -112,5 +127,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dgvConsultaPlanes;
         private System.Windows.Forms.TextBox txbDNI_Consulta;
+        private System.Windows.Forms.Label lblUsuario;
     }
 }
