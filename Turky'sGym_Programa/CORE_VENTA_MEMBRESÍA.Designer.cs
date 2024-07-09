@@ -42,7 +42,6 @@
             this.btnConsultarVentas = new System.Windows.Forms.Button();
             this.cbMetodoPagoS = new System.Windows.Forms.ComboBox();
             this.lblMetodoPago = new System.Windows.Forms.Label();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.btnAnularVenta = new System.Windows.Forms.Button();
             this.btnRegistroServicio = new System.Windows.Forms.Button();
             this.lblFechaRegistro = new System.Windows.Forms.Label();
@@ -164,7 +163,7 @@
             // 
             // btnConsultarVentas
             // 
-            this.btnConsultarVentas.Location = new System.Drawing.Point(879, 595);
+            this.btnConsultarVentas.Location = new System.Drawing.Point(990, 595);
             this.btnConsultarVentas.Name = "btnConsultarVentas";
             this.btnConsultarVentas.Size = new System.Drawing.Size(125, 41);
             this.btnConsultarVentas.TabIndex = 84;
@@ -189,18 +188,9 @@
             this.lblMetodoPago.TabIndex = 82;
             this.lblMetodoPago.Text = "Método de Pago:";
             // 
-            // btnSalir
-            // 
-            this.btnSalir.Location = new System.Drawing.Point(1010, 595);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(125, 41);
-            this.btnSalir.TabIndex = 80;
-            this.btnSalir.Text = "REGRESAR";
-            this.btnSalir.UseVisualStyleBackColor = true;
-            // 
             // btnAnularVenta
             // 
-            this.btnAnularVenta.Location = new System.Drawing.Point(748, 596);
+            this.btnAnularVenta.Location = new System.Drawing.Point(807, 596);
             this.btnAnularVenta.Name = "btnAnularVenta";
             this.btnAnularVenta.Size = new System.Drawing.Size(125, 40);
             this.btnAnularVenta.TabIndex = 79;
@@ -366,7 +356,6 @@
             this.Controls.Add(this.btnConsultarVentas);
             this.Controls.Add(this.cbMetodoPagoS);
             this.Controls.Add(this.lblMetodoPago);
-            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnAnularVenta);
             this.Controls.Add(this.btnRegistroServicio);
             this.Controls.Add(this.lblFechaRegistro);
@@ -404,7 +393,6 @@
         private System.Windows.Forms.Button btnConsultarVentas;
         private System.Windows.Forms.ComboBox cbMetodoPagoS;
         private System.Windows.Forms.Label lblMetodoPago;
-        private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnAnularVenta;
         private System.Windows.Forms.Button btnRegistroServicio;
         private System.Windows.Forms.Label lblFechaRegistro;

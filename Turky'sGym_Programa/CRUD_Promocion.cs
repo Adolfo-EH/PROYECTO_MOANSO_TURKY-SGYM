@@ -19,6 +19,7 @@ namespace Turky_sGym_Programa
             InitializeComponent();
             listarPromocion();
             gbPromocion.Enabled = false;
+            dgvPromocion.Columns["idTipodePromocion"].Visible = false;
         }
 
         public void listarPromocion()
@@ -117,7 +118,6 @@ namespace Turky_sGym_Programa
         {
             DataGridViewRow filaActual = dgvPromocion.Rows[e.RowIndex];
             lbID.Text = filaActual.Cells[0].Value.ToString();
-            cmbTipoProm.Text = filaActual.Cells[1].Value.ToString();
             txtNombre.Text = filaActual.Cells[2].Value.ToString();
             txtDescuento.Text = filaActual.Cells[3].Value.ToString();
             dtpDuracion.Text = filaActual.Cells[4].Value.ToString();

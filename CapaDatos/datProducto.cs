@@ -11,7 +11,7 @@ namespace CapaDatos
 {
     public class datProducto
     {
-        #region sigleton
+       #region sigleton
         //Patron Singleton
         // Variable estática para la instancia
         private static readonly datProducto _instancia = new datProducto();
@@ -41,8 +41,8 @@ namespace CapaDatos
                 {
                     entProducto pr = new entProducto();
                     pr.idProducto = Convert.ToInt32(dr["ProductosID"]);
-                    pr.idCategoria = Convert.ToInt32(dr["CategoriaID"]);
-                    pr.idMarca = Convert.ToInt32(dr["MarcaID"]);
+                    pr.NomCategoria = dr["NomCategoria"].ToString();
+                    pr.NomMarca = dr["NomMarca"].ToString();
                     pr.NomPro = dr["NomProducto"].ToString();
                     pr.Descripcion = dr["Descripcion"].ToString();
                     pr.cantidad = Convert.ToInt32(dr["Stock"]);

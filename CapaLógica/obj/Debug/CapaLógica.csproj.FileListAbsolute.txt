@@ -191,3 +191,14 @@ C:\Users\Usuario\OneDrive\Escritorio\MOANSO_TURKY-SGYM\CapaLógica\bin\Debug\Cap
 C:\Users\Usuario\OneDrive\Escritorio\MOANSO_TURKY-SGYM\CapaLógica\bin\Debug\CapaDatos.pdb
 C:\Users\Usuario\OneDrive\Escritorio\MOANSO_TURKY-SGYM\CapaLógica\bin\Debug\CapaEntidad.pdb
 C:\Users\Usuario\OneDrive\Escritorio\MOANSO_TURKY-SGYM\CapaLógica\obj\Debug\CapaLógica.csproj.Up2Date
+C:\Users\Usuario\OneDrive\Escritorio\HOLA\CapaLógica\bin\Debug\CapaLógica.dll
+C:\Users\Usuario\OneDrive\Escritorio\HOLA\CapaLógica\bin\Debug\CapaLógica.pdb
+C:\Users\Usuario\OneDrive\Escritorio\HOLA\CapaLógica\bin\Debug\CapaDatos.dll
+C:\Users\Usuario\OneDrive\Escritorio\HOLA\CapaLógica\bin\Debug\CapaEntidad.dll
+C:\Users\Usuario\OneDrive\Escritorio\HOLA\CapaLógica\bin\Debug\CapaDatos.pdb
+C:\Users\Usuario\OneDrive\Escritorio\HOLA\CapaLógica\bin\Debug\CapaEntidad.pdb
+C:\Users\Usuario\OneDrive\Escritorio\HOLA\CapaLógica\obj\Debug\CapaLógica.csproj.AssemblyReference.cache
+C:\Users\Usuario\OneDrive\Escritorio\HOLA\CapaLógica\obj\Debug\CapaLógica.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\OneDrive\Escritorio\HOLA\CapaLógica\obj\Debug\CapaLógica.csproj.Up2Date
+C:\Users\Usuario\OneDrive\Escritorio\HOLA\CapaLógica\obj\Debug\CapaLógica.dll
+C:\Users\Usuario\OneDrive\Escritorio\HOLA\CapaLógica\obj\Debug\CapaLógica.pdb

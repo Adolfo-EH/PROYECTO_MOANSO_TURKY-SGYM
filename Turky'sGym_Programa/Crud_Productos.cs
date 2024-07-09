@@ -19,6 +19,9 @@ namespace Turky_sGym_Programa
             InitializeComponent();
             listarProducto();
             grbDatosProducto.Enabled = false;
+            dgvStockProducto.Columns["idCategoria"].Visible = false;
+            dgvStockProducto.Columns["idMarca"].Visible = false;
+
         }
 
         public void listarProducto()
@@ -83,6 +86,7 @@ namespace Turky_sGym_Programa
             try
             {
                 entProducto pr = new entProducto();
+
                 pr.idCategoria = Convert.ToInt32(cmbCategoria.SelectedValue);
                 pr.idMarca = Convert.ToInt32(cbMarca.SelectedValue);
                 pr.NomPro = txtNombre.Text.Trim();
@@ -106,9 +110,9 @@ namespace Turky_sGym_Programa
             try
             {
                 entProducto pr = new entProducto();
-                pr.idProducto = int.Parse(lbID.Text.Trim());
-                pr.idCategoria = (int)cmbCategoria.SelectedValue;
-                pr.idMarca = (int)cbMarca.SelectedValue;
+
+                pr.idCategoria = Convert.ToInt32(cmbCategoria.SelectedValue);
+                pr.idMarca = Convert.ToInt32(cbMarca.SelectedValue);
                 pr.NomPro = txtNombre.Text.Trim();
                 pr.Descripcion = txtDescripcion.Text.Trim();
                 pr.cantidad = int.Parse(txtCantidad.Text.Trim());
@@ -134,13 +138,13 @@ namespace Turky_sGym_Programa
         {
             DataGridViewRow filaActual = dgvStockProducto.Rows[e.RowIndex];
             lbID.Text = filaActual.Cells[0].Value.ToString();
-            cmbCategoria.Text = filaActual.Cells[1].Value.ToString();
-            cbMarca.Text = filaActual.Cells[2].Value.ToString();
-            txtNombre.Text = filaActual.Cells[3].Value.ToString();
-            txtDescripcion.Text = filaActual.Cells[4].Value.ToString();
-            txtCantidad.Text = filaActual.Cells[5].Value.ToString();
-            txtPrecio.Text = filaActual.Cells[6].Value.ToString();
-            cbxEstadoProducto.Checked = Convert.ToBoolean(filaActual.Cells[6].Value);
+            cmbCategoria.Text = filaActual.Cells[3].Value.ToString();
+            cbMarca.Text = filaActual.Cells[4].Value.ToString();
+            txtNombre.Text = filaActual.Cells[5].Value.ToString();
+            txtDescripcion.Text = filaActual.Cells[6].Value.ToString();
+            txtCantidad.Text = filaActual.Cells[7].Value.ToString();
+            txtPrecio.Text = filaActual.Cells[8].Value.ToString();
+            cbxEstadoProducto.Checked = Convert.ToBoolean(filaActual.Cells[9].Value);
         }
 
         private void cmbCategoria_SelectedIndexChanged(object sender, EventArgs e)
