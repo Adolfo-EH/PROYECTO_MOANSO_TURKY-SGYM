@@ -438,7 +438,6 @@ C:\Users\brin_\Source\Repos\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa\obj\D
 C:\Users\brin_\Source\Repos\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.CORE_MONITOREO_CLIENTES.resources
 C:\Users\brin_\Source\Repos\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.CORE_VENTA_MEMBRESÍA.resources
 C:\Users\brin_\Source\Repos\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.CORE_VENTA_PRODUCTOS.resources
-C:\Users\brin_\Source\Repos\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.CRUD_Administrador.resources
 C:\Users\brin_\Source\Repos\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.CRUD_Categoría.resources
 C:\Users\brin_\Source\Repos\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.CRUD_Clientes.resources
 C:\Users\brin_\Source\Repos\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.CRUD_Forma_Pago.resources
@@ -722,3 +721,4 @@ C:\Users\Usuario\OneDrive\Escritorio\FINAL_MOANSO\Turky'sGym_Programa\obj\Debug\
 C:\Users\Usuario\OneDrive\Escritorio\FINAL_MOANSO\Turky'sGym_Programa\obj\Debug\CapaPres.314295FC.Up2Date
 C:\Users\Usuario\OneDrive\Escritorio\FINAL_MOANSO\Turky'sGym_Programa\obj\Debug\Turky'sGym_Programa.exe
 C:\Users\Usuario\OneDrive\Escritorio\FINAL_MOANSO\Turky'sGym_Programa\obj\Debug\Turky'sGym_Programa.pdb
+C:\Users\brin_\Source\Repos\PROYECTO_MOANSO_TURKY-SGYM\Turky'sGym_Programa\obj\Debug\Turky_sGym_Programa.CRUD_Usuario.resources

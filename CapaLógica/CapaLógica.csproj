@@ -53,6 +53,7 @@
     <Compile Include="logPromocion.cs" />
     <Compile Include="logServicios.cs" />
     <Compile Include="logVentaProd.cs" />
+    <Compile Include="logVentaProdCon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

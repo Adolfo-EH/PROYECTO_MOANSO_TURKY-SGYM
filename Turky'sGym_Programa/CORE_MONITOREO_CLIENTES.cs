@@ -25,7 +25,7 @@ namespace Turky_sGym_Programa
         }
         public void listarFichaM()
         {
-            dgvMonitoreoClientes.DataSource = logRelFichaM.Instancia.ListarFichaM();
+            //dgvMonitoreoClientes.DataSource = logRelFichaM.Instancia.ListarFichaM();
             dgvMonitoreoClientes.Columns["UsuarioID"].Visible = false;
             dgvMonitoreoClientes.Columns["K_cal"].Visible = false;
         }
@@ -64,7 +64,7 @@ namespace Turky_sGym_Programa
         private void CORE_MONITOREO_CLIENTES_Load(object sender, EventArgs e)
         {
             MostrarUsuarioLogueado();
-            cmbGenero.DataSource = logRelFichaM.Instancia.CargarGenero();
+            //cmbGenero.DataSource = logRelFichaM.Instancia.CargarGenero();
             cmbGenero.DisplayMember = "NomGenero";
             cmbGenero.ValueMember = "GeneroID";
             txbKCal.Enabled = false;
@@ -191,12 +191,12 @@ namespace Turky_sGym_Programa
         {
             if (int.TryParse(txbDNImonitoreo.Text, out int clienteID))
             {
-                dgvMonitoreoClientes.DataSource = logRelFichaM.Instancia.ListarFichaMPorCliente(clienteID);
+                //dgvMonitoreoClientes.DataSource = logRelFichaM.Instancia.ListarFichaMPorCliente(clienteID);
             }
             else if (string.IsNullOrWhiteSpace(txbDNImonitoreo.Text))
             {
                 // Si el TextBox está vacío, muestra todos los registros
-                dgvMonitoreoClientes.DataSource = logRelFichaM.Instancia.ListarFichaM();
+                //dgvMonitoreoClientes.DataSource = logRelFichaM.Instancia.ListarFichaM();
             }
             else
             {
@@ -359,7 +359,7 @@ namespace Turky_sGym_Programa
 
             if (int.TryParse(lblFichamonitoreoID.Text, out int fichamonitoreoID))
             {
-                logRelFichaM.Instancia.EliminarFichaM(fichamonitoreoID);
+                //logRelFichaM.Instancia.EliminarFichaM(fichamonitoreoID);
                 listarFichaM();
                 LimpiarVariables();
             }
@@ -400,26 +400,26 @@ namespace Turky_sGym_Programa
 
                 if (!int.TryParse(txbDNImonitoreo.Text, out int clienteID))
                     throw new ArgumentException("DNI del cliente no válido.");
-                fm.ClienteID = clienteID;
-                fm.UsuarioID = 1;
+                //fm.ClienteID = clienteID;
+                //fm.UsuarioID = 1;
 
                 if (cmbGenero.SelectedValue == null)
                     throw new ArgumentException("Seleccione un género.");
-                fm.GeneroID = Convert.ToInt32(cmbGenero.SelectedValue);
+                //fm.GeneroID = Convert.ToInt32(cmbGenero.SelectedValue);
 
-                fm.ObjetivoPer = txtObjetivo.Text.Trim();
-                fm.FechaEva = dtpFechaEvaluacion.Value;
-                fm.ProxCita = dtpProximoMonitoreo.Value;
+                //fm.ObjetivoPer = txtObjetivo.Text.Trim();
+                //fm.FechaEva = dtpFechaEvaluacion.Value;
+                //fm.ProxCita = dtpProximoMonitoreo.Value;
 
                 if (!int.TryParse(txtEdadClienteM.Text, out int edad))
                     throw new ArgumentException("Edad no válida.");
-                fm.Edad = edad;
+                //fm.Edad = edad;
 
                 if (!decimal.TryParse(txbTalla.Text, out decimal talla))
                     throw new ArgumentException("Talla no válida.");
-                fm.Talla = talla;
+                //fm.Talla = talla;
 
-                // Validación para los demás campos numéricos
+                /*Validación para los demás campos numéricos
                 fm.IMC = ValidarDecimal(lblIMC.Text, "IMC");
                 fm.Grasa = ValidarDecimal(txbGrasa.Text, "Grasa");
                 fm.Hidratacion = ValidarDecimal(txbHidratacion.Text, "Hidratación");
@@ -438,7 +438,7 @@ namespace Turky_sGym_Programa
                 MessageBox.Show("Ficha de monitoreo insertada con éxito.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LimpiarVariables();
                 listarFichaM();
-                btnBuscarMonitoreo.Enabled = btnInsertarFichaM.Enabled = btnLimpiarTM.Enabled = false;
+                btnBuscarMonitoreo.Enabled = btnInsertarFichaM.Enabled = btnLimpiarTM.Enabled = false;*/
             }
             catch (ArgumentException ex)
             {

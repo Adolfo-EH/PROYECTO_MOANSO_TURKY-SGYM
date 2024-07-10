@@ -56,6 +56,7 @@
     <Compile Include="datVentaMem.cs" />
     <Compile Include="datVentaMembresiaCon.cs" />
     <Compile Include="datVentaProd.cs" />
+    <Compile Include="datVentaProdCon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
