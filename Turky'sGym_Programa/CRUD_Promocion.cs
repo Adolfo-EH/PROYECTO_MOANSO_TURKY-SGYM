@@ -96,20 +96,28 @@ namespace Turky_sGym_Programa
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            //insertar
             try
             {
+                string nombrePromocion = txtNombre.Text.Trim();
+                string descuentoPromocion = txtDescuento.Text.Trim();
+
+                if (string.IsNullOrEmpty(nombrePromocion) || string.IsNullOrEmpty(descuentoPromocion))
+                {
+                    MessageBox.Show("Los campos de nombre y descuento no pueden estar vacíos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
                 entPromocion pr = new entPromocion();
                 pr.idTipodePromocion = Convert.ToInt32(cmbTipoProm.SelectedValue);
-                pr.nombre = txtNombre.Text.Trim();
-                pr.descuento = double.Parse(txtDescuento.Text.Trim());
+                pr.nombre = nombrePromocion;
+                pr.descuento = double.Parse(descuentoPromocion);
                 pr.duracion = dtpDuracion.Value;
                 pr.estPromocion = cbxPromocion.Checked;
                 logPromocion.Instancia.InsertaPromocion(pr);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error.." + ex);
+                MessageBox.Show("Error: " + ex.Message);
             }
             LimpiarVariables();
             gbPromocion.Enabled = false;

@@ -24,6 +24,7 @@ namespace Turky_sGym_Programa
         {
             lblIDAdmin.Text = "00";
             txtUsuarioAd.Clear();
+            txtPassAd.Clear();
             cbEstadoAdmin.Checked = false;
         }
         public void listarUsuario()
@@ -127,16 +128,25 @@ namespace Turky_sGym_Programa
         {
             try
             {
+                string usuario = txtUsuarioAd.Text.Trim();
+                string contraseña = txtPassAd.Text.Trim();
+
+                if (string.IsNullOrEmpty(usuario) || string.IsNullOrEmpty(contraseña))
+                {
+                    MessageBox.Show("Los campos de Usuario y Contraseña no pueden estar vacíos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
                 entUsuario user = new entUsuario();
                 user.TipoUsuarioID = Convert.ToInt32(cbxTipoUser.SelectedValue);
-                user.Usuario = txtUsuarioAd.Text.Trim();
-                user.Contraseña = txtPassAd.Text.Trim();
+                user.Usuario = usuario;
+                user.Contraseña = contraseña;
                 user.estUsuario = cbEstadoAdmin.Checked;
                 logUsuario.Instancia.InsertarUsuario(user);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error.." + ex);
+                MessageBox.Show("Error: " + ex.Message);
             }
             LimpiarVariables();
             gbAdministrador.Enabled = false;
@@ -147,17 +157,26 @@ namespace Turky_sGym_Programa
         {
             try
             {
+                string usuario = txtUsuarioAd.Text.Trim();
+                string contraseña = txtPassAd.Text.Trim();
+
+                if (string.IsNullOrEmpty(usuario) || string.IsNullOrEmpty(contraseña))
+                {
+                    MessageBox.Show("Los campos de Usuario y Contraseña no pueden estar vacíos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
                 entUsuario user = new entUsuario();
                 user.UsuarioID = int.Parse(lblIDAdmin.Text.Trim());
                 user.TipoUsuarioID = Convert.ToInt32(cbxTipoUser.SelectedValue);
-                user.Usuario = txtUsuarioAd.Text.Trim();
-                user.Contraseña = txtPassAd.Text.Trim();
+                user.Usuario = usuario;
+                user.Contraseña = contraseña;
                 user.estUsuario = cbEstadoAdmin.Checked;
                 logUsuario.Instancia.ModificarUsuario(user);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error.." + ex);
+                MessageBox.Show("Error: " + ex.Message);
             }
             LimpiarVariables();
             gbAdministrador.Enabled = false;

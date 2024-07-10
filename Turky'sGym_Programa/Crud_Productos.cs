@@ -119,6 +119,7 @@ namespace Turky_sGym_Programa
             {
                 entProducto pr = new entProducto();
 
+                pr.idProducto = Convert.ToInt32(lbID.Text);
                 pr.idCategoria = Convert.ToInt32(cmbCategoria.SelectedValue);
                 pr.idMarca = Convert.ToInt32(cbMarca.SelectedValue);
                 pr.NomPro = txtNombre.Text.Trim();
@@ -132,13 +133,14 @@ namespace Turky_sGym_Programa
             {
                 MessageBox.Show("Error.." + ex);
             }
-            //LimpiarVariables();
+            LimpiarVariables();
             grbDatosProducto.Enabled = false;
             listarProducto();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+            LimpiarVariables();
             grbDatosProducto.Enabled = false;
         }
 

@@ -83,7 +83,6 @@ namespace Turky_sGym_Programa
                         dtgVentaProductos.Rows[confilas].Cells[7].Value = precioDescuento;
                         confilas++;
                     }
-                    //Limpiar();
                 }
                 MontoPagar = 0;
                 foreach (DataGridViewRow Fila in dtgVentaProductos.Rows)
@@ -111,7 +110,6 @@ namespace Turky_sGym_Programa
 
                 GrabarDetalle(idVen);
                 MessageBox.Show("Se guardó correctamente la Venta del Producto");
-                //ActualizarGrid();
             }
             catch (Exception ex)
             {
@@ -167,25 +165,11 @@ namespace Turky_sGym_Programa
             return promocionID;
         }
 
-
-        private void ActualizarGrid()
-        {/*
-            //MessageBox.Show("formulario de datos se cierra....de si encuentra instancia");
-            TransaccionGridPedido formGridPedido = Application.OpenForms.OfType<TransaccionGridPedido>().FirstOrDefault();
-
-            if (formGridPedido != null)  //Si encuentra una instancia abierta
-            {
-                //MessageBox.Show("Instancia abierta!!! instancia");
-                formGridPedido.ListarPedidos();
-                formGridPedido.Refresh();
-            }*/
-        }
-
         private void btnQuitar_Click(object sender, EventArgs e)
         {
             if (confilas > 0)
             {
-                MontoPagar = MontoPagar - Convert.ToDecimal(dtgVentaProductos.Rows[dtgVentaProductos.CurrentRow.Index].Cells[6].Value);
+                MontoPagar = MontoPagar - Convert.ToDecimal(dtgVentaProductos.Rows[dtgVentaProductos.CurrentRow.Index].Cells[7].Value);
                 txtMontoPagar.Text = MontoPagar.ToString();
                 dtgVentaProductos.Rows.RemoveAt(dtgVentaProductos.CurrentRow.Index);
                 confilas--;

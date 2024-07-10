@@ -81,6 +81,13 @@ namespace Turky_sGym_Programa
             try
             {
                 string nombreCategoria = txtNomCat.Text.Trim();
+
+                if (string.IsNullOrEmpty(nombreCategoria))
+                {
+                    MessageBox.Show("El nombre de la categoría no puede estar vacío.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
                 if (logCategoria.Instancia.ExisteNombreCategoria(nombreCategoria))
                 {
                     MessageBox.Show("El nombre de la categoría ya existe. Por favor, elija otro nombre.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -98,7 +105,7 @@ namespace Turky_sGym_Programa
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error.." + ex);
+                MessageBox.Show("Error.." + ex.Message);
             }
             LimpiarVariables();
             gbCategoría.Enabled = false;

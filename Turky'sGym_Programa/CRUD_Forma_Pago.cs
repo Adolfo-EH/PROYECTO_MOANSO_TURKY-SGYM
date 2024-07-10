@@ -85,9 +85,16 @@ namespace Turky_sGym_Programa
             try
             {
                 string nombreFormaPago = txtTipoFP.Text.Trim();
+
+                if (string.IsNullOrEmpty(nombreFormaPago))
+                {
+                    MessageBox.Show("El nombre de la forma de pago no puede estar vacío.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
                 if (logFormaPago.Instancia.ExisteFormaPago(nombreFormaPago))
                 {
-                    MessageBox.Show("El nombre de la forma de pago ya existe", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("El nombre de la forma de pago ya existe.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
@@ -102,7 +109,7 @@ namespace Turky_sGym_Programa
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error.." + ex);
+                MessageBox.Show("Error.." + ex.Message);
             }
             LimpiarVariables();
             groupForma.Enabled = false;

@@ -88,15 +88,23 @@ namespace Turky_sGym_Programa
         {
             try
             {
+                string nombreMarca = txtNomMarca.Text.Trim();
+
+                if (string.IsNullOrEmpty(nombreMarca))
+                {
+                    MessageBox.Show("El nombre de la marca no puede estar vacío.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
                 entMarca mr = new entMarca();
                 mr.CategoriaID = Convert.ToInt32(cbxCategoriaM.SelectedValue);
-                mr.nomMarca = txtNomMarca.Text.Trim();
+                mr.nomMarca = nombreMarca;
                 mr.estMarca = cbEstadoMarca.Checked;
                 logMarca.Instancia.InsertaMarca(mr);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error.." + ex);
+                MessageBox.Show("Error.." + ex.Message);
             }
             LimpiarVariables();
             gbMarca.Enabled = false;

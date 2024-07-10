@@ -34,7 +34,7 @@ namespace Turky_sGym_Programa
             txtMembresia.Clear();
             txtPrecio.Clear();
             txtDuracionMem.Clear();
-            //listServicios.Clear();
+            listServicios.Items.Clear();
             cbEstado.Checked = false;
         }
         private void MostrarUsuarioLogueado()
@@ -99,11 +99,20 @@ namespace Turky_sGym_Programa
             int idMeb;
             try
             {
-                entMembresia m = new entMembresia();
+                string nombreMembresia = txtMembresia.Text.Trim();
+                string duracionMembresia = txtDuracionMem.Text.Trim();
+                string precioMembresia = txtPrecio.Text.Trim();
 
-                m.nombreMeb = txtMembresia.Text.Trim();
-                m.duracion = txtDuracionMem.Text.Trim();
-                m.precio = Double.Parse(txtPrecio.Text.Trim());
+                if (string.IsNullOrEmpty(nombreMembresia) || string.IsNullOrEmpty(duracionMembresia) || string.IsNullOrEmpty(precioMembresia))
+                {
+                    MessageBox.Show("Todos los campos deben ser llenados.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                entMembresia m = new entMembresia();
+                m.nombreMeb = nombreMembresia;
+                m.duracion = duracionMembresia;
+                m.precio = Double.Parse(precioMembresia);
                 m.estMembresia = cbEstado.Checked;
 
                 idMeb = logMembresia.Instancia.InsertaMembresia(m);
@@ -115,8 +124,7 @@ namespace Turky_sGym_Programa
             }
             catch (Exception ex)
             {
-                MessageBox.Show("error" + ex);
-                throw ex;
+                MessageBox.Show("Error: " + ex.Message);
             }
         }
 

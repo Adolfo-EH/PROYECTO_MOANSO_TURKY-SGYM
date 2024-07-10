@@ -100,14 +100,22 @@ namespace Turky_sGym_Programa
         {
             try
             {
+                string nombreServicio = txtNomSer.Text.Trim();
+
+                if (string.IsNullOrEmpty(nombreServicio))
+                {
+                    MessageBox.Show("El nombre del servicio no puede estar vacío.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
                 entServicios sv = new entServicios();
-                sv.nombreSV = txtNomSer.Text.Trim();
-                sv.estServicio = cbEstadoServicio.Checked; 
+                sv.nombreSV = nombreServicio;
+                sv.estServicio = cbEstadoServicio.Checked;
                 logServicios.Instancia.InsertaServicio(sv);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error.." + ex);
+                MessageBox.Show("Error: " + ex.Message);
             }
             LimpiarVariables();
             gbServicio.Enabled = false;

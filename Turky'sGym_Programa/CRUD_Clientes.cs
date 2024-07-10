@@ -50,6 +50,7 @@ namespace Turky_sGym_Programa
             grbDatCli.Enabled = true;
             btnGuardar.Visible = true;
             btnModificar.Visible = false;
+            txtDNICli.Enabled = true;
             LimpiarVariables();
         }
 
@@ -93,17 +94,33 @@ namespace Turky_sGym_Programa
         {
             try
             {
+                string clienteIDText = txtDNICli.Text.Trim();
+                string telefonoText = txtTelCli.Text.Trim();
+
+                if (clienteIDText.Length != 8 || !int.TryParse(clienteIDText, out int clienteID))
+                {
+                    MessageBox.Show("No es un DNI correcto");
+                    return;
+                }
+
+                if (telefonoText.Length != 9 || telefonoText[0] != '9' || !int.TryParse(telefonoText, out int telefono))
+                {
+                    MessageBox.Show("No es un Telefono correcto");
+                    return;
+                }
+
                 entCliente cl = new entCliente();
-                cl.ClienteID = int.Parse(txtDNICli.Text.Trim());
+                cl.ClienteID = clienteID;
                 cl.NomCliente = txtnomCli.Text.Trim();
                 cl.FechaNac = dtpFecNac.Value;
-                cl.Telefono = int.Parse(txtTelCli.Text.Trim());
+                cl.Telefono = telefono;
                 cl.estClienteMemb = cbxestCli.Checked;
+
                 logCliente.Instancia.InsertarCliente(cl);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error.." + ex);
+                MessageBox.Show("Error.." + ex.Message);
             }
             LimpiarVariables();
             grbDatCli.Enabled = false;
@@ -123,17 +140,26 @@ namespace Turky_sGym_Programa
             grbDatCli.Enabled = true;
             btnModificar.Visible = true;
             btnGuardar.Visible = false;
+            txtDNICli.Enabled = false;
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
             try
             {
+                string telefonoText = txtTelCli.Text.Trim();
+
+                if (telefonoText.Length != 9 || telefonoText[0] != '9' || !int.TryParse(telefonoText, out int telefono))
+                {
+                    MessageBox.Show("No es un Telefono correcto");
+                    return;
+                }
+
                 entCliente cl = new entCliente();
                 cl.ClienteID = int.Parse(txtDNICli.Text.Trim());
                 cl.NomCliente = txtnomCli.Text.Trim();
                 cl.FechaNac = dtpFecNac.Value;
-                cl.Telefono = int.Parse(txtTelCli.Text.Trim());
+                cl.Telefono = telefono;
                 cl.estClienteMemb = cbxestCli.Checked;
                 logCliente.Instancia.EditarCliente(cl);
             }

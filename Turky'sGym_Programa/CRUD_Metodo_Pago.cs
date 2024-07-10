@@ -94,15 +94,23 @@ namespace Turky_sGym_Programa
         {
             try
             {
+                string nombreMetodoPago = txtNombre.Text.Trim();
+
+                if (string.IsNullOrEmpty(nombreMetodoPago))
+                {
+                    MessageBox.Show("El nombre del método de pago no puede estar vacío.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
                 entMetodoPago mp = new entMetodoPago();
-                mp.nombre = txtNombre.Text.Trim();
+                mp.nombre = nombreMetodoPago;
                 mp.TipometodopagoID = Convert.ToInt32(cmbTipoMetPag.SelectedValue);
                 mp.estMetodoPago = cbxEstadoMetodoPago.Checked;
                 logMetodoPago.Instancia.InsertaMetodoPago(mp);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error.." + ex);
+                MessageBox.Show("Error: " + ex.Message);
             }
             LimpiarVariables();
             groupMetodo.Enabled = false;
