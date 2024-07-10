@@ -11,7 +11,6 @@ namespace CapaDatos
 {
     public class datVentaProdCon
     {
-        /*
         #region sigleton
         //Patron Singleton
         // Variable estática para la instancia
@@ -153,7 +152,5 @@ namespace CapaDatos
             return lista;
         }
         #endregion VENTACSLT
-        */
     }
-
 }

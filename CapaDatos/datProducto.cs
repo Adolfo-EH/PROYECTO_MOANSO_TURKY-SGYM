@@ -11,7 +11,7 @@ namespace CapaDatos
 {
     public class datProducto
     {
-       #region sigleton
+        #region sigleton
         //Patron Singleton
         // Variable estática para la instancia
         private static readonly datProducto _instancia = new datProducto();
@@ -206,7 +206,7 @@ namespace CapaDatos
             return Prod;
         }
 
-            public DataTable CargarNombre(int idCat)
+        public DataTable CargarNombre(int idCat)
         {
             SqlCommand cmd = null;
             SqlConnection cn = Conexion.Instancia.Conectar();
@@ -214,6 +214,17 @@ namespace CapaDatos
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@CategoriaID", idCat);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+
+        //Para CSLT
+        public DataTable CargarNombreCSLT()
+        {
+            SqlConnection cn = Conexion.Instancia.Conectar();
+            SqlDataAdapter da = new SqlDataAdapter("spCargarNomProdCSLT", cn);
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
             DataTable dt = new DataTable();
             da.Fill(dt);
             return dt;

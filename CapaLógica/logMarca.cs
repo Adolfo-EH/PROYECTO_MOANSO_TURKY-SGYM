@@ -53,6 +53,11 @@ namespace CapaLógica
         {
             return datMarca.Instancia.CargarCategoria();
         }
+        //ParaCSLT
+        public DataTable CargarMarcaCSLT()
+        {
+            return datMarca.Instancia.CargarMarcaCSLT();
+        }
         #endregion metodos
     }
 }

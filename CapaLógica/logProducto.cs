@@ -58,6 +58,10 @@ namespace CapaLógica
         {
             return datProducto.Instancia.CargarNombre(idCat);
         }
+        public DataTable CargarNombreCSLT()
+        {
+            return datProducto.Instancia.CargarNombreCSLT();
+        }
         public entProducto BuscarProductoId(int idProducto)
         {
             try

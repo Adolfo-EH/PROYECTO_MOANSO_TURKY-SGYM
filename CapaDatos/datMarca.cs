@@ -149,6 +149,17 @@ namespace CapaDatos
             da.Fill(dt);
             return dt;
         }
+
+        //Para CSLT
+        public DataTable CargarMarcaCSLT()
+        {
+            SqlConnection cn = Conexion.Instancia.Conectar();
+            SqlDataAdapter da = new SqlDataAdapter("spCargarNomMarca", cn);
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
         #endregion MARCA
 
     }
