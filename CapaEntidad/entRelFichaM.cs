@@ -11,11 +11,11 @@ namespace CapaEntidad
         public int FichamonitoreoID { get; set; }
         public int ClienteID { get; set; }
         public int UsuarioID { get; set; }
+        public int GeneroID { get; set; }
         public string ObjetivoPer { get; set; }
         public DateTime FechaEva { get; set; }
         public DateTime ProxCita { get; set; }
         public int Edad { get; set; }
-        public Boolean Genero { get; set; }
         public Decimal Talla { get; set; }
         public Decimal IMC { get; set; }
         public Decimal Grasa { get; set; }

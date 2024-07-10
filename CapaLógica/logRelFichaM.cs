@@ -2,6 +2,7 @@
 using CapaEntidad;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,7 +11,6 @@ namespace CapaLógica
 {
     public class logRelFichaM
     {
-
         #region singleton
         private static readonly logRelFichaM _instancia = new logRelFichaM();
         public static logRelFichaM Instancia
@@ -46,6 +46,12 @@ namespace CapaLógica
             datRelFichaM.Instancia.EliminarFichaM(FichamonitoreoID);
         }
 
+
+        ///cargar
+        public DataTable CargarGenero()
+        {
+            return datRelFichaM.Instancia.CargarGenero();
+        }
 
         #endregion metodos
     }

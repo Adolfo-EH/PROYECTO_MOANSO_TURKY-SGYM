@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblUsuario = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.btnLimpiarTM = new System.Windows.Forms.Button();
@@ -90,9 +91,8 @@
             this.txbNombreClienteM = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.chkFemenino = new System.Windows.Forms.CheckBox();
-            this.chkMasculino = new System.Windows.Forms.CheckBox();
-            this.lblUsuario = new System.Windows.Forms.Label();
+            this.cmbGenero = new System.Windows.Forms.ComboBox();
+            this.estIMC = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMonitoreoClientes)).BeginInit();
             this.SuspendLayout();
@@ -108,6 +108,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1184, 79);
             this.panel1.TabIndex = 177;
+            // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblUsuario.Location = new System.Drawing.Point(924, 24);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(103, 29);
+            this.lblUsuario.TabIndex = 256;
+            this.lblUsuario.Text = "Usuario";
             // 
             // label1
             // 
@@ -152,14 +164,14 @@
             this.dgvMonitoreoClientes.Location = new System.Drawing.Point(12, 85);
             this.dgvMonitoreoClientes.Name = "dgvMonitoreoClientes";
             this.dgvMonitoreoClientes.ReadOnly = true;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMonitoreoClientes.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMonitoreoClientes.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvMonitoreoClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvMonitoreoClientes.Size = new System.Drawing.Size(1172, 330);
             this.dgvMonitoreoClientes.TabIndex = 250;
@@ -437,9 +449,9 @@
             this.lblIMC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIMC.Location = new System.Drawing.Point(149, 766);
             this.lblIMC.Name = "lblIMC";
-            this.lblIMC.Size = new System.Drawing.Size(152, 16);
+            this.lblIMC.Size = new System.Drawing.Size(21, 16);
             this.lblIMC.TabIndex = 220;
-            this.lblIMC.Text = "Índice de masa corporal";
+            this.lblIMC.Text = "00";
             // 
             // label13
             // 
@@ -668,48 +680,30 @@
             this.label30.TabIndex = 253;
             this.label30.Text = "Género:";
             // 
-            // chkFemenino
+            // cmbGenero
             // 
-            this.chkFemenino.AutoSize = true;
-            this.chkFemenino.Location = new System.Drawing.Point(152, 582);
-            this.chkFemenino.Name = "chkFemenino";
-            this.chkFemenino.Size = new System.Drawing.Size(82, 17);
-            this.chkFemenino.TabIndex = 254;
-            this.chkFemenino.Text = "FEMENINO";
-            this.chkFemenino.UseVisualStyleBackColor = true;
-            this.chkFemenino.CheckedChanged += new System.EventHandler(this.chkFemenino_CheckedChanged);
-            this.chkFemenino.CheckStateChanged += new System.EventHandler(this.chkFemenino_CheckStateChanged);
+            this.cmbGenero.FormattingEnabled = true;
+            this.cmbGenero.Location = new System.Drawing.Point(151, 584);
+            this.cmbGenero.Name = "cmbGenero";
+            this.cmbGenero.Size = new System.Drawing.Size(201, 21);
+            this.cmbGenero.TabIndex = 254;
             // 
-            // chkMasculino
+            // estIMC
             // 
-            this.chkMasculino.AutoSize = true;
-            this.chkMasculino.Location = new System.Drawing.Point(250, 582);
-            this.chkMasculino.Name = "chkMasculino";
-            this.chkMasculino.Size = new System.Drawing.Size(89, 17);
-            this.chkMasculino.TabIndex = 255;
-            this.chkMasculino.Text = "MASCULINO";
-            this.chkMasculino.UseVisualStyleBackColor = true;
-            this.chkMasculino.CheckedChanged += new System.EventHandler(this.chkMasculino_CheckedChanged);
-            // 
-            // lblUsuario
-            // 
-            this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblUsuario.Location = new System.Drawing.Point(924, 24);
-            this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(103, 29);
-            this.lblUsuario.TabIndex = 256;
-            this.lblUsuario.Text = "Usuario";
+            this.estIMC.AutoSize = true;
+            this.estIMC.Location = new System.Drawing.Point(176, 769);
+            this.estIMC.Name = "estIMC";
+            this.estIMC.Size = new System.Drawing.Size(41, 13);
+            this.estIMC.TabIndex = 255;
+            this.estIMC.Text = "label31";
             // 
             // CORE_MONITOREO_CLIENTES
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1184, 892);
-            this.Controls.Add(this.chkMasculino);
-            this.Controls.Add(this.chkFemenino);
+            this.Controls.Add(this.estIMC);
+            this.Controls.Add(this.cmbGenero);
             this.Controls.Add(this.label30);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnLimpiarTM);
@@ -843,8 +837,8 @@
         private System.Windows.Forms.TextBox txbNombreClienteM;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.CheckBox chkFemenino;
-        private System.Windows.Forms.CheckBox chkMasculino;
         private System.Windows.Forms.Label lblUsuario;
+        private System.Windows.Forms.ComboBox cmbGenero;
+        private System.Windows.Forms.Label estIMC;
     }
 }
