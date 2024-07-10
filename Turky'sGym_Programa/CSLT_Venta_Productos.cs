@@ -14,6 +14,7 @@ namespace Turky_sGym_Programa
 {
     public partial class CSLT_Venta_Productos : Form
     {
+        /*
         public CSLT_Venta_Productos()
         {
             InitializeComponent();
@@ -71,5 +72,6 @@ namespace Turky_sGym_Programa
         {
             dgvCSLTVenta.DataSource = logVentaProdCon.Instancia.ListarVentaProducto();
         }
+        */
     }
 }

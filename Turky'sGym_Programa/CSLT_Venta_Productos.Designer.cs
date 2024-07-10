@@ -2,6 +2,7 @@
 {
     partial class CSLT_Venta_Productos
     {
+        /*
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -361,5 +362,6 @@
         private System.Windows.Forms.Label lblMarcaCSLTVenta;
         private System.Windows.Forms.Button btnRegresarCSLTVenta;
         private System.Windows.Forms.DataGridView dgvCSLTVenta;
+        */
     }
 }

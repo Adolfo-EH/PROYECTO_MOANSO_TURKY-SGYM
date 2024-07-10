@@ -178,3 +178,12 @@ C:\Users\Usuario\OneDrive\Escritorio\FINAL_MOANSO\CapaDatos\obj\Debug\CapaDatos.
 C:\Users\Usuario\OneDrive\Escritorio\FINAL_MOANSO\CapaDatos\obj\Debug\CapaDatos.csproj.Up2Date
 C:\Users\Usuario\OneDrive\Escritorio\FINAL_MOANSO\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\Usuario\OneDrive\Escritorio\FINAL_MOANSO\CapaDatos\obj\Debug\CapaDatos.pdb
+D:\eeqweqwew\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\bin\Debug\CapaDatos.dll
+D:\eeqweqwew\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\bin\Debug\CapaDatos.pdb
+D:\eeqweqwew\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\bin\Debug\CapaEntidad.dll
+D:\eeqweqwew\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\bin\Debug\CapaEntidad.pdb
+D:\eeqweqwew\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+D:\eeqweqwew\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+D:\eeqweqwew\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\obj\Debug\CapaDatos.csproj.Up2Date
+D:\eeqweqwew\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\obj\Debug\CapaDatos.dll
+D:\eeqweqwew\PROYECTO_MOANSO_TURKY-SGYM\CapaDatos\obj\Debug\CapaDatos.pdb

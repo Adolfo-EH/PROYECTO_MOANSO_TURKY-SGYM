@@ -12,6 +12,7 @@ namespace CapaLógica
 {
     public class logVentaProdCon
     {
+        /*
         #region singleton
         private static readonly logVentaProdCon _instancia = new logVentaProdCon();
         //privado para evitar la instanciación directa
@@ -90,5 +91,6 @@ namespace CapaLógica
             return lista;
         }
         #endregion metodos
+        */
     }
 }

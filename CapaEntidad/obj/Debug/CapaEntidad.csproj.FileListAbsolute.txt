@@ -118,3 +118,9 @@ C:\Users\Usuario\OneDrive\Escritorio\FINAL_MOANSO\CapaEntidad\obj\Debug\CapaEnti
 C:\Users\Usuario\OneDrive\Escritorio\FINAL_MOANSO\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\OneDrive\Escritorio\FINAL_MOANSO\CapaEntidad\obj\Debug\CapaEntidad.dll
 C:\Users\Usuario\OneDrive\Escritorio\FINAL_MOANSO\CapaEntidad\obj\Debug\CapaEntidad.pdb
+D:\eeqweqwew\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\bin\Debug\CapaEntidad.dll
+D:\eeqweqwew\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\bin\Debug\CapaEntidad.pdb
+D:\eeqweqwew\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+D:\eeqweqwew\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+D:\eeqweqwew\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\obj\Debug\CapaEntidad.dll
+D:\eeqweqwew\PROYECTO_MOANSO_TURKY-SGYM\CapaEntidad\obj\Debug\CapaEntidad.pdb
