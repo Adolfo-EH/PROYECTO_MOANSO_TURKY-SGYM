@@ -171,6 +171,15 @@ namespace CapaDatos
             finally { cmd.Connection.Close(); }
             return delete;
         }
+        public DataTable CargarMembresia()
+        {
+            SqlConnection cn = Conexion.Instancia.Conectar();
+            SqlDataAdapter da = new SqlDataAdapter("spCargarMembresia", cn);
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
         #endregion metodos
     }
 }

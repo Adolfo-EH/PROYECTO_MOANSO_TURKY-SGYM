@@ -52,6 +52,11 @@ namespace CapaLógica
             { throw e; }
         }
 
+        public void AnularVentaProd(int idVen)
+        {
+            datVentaProd.Instancia.AnularVentaProd(idVen);
+        }
+
         #endregion metodos
     }
 }

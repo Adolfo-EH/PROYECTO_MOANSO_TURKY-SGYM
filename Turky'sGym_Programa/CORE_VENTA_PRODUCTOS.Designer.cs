@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnConsultarVentasProducto = new System.Windows.Forms.Button();
             this.btnAnularVentaProducto = new System.Windows.Forms.Button();
             this.btnRegistroVProducto = new System.Windows.Forms.Button();
             this.lblFechaRegistroP = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblUsuario = new System.Windows.Forms.Label();
             this.lblVentaServicios = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.cmbNombre = new System.Windows.Forms.ComboBox();
@@ -74,7 +75,8 @@
             this.precioDescuento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cmbTipoMetodo = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.lblUsuario = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtAnulaID = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgVentaProductos)).BeginInit();
@@ -82,27 +84,28 @@
             // 
             // btnConsultarVentasProducto
             // 
-            this.btnConsultarVentasProducto.Location = new System.Drawing.Point(820, 571);
+            this.btnConsultarVentasProducto.Location = new System.Drawing.Point(1070, 316);
             this.btnConsultarVentasProducto.Name = "btnConsultarVentasProducto";
-            this.btnConsultarVentasProducto.Size = new System.Drawing.Size(125, 41);
+            this.btnConsultarVentasProducto.Size = new System.Drawing.Size(102, 41);
             this.btnConsultarVentasProducto.TabIndex = 56;
             this.btnConsultarVentasProducto.Text = "CONSULTAR VENTAS";
             this.btnConsultarVentasProducto.UseVisualStyleBackColor = true;
             // 
             // btnAnularVentaProducto
             // 
-            this.btnAnularVentaProducto.Location = new System.Drawing.Point(820, 477);
+            this.btnAnularVentaProducto.Location = new System.Drawing.Point(929, 316);
             this.btnAnularVentaProducto.Name = "btnAnularVentaProducto";
-            this.btnAnularVentaProducto.Size = new System.Drawing.Size(125, 40);
+            this.btnAnularVentaProducto.Size = new System.Drawing.Size(113, 40);
             this.btnAnularVentaProducto.TabIndex = 52;
             this.btnAnularVentaProducto.Text = "ANULAR VENTA";
             this.btnAnularVentaProducto.UseVisualStyleBackColor = true;
+            this.btnAnularVentaProducto.Click += new System.EventHandler(this.btnAnularVentaProducto_Click);
             // 
             // btnRegistroVProducto
             // 
-            this.btnRegistroVProducto.Location = new System.Drawing.Point(820, 367);
+            this.btnRegistroVProducto.Location = new System.Drawing.Point(797, 315);
             this.btnRegistroVProducto.Name = "btnRegistroVProducto";
-            this.btnRegistroVProducto.Size = new System.Drawing.Size(125, 41);
+            this.btnRegistroVProducto.Size = new System.Drawing.Size(102, 41);
             this.btnRegistroVProducto.TabIndex = 51;
             this.btnRegistroVProducto.Text = "GUARDAR";
             this.btnRegistroVProducto.UseVisualStyleBackColor = true;
@@ -126,8 +129,20 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1177, 79);
+            this.panel1.Size = new System.Drawing.Size(1184, 79);
             this.panel1.TabIndex = 63;
+            // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblUsuario.Location = new System.Drawing.Point(924, 24);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(103, 29);
+            this.lblUsuario.TabIndex = 76;
+            this.lblUsuario.Text = "Usuario";
             // 
             // lblVentaServicios
             // 
@@ -175,7 +190,7 @@
             this.cmbNombre.FormattingEnabled = true;
             this.cmbNombre.Location = new System.Drawing.Point(116, 95);
             this.cmbNombre.Name = "cmbNombre";
-            this.cmbNombre.Size = new System.Drawing.Size(121, 21);
+            this.cmbNombre.Size = new System.Drawing.Size(187, 21);
             this.cmbNombre.TabIndex = 72;
             this.cmbNombre.SelectedIndexChanged += new System.EventHandler(this.cmbNombre_SelectedIndexChanged);
             // 
@@ -184,7 +199,7 @@
             this.cmbCategoria.FormattingEnabled = true;
             this.cmbCategoria.Location = new System.Drawing.Point(116, 60);
             this.cmbCategoria.Name = "cmbCategoria";
-            this.cmbCategoria.Size = new System.Drawing.Size(121, 21);
+            this.cmbCategoria.Size = new System.Drawing.Size(187, 21);
             this.cmbCategoria.TabIndex = 71;
             this.cmbCategoria.SelectedIndexChanged += new System.EventHandler(this.cmbCategoria_SelectedIndexChanged);
             // 
@@ -242,7 +257,7 @@
             this.cmbPromocion.FormattingEnabled = true;
             this.cmbPromocion.Location = new System.Drawing.Point(116, 203);
             this.cmbPromocion.Name = "cmbPromocion";
-            this.cmbPromocion.Size = new System.Drawing.Size(121, 21);
+            this.cmbPromocion.Size = new System.Drawing.Size(187, 21);
             this.cmbPromocion.TabIndex = 24;
             // 
             // label7
@@ -303,6 +318,7 @@
             // 
             this.txtMontoPagar.Location = new System.Drawing.Point(420, 200);
             this.txtMontoPagar.Name = "txtMontoPagar";
+            this.txtMontoPagar.ReadOnly = true;
             this.txtMontoPagar.Size = new System.Drawing.Size(87, 20);
             this.txtMontoPagar.TabIndex = 13;
             // 
@@ -323,6 +339,7 @@
             this.txtStock.ReadOnly = true;
             this.txtStock.Size = new System.Drawing.Size(101, 20);
             this.txtStock.TabIndex = 11;
+            this.txtStock.TextChanged += new System.EventHandler(this.txtStock_TextChanged);
             // 
             // label10
             // 
@@ -338,7 +355,7 @@
             // 
             this.txtCantidad.Location = new System.Drawing.Point(116, 168);
             this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(101, 20);
+            this.txtCantidad.Size = new System.Drawing.Size(77, 20);
             this.txtCantidad.TabIndex = 4;
             // 
             // label6
@@ -364,7 +381,7 @@
             // cmbFormaPago
             // 
             this.cmbFormaPago.FormattingEnabled = true;
-            this.cmbFormaPago.Location = new System.Drawing.Point(989, 265);
+            this.cmbFormaPago.Location = new System.Drawing.Point(1014, 239);
             this.cmbFormaPago.Name = "cmbFormaPago";
             this.cmbFormaPago.Size = new System.Drawing.Size(121, 21);
             this.cmbFormaPago.TabIndex = 72;
@@ -372,7 +389,7 @@
             // cmbMetodoPago
             // 
             this.cmbMetodoPago.FormattingEnabled = true;
-            this.cmbMetodoPago.Location = new System.Drawing.Point(989, 214);
+            this.cmbMetodoPago.Location = new System.Drawing.Point(1014, 188);
             this.cmbMetodoPago.Name = "cmbMetodoPago";
             this.cmbMetodoPago.Size = new System.Drawing.Size(121, 21);
             this.cmbMetodoPago.TabIndex = 71;
@@ -381,7 +398,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(829, 269);
+            this.label3.Location = new System.Drawing.Point(854, 243);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(129, 18);
             this.label3.TabIndex = 70;
@@ -391,7 +408,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(821, 213);
+            this.label2.Location = new System.Drawing.Point(846, 187);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(137, 18);
             this.label2.TabIndex = 69;
@@ -430,20 +447,21 @@
             this.Promocion,
             this.precioTotal,
             this.precioDescuento});
-            this.dtgVentaProductos.Location = new System.Drawing.Point(18, 367);
+            this.dtgVentaProductos.Location = new System.Drawing.Point(0, 367);
             this.dtgVentaProductos.Name = "dtgVentaProductos";
             this.dtgVentaProductos.ReadOnly = true;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgVentaProductos.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgVentaProductos.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgVentaProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgVentaProductos.Size = new System.Drawing.Size(759, 245);
+            this.dtgVentaProductos.Size = new System.Drawing.Size(1172, 542);
             this.dtgVentaProductos.TabIndex = 73;
+            this.dtgVentaProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgVentaProductos_CellContentClick);
             // 
             // Productoid
             // 
@@ -500,7 +518,7 @@
             // cmbTipoMetodo
             // 
             this.cmbTipoMetodo.FormattingEnabled = true;
-            this.cmbTipoMetodo.Location = new System.Drawing.Point(989, 156);
+            this.cmbTipoMetodo.Location = new System.Drawing.Point(1014, 130);
             this.cmbTipoMetodo.Name = "cmbTipoMetodo";
             this.cmbTipoMetodo.Size = new System.Drawing.Size(121, 21);
             this.cmbTipoMetodo.TabIndex = 75;
@@ -510,29 +528,35 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(783, 157);
+            this.label12.Location = new System.Drawing.Point(808, 131);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(175, 18);
             this.label12.TabIndex = 74;
             this.label12.Text = "Tipo Metodo de Pago:";
             // 
-            // lblUsuario
+            // label14
             // 
-            this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblUsuario.Location = new System.Drawing.Point(924, 24);
-            this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(103, 29);
-            this.lblUsuario.TabIndex = 76;
-            this.lblUsuario.Text = "Usuario";
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(926, 288);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(52, 13);
+            this.label14.TabIndex = 76;
+            this.label14.Text = "ID Venta:";
+            // 
+            // txtAnulaID
+            // 
+            this.txtAnulaID.Location = new System.Drawing.Point(983, 285);
+            this.txtAnulaID.Name = "txtAnulaID";
+            this.txtAnulaID.Size = new System.Drawing.Size(59, 20);
+            this.txtAnulaID.TabIndex = 77;
             // 
             // CORE_VENTA_PRODUCTOS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1177, 624);
+            this.ClientSize = new System.Drawing.Size(1184, 921);
+            this.Controls.Add(this.txtAnulaID);
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.cmbTipoMetodo);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.dtgVentaProductos);
@@ -608,5 +632,7 @@
         private System.Windows.Forms.ComboBox cmbNombre;
         private System.Windows.Forms.ComboBox cmbCategoria;
         private System.Windows.Forms.Label lblUsuario;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox txtAnulaID;
     }
 }

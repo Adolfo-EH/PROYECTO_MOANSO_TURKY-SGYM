@@ -149,6 +149,31 @@ namespace CapaDatos
             da.Fill(dt);
             return dt;
         }
+
+        public Boolean AnularVentaProd(int idVen)
+        {
+            SqlCommand cmd = null;
+            Boolean delete = false;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spAnularVentaProd", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@VentaProdID", idVen);
+                cn.Open();
+                int i = cmd.ExecuteNonQuery();
+                if (i > 0)
+                {
+                    delete = true;
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return delete;
+        }
         #endregion metodos
     }
 }

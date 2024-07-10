@@ -246,5 +246,30 @@ namespace Turky_sGym_Programa
                 }
             }
         }
+
+        private void txtStock_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtgVentaProductos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnAnularVentaProducto_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int idVen = int.Parse(txtAnulaID.Text);    
+                logVentaProd.Instancia.AnularVentaProd(idVen);
+                MessageBox.Show("Se anuló la venta del Producto con el ID: " + idVen);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error.." + ex);
+            }
+            txtAnulaID.Clear();
+        }
     }
 }

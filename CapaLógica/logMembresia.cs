@@ -2,6 +2,7 @@
 using CapaEntidad;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -54,6 +55,18 @@ namespace CapaLógica
         public void DeshabilitarMembresia(entMembresia pl)
         {
             datMembresia.Instancia.DeshabilitarMembresia(pl);
+        }
+        public entMembresia BuscarMembresiaID(int idMembresia)
+        {
+            try
+            {
+                return datVentaMem.Instancia.BuscarMembresiaID(idMembresia);
+            }
+            catch (Exception e) { throw e; }
+        }
+        public DataTable CargarMembresia()
+        {
+            return datMembresia.Instancia.CargarMembresia();
         }
         #endregion metodos
     }

@@ -191,7 +191,9 @@ namespace CapaDatos
                     cl = new entCliente
                     {
                         ClienteID = Convert.ToInt32(dr["ClienteID"]),
-                        NomCliente = Convert.ToString(dr["NomCliente"])
+                        NomCliente = Convert.ToString(dr["NomCliente"]),
+                        Telefono = Convert.ToInt32(dr["Telefono"]),
+                        FechaNac = Convert.ToDateTime(dr["FechaNac"])
                     };
                 }
             }
